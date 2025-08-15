@@ -35,39 +35,11 @@ Note that if you are using Redis, you can still use these methods.
 
 **Important** : all methods are asynchronous.
 
-<table>
-    <tr>
-        <td>Method</td>
-        <td>Description</td>
-    </tr>
-    <tr>
-        <td><code>async set(key: string, value: any, timeoutUnit: MemStoreTimeoutUnit, timeoutValue: number)</code></td>
-        <td> Set a key/value pair along with optional timeout value, after which the item will be deleted.
-            <ul>
-                <li><code>key</code> : a globally unique key</li>
-                <li><code>value</code> : any data</li>
-                <li><code>timeoutUnit</code> : "seconds"|"minutes"|"hours"|"days"|"never"</li>
-                <li><code>timeoutValue</code> : timeout value in the units specified by <code>timeoutUnit</code></li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td><code>async get(key: string)</code></td>
-        <td> Retrieve a key value pair.
-            <ul>
-                <li><code>key</code> : the globally unique key to retrieve</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td><code>async delete(key: string)</code></td>
-        <td> Delete a key/value pair by key name.
-            <ul>
-                <li><code>key</code> : the globally unique key to retrieve</li>
-            </ul>
-        </td>
-    </tr>
-</table>
+| Method | Description |
+|--------|-------------|
+| `async set(key: string, value: any, timeoutUnit: MemStoreTimeoutUnit, timeoutValue: number)` | Set a key/value pair along with optional timeout value, after which the item will be deleted.<br/>• `key` : a globally unique key<br/>• `value` : any data<br/>• `timeoutUnit` : "seconds"\|"minutes"\|"hours"\|"days"\|"never"<br/>• `timeoutValue` : timeout value in the units specified by `timeoutUnit` |
+| `async get(key: string)` | Retrieve a key value pair.<br/>• `key` : the globally unique key to retrieve |
+| `async delete(key: string)` | Delete a key/value pair by key name.<br/>• `key` : the globally unique key to retrieve |
 
 ## Memory Store browser
 You can browse and search for data in the Data Store using the [Store Browser](Data-and-Memory-Store-Browser.md).

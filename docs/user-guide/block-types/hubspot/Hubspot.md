@@ -10,17 +10,17 @@ HubSpot blocks provide comprehensive integration capabilities with the HubSpot C
 
 ### Data Reading Blocks
 
-- [HubSpot Read](/block-types/hubspot/hs-read) - Read data from HubSpot objects
-- [HubSpot Get Associated](/block-types/hubspot/hs-get-associated) - Retrieve associated records
-- [HubSpot Get All Owners](/block-types/hubspot/hs-get-all-owners) - Get all HubSpot owners
-- [HubSpot Owner Translate](/block-types/hubspot/hs-owner-translate) - Translate owner references
+- [HubSpot Read](/user-guide/block-types/hubspot/hs-read) - Read data from HubSpot objects
+- [HubSpot Get Associated](/user-guide/block-types/hubspot/hs-get-associated) - Retrieve associated records
+- [HubSpot Get All Owners](/user-guide/block-types/hubspot/hs-get-all-owners) - Get all HubSpot owners
+- [HubSpot Owner Translate](/user-guide/block-types/hubspot/hs-owner-translate) - Translate owner references
 
 ### Data Writing Blocks
 
-- [HubSpot Write](/block-types/hubspot/hs-write) - Create and update HubSpot records
-- [HubSpot Create Associations](/block-types/hubspot/hs-create-associations) - Create relationships between records
-- [HubSpot Merge](/block-types/hubspot/hs-merge) - Merge duplicate records
-- [HubSpot Timeline Write](/block-types/hubspot/hs-timeline-write) - Add entries to contact timelines
+- [HubSpot Write](/user-guide/block-types/hubspot/hs-write) - Create and update HubSpot records
+- [HubSpot Create Associations](/user-guide/block-types/hubspot/hs-create-associations) - Create relationships between records
+- [HubSpot Merge](/user-guide/block-types/hubspot/hs-merge) - Merge duplicate records
+- [HubSpot Timeline Write](/user-guide/block-types/hubspot/hs-timeline-write) - Add entries to contact timelines
 
 ## HubSpot Object Types
 

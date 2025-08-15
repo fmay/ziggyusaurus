@@ -186,10 +186,10 @@ function processData(data) {
 
 ## Related Blocks
 
-- [Javascript](/block-types/core/Javascript) - For code examples
-- [Console-Message](/block-types/core/Console-Message) - For runtime output
-- [Variable-Set-Get](/block-types/core/Variable-Set-Get) - For documenting variables
-- [Branch](/block-types/core/Branch) - For documenting decision logic
+- [Javascript](/user-guide/block-types/core/Javascript) - For code examples
+- [Console-Message](/user-guide/block-types/core/Console-Message) - For runtime output
+- [Variable-Set-Get](/user-guide/block-types/core/Variable-Set-Get) - For documenting variables
+- [Branch](/user-guide/block-types/core/Branch) - For documenting decision logic
 
 ## Examples by Flow Type
 

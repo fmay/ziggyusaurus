@@ -6,7 +6,7 @@ title: Block Helper
 
 This is the core functionality for the HubSpot Write Block.
 
-Note how this is using the same interface we defined in the [client definition](/customisation/custom-utility-blocks/client/Definitions-File).
+Note how this is using the same interface we defined in the [client definition](/customisation/custom-utility-blocks/Definitions-File).
 
 ```JavaScript
 export const hsCollectionWriteV1Helper = async (

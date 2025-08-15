@@ -179,10 +179,10 @@ consoleMsg(`Completed processing ${processedCount} items`);
 
 ## Related Blocks
 
-- [Iterator](/block-types/core/Iterator) - For looping through data
-- [Javascript](/block-types/core/Javascript) - For custom batch logic
-- [Collector](/block-types/core/Collector) - For gathering batch results
-- [Merger](/block-types/core/Merger) - For combining batch outputs
+- [Iterator](/user-guide/block-types/core/Iterator) - For looping through data
+- [Javascript](/user-guide/block-types/core/Javascript) - For custom batch logic
+- [Collector](/user-guide/block-types/core/Collector) - For gathering batch results
+- [Merger](/user-guide/block-types/core/Merger) - For combining batch outputs
 
 ## Integration Patterns
 

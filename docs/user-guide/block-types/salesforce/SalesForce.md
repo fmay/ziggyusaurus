@@ -10,17 +10,17 @@ Salesforce blocks provide comprehensive integration capabilities with the Salesf
 
 ### Data Reading Blocks
 
-- [Salesforce Read Object](/block-types/salesforce/sf-read-object) - Read data from Salesforce objects
-- [Salesforce Get Associated Object](/block-types/salesforce/SalesForce-Get-Associated-Object) - Retrieve associated records
+- [Salesforce Read Object](/user-guide/block-types/salesforce/sf-read-object) - Read data from Salesforce objects
+- [Salesforce Get Associated Object](/user-guide/block-types/salesforce/SalesForce-Get-Associated-Object) - Retrieve associated records
 
 ### Data Writing Blocks
 
-- [Salesforce Write Object](/block-types/salesforce/sf-write-object) - Create and update Salesforce records
-- [Salesforce Set Associations](/block-types/salesforce/SalesForce-Set-Assciations) - Create relationships between records
+- [Salesforce Write Object](/user-guide/block-types/salesforce/sf-write-object) - Create and update Salesforce records
+- [Salesforce Set Associations](/user-guide/block-types/salesforce/SalesForce-Set-Assciations) - Create relationships between records
 
 ### Utility Blocks
 
-- [Salesforce Owner Translate](/block-types/salesforce/SalesForce-Owner-Translate) - Translate owner references
+- [Salesforce Owner Translate](/user-guide/block-types/salesforce/SalesForce-Owner-Translate) - Translate owner references
 
 ## Salesforce Object Types
 

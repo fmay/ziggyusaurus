@@ -28,9 +28,9 @@ Subflow blocks are typically used to break complex flows into manageable, reusab
 
 ## Related Blocks
 
-- [Branch-To-Subflow](/block-types/core/Branch-To-Subflow) - For conditional subflow execution
-- [Receiver](/block-types/core/Receiver) - For starting subflows
-- [Terminator](/block-types/core/Terminator) - For ending subflows
+- [Branch-To-Subflow](/user-guide/block-types/core/Branch-To-Subflow) - For conditional subflow execution
+- [Receiver](/user-guide/block-types/core/Receiver) - For starting subflows
+- [Terminator](/user-guide/block-types/core/Terminator) - For ending subflows
 
 ## Use Cases
 

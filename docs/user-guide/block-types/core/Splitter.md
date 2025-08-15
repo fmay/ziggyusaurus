@@ -28,9 +28,9 @@ Splitter blocks are typically placed after data sources to distribute data to mu
 
 ## Related Blocks
 
-- [Merger](/block-types/core/Merger) - For combining data streams
-- [Joiner](/block-types/core/joiner) - For joining related data
-- [Collector](/block-types/core/Collector) - For gathering data from multiple sources
+- [Merger](/user-guide/block-types/core/Merger) - For combining data streams
+- [Joiner](/user-guide/block-types/core/joiner) - For joining related data
+- [Collector](/user-guide/block-types/core/Collector) - For gathering data from multiple sources
 
 ## Use Cases
 

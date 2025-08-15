@@ -28,9 +28,9 @@ Branch blocks are typically placed after data sources to route data based on spe
 
 ## Related Blocks
 
-- [Branch-To-Subflow](/block-types/core/Branch-To-Subflow) - For calling subflows conditionally
-- [Merger](/block-types/core/Merger) - For combining branched paths
-- [Collector](/block-types/core/Collector) - For gathering data from multiple paths
+- [Branch-To-Subflow](/user-guide/block-types/core/Branch-To-Subflow) - For calling subflows conditionally
+- [Merger](/user-guide/block-types/core/Merger) - For combining branched paths
+- [Collector](/user-guide/block-types/core/Collector) - For gathering data from multiple paths
 
 ## Use Cases
 

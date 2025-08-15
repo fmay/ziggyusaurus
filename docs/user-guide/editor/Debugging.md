@@ -133,8 +133,8 @@ consoleMsg(`Execution time: ${endTime - startTime}ms`);
 
 ## Related Topics
 
-- [Flow Editor](/editor/Editor) - Flow editing interface
-- [Console Messages](/block-types/core/Console-Message) - Output debugging information
-- [Error Handling](/error-handling/Error-Handling) - Handle errors gracefully
-- [Logging](/logging/Logging) - System logging configuration
-- [Data Browser](/data-browser/Data-and-Memory-Store-Browser) - Examine data structures
+- [Flow Editor](/user-guide/editor/Editor) - Flow editing interface
+- [Console Messages](/user-guide/block-types/core/Console-Message) - Output debugging information
+- [Error Handling](/user-guide/Error-Handling) - Handle errors gracefully
+- [Logging](/user-guide/Logging) - System logging configuration
+- [Data Browser](/user-guide/Data-and-Memory-Store-Browser) - Examine data structures

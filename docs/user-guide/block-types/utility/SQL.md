@@ -292,10 +292,10 @@ for (let i = 0; i < customers.length; i += batchSize) {
 
 ## Related Blocks
 
-- [Data Store](/block-types/utility/Data-Store-section) - For data storage operations
-- [Memory Store](/block-types/utility/MemStore) - For in-memory data
-- [Mapper](/block-types/utility/Mapper) - For data transformation
-- [Javascript](/block-types/core/Javascript) - For custom database logic
+- [Data Store](/user-guide/block-types/Data-Store-section) - For data storage operations
+- [Memory Store](/user-guide/block-types/utility/MemStore) - For in-memory data
+- [Mapper](/user-guide/block-types/utility/Mapper) - For data transformation
+- [Javascript](/user-guide/block-types/core/Javascript) - For custom database logic
 
 ## Use Cases
 

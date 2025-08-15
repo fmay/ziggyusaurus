@@ -62,7 +62,7 @@ Scheduled flows can be configured with:
 
 ## Related Topics
 
-- [Flows Listing](/editor/Flows-listing) - Managing your flows
-- [Global Settings](/global-settings/Global-Settings) - System configuration
-- [Monitoring](/monitoring/Monitoring) - Flow execution monitoring
-- [Alerts](/alerts/Alerts) - Setting up notifications
+- [Flows Listing](/user-guide/editor/Flows-listing) - Managing your flows
+- [Global Settings](/user-guide/Global-Settings) - System configuration
+- [Monitoring](/user-guide/Monitoring) - Flow execution monitoring
+- [Alerts](/user-guide/Alerts) - Setting up notifications

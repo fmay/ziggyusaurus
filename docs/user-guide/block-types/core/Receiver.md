@@ -129,10 +129,10 @@ Receiver blocks can be configured with various options including:
 
 ## Related Blocks
 
-- [Terminator](/block-types/core/Terminator) - For ending flows
-- [Branch](/block-types/core/Branch) - For conditional flow control
-- [Javascript](/block-types/core/Javascript) - For custom data processing
-- [Variable-Set-Get](/block-types/core/Variable-Set-Get) - For managing variables
+- [Terminator](/user-guide/block-types/core/Terminator) - For ending flows
+- [Branch](/user-guide/block-types/core/Branch) - For conditional flow control
+- [Javascript](/user-guide/block-types/core/Javascript) - For custom data processing
+- [Variable-Set-Get](/user-guide/block-types/core/Variable-Set-Get) - For managing variables
 
 ## Use Cases
 

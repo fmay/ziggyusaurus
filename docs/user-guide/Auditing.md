@@ -80,7 +80,7 @@ Audit settings can be configured through:
 
 ## Related Topics
 
-- [Logging](/logging/Logging) - System logging configuration
-- [Monitoring](/monitoring/Monitoring) - Real-time system monitoring
-- [Global Settings](/global-settings/Global-Settings) - Audit configuration
-- [Security](/security/Security) - Security and access control 
+- [Logging](/user-guide/Logging) - System logging configuration
+- [Monitoring](/user-guide/Monitoring) - Real-time system monitoring
+- [Global Settings](/user-guide/Global-Settings) - Audit configuration
+- [Security](/user-guide/Security) - Security and access control 

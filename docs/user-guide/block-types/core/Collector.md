@@ -28,9 +28,9 @@ Collector blocks are typically placed before data processing or output blocks to
 
 ## Related Blocks
 
-- [Splitter](/block-types/core/Splitter) - For dividing data streams
-- [Merger](/block-types/core/Merger) - For merging related data
-- [Joiner](/block-types/core/joiner) - For joining data based on relationships
+- [Splitter](/user-guide/block-types/core/Splitter) - For dividing data streams
+- [Merger](/user-guide/block-types/core/Merger) - For merging related data
+- [Joiner](/user-guide/block-types/core/joiner) - For joining data based on relationships
 
 ## Use Cases
 

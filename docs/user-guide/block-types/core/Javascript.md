@@ -196,10 +196,10 @@ try {
 
 ## Related Blocks
 
-- [Variable-Set-Get](/block-types/core/Variable-Set-Get) - For setting and getting variables
-- [Console-Message](/block-types/core/Console-Message) - For simple console output
-- [Iterator](/block-types/core/Iterator) - For looping through data
-- [Branch](/block-types/core/Branch) - For conditional logic
+- [Variable-Set-Get](/user-guide/block-types/core/Variable-Set-Get) - For setting and getting variables
+- [Console-Message](/user-guide/block-types/core/Console-Message) - For simple console output
+- [Iterator](/user-guide/block-types/core/Iterator) - For looping through data
+- [Branch](/user-guide/block-types/core/Branch) - For conditional logic
 
 ## Examples
 

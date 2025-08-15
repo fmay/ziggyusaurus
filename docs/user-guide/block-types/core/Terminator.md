@@ -26,9 +26,9 @@ Terminator blocks are typically placed at the end of a flow to handle completion
 
 ## Related Blocks
 
-- [Receiver](/block-types/core/Receiver) - For starting flows
-- [Branch](/block-types/core/Branch) - For conditional flow control
-- [Error Handling](/error-handling/Error-Handling) - For error management
+- [Receiver](/user-guide/block-types/core/Receiver) - For starting flows
+- [Branch](/user-guide/block-types/core/Branch) - For conditional flow control
+- [Error Handling](/user-guide/Error-Handling) - For error management
 
 ## Use Cases
 

@@ -98,7 +98,7 @@ Dev-Prod Modes provide:
 
 ## Related Topics
 
-- [Global Settings](/global-settings/Global-Settings) - System configuration
-- [Deployment](/deployment/Deployment) - Production deployment
-- [Testing](/tests/Tests) - Flow testing procedures
-- [Security](/security/Security) - Security considerations
+- [Global Settings](/user-guide/Global-Settings) - System configuration
+- [Deployment](/user-guide/Deployment) - Production deployment
+- [Testing](/user-guide/Tests) - Flow testing procedures
+- [Security](/user-guide/Security) - Security considerations

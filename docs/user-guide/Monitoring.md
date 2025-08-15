@@ -61,7 +61,7 @@ Monitoring can be configured through:
 
 ## Related Topics
 
-- [Global Settings](/global-settings/Global-Settings) - System configuration
-- [Alerts](/alerts/Alerts) - Setting up notifications
-- [Logging](/logging/Logging) - System logging configuration
-- [Execution History](/editor/Execution-history) - Flow execution tracking
+- [Global Settings](/user-guide/Global-Settings) - System configuration
+- [Alerts](/user-guide/Alerts) - Setting up notifications
+- [Logging](/user-guide/Logging) - System logging configuration
+- [Execution History](/user-guide/editor/Execution-history) - Flow execution tracking

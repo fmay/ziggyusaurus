@@ -39,6 +39,6 @@ Simple embedding of YouTube and Vimeo videos is supported.
 ```
 
 ## Annotations Block
-You can add the [Annotation Block](Annotation.md) to your Flow and position it anywhere. It is resizable.
+You can add the [Annotation Block](/user-guide/block-types/core/Annotation) to your Flow and position it anywhere. It is resizable.
 
 

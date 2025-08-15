@@ -11,7 +11,7 @@ Reads data in chunks defined by **Batch Size** and for a maximum of **Max iterat
 
 Setting iterations to 0 will run the batch until no more rows are available.
 
-Refer to [Batching](/user-guide/batching/Batching) for details about batching and the [Batch End](Batch-End.md) block, which is required.
+Refer to [Batching](/user-guide/batching/Batching) for details about batching and the [Batch End](/user-guide/block-types/core/Batch-End) block, which is required.
 
 <img src="/img/flows/blocks/utility/SQL/sql-select-batch.png" alt="Batch mode" width="500" />
 

@@ -20,7 +20,7 @@ Ziggy currently supports the following data formats. The format is specified in 
 ## Reading
 Regardless of the platform, reading is a batch operation.
 
-- There should be a [Batch End](Batch-End.md) block further down the Flow.
+- There should be a [Batch End](/user-guide/block-types/core/Batch-End) block further down the Flow.
 - You should specify the batch size and number of iterations (0 means read entire file)
 
 ## Platform - File System

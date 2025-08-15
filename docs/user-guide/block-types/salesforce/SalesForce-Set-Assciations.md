@@ -17,7 +17,7 @@ The data below shows two keys `accountId` and `wordId`. Each of these contains a
 Specify a valid SalesForce connection from the [Connection Manager](/user-guide/connections/Connections).
 
 ## Namespace for errors
-If you want to capture errors to a namespace in the [Ziggy Data Store](Data-Store.md), choose an existing namespace 
+If you want to capture errors to a namespace in the [Ziggy Data Store](/user-guide/block-types/utility/Data-Store), choose an existing namespace 
 from the dropdown or enter a new namespace name.
 
 ## From and To objects

@@ -16,7 +16,7 @@ The general concepts are hopefully self-explanatory but here are some things to 
 - **Clone** - clones your Flow.
 - **Test** - indicates which [Tests](/user-guide/tests/Tests) this Flow is associated with.
 - **Debug Info** - for developers working with [source code](Customisation.md).
-- **Debug Flow** - run and step through your flow using the [visual debugger](Debugging.md).
+- **Debug Flow** - run and step through your flow using the [visual debugger](Debugging).
 - **Execution History** - each time your Flow is executed, it logs it along with the complete flow data (optional).
 - **Named save** - you can create a save with a name you choose. You can then restore from this at a later date.
 - **Production/Development** - click on this to toggle modes. Each mode has its own secrets and connection settings.

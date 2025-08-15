@@ -25,7 +25,7 @@ The configuration below shows how we are using data on the incoming edge to perf
 
 <img src="/img/flows/blocks/hubspot/hubspot-read-lookup.png" alt="Hubspot Lookup Read" width="900" />
 
-- We are using test data in the [Receiver block](Receiver.md) to demonstrate the way the lookup function works.
+- We are using test data in the [Receiver block](/user-guide/block-types/core/Receiver) to demonstrate the way the lookup function works.
 - In the **Edge key to search with** field, you specify which key on the incoming edge contains the value to lookup.
 - In **HS property to search on**, you then specify which Hubspot property should be used for the lookup. It will show you only unique properties. The **Record Id** field is selected. 
 - Finally, specify which properties to fetch. If you leave this field empty, it will fetch all properties.

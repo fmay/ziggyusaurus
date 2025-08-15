@@ -9,7 +9,7 @@ title: Flow Execution history
 There are two ways to view the execution history for one Flow.
 
 - In the Flow editor for the currently loaded Flow
-- In the [Execution History dashboard](Monitoring.md)
+- In the [Execution History dashboard](/user-guide/Monitoring)
 
 Click on the circled history icon in the toolbar to load the history for the loaded Flow.
 

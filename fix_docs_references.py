@@ -2,8 +2,9 @@
 """
 Script to fix documentation references in Docusaurus markdown files.
 Fixes:
-1. Image references to use proper Docusaurus paths
-2. Markdown link references to use proper relative paths
+1. Width attributes from #width=800 format to {width=800} format
+2. Image references to use proper Docusaurus paths
+3. Markdown link references to use proper relative paths
 """
 
 import os
@@ -31,6 +32,24 @@ class DocsReferenceFixer:
             self.image_files.add(img_file.name)
         print(f"Found {len(self.image_files)} PNG files")
         
+    def fix_width_attributes(self, content: str) -> Tuple[str, bool]:
+        """Fix width attributes from #width=800 format to {width=800} format"""
+        original_content = content
+        fixed = False
+        
+        # Pattern to match width attributes: #width=800
+        width_pattern = r'#width=(\d+)'
+        
+        def replace_width(match):
+            nonlocal fixed
+            width_value = match.group(1)
+            fixed = True
+            print(f"  Fixed width attribute: #width={width_value} -> {{width={width_value}}}")
+            return f'{{width={width_value}}}'
+        
+        content = re.sub(width_pattern, replace_width, content)
+        return content, fixed
+    
     def fix_image_references(self, content: str, file_path: Path) -> Tuple[str, bool]:
         """Fix image references to use proper Docusaurus paths"""
         original_content = content
@@ -125,15 +144,25 @@ class DocsReferenceFixer:
                 content = f.read()
             
             original_content = content
+            any_fixes = False
             
-            # Fix image references
+            # Step 1: Fix width attributes first
+            content, width_fixed = self.fix_width_attributes(content)
+            if width_fixed:
+                any_fixes = True
+            
+            # Step 2: Fix image references
             content, images_fixed = self.fix_image_references(content, file_path)
+            if images_fixed:
+                any_fixes = True
             
-            # Fix markdown links
+            # Step 3: Fix markdown links
             content, links_fixed = self.fix_markdown_links(content, file_path)
+            if links_fixed:
+                any_fixes = True
             
             # Write back if changes were made
-            if images_fixed or links_fixed:
+            if any_fixes:
                 with open(file_path, 'w', encoding='utf-8') as f:
                     f.write(content)
                 self.fixed_files.append(str(file_path))
@@ -150,6 +179,11 @@ class DocsReferenceFixer:
     def run(self):
         """Run the fixer on all markdown files"""
         print("🚀 Starting documentation reference fixer...")
+        print("=" * 50)
+        print("📋 Fix order:")
+        print("   1. Width attributes (#width=800 -> {width=800})")
+        print("   2. Image references (-> proper Docusaurus paths)")
+        print("   3. Markdown links (-> proper relative paths)")
         print("=" * 50)
         
         self.scan_files()

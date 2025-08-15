@@ -24,7 +24,7 @@ You can solve the problem in Ziggy as follows.
 
 Even with this solution you need to bear in mind that other Flows might be operating on HubSpot in parallel. A way to solve this is as follows.
 
-- Use the [Ziggy Memory Store](Memory-Store.md) to set a flag to indicate that the HubSpot Api is in use. Flows that are accessing the HubSpot APi can then query the memory store. If it is currently in use then you can use the Javascript Block's ```sleep()``` method to build in a small delay before retrying.
+- Use the [Ziggy Memory Store](/user-guide/memory-store/Memory-Store) to set a flag to indicate that the HubSpot Api is in use. Flows that are accessing the HubSpot APi can then query the memory store. If it is currently in use then you can use the Javascript Block's ```sleep()``` method to build in a small delay before retrying.
 
 If you are performing migrations or data loads as opposed to integrations that could execute in parallel then you won't really have this problem. You can let the HubSpot NPM client take care of retries in the background.
 

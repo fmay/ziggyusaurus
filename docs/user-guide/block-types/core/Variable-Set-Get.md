@@ -15,5 +15,5 @@ This sets or gets a Flow variable.
 ## Get
 Reads the specified variable and puts it on the output edge.
 
-![Variable get set](varibale-get-set.png#width=300)
+![Variable get set](/img/flows/blocks/core/variable-get-set/varibale-get-set.png){width=300}
 

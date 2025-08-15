@@ -11,10 +11,10 @@ This block expects the incoming edge data to contain two keys that contain an `I
 
 The data below shows two keys `accountId` and `wordId`. Each of these contains a SalesForce `Id`.
 
-![SalesForce set associations](sf-set-associations.png#width=900)
+![SalesForce set associations](/img/flows/blocks/salesforce/sf-set-associations.png){width=900}
 
 ## Connection
-Specify a valid SalesForce connection from the [Connection Manager](Connections.md).
+Specify a valid SalesForce connection from the [Connection Manager](/user-guide/connections/Connections).
 
 ## Namespace for errors
 If you want to capture errors to a namespace in the [Ziggy Data Store](Data-Store.md), choose an existing namespace 
@@ -36,6 +36,6 @@ For the From object, we need to specify which SalesForce object field should be 
 
 ## Error output edge
 The second of the two output edges will contiain any data that could not be written to SalesForce. 
-You do not have to use this output edge. The above example shows data being passed to the [Sinkhole](sinkhole.md) block. 
+You do not have to use this output edge. The above example shows data being passed to the [Sinkhole](/user-guide/block-types/core/sinkhole) block. 
 This allows you to inspect errored data, although you can do whatever you like with the data.
 

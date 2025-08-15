@@ -6,7 +6,7 @@ title: Hubspot Get All Owners
 
 This block gets all Hubspot owners/users and outputs them onto the edge.
 
-![Hubspot get associated](hubspot-get-all-owners.png#width=300)
+![Hubspot get associated](/img/flows/blocks/hubspot/hubspot-get-all-owners.png){width=300}
 
 
 The edge data is an array of the following object.

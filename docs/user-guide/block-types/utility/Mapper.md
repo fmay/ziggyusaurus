@@ -5,26 +5,26 @@ title: Mapper
 # Mapper
 Maps value on the input edge from one value to another. Data can be read from the Google Sheet workbook/worksheet combination you enter.
 
-![Mapper](block-mapper.png#width=300)
+![Mapper](/img/flows/blocks/utility/mapper/block-mapper.png){width=300}
 
 ## Google Sheet
 Mapping data is loaded from the Google Sheet URL. You should create a sheet as explained below..
 
-|                                                                                                          |  |
-|----------------------------------------------------------------------------------------------------------|---|
-| About this mapping                                                                                       |  |
-| Add anything else on any number of rows                                                                  |  |
-| At some point, it expects to find 'If' and 'Then' in the first two columns, followed by the mapping data |  |
-|                                                                                                          |  |
-|                                                                                                          |  |
-| **If**                                                                                                   | **Then** |
-| Mr.                                                                                                      | 1 |
-| Mrs.                                                                                                     | 2 |
-| Ms.                                                                                                      | 3 |
-| Dr.                                                                                                      | 4 |
-| {\$='Dame' OR \$='Sir'}                                                                                  | 9 |
-| \$='Dame' OR \$='Sir'                                                                                    | 9 |
-| #Otherwise#                                                                                              | 99 |
+**About this mapping**
+
+**Add anything else on any number of rows**
+
+**At some point, it expects to find 'If' and 'Then' in the first two columns, followed by the mapping data**
+
+**If** | **Then**
+-------|--------
+Mr. | 1
+Mrs. | 2
+Ms. | 3
+Dr. | 4
+`[$='Dame' OR $='Sir']` | 9
+`$='Dame' OR $='Sir'` | 9
+#Otherwise# | 99
 
 You can also copy **[this sheet](https://docs.google.com/spreadsheets/d/1XpcmSuiKKP2yE135rUCmuTqLDZ7mGBGdkAVk2qIrAnQ/edit?gid=0#gid=0)** and format it to your liking.
 

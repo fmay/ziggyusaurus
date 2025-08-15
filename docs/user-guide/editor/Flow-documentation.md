@@ -10,18 +10,18 @@ There are two ways you can add documentation to a Flow. Both of these support Ma
 Most of the tutorials use this to explain the contents.
 In the button bar of the Flow Editor is the Info button.
 
-![Info button](info-button.png){style="inline"}{width="550"}
+![Info button](/img/flows/info/info-button.png){style="inline"}{width="550"}
 
 If there is Flow Information available, the button will be green,
 
 Press this to open the **Flow Information Editor**. The content is rendered as shown below.
 
-![Rendered](info-html.png#width=500)
+![Rendered](/img/flows/info/info-html.png){width=500}
 
 ## Editing
 You can edit the Flow Information by pressing the edit button. You can then write your content in markdown.
 
-![Markdown](info-markdown.png#width=500)
+![Markdown](/img/flows/info/info-markdown.png){width=500}
 
 ### Images
 You can specify an image width as follows.

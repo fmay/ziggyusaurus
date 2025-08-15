@@ -9,9 +9,9 @@ This ensures that the system is not overloaded with requests.
 However, it is often necessary to use a user defined queue to stay within API rate limits.
 
 ## Define Queues
-You can define your Queues in [Global Settings](Global-Settings.md).
+You can define your Queues in [Global Settings](/user-guide/global-settings/Global-Settings).
 
-![Queue settings](queue-settings.png)
+![Queue settings](/img/flows/queueing/queue-settings.png)
 
 Generally, you might use the following strategy if you were integrating Hubspot with Microsoft Dynamics.
 
@@ -22,19 +22,19 @@ Generally, you might use the following strategy if you were integrating Hubspot 
 ## Rate limits
 You can assign a rate limit to a Queue by clicking on the Queue in Global Settings.
 
-![Queue settings](queue-settings-edit.png#width=450)
+![Queue settings](/img/flows/queueing/queue-settings-edit.png){width=450}
 
 ## Assigning a Flow to a Queue
 You can assign a request to a Queue within the Receiver Block. If no Queue is specified, the Flow will execute immediately. Otherwise, the Flow will be added to the chosen Queue and then processed by the Queue Worker.
 
-![Receiver](queues-receiver.png#width=400)
+![Receiver](/img/flows/queueing/queues-receiver.png){width=400}
 
 The queue worker processes any jobs found in the queue on an FIFO basis. 
 
 ## Monitoring and pausing Queues
 You can access Queue stats from Queue menu bar. You can also pause and restart queues.
 
-![Queue monitor](queues-menu.png)
+![Queue monitor](/img/flows/queueing/queues-menu.png)
 
 ## Security
 Users with the most stringent security requirements may be concerned about any form of data persistence.

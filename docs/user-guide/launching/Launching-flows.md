@@ -14,11 +14,11 @@ You will first need to generate an API key. An administrator should
 
 - Navigate to **Global Settings** (gear icon in the navigation bar).
 
-![400](global-settings-icon.png#width=400)
+![400](/img/flows/launching/global-settings-icon.png){width=400}
 
 - Select the **Security** tab.
 
-![600](execution-keys.png#width=600)
+![600](/img/flows/launching/execution-keys.png){width=600}
 
 You can generate and revoke multiple keys.
 
@@ -29,7 +29,7 @@ To get the endpoint for the Flow
 
 - Click on the Flow name or the **Gear** icon in the Flow info bar.
 
-![500](flow-info-bar.png#width=500)
+![500](/img/flows/launching/flow-info-bar.png){width=500}
 
 - The Flow identifier can be seen at the top , and forms an integral part of the endpoint URL.
 - Press the **URL** button to generate the full url.
@@ -47,7 +47,7 @@ The `executionId` query parameter is optional. It lets you pass in a **unique** 
 If you are launching Flows programmatically, then you might want to query the execution status of the Flow (see below). 
 In this case you should generate a unique id (a UUID is ideal) in your code and pass this value as the `executionId`.
 
-This value will also be shown when viewing the [Execution History](Execution-history.md) and when using the [Audit block](audit.md).
+This value will also be shown when viewing the [Execution History](/user-guide/editor/Execution-history) and when using the [Audit block](/user-guide/block-types/utility/audit).
 
 ## Passing data to the Flow
 Data you want to pass to the Flow should be included in the request body in JSON format.

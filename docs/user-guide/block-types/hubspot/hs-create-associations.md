@@ -16,11 +16,11 @@ This block expects the incoming edge data to contain two keys that contain an `h
 
 The data below shows two keys **customer** and **deal**. Each of these contains an `hs_object_id` key.
 
-![HubSpot set associated](hubspot-set-associations-data.png#width=400)
+![HubSpot set associated](/img/flows/blocks/hubspot/hubspot-set-associations-data.png){width=400}
 
 You can now specify the path to each of these for the **From** and **To** objects as shown below.
 
-![HubSpot set associated](hubspot-set-associations.png#width=300)
+![HubSpot set associated](/img/flows/blocks/hubspot/hubspot-set-associations.png){width=300}
 
 
 

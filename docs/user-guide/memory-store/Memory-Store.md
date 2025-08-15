@@ -22,14 +22,14 @@ The Simple Memory Store is persistent across all Flows but is not persisted to d
 ## Memory Store Block
 There block lets you handle Memory Store operations without needing to write Javascript.
 
-- Read the [Memory Store Block topic](MemStore.md).
+- Read the [Memory Store Block topic](/user-guide/block-types/utility/MemStore).
 
 ## Standard interface for Javascript
 We provide the following methods for simple use cases. You should bear in mind that the management capabilities of the Simple Memory Store are basic and do not handle persistence or out-of-memory situations. Should you require these, please use Redis.
 
 Below is an example Flow that uses the Memory Store Block and Javascript commands that access the Memory Store. This example illustrates how timed out Memory Store keys can be refreshed.
 
-![Example](example-mem-store.png)
+![Example](/img/flows/example-flows/example-mem-store.png)
 
 Note that if you are using Redis, you can still use these methods.
 
@@ -42,7 +42,7 @@ Note that if you are using Redis, you can still use these methods.
 | `async delete(key: string)` | Delete a key/value pair by key name.<br/>• `key` : the globally unique key to retrieve |
 
 ## Memory Store browser
-You can browse and search for data in the Data Store using the [Store Browser](Data-and-Memory-Store-Browser.md).
+You can browse and search for data in the Data Store using the [Store Browser](/user-guide/data-browser/Data-and-Memory-Store-Browser).
 
 ## Redis
 If you wish to use Redis, please contact us.

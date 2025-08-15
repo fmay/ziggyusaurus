@@ -29,19 +29,19 @@ You will typically write to a File on the Ziggy platform.
 If a Flow chooses to write to a Ziggy file, you can read from this file in the same or in another Flow.
 
 ### Write
-![File write](file-file-write.png)
+![File write](/img/flows/blocks/utility/file/file-file-write.png)
 
 ### Read
 
-![File read](file-file-read.png#width=450)
+![File read](/img/flows/blocks/utility/file/file-file-read.png){width=450}
 
 When reading from a file, you need to specify the batch buffer size and the number of iterations to process (0 means read whole file).
 
 ## Platform - AWS S3
-You need to have defined a Connection in the [Connection Manager](Connections.md). You then select the Connection in the block.
+You need to have defined a Connection in the [Connection Manager](/user-guide/connections/Connections). You then select the Connection in the block.
 
 This is an NPM connection object, which will typically be as shown below. Note this references two secrets
-in the [Secrets Manager](Secrets.md) to avoid exposing it.
+in the [Secrets Manager](/user-guide/secrets/Secrets) to avoid exposing it.
 
 ```javascript
 {
@@ -55,15 +55,15 @@ in the [Secrets Manager](Secrets.md) to avoid exposing it.
 
 You should choose the data format and read/write mode.
 
-![S3 write](file-s3-write.png#width=300)
+![S3 write](/img/flows/blocks/utility/file/file-s3-write.png){width=300}
 
 ## Platform - SFTP
 
-You need to have defined a Connection in the [Connection Manager](Connections.md). 
+You need to have defined a Connection in the [Connection Manager](/user-guide/connections/Connections). 
 You then select the Connection in the block.
 
 This is an NPM connection object, which will typically be as shown below. Note this references two secrets
-in the [Secrets Manager](Secrets.md) to avoid exposing it.
+in the [Secrets Manager](/user-guide/secrets/Secrets) to avoid exposing it.
 
 ```javascript
 {
@@ -76,4 +76,4 @@ in the [Secrets Manager](Secrets.md) to avoid exposing it.
 
 You should choose the data format and read/write mode.
 
-![S3 write](file-sftp-write.png#width=300)
+![S3 write](/img/flows/blocks/utility/file/file-sftp-write.png){width=300}

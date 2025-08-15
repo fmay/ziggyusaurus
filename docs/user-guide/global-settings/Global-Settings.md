@@ -13,12 +13,12 @@ Currently, this only lets you log out. More coming soon.
 
 ## Flows
 
-![Flows](gsettings-flow.png#width=800)
+![Flows](/img/global-settings/gsettings-flow.png){width=800}
 
 - **Default Flow timeout** - before Flows throw a timed out error. This can be overridden for an individual Flow in the Flow settings.
-- **Default Execution Log Level** - please refer to [History log levels](History-data-storage-levels.md).
+- **Default Execution Log Level** - please refer to [History log levels](/user-guide/History-data-storage-levels).
 - **Execution Log Retention (hours)** - how long data remains in the execution history before being flushed automatically. This deletion is performed hourly. Please note that for data to be fully removed from the database a Full Vacuum or Scheduled Vacuum should be performed (see below).
-- **Flush execution history** - allows you to flush all execution history items before the specified date and time. You can also flush in a more selective manner from the [Dashboard](Execution-history.md).
+- **Flush execution history** - allows you to flush all execution history items before the specified date and time. You can also flush in a more selective manner from the [Dashboard](/user-guide/editor/Execution-history).
 
 **IMPORTANT** - note that flushed data will remain in the database until you perform a database reorganisation. This can be done
 
@@ -27,19 +27,19 @@ Currently, this only lets you log out. More coming soon.
 ## Queues
 Manage your Queues.
 
-![Queues](gsettings-queues.png#width=800)
+![Queues](/img/global-settings/gsettings-queues.png){width=800}
 
 - **Add a Queue** - you can queue Flow execution by selecting the Queue in the [Receiver Block](Receiver.md).
 - **Rate limit** - this will ensure that Flows are executed according to a per second rate limit value you specify here. This feature works across all Flows that use the same Queue ensuring you never exceed the target API's ceiling value.
-- **Alert threshold** - if the queue size ever exceeds this value and alerts are enabled for queues, then this will be logged and an alert notification sent. See [Alerts](Alerts.md) for more details.
+- **Alert threshold** - if the queue size ever exceeds this value and alerts are enabled for queues, then this will be logged and an alert notification sent. See [Alerts](/user-guide/alerts/Alerts) for more details.
 - **Delete queue** - the delete icon lets you delete a Flow. You should be careful when deleting a queue as any Flow using this Queue will fail.
 
 ## Security
 
-![Security](gsettings-security.png#width=800)
+![Security](/img/global-settings/gsettings-security.png){width=800}
 
 ### External execution tokens
-A token must be used when external systems [call the Ziggy API to launch a flow](Launching-flows.md).
+A token must be used when external systems [call the Ziggy API to launch a flow](/user-guide/launching/Launching-flows).
 
 - **+Execution token** - this will generate a new random token. You will be shown it one time only.
 - **Rename token** - if, for example, you want to assign tokens to an individual or group, you can rename the token to make it clear who it belongs to. This is useful when revoking a token.
@@ -49,19 +49,19 @@ A token must be used when external systems [call the Ziggy API to launch a flow]
 Coming soon.
 
 ## Alerts
-This lets set alert options and thresholds. Please read the [Alerts](Alerts.md) topic for full details on alerts and the alert log.
+This lets set alert options and thresholds. Please read the [Alerts](/user-guide/alerts/Alerts) topic for full details on alerts and the alert log.
 
-![Alerts](gsetting-alerts.png#width=800)
+![Alerts](/img/global-settings/gsetting-alerts.png){width=800}
 
 ## Users
 
-![Users](gsettings-users.png#width=800)
+![Users](/img/global-settings/gsettings-users.png){width=800}
 
-Add Users, their roles and whether they should receive [alerts](Alerts.md). 
+Add Users, their roles and whether they should receive [alerts](/user-guide/alerts/Alerts). 
 
 ## Export
 
-![Export](gsettings-export.png#width=800)
+![Export](/img/global-settings/gsettings-export.png){width=800}
 
 This exports a JSON representation of the system (except for execution history). Secrets are exported without exposed values.
 
@@ -70,15 +70,15 @@ This is in preparation for a corresponding import feature that will let you sele
 ## System Logs
 You can conveniently view system logs.
 
-![system logs](gsettings-sys-logs.png#width=800)
+![system logs](/img/global-settings/gsettings-sys-logs.png){width=800}
 
 You can select a log file to view from the **Log files** dropdown. This will then open up a log viewer.
 
-![flush log](gsettings-syslog-viewer.png#width=800)
+![flush log](/img/global-settings/gsettings-syslog-viewer.png){width=800}
 
 ## Housekeeping
 
-![Housekeeping](gsettings-housekeeping.png#width=800)
+![Housekeeping](/img/global-settings/gsettings-housekeeping.png){width=800}
 
 Perform a database reorganisation.
 
@@ -98,7 +98,7 @@ You should configure you ```docker-compose.yaml``` file to persist to some locat
 You can specify a schedule for performing a Full Vacuum on the database. This can be useful for the following reasons.
 
 - Keep your database optimised for performance reasons.
-- Security - if you have configured the [Execution History](Execution-history.md) to store errored or full execution history, this will ensure data is fully removed from the database.
+- Security - if you have configured the [Execution History](/user-guide/editor/Execution-history) to store errored or full execution history, this will ensure data is fully removed from the database.
 
 **Important** - the Scheduled Vacuum will block the database, so it should be performed at times of no activity. You should also perform this operation regularly so the amount of deletion and reorganisation required does not accumulate and therefore takes less time.
 
@@ -111,4 +111,4 @@ This lets you transfer your entire database to another Ziggy instance.
 - **Create Transfer File** generates the file to be transferred.
 - **Load Transfer File** restores this into the target Ziggy instance.
 
-Please refer to [Transferring Data](Transferring-Data.md) for more information.
+Please refer to [Transferring Data](/user-guide/transferring-data/Transferring-Data) for more information.

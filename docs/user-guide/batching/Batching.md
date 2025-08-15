@@ -16,18 +16,18 @@ These situations require batching in order to optimise for memory, speed and API
 All blocks can be used within a batch loop. The following blocks initiate a batch loop.
 The following blocks offer batching.
 
-- [HubSpot Read](hs-read.md)
+- [HubSpot Read](/user-guide/block-types/hubspot/hs-read)
 - [SQL (select)](SQL.md)
 - [REST](REST-Call.md)
-- [File (read)](file-reader-writer.md)
+- [File (read)](/user-guide/block-types/utility/file-reader-writer)
 - [Data Store (read)](Data-Store.md)
-- [Memory Store (read)](Memory-Store.md)
-- [Airtable](airtable.md)
+- [Memory Store (read)](/user-guide/memory-store/Memory-Store)
+- [Airtable](/user-guide/block-types/utility/airtable)
 - [Javascript](Javascript.md)
 
 ## Example
 
-![reporting-prep](batching-reporting-prep.png)
+![reporting-prep](/img/flows/batching/batching-reporting-prep.png)
 
 - The HubSpot Read block reads batches of 100 Deals from HubSpot.
 - It then gets associated Companies
@@ -37,15 +37,15 @@ The following blocks offer batching.
 ## Example - Javascript
 You can batch with Javascript as shown in the following example. Refer to the [Javascript Block](Javascript.md) for more details.
 
-![JS Batching](batching-js-heavy.png)
+![JS Batching](/img/flows/batching/batching-js-heavy.png)
 
 The first Javascript initiates the batch with ```batch(BATCH_SIZE)```. When there is no data left to process. it calls ```batchEnd()```.
 
-![Batch Size](batching-js-1.png#width=400)
+![Batch Size](/img/flows/batching/batching-js-1.png){width=400}
 
 The second Block shows how you can get ```batchIteration()``` and ```batchOffset()``` values as the batch loops
 
-![Batch Info](batching-js-2.png#width=400)
+![Batch Info](/img/flows/batching/batching-js-2.png){width=400}
 
 Note the Batch End Block is the point at which execution loops back until ```batchEnd()``` is called.
 

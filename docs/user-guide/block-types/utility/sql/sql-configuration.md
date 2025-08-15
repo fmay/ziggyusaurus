@@ -8,14 +8,14 @@ For all operations, you need to configure the following.
 
 - **Operation** - SELECT, INSERT, UPDATE, DELETE, UPSERT
 - **Database** - this is only required for certain platforms (currently Snowflake). For others, the database to connect to is specified within the Connection itself.
-- **Connection** - a centrally defined [Connection](Connections.md).
+- **Connection** - a centrally defined [Connection](/user-guide/connections/Connections).
 - **Schema**
 - **Table**
 - **Fields** - to be used in the `SELECT [fields selected] FROM` clause
 - **Where** - for SELECT operations
 - **Order** - for SELECT operations
 
-![Config](sql-insert.png#width=900)
+![Config](/img/flows/blocks/utility/SQL/sql-insert.png){width=900}
 
 When you modify the Connection, Schema and Table, the fields that depend on the modified field will be reloaded.
 

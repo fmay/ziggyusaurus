@@ -3,7 +3,7 @@ title: Memory Store
 ---
 
 # Memory Store
-Write to and read from the Memory Store, a very simple, bare-bones key/value pair memory store. [Read more about the Memory Store](Memory-Store.md).
+Write to and read from the Memory Store, a very simple, bare-bones key/value pair memory store. [Read more about the Memory Store](/user-guide/memory-store/Memory-Store).
 
 ## Overview
 This Block takes data that arrives on the input edge and stores it in the Memory Store.
@@ -13,7 +13,7 @@ This Block takes data that arrives on the input edge and stores it in the Memory
 - Often, the edge data you want to store will be an array, in which case the array will be iterated over and each element will be stored against its own key. This means there must be a unique id in each array element.
 - If the edge data does not have a unique id, then you should leave the **key** field empty and a UUID will be generated for you.
 
-![Memory store](memstore-block.png)
+![Memory store](/img/flows/blocks/utility/memstore/memstore-block.png)
 
 ## Using the **Key** field
 Key values will be set using the data encountered on the input edge.

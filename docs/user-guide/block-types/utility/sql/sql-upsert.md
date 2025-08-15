@@ -11,7 +11,7 @@ The example below shows the incoming edge with `age`, `name` and `id` populated 
 The `id` field for each imcoming array element is be used to perform lookups in this example. 
 If the id exists, the record will be updated, otherwise a new record will be inserted. 
 
-![Upsert](sql-upsert.png#width=1200)
+![Upsert](/img/flows/blocks/utility/SQL/sql-upsert.png){width=1200}
 
 Notice when have specified the edge key `id` that is used for matching
 as well as the database field `id` used for matching.
@@ -27,13 +27,13 @@ These values are the same values as the table field names.
 In many cases, your incoming edge data will not be the same as the table field names. To handle this,
 there are several approaches to make this as easy as possible.
 
-Please refer to [Edge mapping](sql-mapping.md) for details.
+Please refer to [Edge mapping](sql-mapping) for details.
 
 ## Editing
 For more complex scenarios, you can let Ziggy generate the basic query for you and then
-select the **Edit SQL** box to customise. Refer to [Editing SQL](sql-editing.md) for details.
+select the **Edit SQL** box to customise. Refer to [Editing SQL](sql-editing) for details.
 
 Note that any modifications you make are expected to confirm to the templated approach.
 In practice, this means editing the `$$token` values to address the incoming edge key rather
-than using other [mapping techniques](sql-mapping.md).
+than using other [mapping techniques](sql-mapping).
 

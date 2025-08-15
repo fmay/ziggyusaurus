@@ -11,7 +11,7 @@ This block reads data from any Hubspot object in two ways.
 
 ## Batch
 
-![Hubspot Batch Read](hubspot-read-batch.png#width=700)
+![Hubspot Batch Read](/img/flows/blocks/hubspot/hubspot-read-batch.png){width=700}
 
 You can see that we are reading batches of 100 records from Companies.
 
@@ -23,7 +23,7 @@ The fetched data will be placed on the output edge.
 ## Lookup
 The configuration below shows how we are using data on the incoming edge to perform a lookup in Hubspot Companies.
 
-![Hubspot Lookup Read](hubspot-read-lookup.png#width=900)
+![Hubspot Lookup Read](/img/flows/blocks/hubspot/hubspot-read-lookup.png){width=900}
 
 - We are using test data in the [Receiver block](Receiver.md) to demonstrate the way the lookup function works.
 - In the **Edge key to search with** field, you specify which key on the incoming edge contains the value to lookup.
@@ -39,4 +39,4 @@ and the outgoing edge also has two elements (the ones that were looked up and fe
 
 If you click on the outgoing edge, you'll see this.
 
-![Hubspot outgoing edge](hubspot-read-lookup-outgoing.png#width=500)
+![Hubspot outgoing edge](/img/flows/blocks/hubspot/hubspot-read-lookup-outgoing.png){width=500}

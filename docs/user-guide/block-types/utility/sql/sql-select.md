@@ -11,9 +11,9 @@ Reads data in chunks defined by **Batch Size** and for a maximum of **Max iterat
 
 Setting iterations to 0 will run the batch until no more rows are available.
 
-Refer to [Batching](Batching.md) for details about batching and the [Batch End](Batch-End.md) block, which is required.
+Refer to [Batching](/user-guide/batching/Batching) for details about batching and the [Batch End](Batch-End.md) block, which is required.
 
-![Batch mode](sql-select-batch.png#width=500)
+![Batch mode](/img/flows/blocks/utility/SQL/sql-select-batch.png){width=500}
 
 
 ## Edge mode
@@ -24,7 +24,7 @@ You need to specify two fields.
 - **Edge key for matching** - the key on the input edge whose value will be used for the lookup.
 - **DB field to match against** - they database field to use for the lookup.
 
-![Edge mode](sql-select-edge.png#width=700)
+![Edge mode](/img/flows/blocks/utility/SQL/sql-select-edge.png){width=700}
 
 You can see what is going on behind the scenes by looking at the generated SQL. For Postgres, it will look like this.
 
@@ -39,14 +39,14 @@ At run time, `$$id` will be replaced by the list of values referenced by **Edge 
 ## Where editor
 When you set a where condition, the following dialog will appear.
 
-![Where editor](sql-where.png#width=600)
+![Where editor](/img/flows/blocks/utility/SQL/sql-where.png){width=600}
 
 This generates the following WHERE clause.
 
 ```SQL
 WHERE ("age" > 18 or "age" < 30)
 ```
-You can also use tokens for the values ([see Editing SQL](sql-editing.md)) instead of literal values.
+You can also use tokens for the values ([see Editing SQL](sql-editing)) instead of literal values.
 
 ```SQL
 WHERE ("age" > $$lowerValue or "age" < $$upperValue)

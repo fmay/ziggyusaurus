@@ -6,7 +6,7 @@ title: Key Filter
 
 This block lets you filter data on the incoming edge by including or excluding specified field.
 
-![Key Filter](key-filter.png#width=400)
+![Key Filter](/img/flows/blocks/core/key-filter/key-filter.png){width=400}
 
 From the dropdown, you can choose
 

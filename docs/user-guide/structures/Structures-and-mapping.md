@@ -16,7 +16,7 @@ out validations, transformations and mappings.
 - Select **HubSpot** from the dropdown
 - See the relevant tutorials circled below.
 
-![Tuturials](svtm-tutorials.png)
+![Tuturials](/img/flows/structures/svtm-tutorials.png)
 
 ## Structures
 Structures are used for two primary purposes.
@@ -27,7 +27,7 @@ Structures are used for two primary purposes.
 ## Defining a Structure
 Structures are managed in the **Structures** main navbar button. This shows you all available Structures.
 
-![Structures](svtm-structures.png)
+![Structures](/img/flows/structures/svtm-structures.png)
 
 There are two ways to add a Structure.
 
@@ -39,7 +39,7 @@ There are two ways to add a Structure.
 - Click on the **+Structure** button to add a new Structure.
 - or click a Structure in the Structures list to edit.
 
-![Edit](structure-edit.png#width=700)
+![Edit](/img/flows/structures/structure-edit.png){width=700}
 
 
 ## The Zod validation object
@@ -55,7 +55,7 @@ To get more details, please read the [Zod documentation](https://zod.dev/?id=pri
 ## Validation
 This section will refer to the following Flow.
 
-![validation flow](svtm-validation-flow.png)
+![validation flow](/img/flows/structures/svtm-validation-flow.png)
 
 
 ### Run the Flow
@@ -68,7 +68,7 @@ you can see the edge has 10 records of data on it.
 - Select the **Validate** tab.
 - Press the **Generate from input data** button, which generates a validation object, which we'll explain in next tutorial.
 
-![600](A51-validate.png)
+![600](/img/flows/structures/tutorial-videos/A51-validate.png)
 
 - Run the Flow again then click the edge bubble.
 - You'll notice there is now a **Data out** tab. You can click on it and you'll see the same data as in the first Data tab (no validations failed).
@@ -80,18 +80,18 @@ Let's now force the validation to fail.
 - Run the Flow again.
 - The edge bubble is now red, indicating and error.
 
-![600](svtm-failed.png#width=600)
+![600](/img/flows/structures/svtm-failed.png){width=600}
 
 - Click it to see the reason for the failure in the Rejected tab.
 
-![600](A51-failed-validation.png)
+![600](/img/flows/structures/tutorial-videos/A51-failed-validation.png)
 
 ### Aborting the Flow on failure
 By default, Ziggy will abort the Flow if a validation fails.
 
 However, you can tell Ziggy to strip records which fail the validation. We can, at the same time, store failed records in the data store.
 
-![600](A51-no-abort-validate.png)
+![600](/img/flows/structures/tutorial-videos/A51-no-abort-validate.png)
 
 - Uncheck **Abort flow for failed validation**.
 - Optionally, enter a Data Store namespace name where rejected records can be added.
@@ -99,7 +99,7 @@ However, you can tell Ziggy to strip records which fail the validation. We can, 
 - Click the edge bubble.
 - You'll notice that there is now a **Rejected** tab, which lists the records that failed the validation and the reason for the rejection.
 
-![600](A51-failed-validation.png)
+![600](/img/flows/structures/tutorial-videos/A51-failed-validation.png)
 
 ### Using the Data Store for rejections
 In the above screenshot, we specified that any rejections should be stored in the **rejected companies** namespace.
@@ -108,9 +108,9 @@ If you want, you can then use the **Data Store Block** to process these or just 
 
 To do this, hover on the Stores icon in the top navigation bar and click.
 
-![1000](A51-datastore-listing.png)
+![1000](/img/flows/structures/tutorial-videos/A51-datastore-listing.png)
 
-![500](A51-datastore-item.png)
+![500](/img/flows/structures/tutorial-videos/A51-datastore-item.png)
 
 ## Transformations
 The **Transformer** tab lets you use basic Javascript to perform any sort of validation, data transformation or even a hard-coded mapping with ease.
@@ -119,7 +119,7 @@ The **Transformer** tab lets you use basic Javascript to perform any sort of val
 - Check **Transform** in the top row.
 - A **Transform** tab will now appear, where you can enter some Javascript expressions.
 
-![800](A53-transformer.png)
+![800](/img/flows/structures/tutorial-videos/A53-transformer.png)
 
 Feel free to copy paste the following code.
 
@@ -133,7 +133,7 @@ if(!data['hs_country_code'])
 
 Now run the Flow and inspect the edge data.
 
-![600](A53-transformed.png#width=500)
+![600](/img/flows/structures/tutorial-videos/A53-transformed.png){width=500}
 
 You can see that the transformer has added two new keys `newKey` and `anotherKey`. It has also modifed `hs_country_code` where it was null when arriving on the edge.
 
@@ -152,7 +152,7 @@ if(!data['hs_country_code'])
 
 Run the Flow and inspect the edge data.
 
-![600](A53-transform-reject.png#width=500)
+![600](/img/flows/structures/tutorial-videos/A53-transform-reject.png){width=500}
 
 
 ### Combined with Validations and Mappings
@@ -177,9 +177,9 @@ To use the Map feature, you will need to have defined a **Structure** to map to.
 - In the top navigation bar, hover and click on the Structures item.
 - You should see a Structure **A50 Output**.
 
-![1000](A55-structures.png#width=700)
+![1000](/img/flows/structures/tutorial-videos/A55-structures.png){width=700}
 
-![400](A55-structure.png#width=500)
+![400](/img/flows/structures/tutorial-videos/A55-structure.png){width=500}
 
 This should be clear if you have already loooked at the earlier tutorials.
 
@@ -188,22 +188,22 @@ This should be clear if you have already loooked at the earlier tutorials.
 - Check the **Map** box in the top row of the dialog.
 - From the dropdown, select **A50 Output**.
 
-![500](A55-map-unselected.png#width=400)
+![500](/img/flows/structures/tutorial-videos/A55-map-unselected.png){width=400}
 
 - Press the **Guess Mapping** button. This will show a list of the input fields.
 - You can map manually by clicking a pill and choosing the target field to map to.
 - You can also press the **Guess mapping** button, which will do its best to automate this. You should carefully check the results and edit as needed.
 
-![500](A55-map-selected.png#width=500)
+![500](/img/flows/structures/tutorial-videos/A55-map-selected.png){width=500}
 
 Once you have the configuration you see above, run the Flow and click on the edge bubble.
 
 If you look at the Data and Data Out tabs, you can see how the mapping has done its job.
 
-![500](A55-data-in.png)
+![500](/img/flows/structures/tutorial-videos/A55-data-in.png)
 
 
-![500](A55-data-out.png)
+![500](/img/flows/structures/tutorial-videos/A55-data-out.png)
 
 ### Combining Mapping with Validations and Transformers
 

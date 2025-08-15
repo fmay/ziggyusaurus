@@ -8,11 +8,11 @@ This block writes data on the incoming edge to the specified HubSpot object.
 
 **Important** : all fields on the input edge should be valid HubSpot properties and contain valid data for each property.
 
-![HubSpot Write](hubspot-write.png#width=300)
+![HubSpot Write](/img/flows/blocks/hubspot/hubspot-write.png){width=300}
 
 
 # Connection
-Choose a Connection that you have defined in the [Connection Manager](Connections.md). 
+Choose a Connection that you have defined in the [Connection Manager](/user-guide/connections/Connections). 
 This will contain your HubSpot API key or reference a secret containing it. If there is only one HubSpot connection
 defined, it should be auto-selected.
 

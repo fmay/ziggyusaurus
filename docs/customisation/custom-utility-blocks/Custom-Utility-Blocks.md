@@ -20,7 +20,7 @@ Expand this section to see example code.
 ## Adding your Custom Block to a Flow
 Once the client side functionality has been added, you can add, test and modify your Block by pressing the Add Block icon in the Flow toolbar. It will then appear in the dialog.
 
-![add block](customisation-add-block.png#width=500)
+![add block](/img/customisation/customisation-add-block.png){width=500}
 
 The section it ids displayed is in controlled by the ``` group: BlockGroupEnum.Custom``` in the ```customBlockName.block.v1.ts``` file.
 
@@ -38,10 +38,10 @@ The server side is also quite easy to create. Again, you have all the other Zigg
 ## Support framework
 Ziggy provides all of the support framework you need for slotting your Block into any Flow.
 
-- **Batching** - if your Block should support [Batching](Batching.md) then a few utility methods are available for you to use. Referring to other Utility Blocks such as SQL, SFTP or REST give you plenty of example of how these work.
+- **Batching** - if your Block should support [Batching](/user-guide/batching/Batching) then a few utility methods are available for you to use. Referring to other Utility Blocks such as SQL, SFTP or REST give you plenty of example of how these work.
 - **Logging** - most logging happens by default but custom logging can also be handled.
 - **Edge Data** - all input edge data management is handled for you and standard utility methods make this very easy to work with.
-- **Connections** and **modules** - you can create custom [Connection](Connections.md) types and use external modules (typically NPM) and use these in your Block code.
+- **Connections** and **modules** - you can create custom [Connection](/user-guide/connections/Connections) types and use external modules (typically NPM) and use these in your Block code.
 - **Internal API** - you have access to all of the system objects such as Secrets, Variables, Connections.
 
 

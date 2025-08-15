@@ -9,9 +9,9 @@ This Block is used to write data to the HubSpot timeline.
 **Important** : in order to support all HubSpot plans, this requires authentication with oAuth and a Public App, rather
 than the usual Private App. This is explained below.
 
-![Hubspot timeline](hubspot-timeline-write.png#width=400)
+![Hubspot timeline](/img/flows/blocks/hubspot/hubspot-timeline-write.png){width=400}
 
-- You should choose a [Connection](Connections.md). You will be presented with configured HubSpot Connections.
+- You should choose a [Connection](/user-guide/connections/Connections). You will be presented with configured HubSpot Connections.
 - Once the Connection is selected, you choose an Event Template. You cannot define these yourself 
 due to the constraint of HubSpot Public Apps. You will need to contact Ziggy to configure a special Public App with 
 the events you require.

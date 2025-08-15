@@ -19,12 +19,12 @@ There are two primary consideration when choosing whether to store snapshot data
 There are two places to specify this.
 
 ### Global default
-in the [Global Settings](Global-Settings.md), you can specify the default for all Flows. If an individual Flow does not specify the level, then it will use this.
+in the [Global Settings](global-settings/Global-Settings), you can specify the default for all Flows. If an individual Flow does not specify the level, then it will use this.
 
-![History levels](gsettings-log-level.png)
+![History levels](/img/flows/history-levels/gsettings-log-level.png)
 
 ### Flow Settings
 Open the Flow Settings to select a snapshot level for an individual Flow.
 
-![History levels](fsettings-log-level.png#width=700)
+![History levels](/img/flows/history-levels/fsettings-log-level.png){width=700}
 

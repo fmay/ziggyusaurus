@@ -4,7 +4,7 @@ title: Editing SQL
 
 # Editing SQL
 
-![Edit SQL](sql-sql-edit.png#width=500)
+![Edit SQL](/img/flows/blocks/utility/SQL/sql-sql-edit.png){width=500}
 
 After you have checked the **Edit SQL** box, the SQL becomes editable. 
 However, changes in the configuration will no longer be reflected in the SQL.
@@ -20,7 +20,7 @@ such as `DELETE FROM my_table`, it will fail.
 In practice, the most useful edits you will make are to map incoming edge data to the database table field names. 
 
 By default, Ziggy generates an edge key token, `$$token`, with the same name as the database field name. 
-This is fine is you are using [edge based mapping](sql-mapping.md). 
+This is fine is you are using [edge based mapping](sql-mapping). 
 
 However, a quick and easy way to map is to editor the SQL to refer to the edge key name. 
 For example, if you see this in the SQL ...
@@ -52,7 +52,7 @@ The following shortcuts can be used to insert tokens into the SQL.
 - **$** - list of all keys on the incoming edge. You should first run or step through the flow to the block so the edge has data on it.
 - **#** - special token for batch and insert values. See below.
 
-![Helper](sql-helper.png#width=500)
+![Helper](/img/flows/blocks/utility/SQL/sql-helper.png){width=500}
 
 The screenshot shows the list of database fields appearing in the popup list.
 

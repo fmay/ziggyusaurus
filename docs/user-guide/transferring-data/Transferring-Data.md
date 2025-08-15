@@ -14,12 +14,12 @@ Ziggy lets you handle both of these situations.
 ## Entire database
 This is a "kitchen sink" transfer of the entire database to another Ziggy instance. You can manage this process from [Global Settings](Global-Settings.md#housekeeping) - **System Transfer**.
 
-![System transfer](gsettings-housekeeping.png)
+![System transfer](/img/global-settings/gsettings-housekeeping.png)
 
 **Important** - please note the following.
 
 - The target platform's database will be disabled when restoring data, so UI access an integrations will not be available.
-- If you have a large database (a lot of Execution History and Log content) then you should consider a) running a [Full Vacuum](Global-Settings.md#housekeeping) b) a Purge All in the [Logs](Global-Settings.md#) c) deleting [Execution History](Execution-history.md) .
+- If you have a large database (a lot of Execution History and Log content) then you should consider a) running a [Full Vacuum](Global-Settings.md#housekeeping) b) a Purge All in the [Logs](Global-Settings.md#) c) deleting [Execution History](/user-guide/editor/Execution-history) .
 
 ### Create Transfer File
 Press this button in your source Ziggy instance. 

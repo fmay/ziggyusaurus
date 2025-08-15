@@ -5,7 +5,7 @@ title: Iterator
 # Iterator
 Iterates over an array pointed to by the **Iterator path** field.
 
-![Iterator](block-iterator.png)
+![Iterator](/img/flows/blocks/core/iterator/block-iterator.png)
 
 The usual case does not require you do specify any values for **Iterator key** or **Parent fields to include**, in which case it will
 

@@ -8,7 +8,7 @@ Fetches associations between specified HubSpot objects.
 
 The following image shows 91 companies being fetched and 830 association deals with those 91 companies.
 
-![HubSpot get associated](hubspot-get-associated.png#width=900)
+![HubSpot get associated](/img/flows/blocks/hubspot/hubspot-get-associated.png){width=900}
 
 For this to work, the following is assumed that the elements in the incoming edge data array 
 have one key `hs_object_id` to uniquely identify a HubSpot object.
@@ -28,4 +28,4 @@ You should then configure the block as follows.
 
 The above configuration results in the following data.
 
-![HubSpot get associated data out](hubspot-get-associated-data-out.png#width=500)
+![HubSpot get associated data out](/img/flows/blocks/hubspot/hubspot-get-associated-data-out.png){width=500}

@@ -20,7 +20,7 @@ Using the Audit, you can easily perform random searches and then view the data i
 
 The current implementation writes data to Snowflake. Other platforms can be added upon request.
 
-![Audit flow](audit-flow.png#width=1200)
+![Audit flow](/img/flows/blocks/utility/audit/audit-flow.png){width=1200}
 
 ## Prerequisites and Connection
 **Important** : your Snowflake table must be named `AUDIT_LOG`.
@@ -42,7 +42,7 @@ create or replace TABLE AUDIT.PUBLIC.AUDIT_LOG (
 );
 ```
 
-You should configure a Snowflake [Connection](Connections.md) in the connection manager. The config field will 
+You should configure a Snowflake [Connection](/user-guide/connections/Connections) in the connection manager. The config field will 
 look something like this.
 
 ```JavaScript
@@ -91,7 +91,7 @@ This is a second value you want to search on. For example, you might choose the 
 - The `IS_ERROR` field is set if the entry was created during error handling (see below).
 - `EXECUTION_UUID` will contain the execution id of the Flow.
 
-Note that there will also be an [Execution History](Execution-history.md) entry.
+Note that there will also be an [Execution History](/user-guide/editor/Execution-history) entry.
 
 ## Error handling
 When an Audit block is used when handling errors, the only fields that are written are 

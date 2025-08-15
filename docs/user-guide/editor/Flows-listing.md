@@ -6,7 +6,7 @@ title: Flows listing
 
 Access the full Flows listing from the menu bar.
 
-![Flow listing](flows-listing.png)
+![Flow listing](/img/flows/flows-listing.png)
 
 Click the **Open** button to open the Flow in the editor.
 

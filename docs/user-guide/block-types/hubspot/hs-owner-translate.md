@@ -7,7 +7,7 @@ title: Hubspot Owner Translate
 This block is used in any integration or migration where the source data has an email 
 that you need to translate to an Owner ID before writing to Hubspot.
 
-![Hubspot owner translate](hubspot-owner-translate.png#width=600)
+![Hubspot owner translate](/img/flows/blocks/hubspot/hubspot-owner-translate.png){width=600}
 
 ## Email key on input edge
 We have specified the key where we expect to find the email address to lookup - `salesPersonEmail`.

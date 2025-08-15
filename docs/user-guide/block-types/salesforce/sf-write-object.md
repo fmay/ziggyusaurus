@@ -8,10 +8,10 @@ This block writes data on the incoming edge to the specified SalesForce object.
 
 **Important** : all keys on the input edge should be valid SalesForce field names (not labels) and contain valid data for each property.
 
-![SalesForce Write](sf-write.png#width=300)
+![SalesForce Write](/img/flows/blocks/salesforce/sf-write.png){width=300}
 
 # Connection
-Choose a Connection that you have defined in the [Connection Manager](Connections.md).
+Choose a Connection that you have defined in the [Connection Manager](/user-guide/connections/Connections).
 This will contain your SalesForce API key or reference a secret containing it. If there is only one SalesForce connection
 defined, it should be auto-selected.
 

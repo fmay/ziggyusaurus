@@ -49,5 +49,5 @@ You can also perform Data Store operations from the Javascript Block. The follow
 | `deleteOneNameKey(name: string, key: string)` | Delete a key/value pair in the specified namespace.<br/>• `name` : namespace<br/>• `key` : key |
 
 ## Data Store browser
-You can browse and search for data in the Data Store using the [Store Browser](Data-and-Memory-Store-Browser.md). 
+You can browse and search for data in the Data Store using the [Store Browser](/user-guide/data-browser/Data-and-Memory-Store-Browser). 
 This works for **Internal** mode only.

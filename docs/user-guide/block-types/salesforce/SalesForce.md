@@ -5,8 +5,8 @@ title: SalesForce
 # SalesForce
 This section contains SalesForce specific blocks.
 
-Please note that you should create a SalesForce connection in the [Connection Manager](Connections.md)
-as well as a Secret in the [Secrets Manager](Secrets.md).
+Please note that you should create a SalesForce connection in the [Connection Manager](/user-guide/connections/Connections)
+as well as a Secret in the [Secrets Manager](/user-guide/secrets/Secrets).
 
 The SalesForce Connection object will look like this.
 

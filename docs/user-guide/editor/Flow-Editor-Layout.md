@@ -6,15 +6,15 @@ title: Flow editor layout
 
 Below is a simple Flow in the editor. 
 
-![Editor Flow](flow-editor-explanation.png){border-effect=line}
+![Editor Flow](/img/flows/flow-editor-explanation.png)
 
 The general concepts are hopefully self-explanatory but here are some things to point out.
 
 - **Settings** - change the Flow name, timeout, execution history data storage, tags etc.
-- **Flow Info** - [document/explain your Flow](Flow-documentation.md) with markdown
+- **Flow Info** - [document/explain your Flow](Flow-documentation) with markdown
 - **Add Block** - add a new Block to the canvas.
 - **Clone** - clones your Flow.
-- **Test** - indicates which [Tests](Tests.md) this Flow is associated with.
+- **Test** - indicates which [Tests](/user-guide/tests/Tests) this Flow is associated with.
 - **Debug Info** - for developers working with [source code](Customisation.md).
 - **Debug Flow** - run and step through your flow using the [visual debugger](Debugging.md).
 - **Execution History** - each time your Flow is executed, it logs it along with the complete flow data (optional).
@@ -29,7 +29,7 @@ When a Flow has run, the execution time (ms) of each Block is displayed in the h
 
 You can also add a note to a Block to explain the context better.
 
-![Block ms and info](flow-execution-times.png){ width=290 }{border-effect=line}
+![Block ms and info](/img/flows/flow-execution-times.png){ width=290}
 
 
 

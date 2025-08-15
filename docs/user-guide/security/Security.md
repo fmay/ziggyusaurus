@@ -7,7 +7,7 @@ title: Security
 There are a few areas of security you will want to control. 
 
 ## API Security 
-When calling Ziggy from an external source, you pass a secret key in the API call. These secret keys are managed in the [Global Settings](Global-Settings.md).
+When calling Ziggy from an external source, you pass a secret key in the API call. These secret keys are managed in the [Global Settings](/user-guide/global-settings/Global-Settings).
 
 You can issue and revoke multiple keys. Keys are only displayed when they are created. If you lose this key then you will need to issue another one.
 
@@ -22,7 +22,7 @@ It is up to you how and when you persist execution history data snapshots. By de
 - Disabling/enabling for specific Flows.
 - Auto deleting snapshot data that is older than X hours/minutes.
 
-Please review [Execution History](Execution-history.md) for details.
+Please review [Execution History](/user-guide/editor/Execution-history) for details.
 
 ## Secrets
 Ziggy has its own Secretes management for storing Flow internal secrets. This data is encrypted in the database.

@@ -48,6 +48,22 @@ class DocsReferenceFixer:
             return f'{{width={width_value}}}'
         
         content = re.sub(width_pattern, replace_width, content)
+        
+        # Also fix incorrectly placed width attributes inside parentheses
+        # Pattern: ![alt](image.png{width=500}) -> ![alt](image.png){width=500}
+        incorrect_width_pattern = r'!\[([^\]]*)\]\(([^)]*\.png)\{width=(\d+)\}\)'
+        
+        def fix_incorrect_width(match):
+            nonlocal fixed
+            alt_text = match.group(1)
+            image_path = match.group(2)
+            width_value = match.group(3)
+            fixed = True
+            print(f"  Fixed incorrectly placed width attribute: {image_path}{{width={width_value}}} -> {image_path}){{width={width_value}}}")
+            return f'![{alt_text}]({image_path}){{width={width_value}}}'
+        
+        content = re.sub(incorrect_width_pattern, fix_incorrect_width, content)
+        
         return content, fixed
     
     def fix_image_references(self, content: str, file_path: Path) -> Tuple[str, bool]:

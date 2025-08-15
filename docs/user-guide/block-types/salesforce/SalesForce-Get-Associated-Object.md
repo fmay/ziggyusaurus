@@ -8,7 +8,7 @@ Fetches associations between specified SalesForce objects.
 
 The following image shows 91 companies being fetched and 830 association deals with those 91 companies.
 
-![SalesForce get associated](/img/flows/blocks/salesforce/sf-get-associated.png){width=900}
+<img src="/img/flows/blocks/salesforce/sf-get-associated.png" alt="SalesForce get associated" width="900" />
 
 For this to work, the following is assumed that the elements in the incoming edge data array
 have one key `Id` to uniquely identify a SalesForce object by its `Id`.
@@ -28,7 +28,7 @@ You should then configure the block as follows.
 
 The above configuration results in the following data.
 
-![SalesForce get associated data out](/img/flows/blocks/salesforce/sf-get-associated-data-out.png){width=500}
+<img src="/img/flows/blocks/salesforce/sf-get-associated-data-out.png" alt="SalesForce get associated data out" width="500" />
 
 ## Many to Many / Junction relationships
 SalesForce manages these as so-called *Junction Objects*. The best way to deal with these is to use the [SalesForce Write](sf-write-object) 

@@ -15,7 +15,7 @@ For all operations, you need to configure the following.
 - **Where** - for SELECT operations
 - **Order** - for SELECT operations
 
-![Config](/img/flows/blocks/utility/SQL/sql-insert.png){width=900}
+<img src="/img/flows/blocks/utility/SQL/sql-insert.png" alt="Config" width="900" />
 
 When you modify the Connection, Schema and Table, the fields that depend on the modified field will be reloaded.
 

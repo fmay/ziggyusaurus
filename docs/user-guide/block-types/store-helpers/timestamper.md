@@ -15,7 +15,7 @@ changed since the last time you ran the Flow.
 Below is an example Flow that does the following. You'll find this in the tutorial 
 Flows under **Reporting 10 - Import Companies, Deals**.
 
-![Upsert](/img/flows/blocks/store-utility/timestamper.png){width=1200}
+<img src="/img/flows/blocks/store-utility/timestamper.png" alt="Upsert" width="1200" />
 
 - uses the Timestamper block to get the timestamp of the last execution. If it has not run before, it sets the date to Jan 01, 1970.
 - Reads in all the Deals, with a filter applied that references the timestamp.

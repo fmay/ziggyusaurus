@@ -29,7 +29,7 @@ Note that only the text from the last alert of each type is included. You should
 ## Global Settings - Alerts
 The Alert section of Global Settings manages all alert settings except for Queue threshold settings (see Queue Settings below).
 
-![Alert settings](/img/flows/alerts/alerts-settings.png){width=800}
+<img src="/img/flows/alerts/alerts-settings.png" alt="Alert settings" width="800" />
 
 ### Purge
 You can choose to purge the entire log immediately using the **Purge all** button. 
@@ -52,5 +52,5 @@ This shows your defined Queues along with the rate limit values and alert thresh
 
 If the Queue size exceeds the threshold and alert will be generated.
 
-![Queues](/img/flows/alerts/alerts-queues.png){width=800}
+<img src="/img/flows/alerts/alerts-queues.png" alt="Queues" width="800" />
 

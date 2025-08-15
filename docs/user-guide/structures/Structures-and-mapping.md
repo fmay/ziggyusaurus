@@ -39,7 +39,7 @@ There are two ways to add a Structure.
 - Click on the **+Structure** button to add a new Structure.
 - or click a Structure in the Structures list to edit.
 
-![Edit](/img/flows/structures/structure-edit.png){width=700}
+<img src="/img/flows/structures/structure-edit.png" alt="Edit" width="700" />
 
 
 ## The Zod validation object
@@ -80,7 +80,7 @@ Let's now force the validation to fail.
 - Run the Flow again.
 - The edge bubble is now red, indicating and error.
 
-![600](/img/flows/structures/svtm-failed.png){width=600}
+<img src="/img/flows/structures/svtm-failed.png" alt="600" width="600" />
 
 - Click it to see the reason for the failure in the Rejected tab.
 
@@ -133,7 +133,7 @@ if(!data['hs_country_code'])
 
 Now run the Flow and inspect the edge data.
 
-![600](/img/flows/structures/tutorial-videos/A53-transformed.png){width=500}
+<img src="/img/flows/structures/tutorial-videos/A53-transformed.png" alt="600" width="500" />
 
 You can see that the transformer has added two new keys `newKey` and `anotherKey`. It has also modifed `hs_country_code` where it was null when arriving on the edge.
 
@@ -152,7 +152,7 @@ if(!data['hs_country_code'])
 
 Run the Flow and inspect the edge data.
 
-![600](/img/flows/structures/tutorial-videos/A53-transform-reject.png){width=500}
+<img src="/img/flows/structures/tutorial-videos/A53-transform-reject.png" alt="600" width="500" />
 
 
 ### Combined with Validations and Mappings
@@ -177,9 +177,9 @@ To use the Map feature, you will need to have defined a **Structure** to map to.
 - In the top navigation bar, hover and click on the Structures item.
 - You should see a Structure **A50 Output**.
 
-![1000](/img/flows/structures/tutorial-videos/A55-structures.png){width=700}
+<img src="/img/flows/structures/tutorial-videos/A55-structures.png" alt="1000" width="700" />
 
-![400](/img/flows/structures/tutorial-videos/A55-structure.png){width=500}
+<img src="/img/flows/structures/tutorial-videos/A55-structure.png" alt="400" width="500" />
 
 This should be clear if you have already loooked at the earlier tutorials.
 
@@ -188,13 +188,13 @@ This should be clear if you have already loooked at the earlier tutorials.
 - Check the **Map** box in the top row of the dialog.
 - From the dropdown, select **A50 Output**.
 
-![500](/img/flows/structures/tutorial-videos/A55-map-unselected.png){width=400}
+<img src="/img/flows/structures/tutorial-videos/A55-map-unselected.png" alt="500" width="400" />
 
 - Press the **Guess Mapping** button. This will show a list of the input fields.
 - You can map manually by clicking a pill and choosing the target field to map to.
 - You can also press the **Guess mapping** button, which will do its best to automate this. You should carefully check the results and edit as needed.
 
-![500](/img/flows/structures/tutorial-videos/A55-map-selected.png){width=500}
+<img src="/img/flows/structures/tutorial-videos/A55-map-selected.png" alt="500" width="500" />
 
 Once you have the configuration you see above, run the Flow and click on the edge bubble.
 

@@ -8,7 +8,7 @@ This block writes data on the incoming edge to the specified SalesForce object.
 
 **Important** : all keys on the input edge should be valid SalesForce field names (not labels) and contain valid data for each property.
 
-![SalesForce Write](/img/flows/blocks/salesforce/sf-write.png){width=300}
+<img src="/img/flows/blocks/salesforce/sf-write.png" alt="SalesForce Write" width="300" />
 
 # Connection
 Choose a Connection that you have defined in the [Connection Manager](/user-guide/connections/Connections).

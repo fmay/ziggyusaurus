@@ -33,7 +33,7 @@ If a Flow chooses to write to a Ziggy file, you can read from this file in the s
 
 ### Read
 
-![File read](/img/flows/blocks/utility/file/file-file-read.png){width=450}
+<img src="/img/flows/blocks/utility/file/file-file-read.png" alt="File read" width="450" />
 
 When reading from a file, you need to specify the batch buffer size and the number of iterations to process (0 means read whole file).
 
@@ -55,7 +55,7 @@ in the [Secrets Manager](/user-guide/secrets/Secrets) to avoid exposing it.
 
 You should choose the data format and read/write mode.
 
-![S3 write](/img/flows/blocks/utility/file/file-s3-write.png){width=300}
+<img src="/img/flows/blocks/utility/file/file-s3-write.png" alt="S3 write" width="300" />
 
 ## Platform - SFTP
 
@@ -76,4 +76,4 @@ in the [Secrets Manager](/user-guide/secrets/Secrets) to avoid exposing it.
 
 You should choose the data format and read/write mode.
 
-![S3 write](/img/flows/blocks/utility/file/file-sftp-write.png){width=300}
+<img src="/img/flows/blocks/utility/file/file-sftp-write.png" alt="S3 write" width="300" />

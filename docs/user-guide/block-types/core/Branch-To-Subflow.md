@@ -6,7 +6,7 @@ title: Branch to Subflow
 
 Branches to a subflow based on the input edge element. This expects an array with only a **single element**.
 
-![Branch subflow](/img/flows/blocks/core/branch-subflow/block-branch-subflow.png){width=800}
+<img src="/img/flows/blocks/core/branch-subflow/block-branch-subflow.png" alt="Branch subflow" width="800" />
 
 A common combination is using the [Iterator Block](Iterator) to
 take an edge with multiple rows on it and split it up into single elements.

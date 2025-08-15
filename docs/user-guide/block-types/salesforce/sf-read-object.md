@@ -12,7 +12,7 @@ This block reads data from any SalesForce object in two ways.
 
 ## Batch
 
-![SalesForce Batch Read](/img/flows/blocks/salesforce/sf-read-batch.png){width=700}
+<img src="/img/flows/blocks/salesforce/sf-read-batch.png" alt="SalesForce Batch Read" width="700" />
 
 You can see that we are reading batches of 100 records from Accounts.
 
@@ -24,7 +24,7 @@ The fetched data will be placed on the output edge.
 ## Lookup
 The configuration below shows how we are using data on the incoming edge to perform a lookup in SalesForce Companies.
 
-![SalesForce Lookup Read](/img/flows/blocks/salesforce/sf-read-lookup.png){width=900}
+<img src="/img/flows/blocks/salesforce/sf-read-lookup.png" alt="SalesForce Lookup Read" width="900" />
 
 - We are using test data in the [Receiver block](Receiver.md) to demonstrate the way the lookup function works.
 - In the **Edge key to search with** field, you specify which key on the incoming edge contains the value to lookup.
@@ -40,7 +40,7 @@ and the outgoing edge also has two elements (the ones that were looked up and fe
 
 If you click on the outgoing edge, you'll see this.
 
-![SalesForce outgoing edge](/img/flows/blocks/salesforce/sf-read-lookup-outgoing.png){width=500}
+<img src="/img/flows/blocks/salesforce/sf-read-lookup-outgoing.png" alt="SalesForce outgoing edge" width="500" />
 
 ## Where
 Click **Where** to provide a set of filtering rules. 

@@ -26,5 +26,5 @@ in the [Global Settings](global-settings/Global-Settings), you can specify the d
 ### Flow Settings
 Open the Flow Settings to select a snapshot level for an individual Flow.
 
-![History levels](/img/flows/history-levels/fsettings-log-level.png){width=700}
+<img src="/img/flows/history-levels/fsettings-log-level.png" alt="History levels" width="700" />
 

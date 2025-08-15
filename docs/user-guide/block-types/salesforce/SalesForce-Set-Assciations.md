@@ -11,7 +11,7 @@ This block expects the incoming edge data to contain two keys that contain an `I
 
 The data below shows two keys `accountId` and `wordId`. Each of these contains a SalesForce `Id`.
 
-![SalesForce set associations](/img/flows/blocks/salesforce/sf-set-associations.png){width=900}
+<img src="/img/flows/blocks/salesforce/sf-set-associations.png" alt="SalesForce set associations" width="900" />
 
 ## Connection
 Specify a valid SalesForce connection from the [Connection Manager](/user-guide/connections/Connections).

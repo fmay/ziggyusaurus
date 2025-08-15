@@ -4,7 +4,7 @@ title: Editing SQL
 
 # Editing SQL
 
-![Edit SQL](/img/flows/blocks/utility/SQL/sql-sql-edit.png){width=500}
+<img src="/img/flows/blocks/utility/SQL/sql-sql-edit.png" alt="Edit SQL" width="500" />
 
 After you have checked the **Edit SQL** box, the SQL becomes editable. 
 However, changes in the configuration will no longer be reflected in the SQL.
@@ -52,7 +52,7 @@ The following shortcuts can be used to insert tokens into the SQL.
 - **$** - list of all keys on the incoming edge. You should first run or step through the flow to the block so the edge has data on it.
 - **#** - special token for batch and insert values. See below.
 
-![Helper](/img/flows/blocks/utility/SQL/sql-helper.png){width=500}
+<img src="/img/flows/blocks/utility/SQL/sql-helper.png" alt="Helper" width="500" />
 
 The screenshot shows the list of database fields appearing in the popup list.
 

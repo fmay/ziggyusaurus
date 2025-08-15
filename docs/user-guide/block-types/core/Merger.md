@@ -5,7 +5,7 @@ title: Merger
 # Merger
 Takes array data from multiple inputs and merges them into a single array. It is assumed that each of the input arrays are of the same size.
 
-![Merger](/img/flows/blocks/core/merger/block-merger.png){width=900}
+<img src="/img/flows/blocks/core/merger/block-merger.png" alt="Merger" width="900" />
 
 If the first input, ```northwind``` and the second ```hubspot```, both of which contain 100 elements, then there will be a single output edge array of 100 elements. Each element will look like this.
 

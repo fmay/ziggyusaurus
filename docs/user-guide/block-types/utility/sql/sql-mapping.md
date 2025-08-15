@@ -14,7 +14,7 @@ There are two high level ways of dealing with this.
 ## Token editing
 Click the **Edit SQL** box in the SQL block and edit the `$$edgeKeyName` token to match the key name on the edge. This is the best approach if you have a one-off situation.
 
-![Insert](/img/flows/blocks/utility/SQL/sql-insert.png){width=700}
+<img src="/img/flows/blocks/utility/SQL/sql-insert.png" alt="Insert" width="700" />
 
 In the simple example above, you can see we are inserting two records into the `insert-test` table. 
 The operation maps `$$name` and `$$age` from the edge to `"name"` and `"age"` in the database.
@@ -30,11 +30,11 @@ where there is also a video overview and detailed explanation of the mapping pro
 What can be especially helpful is using the **Generate mapping object**. This will generate a Zod validation object
 based on the database fields and types.
 
-![Field object in select](/img/flows/blocks/utility/SQL/sql-select-generate-mapping-object.png){width=500}
+<img src="/img/flows/blocks/utility/SQL/sql-select-generate-mapping-object.png" alt="Field object in select" width="500" />
 
 After pressing the button, you will see the following auto-generated object.
 
-![Field object](/img/flows/blocks/utility/SQL/sql-mapping-object.png){width=600}
+<img src="/img/flows/blocks/utility/SQL/sql-mapping-object.png" alt="Field object" width="600" />
 
 You can then add this as a standard Structure, which can be used in this block and any others.
 

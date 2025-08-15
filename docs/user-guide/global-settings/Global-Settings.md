@@ -13,7 +13,7 @@ Currently, this only lets you log out. More coming soon.
 
 ## Flows
 
-![Flows](/img/global-settings/gsettings-flow.png){width=800}
+<img src="/img/global-settings/gsettings-flow.png" alt="Flows" width="800" />
 
 - **Default Flow timeout** - before Flows throw a timed out error. This can be overridden for an individual Flow in the Flow settings.
 - **Default Execution Log Level** - please refer to [History log levels](/user-guide/History-data-storage-levels).
@@ -27,7 +27,7 @@ Currently, this only lets you log out. More coming soon.
 ## Queues
 Manage your Queues.
 
-![Queues](/img/global-settings/gsettings-queues.png){width=800}
+<img src="/img/global-settings/gsettings-queues.png" alt="Queues" width="800" />
 
 - **Add a Queue** - you can queue Flow execution by selecting the Queue in the [Receiver Block](Receiver.md).
 - **Rate limit** - this will ensure that Flows are executed according to a per second rate limit value you specify here. This feature works across all Flows that use the same Queue ensuring you never exceed the target API's ceiling value.
@@ -36,7 +36,7 @@ Manage your Queues.
 
 ## Security
 
-![Security](/img/global-settings/gsettings-security.png){width=800}
+<img src="/img/global-settings/gsettings-security.png" alt="Security" width="800" />
 
 ### External execution tokens
 A token must be used when external systems [call the Ziggy API to launch a flow](/user-guide/launching/Launching-flows).
@@ -51,17 +51,17 @@ Coming soon.
 ## Alerts
 This lets set alert options and thresholds. Please read the [Alerts](/user-guide/alerts/Alerts) topic for full details on alerts and the alert log.
 
-![Alerts](/img/global-settings/gsetting-alerts.png){width=800}
+<img src="/img/global-settings/gsetting-alerts.png" alt="Alerts" width="800" />
 
 ## Users
 
-![Users](/img/global-settings/gsettings-users.png){width=800}
+<img src="/img/global-settings/gsettings-users.png" alt="Users" width="800" />
 
 Add Users, their roles and whether they should receive [alerts](/user-guide/alerts/Alerts). 
 
 ## Export
 
-![Export](/img/global-settings/gsettings-export.png){width=800}
+<img src="/img/global-settings/gsettings-export.png" alt="Export" width="800" />
 
 This exports a JSON representation of the system (except for execution history). Secrets are exported without exposed values.
 
@@ -70,15 +70,15 @@ This is in preparation for a corresponding import feature that will let you sele
 ## System Logs
 You can conveniently view system logs.
 
-![system logs](/img/global-settings/gsettings-sys-logs.png){width=800}
+<img src="/img/global-settings/gsettings-sys-logs.png" alt="system logs" width="800" />
 
 You can select a log file to view from the **Log files** dropdown. This will then open up a log viewer.
 
-![flush log](/img/global-settings/gsettings-syslog-viewer.png){width=800}
+<img src="/img/global-settings/gsettings-syslog-viewer.png" alt="flush log" width="800" />
 
 ## Housekeeping
 
-![Housekeeping](/img/global-settings/gsettings-housekeeping.png){width=800}
+<img src="/img/global-settings/gsettings-housekeeping.png" alt="Housekeeping" width="800" />
 
 Perform a database reorganisation.
 

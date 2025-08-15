@@ -11,7 +11,7 @@ each of which contains `age` and `name`. We've used the Receiver's test data to 
 
 As a result, two records will be inserted into the `insert-test` table.
 
-![Insert](/img/flows/blocks/utility/SQL/sql-insert.png){width=700}
+<img src="/img/flows/blocks/utility/SQL/sql-insert.png" alt="Insert" width="700" />
 
 ## Field name mapping
 In the screenshot above, you can see that the edge tokens `($$name, $$age)` is generated. 

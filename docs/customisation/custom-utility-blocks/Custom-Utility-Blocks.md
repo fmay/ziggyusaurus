@@ -20,7 +20,7 @@ Expand this section to see example code.
 ## Adding your Custom Block to a Flow
 Once the client side functionality has been added, you can add, test and modify your Block by pressing the Add Block icon in the Flow toolbar. It will then appear in the dialog.
 
-![add block](/img/customisation/customisation-add-block.png){width=500}
+<img src="/img/customisation/customisation-add-block.png" alt="add block" width="500" />
 
 The section it ids displayed is in controlled by the ``` group: BlockGroupEnum.Custom``` in the ```customBlockName.block.v1.ts``` file.
 

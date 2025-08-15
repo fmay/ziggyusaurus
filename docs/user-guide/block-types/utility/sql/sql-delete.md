@@ -7,7 +7,7 @@ title: DELETE
 This block deletes records based on a key fields in the input edge. It is assumed that one of the keys 
 contains an `id` type value that is used in the WHERE clause.
 
-![Delete](/img/flows/blocks/utility/SQL/sql-delete.png){width=700}
+<img src="/img/flows/blocks/utility/SQL/sql-delete.png" alt="Delete" width="700" />
 
 In the above example, you can see that the incoming data (supplied by the test data in the Receiver) contains two ids.
 

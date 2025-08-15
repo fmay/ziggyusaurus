@@ -22,12 +22,12 @@ Generally, you might use the following strategy if you were integrating Hubspot 
 ## Rate limits
 You can assign a rate limit to a Queue by clicking on the Queue in Global Settings.
 
-![Queue settings](/img/flows/queueing/queue-settings-edit.png){width=450}
+<img src="/img/flows/queueing/queue-settings-edit.png" alt="Queue settings" width="450" />
 
 ## Assigning a Flow to a Queue
 You can assign a request to a Queue within the Receiver Block. If no Queue is specified, the Flow will execute immediately. Otherwise, the Flow will be added to the chosen Queue and then processed by the Queue Worker.
 
-![Receiver](/img/flows/queueing/queues-receiver.png){width=400}
+<img src="/img/flows/queueing/queues-receiver.png" alt="Receiver" width="400" />
 
 The queue worker processes any jobs found in the queue on an FIFO basis. 
 

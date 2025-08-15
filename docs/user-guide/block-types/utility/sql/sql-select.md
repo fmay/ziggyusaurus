@@ -13,7 +13,7 @@ Setting iterations to 0 will run the batch until no more rows are available.
 
 Refer to [Batching](/user-guide/batching/Batching) for details about batching and the [Batch End](Batch-End.md) block, which is required.
 
-![Batch mode](/img/flows/blocks/utility/SQL/sql-select-batch.png){width=500}
+<img src="/img/flows/blocks/utility/SQL/sql-select-batch.png" alt="Batch mode" width="500" />
 
 
 ## Edge mode
@@ -24,7 +24,7 @@ You need to specify two fields.
 - **Edge key for matching** - the key on the input edge whose value will be used for the lookup.
 - **DB field to match against** - they database field to use for the lookup.
 
-![Edge mode](/img/flows/blocks/utility/SQL/sql-select-edge.png){width=700}
+<img src="/img/flows/blocks/utility/SQL/sql-select-edge.png" alt="Edge mode" width="700" />
 
 You can see what is going on behind the scenes by looking at the generated SQL. For Postgres, it will look like this.
 
@@ -39,7 +39,7 @@ At run time, `$$id` will be replaced by the list of values referenced by **Edge 
 ## Where editor
 When you set a where condition, the following dialog will appear.
 
-![Where editor](/img/flows/blocks/utility/SQL/sql-where.png){width=600}
+<img src="/img/flows/blocks/utility/SQL/sql-where.png" alt="Where editor" width="600" />
 
 This generates the following WHERE clause.
 

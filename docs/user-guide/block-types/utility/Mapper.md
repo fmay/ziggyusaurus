@@ -5,7 +5,7 @@ title: Mapper
 # Mapper
 Maps value on the input edge from one value to another. Data can be read from the Google Sheet workbook/worksheet combination you enter.
 
-![Mapper](/img/flows/blocks/utility/mapper/block-mapper.png){width=300}
+<img src="/img/flows/blocks/utility/mapper/block-mapper.png" alt="Mapper" width="300" />
 
 ## Google Sheet
 Mapping data is loaded from the Google Sheet URL. You should create a sheet as explained below..

@@ -9,7 +9,7 @@ This block updates data in the database based on data on the input edge.
 The example below, the incoming edge will contain an array with two 
 elements with the keys `age`, `name` and `id` - populated by the Receiver's test data.
 
-![Update](/img/flows/blocks/utility/SQL/sql-update.png){width=1200}
+<img src="/img/flows/blocks/utility/SQL/sql-update.png" alt="Update" width="1200" />
 
 Notice when have specified the edge that is used for matching 
 as well as the database field to be using for matching (see highlighted section).

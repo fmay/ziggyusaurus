@@ -41,11 +41,11 @@ You can batch with Javascript as shown in the following example. Refer to the [J
 
 The first Javascript initiates the batch with ```batch(BATCH_SIZE)```. When there is no data left to process. it calls ```batchEnd()```.
 
-![Batch Size](/img/flows/batching/batching-js-1.png){width=400}
+<img src="/img/flows/batching/batching-js-1.png" alt="Batch Size" width="400" />
 
 The second Block shows how you can get ```batchIteration()``` and ```batchOffset()``` values as the batch loops
 
-![Batch Info](/img/flows/batching/batching-js-2.png){width=400}
+<img src="/img/flows/batching/batching-js-2.png" alt="Batch Info" width="400" />
 
 Note the Batch End Block is the point at which execution loops back until ```batchEnd()``` is called.
 

@@ -27,7 +27,7 @@ Anything that is available as an NPM module can be quickly added.
 ## Configuration
 The configuration you enter is an object. The example below shows a Hubspot connection object.
 
-![Connection object](/img/flows/connections/connections-object-general.png){width=500}
+<img src="/img/flows/connections/connections-object-general.png" alt="Connection object" width="500" />
 
 ### Development and Production
 Note that you can specify a different connection object for Development and Production modes. 

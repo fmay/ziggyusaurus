@@ -13,7 +13,7 @@ There are two ways to view the execution history for one Flow.
 
 Click on the circled history icon in the toolbar to load the history for the loaded Flow.
 
-![Execution history toolbar](/img/flows/execution-history/history-toolbar.png){width=800}
+<img src="/img/flows/execution-history/history-toolbar.png" alt="Execution history toolbar" width="800" />
 
 You then see a listing of recent executions for the Flow.
 

@@ -20,7 +20,7 @@ Using the Audit, you can easily perform random searches and then view the data i
 
 The current implementation writes data to Snowflake. Other platforms can be added upon request.
 
-![Audit flow](/img/flows/blocks/utility/audit/audit-flow.png){width=1200}
+<img src="/img/flows/blocks/utility/audit/audit-flow.png" alt="Audit flow" width="1200" />
 
 ## Prerequisites and Connection
 **Important** : your Snowflake table must be named `AUDIT_LOG`.

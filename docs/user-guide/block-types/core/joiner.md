@@ -16,14 +16,14 @@ This block performs the following join operations on two or more input edges.
 
 The screenshot below shows this in action.
 
-![Joiner](/img/flows/blocks/core/joiner/joiner-flow-example.png){width=1200}
+<img src="/img/flows/blocks/core/joiner/joiner-flow-example.png" alt="Joiner" width="1200" />
 
 - The first Join block joins the Departments and Users on `departmentId` from the first edge and `deptId` from the second edge.
 - The second Join block joins the result of the first join operation with the Profile data. 
 
 If you run the Flow, the output edge data is as follows.
 
-![Joiner edge data](/img/flows/blocks/core/joiner/joiner-edge-data.png){width=400}
+<img src="/img/flows/blocks/core/joiner/joiner-edge-data.png" alt="Joiner edge data" width="400" />
 
 Note the `d` and `p` keys in the data. Prefixing is explained below.
 

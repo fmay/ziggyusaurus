@@ -29,7 +29,7 @@ When a Flow has run, the execution time (ms) of each Block is displayed in the h
 
 You can also add a note to a Block to explain the context better.
 
-![Block ms and info](/img/flows/flow-execution-times.png){ width=290}
+<img src="/img/flows/flow-execution-times.png" alt="Block ms and info" width="290" />
 
 
 

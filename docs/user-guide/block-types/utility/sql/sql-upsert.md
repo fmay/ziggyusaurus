@@ -11,7 +11,7 @@ The example below shows the incoming edge with `age`, `name` and `id` populated 
 The `id` field for each imcoming array element is be used to perform lookups in this example. 
 If the id exists, the record will be updated, otherwise a new record will be inserted. 
 
-![Upsert](/img/flows/blocks/utility/SQL/sql-upsert.png){width=1200}
+<img src="/img/flows/blocks/utility/SQL/sql-upsert.png" alt="Upsert" width="1200" />
 
 Notice when have specified the edge key `id` that is used for matching
 as well as the database field `id` used for matching.

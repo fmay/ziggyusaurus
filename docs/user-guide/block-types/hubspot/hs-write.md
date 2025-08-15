@@ -8,7 +8,7 @@ This block writes data on the incoming edge to the specified HubSpot object.
 
 **Important** : all fields on the input edge should be valid HubSpot properties and contain valid data for each property.
 
-![HubSpot Write](/img/flows/blocks/hubspot/hubspot-write.png){width=300}
+<img src="/img/flows/blocks/hubspot/hubspot-write.png" alt="HubSpot Write" width="300" />
 
 
 # Connection

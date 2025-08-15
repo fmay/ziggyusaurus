@@ -11,7 +11,7 @@ The Secrets Manager can be accessed from the nav bar.
 ## Add/Edit secret
 To add a new secret, press the **+Secret** button. Click on the row to edit an existing secret.
 
-![Dialog](/img/secrets/secret-dialog.png){width=500}
+<img src="/img/secrets/secret-dialog.png" alt="Dialog" width="500" />
 
 - The **Name** field should not contain spaces and is limited to characters that are permitted in a Javascript variable.
 - Add **Tags** if you have a lot of secrets and want to find them from the main secrets listing.
@@ -27,7 +27,7 @@ There are two places where you reference a secret.
 ### Connections
 When defining a [Connection](/user-guide/connections/Connections), you can specify a secret. 
 
-![Connections](/img/secrets/secret-connection-reference.png){width=400}
+<img src="/img/secrets/secret-connection-reference.png" alt="Connections" width="400" />
 
 ### Javascript Block
 You can reference a connection in a Javascript Block like this.

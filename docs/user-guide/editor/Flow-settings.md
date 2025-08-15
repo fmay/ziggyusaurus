@@ -4,7 +4,7 @@ title: Flow settings
 
 # Flow settings
 
-![Flow settings](/img/flows/flow-settings.png){width=500}
+<img src="/img/flows/flow-settings.png" alt="Flow settings" width="500" />
 
 ## Identifier
 Each Flow has a unique id. This is the value you will need to used when [launching flows via an API call](/user-guide/launching/Launching-flows).

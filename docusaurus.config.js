@@ -21,11 +21,93 @@ const config = {
       },
     ],
   ],
-  
-  // Search functionality can be added later
-  // plugins: [
-  //   require.resolve('@easyops-cn/docusaurus-search-local'),
-  // ],
+
+  // Navbar configuration
+  themeConfig: {
+    navbar: {
+      title: 'Ziggy Docs',
+      logo: {
+        alt: 'Ziggy Logo',
+        src: 'img/logo.svg', // You can add your logo here
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Documentation',
+        },
+        {
+          href: 'https://github.com/ziggyservices/ziggyusaurus',
+          label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'search',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {
+              label: 'Getting Started',
+              to: '/user-guide',
+            },
+            {
+              label: 'Block Types',
+              to: '/user-guide/block-types',
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/ziggyservices/ziggyusaurus',
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Ziggy Services. Built with Docusaurus.`,
+    },
+    
+    // Algolia search configuration
+    // You'll need to sign up at https://docsearch.algolia.com/
+    // and replace these placeholder values with your actual API keys
+    algolia: {
+      // The application ID provided by Algolia
+      appId: 'XPMSD22TBN',
+      
+      // Public API key: it is safe to commit it
+      apiKey: '8435405b612fbeebf6cae0e1a27861c5',
+      
+      indexName: 'ziggy_docs',
+      
+      // Optional: see doc section below
+      contextualSearch: true,
+      
+      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      externalUrlRegex: 'external\\.com|domain\\.com',
+      
+      // Optional: Replace parts of the item URLs from Algolia search results. Useful when using the same search index for multiple deployments using a different baseUrl. For example: localhost:3000 vs myCompany.com/docs
+      replaceSearchResultPathname: {
+        from: '/docs/', // or as RegExp: /\/docs\//
+        to: '/',
+      },
+      
+      // Optional: Algolia search parameters
+      searchParameters: {},
+      
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
+    },
+  },
 };
 
 module.exports = config;

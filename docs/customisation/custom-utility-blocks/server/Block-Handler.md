@@ -6,7 +6,7 @@ title: Block Handler
 
 This looks complex, but it's actually rather simple. You will typically copy code from another Block that comes close to meeting your requirements.
 
-You will need to adjust very little. Note that most of the Blocks we have coded extract the code the core functionality into a helper file, which you can [see here](Block-Helper). 
+You will need to adjust very little. Note that most of the Blocks we have coded extract the code the core functionality into a helper file, which you can [see here](/customisation/custom-utility-blocks/Block-Helper). 
 
 ```JavaScript
 export const HSCollectionWriteV1 = async (props: BlockExecutionProps) => {

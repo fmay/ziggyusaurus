@@ -12,7 +12,7 @@ This block writes data on the incoming edge to the specified HubSpot object.
 
 
 # Connection
-Choose a Connection that you have defined in the [Connection Manager](/user-guide/connections/Connections). 
+Choose a Connection that you have defined in the [Connection Manager](/user-guide/Connections). 
 This will contain your HubSpot API key or reference a secret containing it. If there is only one HubSpot connection
 defined, it should be auto-selected.
 

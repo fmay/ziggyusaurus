@@ -20,11 +20,11 @@ Custom Utility Blocks provides comprehensive functionality for managing and orga
 
 Choose your path:
 - [User Guide](/user-guide) - Learn how to use Ziggy
-- [Block Types](/block-types) - Explore available blocks
-- [Case Studies](/case-studies) - See real-world examples
+- [Block Types](/user-guide/block-types) - Explore available blocks
+- [Case Studies](/case-studies/hubspot/Case-Study-Hubspot) - See real-world examples
 
 ## Related Topics
 
-- [Editor](/editor) - Flow editor functionality
-- [Global Settings](/global-settings) - System configuration
-- [Monitoring](/monitoring) - System monitoring and alerts
+- [Editor](/user-guide/editor) - Flow editor functionality
+- [Global Settings](/user-guide/Global-Settings) - System configuration
+- [Monitoring](/user-guide/Monitoring) - System monitoring and alerts

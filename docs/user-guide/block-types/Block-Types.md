@@ -31,7 +31,7 @@ Core blocks provide fundamental flow control and data processing capabilities:
 
 Utility blocks provide specialized functionality for common tasks:
 
-- [Data Store](/user-guide/block-types/Data-Store-section) - Persistent data storage
+- [Data Store](/user-guide/Data-Store-section) - Persistent data storage
 - [Memory Store](/user-guide/block-types/utility/MemStore) - In-memory storage
 - [File Reader/Writer](/user-guide/block-types/utility/file-reader-writer) - File operations
 - [SQL](/user-guide/block-types/utility/SQL) - Database operations
@@ -44,9 +44,9 @@ Utility blocks provide specialized functionality for common tasks:
 
 Platform-specific integration blocks:
 
-- [HubSpot](/block-types/hubspot) - HubSpot CRM integration
-- [Salesforce](/block-types/salesforce) - Salesforce CRM integration
-- [Store Helpers](/user-guide/block-types/store-helpers/store-helpers) - Data store utilities
+- [HubSpot](/user-guide/block-types/hubspot) - HubSpot CRM integration
+- [Salesforce](/user-guide/block-types/salesforce) - Salesforce CRM integration
+- [Store Helpers](/user-guide/block-types/store-helpers/) - Data store utilities
 
 ## Creating Custom Blocks
 

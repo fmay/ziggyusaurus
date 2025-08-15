@@ -11,7 +11,7 @@ than the usual Private App. This is explained below.
 
 <img src="/img/flows/blocks/hubspot/hubspot-timeline-write.png" alt="Hubspot timeline" width="400" />
 
-- You should choose a [Connection](/user-guide/connections/Connections). You will be presented with configured HubSpot Connections.
+- You should choose a [Connection](/user-guide/Connections). You will be presented with configured HubSpot Connections.
 - Once the Connection is selected, you choose an Event Template. You cannot define these yourself 
 due to the constraint of HubSpot Public Apps. You will need to contact Ziggy to configure a special Public App with 
 the events you require.

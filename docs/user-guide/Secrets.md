@@ -6,7 +6,7 @@ title: Secrets
 
 The Secrets Manager can be accessed from the nav bar.
 
-![Secrets](/img/secrets/secrets-listing.png)
+![Secrets](/img/secrets/secrets-listing.png
 
 ## Add/Edit secret
 To add a new secret, press the **+Secret** button. Click on the row to edit an existing secret.
@@ -19,13 +19,13 @@ To add a new secret, press the **+Secret** button. Click on the row to edit an e
 ## Development and Production values
 A secret should always have a development value. This also acts as the production value if nothing is provided in the **Production value** field.
 
-Ziggy will select the appropriate value at runtime. See [Dev/Prod mode](Dev-Prod-Modes) for information on switching modes.
+Ziggy will select the appropriate value at runtime. See [Dev/Prod mode](/user-guide/Dev-Prod-Modes) for information on switching modes.
 
 ## Where do I reference secrets from?
 There are two places where you reference a secret.
 
 ### Connections
-When defining a [Connection](/user-guide/connections/Connections), you can specify a secret. 
+When defining a [Connection](/user-guide/Connections), you can specify a secret. 
 
 <img src="/img/secrets/secret-connection-reference.png" alt="Connections" width="400" />
 

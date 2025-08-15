@@ -29,9 +29,9 @@ Manage your Queues.
 
 <img src="/img/global-settings/gsettings-queues.png" alt="Queues" width="800" />
 
-- **Add a Queue** - you can queue Flow execution by selecting the Queue in the [Receiver Block](block-types/core/Receiver).
+- **Add a Queue** - you can queue Flow execution by selecting the Queue in the [Receiver Block](/user-guide/block-types/core/Receiver).
 - **Rate limit** - this will ensure that Flows are executed according to a per second rate limit value you specify here. This feature works across all Flows that use the same Queue ensuring you never exceed the target API's ceiling value.
-- **Alert threshold** - if the queue size ever exceeds this value and alerts are enabled for queues, then this will be logged and an alert notification sent. See [Alerts](/user-guide/alerts/Alerts) for more details.
+- **Alert threshold** - if the queue size ever exceeds this value and alerts are enabled for queues, then this will be logged and an alert notification sent. See [Alerts](/user-guide/Alerts) for more details.
 - **Delete queue** - the delete icon lets you delete a Flow. You should be careful when deleting a queue as any Flow using this Queue will fail.
 
 ## Security
@@ -39,7 +39,7 @@ Manage your Queues.
 <img src="/img/global-settings/gsettings-security.png" alt="Security" width="800" />
 
 ### External execution tokens
-A token must be used when external systems [call the Ziggy API to launch a flow](/user-guide/launching/Launching-flows).
+A token must be used when external systems [call the Ziggy API to launch a flow](/user-guide/Launching-flows).
 
 - **+Execution token** - this will generate a new random token. You will be shown it one time only.
 - **Rename token** - if, for example, you want to assign tokens to an individual or group, you can rename the token to make it clear who it belongs to. This is useful when revoking a token.
@@ -49,7 +49,7 @@ A token must be used when external systems [call the Ziggy API to launch a flow]
 Coming soon.
 
 ## Alerts
-This lets set alert options and thresholds. Please read the [Alerts](/user-guide/alerts/Alerts) topic for full details on alerts and the alert log.
+This lets set alert options and thresholds. Please read the [Alerts](/user-guide/Alerts) topic for full details on alerts and the alert log.
 
 <img src="/img/global-settings/gsetting-alerts.png" alt="Alerts" width="800" />
 
@@ -57,7 +57,7 @@ This lets set alert options and thresholds. Please read the [Alerts](/user-guide
 
 <img src="/img/global-settings/gsettings-users.png" alt="Users" width="800" />
 
-Add Users, their roles and whether they should receive [alerts](/user-guide/alerts/Alerts). 
+Add Users, their roles and whether they should receive [alerts](/user-guide/Alerts). 
 
 ## Export
 
@@ -111,4 +111,4 @@ This lets you transfer your entire database to another Ziggy instance.
 - **Create Transfer File** generates the file to be transferred.
 - **Load Transfer File** restores this into the target Ziggy instance.
 
-Please refer to [Transferring Data](/user-guide/transferring-data/Transferring-Data) for more information.
+Please refer to [Transferring Data](/user-guide/Transferring-Data) for more information.

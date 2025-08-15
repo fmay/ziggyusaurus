@@ -8,34 +8,34 @@ Welcome to the Ziggy User Guide. This comprehensive guide covers everything you 
 
 ## Getting Started
 
-- [Editor](/editor) - Learn about the Flow Editor
-- [Block Types](/block-types) - Explore available blocks
-- [Connections](/connections) - Set up system connections
-- [Secrets](/secrets) - Manage sensitive configuration
+- [Editor](/user-guide/editor) - Learn about the Flow Editor
+- [Block Types](/user-guide/block-types) - Explore available blocks
+- [Connections](/user-guide/Connections) - Set up system connections
+- [Secrets](/user-guide/Secrets) - Manage sensitive configuration
 
 ## Core Concepts
 
-- [Variables](/variables) - Working with data variables
-- [Structures and Mapping](/structures) - Data transformation
-- [Batching](/batching) - Processing large datasets
-- [Error Handling](/error-handling) - Managing errors and exceptions
+- [Variables](/user-guide/Variables) - Working with data variables
+- [Structures and Mapping](/user-guide/Structures-and-mapping) - Data transformation
+- [Batching](/user-guide/Batching) - Processing large datasets
+- [Error Handling](/user-guide/Error-Handling) - Managing errors and exceptions
 
 ## Advanced Topics
 
-- [Memory Store](/memory-store) - In-memory data storage
-- [Data Store](/data-store) - Persistent data storage
-- [Monitoring](/monitoring) - Track flow execution
-- [Global Settings](/global-settings) - System configuration
+- [Memory Store](/user-guide/Memory-Store) - In-memory data storage
+- [Data Store](/user-guide/Data-Store-section) - Persistent data storage
+- [Monitoring](/user-guide/Monitoring) - Track flow execution
+- [Global Settings](/user-guide/Global-Settings) - System configuration
 
 ## Development and Testing
 
-- [Tests](/tests) - Testing your flows
-- [Tags](/tags) - Organizing your flows
-- [Deployment](/deployment) - Moving to production
-- [Security](/security) - Security best practices
+- [Tests](/user-guide/Tests) - Testing your flows
+- [Tags](/user-guide/Tags) - Organizing your flows
+- [Deployment](/user-guide/Deployment) - Moving to production
+- [Security](/user-guide/Security) - Security best practices
 
 ## Troubleshooting
 
-- [Troubleshooting](/troubleshooting) - Common issues and solutions
-- [Logging](/logging) - Understanding logs
-- [Alerts](/alerts) - Setting up notifications
+- [Troubleshooting](/user-guide/Troubleshooting) - Common issues and solutions
+- [Logging](/user-guide/Logging) - Understanding logs
+- [Alerts](/user-guide/Alerts) - Setting up notifications

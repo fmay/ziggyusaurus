@@ -28,9 +28,9 @@ REST Call Block blocks are typically placed in flows to handle specific processi
 
 ## Related Blocks
 
-- [Core Blocks](/block-types/core) - Fundamental flow control
-- [Utility Blocks](/block-types/utility) - Specialized functionality
-- [Integration Blocks](/block-types) - External system connections
+- [Core Blocks](/user-guide/block-types/core) - Fundamental flow control
+- [Utility Blocks](/user-guide/block-types/utility) - Specialized functionality
+- [Integration Blocks](/user-guide/block-types) - External system connections
 
 ## Use Cases
 

@@ -14,7 +14,7 @@ The data below shows two keys `accountId` and `wordId`. Each of these contains a
 <img src="/img/flows/blocks/salesforce/sf-set-associations.png" alt="SalesForce set associations" width="900" />
 
 ## Connection
-Specify a valid SalesForce connection from the [Connection Manager](/user-guide/connections/Connections).
+Specify a valid SalesForce connection from the [Connection Manager](/user-guide/Connections).
 
 ## Namespace for errors
 If you want to capture errors to a namespace in the [Ziggy Data Store](/user-guide/block-types/utility/Data-Store), choose an existing namespace 

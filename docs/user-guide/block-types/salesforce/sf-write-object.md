@@ -11,7 +11,7 @@ This block writes data on the incoming edge to the specified SalesForce object.
 <img src="/img/flows/blocks/salesforce/sf-write.png" alt="SalesForce Write" width="300" />
 
 # Connection
-Choose a Connection that you have defined in the [Connection Manager](/user-guide/connections/Connections).
+Choose a Connection that you have defined in the [Connection Manager](/user-guide/Connections).
 This will contain your SalesForce API key or reference a secret containing it. If there is only one SalesForce connection
 defined, it should be auto-selected.
 

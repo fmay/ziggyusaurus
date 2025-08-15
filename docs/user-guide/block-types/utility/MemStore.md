@@ -3,7 +3,7 @@ title: Memory Store
 ---
 
 # Memory Store
-Write to and read from the Memory Store, a very simple, bare-bones key/value pair memory store. [Read more about the Memory Store](/user-guide/memory-store/Memory-Store).
+Write to and read from the Memory Store, a very simple, bare-bones key/value pair memory store. [Read more about the Memory Store](/user-guide/Memory-Store).
 
 ## Overview
 This Block takes data that arrives on the input edge and stores it in the Memory Store.

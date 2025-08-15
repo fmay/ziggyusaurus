@@ -23,7 +23,7 @@ If, however, the incoming edge keys were called `personName` and `personAge`
 then you can map these by checking the **SQL Edit** box and changing the tokens to `$$personAge` and `$$personAge`.
 
 ## Edge based mapping
-This approach is better if you regularly encounter edge data of the same structure. See [Structures, validation, mapping and transformations](/user-guide/structures/Structures-and-mapping) 
+This approach is better if you regularly encounter edge data of the same structure. See [Structures, validation, mapping and transformations](/user-guide/Structures-and-mapping) 
 where there is also a video overview and detailed explanation of the mapping process.
 
 ### Generate mapping object

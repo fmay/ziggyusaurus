@@ -11,7 +11,7 @@ Connections are hooks into external modules along with a corresponding setup tha
 
 Connections are managed the Ziggy UI.
 
-![Connections](/img/flows/connections/connections-listing.png)
+![Connections](/img/flows/connections/connections-listing.png
 
 The following connection types are currently supported.
 
@@ -31,10 +31,10 @@ The configuration you enter is an object. The example below shows a Hubspot conn
 
 ### Development and Production
 Note that you can specify a different connection object for Development and Production modes. 
-[Click here](Dev-Prod-Modes) for details on switching modes.
+[Click here](/user-guide/Dev-Prod-Modes) for details on switching modes.
 
 ### Secrets
-It is good practice to use the [Secrets Manager](/user-guide/secrets/Secrets) 
+It is good practice to use the [Secrets Manager](/user-guide/Secrets) 
 to avoid exposing sensitive information in the Connection object. 
 
 ## Hubspot object

@@ -11,7 +11,7 @@ Reads data in chunks defined by **Batch Size** and for a maximum of **Max iterat
 
 Setting iterations to 0 will run the batch until no more rows are available.
 
-Refer to [Batching](/user-guide/batching/Batching) for details about batching and the [Batch End](/user-guide/block-types/core/Batch-End) block, which is required.
+Refer to [Batching](/user-guide/Batching) for details about batching and the [Batch End](/user-guide/block-types/core/Batch-End) block, which is required.
 
 <img src="/img/flows/blocks/utility/SQL/sql-select-batch.png" alt="Batch mode" width="500" />
 
@@ -46,7 +46,7 @@ This generates the following WHERE clause.
 ```SQL
 WHERE ("age" > 18 or "age" < 30)
 ```
-You can also use tokens for the values ([see Editing SQL](sql-editing)) instead of literal values.
+You can also use tokens for the values ([see Editing SQL](/user-guide/block-types/utility/sql/sql-editing)) instead of literal values.
 
 ```SQL
 WHERE ("age" > $$lowerValue or "age" < $$upperValue)

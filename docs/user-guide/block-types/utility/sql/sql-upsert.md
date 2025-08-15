@@ -27,13 +27,13 @@ These values are the same values as the table field names.
 In many cases, your incoming edge data will not be the same as the table field names. To handle this,
 there are several approaches to make this as easy as possible.
 
-Please refer to [Edge mapping](sql-mapping) for details.
+Please refer to [Edge mapping](/user-guide/block-types/utility/sql/sql-mapping) for details.
 
 ## Editing
 For more complex scenarios, you can let Ziggy generate the basic query for you and then
-select the **Edit SQL** box to customise. Refer to [Editing SQL](sql-editing) for details.
+select the **Edit SQL** box to customise. Refer to [Editing SQL](/user-guide/block-types/utility/sql/sql-editing) for details.
 
 Note that any modifications you make are expected to confirm to the templated approach.
 In practice, this means editing the `$$token` values to address the incoming edge key rather
-than using other [mapping techniques](sql-mapping).
+than using other [mapping techniques](/user-guide/block-types/utility/sql/sql-mapping).
 

@@ -38,10 +38,10 @@ If a Flow chooses to write to a Ziggy file, you can read from this file in the s
 When reading from a file, you need to specify the batch buffer size and the number of iterations to process (0 means read whole file).
 
 ## Platform - AWS S3
-You need to have defined a Connection in the [Connection Manager](/user-guide/connections/Connections). You then select the Connection in the block.
+You need to have defined a Connection in the [Connection Manager](/user-guide/Connections). You then select the Connection in the block.
 
 This is an NPM connection object, which will typically be as shown below. Note this references two secrets
-in the [Secrets Manager](/user-guide/secrets/Secrets) to avoid exposing it.
+in the [Secrets Manager](/user-guide/Secrets) to avoid exposing it.
 
 ```javascript
 {
@@ -59,11 +59,11 @@ You should choose the data format and read/write mode.
 
 ## Platform - SFTP
 
-You need to have defined a Connection in the [Connection Manager](/user-guide/connections/Connections). 
+You need to have defined a Connection in the [Connection Manager](/user-guide/Connections). 
 You then select the Connection in the block.
 
 This is an NPM connection object, which will typically be as shown below. Note this references two secrets
-in the [Secrets Manager](/user-guide/secrets/Secrets) to avoid exposing it.
+in the [Secrets Manager](/user-guide/Secrets) to avoid exposing it.
 
 ```javascript
 {

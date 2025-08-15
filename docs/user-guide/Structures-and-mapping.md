@@ -16,7 +16,7 @@ out validations, transformations and mappings.
 - Select **HubSpot** from the dropdown
 - See the relevant tutorials circled below.
 
-![Tuturials](/img/flows/structures/svtm-tutorials.png)
+![Tuturials](/img/flows/structures/svtm-tutorials.png
 
 ## Structures
 Structures are used for two primary purposes.
@@ -27,7 +27,7 @@ Structures are used for two primary purposes.
 ## Defining a Structure
 Structures are managed in the **Structures** main navbar button. This shows you all available Structures.
 
-![Structures](/img/flows/structures/svtm-structures.png)
+![Structures](/img/flows/structures/svtm-structures.png
 
 There are two ways to add a Structure.
 
@@ -55,7 +55,7 @@ To get more details, please read the [Zod documentation](https://zod.dev/?id=pri
 ## Validation
 This section will refer to the following Flow.
 
-![validation flow](/img/flows/structures/svtm-validation-flow.png)
+![validation flow](/img/flows/structures/svtm-validation-flow.png
 
 
 ### Run the Flow
@@ -68,7 +68,7 @@ you can see the edge has 10 records of data on it.
 - Select the **Validate** tab.
 - Press the **Generate from input data** button, which generates a validation object, which we'll explain in next tutorial.
 
-![600](/img/flows/structures/tutorial-videos/A51-validate.png)
+![600](/img/flows/structures/tutorial-videos/A51-validate.png
 
 - Run the Flow again then click the edge bubble.
 - You'll notice there is now a **Data out** tab. You can click on it and you'll see the same data as in the first Data tab (no validations failed).
@@ -84,14 +84,14 @@ Let's now force the validation to fail.
 
 - Click it to see the reason for the failure in the Rejected tab.
 
-![600](/img/flows/structures/tutorial-videos/A51-failed-validation.png)
+![600](/img/flows/structures/tutorial-videos/A51-failed-validation.png
 
 ### Aborting the Flow on failure
 By default, Ziggy will abort the Flow if a validation fails.
 
 However, you can tell Ziggy to strip records which fail the validation. We can, at the same time, store failed records in the data store.
 
-![600](/img/flows/structures/tutorial-videos/A51-no-abort-validate.png)
+![600](/img/flows/structures/tutorial-videos/A51-no-abort-validate.png
 
 - Uncheck **Abort flow for failed validation**.
 - Optionally, enter a Data Store namespace name where rejected records can be added.
@@ -99,7 +99,7 @@ However, you can tell Ziggy to strip records which fail the validation. We can, 
 - Click the edge bubble.
 - You'll notice that there is now a **Rejected** tab, which lists the records that failed the validation and the reason for the rejection.
 
-![600](/img/flows/structures/tutorial-videos/A51-failed-validation.png)
+![600](/img/flows/structures/tutorial-videos/A51-failed-validation.png
 
 ### Using the Data Store for rejections
 In the above screenshot, we specified that any rejections should be stored in the **rejected companies** namespace.
@@ -108,9 +108,9 @@ If you want, you can then use the **Data Store Block** to process these or just 
 
 To do this, hover on the Stores icon in the top navigation bar and click.
 
-![1000](/img/flows/structures/tutorial-videos/A51-datastore-listing.png)
+![1000](/img/flows/structures/tutorial-videos/A51-datastore-listing.png
 
-![500](/img/flows/structures/tutorial-videos/A51-datastore-item.png)
+![500](/img/flows/structures/tutorial-videos/A51-datastore-item.png
 
 ## Transformations
 The **Transformer** tab lets you use basic Javascript to perform any sort of validation, data transformation or even a hard-coded mapping with ease.
@@ -119,7 +119,7 @@ The **Transformer** tab lets you use basic Javascript to perform any sort of val
 - Check **Transform** in the top row.
 - A **Transform** tab will now appear, where you can enter some Javascript expressions.
 
-![800](/img/flows/structures/tutorial-videos/A53-transformer.png)
+![800](/img/flows/structures/tutorial-videos/A53-transformer.png
 
 Feel free to copy paste the following code.
 
@@ -200,10 +200,10 @@ Once you have the configuration you see above, run the Flow and click on the edg
 
 If you look at the Data and Data Out tabs, you can see how the mapping has done its job.
 
-![500](/img/flows/structures/tutorial-videos/A55-data-in.png)
+![500](/img/flows/structures/tutorial-videos/A55-data-in.png
 
 
-![500](/img/flows/structures/tutorial-videos/A55-data-out.png)
+![500](/img/flows/structures/tutorial-videos/A55-data-out.png
 
 ### Combining Mapping with Validations and Transformers
 

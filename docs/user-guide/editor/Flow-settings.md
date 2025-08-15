@@ -7,17 +7,17 @@ title: Flow settings
 <img src="/img/flows/flow-settings.png" alt="Flow settings" width="500" />
 
 ## Identifier
-Each Flow has a unique id. This is the value you will need to used when [launching flows via an API call](/user-guide/launching/Launching-flows).
+Each Flow has a unique id. This is the value you will need to used when [launching flows via an API call](/user-guide/Launching-flows).
 
 ## API Launch URL
-Press this button to paste the URL that [external systems should use to launch the Flow](/user-guide/launching/Launching-flows). 
+Press this button to paste the URL that [external systems should use to launch the Flow](/user-guide/Launching-flows). 
 
 ## Flow name
 The Flow name.
 
 ## Tags
 These are really useful if you have a lot of Flows and want to be able to find them using tag 
-filtering in the [Flows listing](Flows-listing).
+filtering in the [Flows listing](/user-guide/editor/Flows-listing).
 
 ## Timeout
 A Flow will be aborted if this period is exceeded. It will be ignored if stepping though flows in the UI.
@@ -25,10 +25,10 @@ A Flow will be aborted if this period is exceeded. It will be ignored if steppin
 ## Execution history level
 Execution History is useful for debugging when things go wrong and when building new Flows. 
 
-Read the [Execution History topic](Execution-history) for full configuration details. 
+Read the [Execution History topic](/user-guide/editor/Execution-history) for full configuration details. 
 
 ## Subflow
 Check the box to allow this Flow to be called from another Flow.
 
 ## Commander
-Identifies this as a [Commander Flow](Commander).
+Identifies this as a [Commander Flow](/user-guide/editor/Commander).

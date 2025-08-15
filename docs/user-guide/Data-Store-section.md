@@ -31,7 +31,7 @@ The data store is a Key/Value store but it also provides an additional field **`
 The combination of **```name + key```** must be unique within the store.
 
 ## Data Store Block
-The [Data Store Block](block-types/utility/Data-Store) gives you access to Data Store operations without the need to write any Javascript code.
+The [Data Store Block](/user-guide/block-types/utility/Data-Store) gives you access to Data Store operations without the need to write any Javascript code.
 
 ## Javascript API
 You can also perform Data Store operations from the Javascript Block. The following methods are available.
@@ -49,5 +49,5 @@ You can also perform Data Store operations from the Javascript Block. The follow
 | `deleteOneNameKey(name: string, key: string)` | Delete a key/value pair in the specified namespace.<br/>• `name` : namespace<br/>• `key` : key |
 
 ## Data Store browser
-You can browse and search for data in the Data Store using the [Store Browser](/user-guide/data-browser/Data-and-Memory-Store-Browser). 
+You can browse and search for data in the Data Store using the [Store Browser](/user-guide/Data-and-Memory-Store-Browser). 
 This works for **Internal** mode only.

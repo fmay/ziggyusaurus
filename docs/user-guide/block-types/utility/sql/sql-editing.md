@@ -20,7 +20,7 @@ such as `DELETE FROM my_table`, it will fail.
 In practice, the most useful edits you will make are to map incoming edge data to the database table field names. 
 
 By default, Ziggy generates an edge key token, `$$token`, with the same name as the database field name. 
-This is fine is you are using [edge based mapping](sql-mapping). 
+This is fine is you are using [edge based mapping](/user-guide/block-types/utility/sql/sql-mapping). 
 
 However, a quick and easy way to map is to editor the SQL to refer to the edge key name. 
 For example, if you see this in the SQL ...

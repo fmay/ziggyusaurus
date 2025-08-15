@@ -14,7 +14,7 @@ Ziggy lets you handle both of these situations.
 ## Entire database
 This is a "kitchen sink" transfer of the entire database to another Ziggy instance. You can manage this process from [Global Settings](Global-Settings.md#housekeeping) - **System Transfer**.
 
-![System transfer](/img/global-settings/gsettings-housekeeping.png)
+![System transfer](/img/global-settings/gsettings-housekeeping.png
 
 **Important** - please note the following.
 

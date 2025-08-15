@@ -1,0 +1,19 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^/"
+    },
+    {
+      "pattern": "^/user-guide/"
+    },
+    {
+      "pattern": "^/block-types/"
+    },
+    {
+      "pattern": "^/customisation/"
+    },
+    {
+      "pattern": "^/case-studies/"
+    }
+  ]
+}

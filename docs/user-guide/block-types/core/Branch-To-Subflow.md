@@ -8,7 +8,7 @@ Branches to a subflow based on the input edge element. This expects an array wit
 
 <img src="/img/flows/blocks/core/branch-subflow/block-branch-subflow.png" alt="Branch subflow" width="800" />
 
-A common combination is using the [Iterator Block](Iterator) to
+A common combination is using the [Iterator Block](/user-guide/block-types/core/Iterator) to
 take an edge with multiple rows on it and split it up into single elements.
 
 For each entry you add to the branch, you specify an expression that evaluates the incoming data.

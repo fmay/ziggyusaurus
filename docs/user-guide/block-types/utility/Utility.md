@@ -8,7 +8,7 @@ Utility blocks provide specialized functionality for common integration and data
 
 ## Data Storage Blocks
 
-- [Data Store](/user-guide/block-types/Data-Store-section) - Persistent key-value data storage
+- [Data Store](/user-guide/Data-Store-section) - Persistent key-value data storage
 - [Memory Store](/user-guide/block-types/utility/MemStore) - High-performance in-memory storage
 
 ## File and Data Operations

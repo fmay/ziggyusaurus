@@ -19,12 +19,12 @@ The calling system might be able to recognise the failure and manage the retries
 
 You can solve the problem in Ziggy as follows.
 
-- Change your Flow to write data to the [Ziggy Data Store](block-types/utility/Data-Store) or SQL database. This will ensure no requests are lost.
+- Change your Flow to write data to the [Ziggy Data Store](/user-guide/block-types/utility/Data-Store) or SQL database. This will ensure no requests are lost.
 - Create another Flow that is scheduled to run very frequently. This reads from the Data Store or database and runs through the data sequentially.
 
 Even with this solution you need to bear in mind that other Flows might be operating on HubSpot in parallel. A way to solve this is as follows.
 
-- Use the [Ziggy Memory Store](/user-guide/memory-store/Memory-Store) to set a flag to indicate that the HubSpot Api is in use. Flows that are accessing the HubSpot APi can then query the memory store. If it is currently in use then you can use the Javascript Block's ```sleep()``` method to build in a small delay before retrying.
+- Use the [Ziggy Memory Store](/user-guide/Memory-Store) to set a flag to indicate that the HubSpot Api is in use. Flows that are accessing the HubSpot APi can then query the memory store. If it is currently in use then you can use the Javascript Block's ```sleep()``` method to build in a small delay before retrying.
 
 If you are performing migrations or data loads as opposed to integrations that could execute in parallel then you won't really have this problem. You can let the HubSpot NPM client take care of retries in the background.
 

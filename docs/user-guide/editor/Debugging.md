@@ -133,7 +133,7 @@ consoleMsg(`Execution time: ${endTime - startTime}ms`);
 
 ## Related Topics
 
-- [Flow Editor](/user-guide/editor/Editor) - Flow editing interface
+- [Flow Editor Layout](/user-guide/editor/Flow-Editor-Layout) - Flow editing interface
 - [Console Messages](/user-guide/block-types/core/Console-Message) - Output debugging information
 - [Error Handling](/user-guide/Error-Handling) - Handle errors gracefully
 - [Logging](/user-guide/Logging) - System logging configuration

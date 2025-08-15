@@ -32,5 +32,5 @@ Ziggy is a powerful integration and migration platform designed for Systems Inte
 
 Choose your path:
 - [User Guide](/user-guide) - Learn how to use Ziggy
-- [Case Studies](/case-studies) - See real-world examples
-- [Customisation](/customisation) - Build custom blocks
+- [Case Studies](/case-studies/hubspot/Case-Study-Hubspot) - See real-world examples
+- [Customisation](/customisation/Custom-Utility-Blocks) - Build custom blocks

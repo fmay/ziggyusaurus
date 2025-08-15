@@ -7,7 +7,7 @@ title: Audit
 The Audit block allows you to write data to an external data source so a process auditor
 can track data at a point in time. 
 
-You could use the [Data Store](Data-Store) block to achieve a similar objective. 
+You could use the [Data Store](/user-guide/block-types/utility/Data-Store) block to achieve a similar objective. 
 The advantage of the Audit block is the ability to manage the user interaction through any BI tool 
 by connecting to the Snowflake database (see below).
 
@@ -42,7 +42,7 @@ create or replace TABLE AUDIT.PUBLIC.AUDIT_LOG (
 );
 ```
 
-You should configure a Snowflake [Connection](/user-guide/connections/Connections) in the connection manager. The config field will 
+You should configure a Snowflake [Connection](/user-guide/Connections) in the connection manager. The config field will 
 look something like this.
 
 ```JavaScript

@@ -46,7 +46,7 @@ Server can be configured through:
 
 ## Related Topics
 
-- [Global Settings](/global-settings) - System configuration
-- [Monitoring](/monitoring) - System monitoring
-- [Security](/security) - Security and access control
+- [Global Settings](/user-guide/Global-Settings) - System configuration
+- [Monitoring](/user-guide/Monitoring) - System monitoring
+- [Security](/user-guide/Security) - Security and access control
 - [User Guide](/user-guide) - Comprehensive user documentation

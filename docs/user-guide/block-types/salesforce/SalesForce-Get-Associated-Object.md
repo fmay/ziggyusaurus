@@ -31,6 +31,6 @@ The above configuration results in the following data.
 <img src="/img/flows/blocks/salesforce/sf-get-associated-data-out.png" alt="SalesForce get associated data out" width="500" />
 
 ## Many to Many / Junction relationships
-SalesForce manages these as so-called *Junction Objects*. The best way to deal with these is to use the [SalesForce Write](sf-write-object) 
+SalesForce manages these as so-called *Junction Objects*. The best way to deal with these is to use the [SalesForce Write](/user-guide/block-types/salesforce/sf-write-object) 
 object where you specify the Junction Object as the Object Name and then write the Ids for both side of the 
 relationship by specifying the fields that contain data on the input edge, 

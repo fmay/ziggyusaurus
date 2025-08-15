@@ -16,7 +16,7 @@ If you are using Redis for advanced features, then you should address the Redis 
 ## Persistence
 The Simple Memory Store is persistent across all Flows but is not persisted to disk. A restart will lose the Memory Store contents. If you require full persistence 
 
-- either use the [Data Store](block-types/utility/Data-Store) if performance is not a primary considerations
+- either use the [Data Store](/user-guide/block-types/utility/Data-Store) if performance is not a primary considerations
 - or use Redis
 
 ## Memory Store Block
@@ -42,7 +42,7 @@ Note that if you are using Redis, you can still use these methods.
 | `async delete(key: string)` | Delete a key/value pair by key name.<br/>• `key` : the globally unique key to retrieve |
 
 ## Memory Store browser
-You can browse and search for data in the Data Store using the [Store Browser](/user-guide/data-browser/Data-and-Memory-Store-Browser).
+You can browse and search for data in the Data Store using the [Store Browser](/user-guide/Data-and-Memory-Store-Browser).
 
 ## Redis
 If you wish to use Redis, please contact us.

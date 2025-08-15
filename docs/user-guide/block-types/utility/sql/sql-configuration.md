@@ -8,7 +8,7 @@ For all operations, you need to configure the following.
 
 - **Operation** - SELECT, INSERT, UPDATE, DELETE, UPSERT
 - **Database** - this is only required for certain platforms (currently Snowflake). For others, the database to connect to is specified within the Connection itself.
-- **Connection** - a centrally defined [Connection](/user-guide/connections/Connections).
+- **Connection** - a centrally defined [Connection](/user-guide/Connections).
 - **Schema**
 - **Table**
 - **Fields** - to be used in the `SELECT [fields selected] FROM` clause

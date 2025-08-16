@@ -91,7 +91,7 @@ const config = {
       appId: 'XPMSD22TBN',
       
       // Public API key: it is safe to commit it
-      apiKey: '8435405b612fbeebf6cae0e1a27861c5',
+      apiKey: 'd306c3a1645bb47380811310974fed3b',
       
       indexName: 'ziggy_docs',
       

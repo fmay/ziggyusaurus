@@ -6,8 +6,6 @@ title: Overview
 
 This is the main overview page for Ziggy documentation. It provides a comprehensive introduction to the Ziggy platform and its capabilities.
 
-TODO REMOVE THIS LINE
-
 ## What is Ziggy?
 
 Ziggy is a powerful integration and migration platform designed for Systems Integrators and System Architects. It focuses on:

@@ -24,6 +24,8 @@ const config = {
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
+          // Ensure sitemap URLs are correct for production
+          url: 'https://docs.ziggyservices.com',
         },
       },
     ],
@@ -97,6 +99,9 @@ const config = {
       
       // Optional: see doc section below
       contextualSearch: true,
+      
+      // Sitemap for crawling
+      sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],
       
       // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
       externalUrlRegex: 'external\\.com|domain\\.com',

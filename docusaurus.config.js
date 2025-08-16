@@ -96,7 +96,7 @@ const config = {
       indexName: 'Ziggy Docs',
       
       // Optional: see doc section below
-      contextualSearch: true,
+      contextualSearch: false,
       
       // Sitemap for crawling
       sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],

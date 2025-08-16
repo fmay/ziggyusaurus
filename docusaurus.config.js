@@ -35,7 +35,8 @@ const config = {
       title: 'Ziggy Docs',
       logo: {
         alt: 'Ziggy Logo',
-        src: 'img/logo.svg', // You can add your logo here
+        src: 'img/ziggy-logo-light.webp',
+        srcDark: 'img/ziggy-logo-dark.webp',
       },
       items: [
         {

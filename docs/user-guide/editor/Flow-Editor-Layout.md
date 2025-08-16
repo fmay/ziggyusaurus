@@ -6,7 +6,7 @@ title: Flow editor layout
 
 Below is a simple Flow in the editor. 
 
-![Editor Flow](/img/flows/flow-editor-explanation.png
+![Editor Flow](/img/flows/flow-editor-explanation.png)
 
 The general concepts are hopefully self-explanatory but here are some things to point out.
 

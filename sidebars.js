@@ -14,7 +14,6 @@ const sidebars = {
       type: 'category',
       label: 'User Guide',
       items: [
-        'user-guide/User-Guide',
         {
           type: 'category',
           label: 'Editor',
@@ -39,12 +38,10 @@ const sidebars = {
           type: 'category',
           label: 'Block Types',
           items: [
-            'user-guide/block-types/Block-Types',
             {
               type: 'category',
               label: 'Core',
               items: [
-                'user-guide/block-types/core/Core',
                 'user-guide/block-types/core/Receiver',
                 'user-guide/block-types/core/Terminator',
                 'user-guide/block-types/core/sinkhole',
@@ -71,7 +68,6 @@ const sidebars = {
               type: 'category',
               label: 'Utility',
               items: [
-                'user-guide/block-types/utility/Utility',
                 'user-guide/block-types/utility/Data-Store',
                 'user-guide/block-types/utility/MemStore',
                 'user-guide/block-types/utility/file-reader-writer',
@@ -101,7 +97,6 @@ const sidebars = {
               type: 'category',
               label: 'HubSpot',
               items: [
-                'user-guide/block-types/hubspot/Hubspot',
                 'user-guide/block-types/hubspot/hs-read',
                 'user-guide/block-types/hubspot/hs-write',
                 'user-guide/block-types/hubspot/hs-get-associated',
@@ -116,7 +111,6 @@ const sidebars = {
               type: 'category',
               label: 'Salesforce',
               items: [
-                'user-guide/block-types/salesforce/SalesForce',
                 'user-guide/block-types/salesforce/sf-read-object',
                 'user-guide/block-types/salesforce/sf-write-object',
                 'user-guide/block-types/salesforce/SalesForce-Get-Associated-Object',
@@ -128,7 +122,6 @@ const sidebars = {
               type: 'category',
               label: 'Store Helpers',
               items: [
-                'user-guide/block-types/store-helpers/store-helpers',
                 'user-guide/block-types/store-helpers/timestamper',
               ],
             },
@@ -161,26 +154,6 @@ const sidebars = {
         'user-guide/Deployment',
       ],
     },
-    // {
-    //   type: 'category',
-    //   label: 'Customisation',
-    //   items: [
-    //     'customisation/Custom-Utility-Blocks',
-    //     {
-    //       type: 'category',
-    //       label: 'Custom Utility Blocks',
-    //       items: [
-    //         'customisation/custom-utility-blocks/Client',
-    //         'customisation/custom-utility-blocks/Server',
-    //         'customisation/custom-utility-blocks/Definitions-File',
-    //         'customisation/custom-utility-blocks/React-component',
-    //         'customisation/custom-utility-blocks/Manifest-file',
-    //         'customisation/custom-utility-blocks/Block-Handler',
-    //         'customisation/custom-utility-blocks/Block-Helper',
-    //       ],
-    //     },
-    //   ],
-    // },
   ],
 };
 

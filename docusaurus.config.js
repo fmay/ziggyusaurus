@@ -100,7 +100,9 @@ const config = {
       
       // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
       externalUrlRegex: 'external\\.com|domain\\.com',
-      
+
+      sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],
+
       // Optional: Replace parts of the item URLs from Algolia search results. Useful when using the same search index for multiple deployments using a different baseUrl. For example: localhost:3000 vs myCompany.com/docs
       replaceSearchResultPathname: {
         from: '/docs/', // or as RegExp: /\/docs\//

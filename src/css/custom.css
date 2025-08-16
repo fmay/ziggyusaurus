@@ -8,3 +8,109 @@
   html[data-theme='dark'] {
     --ifm-color-primary: #4dabf7; /* lighter primary in dark mode */
   }
+
+/* Navbar title customization */
+.navbar__title {
+  /* Font size and weight */
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  
+  /* Positioning */
+  margin-left: 2.5rem !important;
+  margin-right: 1rem !important;
+  
+  /* Text styling */
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+/* Dark theme title styling */
+html[data-theme='dark'] .navbar__title {
+  color: inherit !important;
+}
+
+/* Active link styling for sidebar and content areas */
+/* Sidebar active links */
+.menu__link--active,
+.menu__link--sublist.menu__link--active,
+.theme-doc-sidebar-item-link[aria-current="page"],
+.theme-doc-sidebar-item-link[aria-current="true"],
+.theme-doc-sidebar-item-link.active {
+  color: #333333 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* Dark theme sidebar active links */
+html[data-theme='dark'] .menu__link--active,
+html[data-theme='dark'] .menu__link--sublist.menu__link--active,
+html[data-theme='dark'] .theme-doc-sidebar-item-link[aria-current="page"],
+html[data-theme='dark'] .theme-doc-sidebar-item-link[aria-current="true"],
+html[data-theme='dark'] .theme-doc-sidebar-item-link.active {
+  color: #cccccc !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* Main content area active links */
+article a[aria-current="page"],
+article a[aria-current="true"],
+article a.active,
+.theme-doc-markdown a[aria-current="page"],
+.theme-doc-markdown a[aria-current="true"],
+.theme-doc-markdown a.active,
+main a[aria-current="page"],
+main a[aria-current="true"],
+main a.active {
+  color: #333333 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* Dark theme content active links */
+html[data-theme='dark'] article a[aria-current="page"],
+html[data-theme='dark'] article a[aria-current="true"],
+html[data-theme='dark'] article a.active,
+html[data-theme='dark'] .theme-doc-markdown a[aria-current="page"],
+html[data-theme='dark'] .theme-doc-markdown a[aria-current="true"],
+html[data-theme='dark'] .theme-doc-markdown a.active,
+html[data-theme='dark'] main a[aria-current="page"],
+html[data-theme='dark'] main a[aria-current="true"],
+html[data-theme='dark'] main a.active {
+  color: #cccccc !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* Right sidebar (table of contents) - normal links use normal text color */
+.table-of-contents__link {
+  color: inherit !important;
+  font-weight: normal !important;
+  text-decoration: none !important;
+}
+
+/* Right sidebar (table of contents) active links - bold only */
+.table-of-contents__link--active,
+.table-of-contents__link[aria-current="page"],
+.table-of-contents__link[aria-current="true"],
+.table-of-contents__link.active {
+  color: inherit !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
+/* All links in main content area - normal text color and underlined */
+article a,
+.theme-doc-markdown a,
+main a {
+  color: inherit !important;
+  text-decoration: underline !important;
+}
+
+/* Dark theme all links in main content - normal text color and underlined */
+html[data-theme='dark'] article a,
+html[data-theme='dark'] .theme-doc-markdown a,
+html[data-theme='dark'] main a {
+  color: inherit !important;
+  text-decoration: underline !important;
+}

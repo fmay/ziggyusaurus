@@ -32,19 +32,13 @@ const config = {
   // Navbar configuration
   themeConfig: {
     navbar: {
-      title: 'Ziggy Docs',
+      title: 'Documentation',
       logo: {
         alt: 'Ziggy Logo',
         src: 'img/ziggy-logo-light.webp',
         srcDark: 'img/ziggy-logo-dark.webp',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
-        },
         {
           href: 'https://github.com/ziggyservices/ziggyusaurus',
           label: 'GitHub',
@@ -56,6 +50,9 @@ const config = {
         },
       ],
     },
+    
+    // Footer configuration (commented out to hide footer)
+    /*
     footer: {
       style: 'dark',
       links: [
@@ -84,6 +81,7 @@ const config = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Ziggy Services. Built with Docusaurus.`,
     },
+    */
     
     // Algolia search configuration
     // You'll need to sign up at https://docsearch.algolia.com/

@@ -3,7 +3,7 @@ title: Merger
 ---
 
 # Merger
-Takes array data from multiple inputs and merges them into a single array. It is assumed that each of the input arrays are of the same size.
+Takes array data from multiple inputs and merges them into a single array. It is assumed that each of the input arrays are of the same size. ss 
 
 <img src="/img/flows/blocks/core/merger/block-merger.png" alt="Merger" width="900" />
 

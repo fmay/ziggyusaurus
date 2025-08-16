@@ -2,46 +2,17 @@
 title: Subflow Block
 ---
 
-# Subflow Block
+# Subflow
 
-The Subflow Block is a core block type that enables the creation of reusable, modular flow components. It promotes code reusability and maintainable flow design.
+Using Subflows helps you keep your Flows modular and reusable.
 
-## Overview
+Once your prototyped your Flow, which will often use a few Javascript Blocks, you can hide it away in a Subflow to keep the Flows that use it as tidy as possible.
 
-The Subflow Block is responsible for:
-- Encapsulating reusable flow logic
-- Providing modular flow components
-- Enabling flow composition and reuse
-- Managing flow parameters and return values
+There's very little to configuring the Subflow Block. 
 
-## Configuration
+![Subflow block](block-subflow.png)
 
-Subflow blocks can be configured with various options including:
-- Flow selection and reference
-- Input parameter mapping
-- Output handling configuration
-- Error handling options
+You only need to specify the Subflow name.
 
-## Usage
+![Subflow chooser](subflow-chooser.png){width="700"}
 
-Subflow blocks are typically used to break complex flows into manageable, reusable components that can be called from multiple locations.
-
-## Related Blocks
-
-- [Branch-To-Subflow](/user-guide/block-types/core/Branch-To-Subflow) - For conditional subflow execution
-- [Receiver](/user-guide/block-types/core/Receiver) - For starting subflows
-- [Terminator](/user-guide/block-types/core/Terminator) - For ending subflows
-
-## Use Cases
-
-- **Code Reuse**: Implement common functionality once and reuse it
-- **Modular Design**: Break complex flows into manageable pieces
-- **Maintenance**: Update logic in one place for all instances
-- **Testing**: Test individual components independently
-
-## Best Practices
-
-- Design subflows with clear input/output contracts
-- Use descriptive names for subflow parameters
-- Document subflow behavior and requirements
-- Test subflows independently before integration

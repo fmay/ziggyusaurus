@@ -2,66 +2,38 @@
 title: Monitoring
 ---
 
-# Monitoring
+# Execution History Dashboard
 
-Monitoring in Ziggy provides comprehensive oversight of your flows, system performance, and execution status. This feature is essential for maintaining system health and identifying issues before they impact operations.
+The Execution History Dashboard lets you monitor Flow executions. 
 
-## Overview
+Depending on your Global Settings and Flow Settings, you can also examine the data snapshot and edge data for an individual Flow execution.
 
-Monitoring provides:
-- Real-time flow execution status
-- Performance metrics and analytics
-- System resource utilization
-- Error tracking and alerting
-- Historical execution data
+**Important** : for secure environments, you can set whether snapshot data is stored or not at the system or Flow level. 
+Please read the [next topic](History-data-storage-levels.md) for more information.
 
-## Monitoring Components
+![Dashboard](flows-dashboard-1.png)
+ 
+## Filters
+Select any combination of filters in the left pane to narrow down the execution history list.
 
-### Flow Execution Monitoring
-- **Active Flows**: View currently running flows
-- **Execution History**: Track completed and failed flows
-- **Performance Metrics**: Monitor execution times and resource usage
-- **Error Tracking**: Identify and analyze execution failures
+Terminator Status and Flows selections can be individually deselected by clicking on them again.
 
-### System Health Monitoring
-- **Resource Utilization**: CPU, memory, and disk usage
-- **Connection Status**: Monitor external system connections
-- **Queue Status**: Track message queue performance
-- **Database Performance**: Monitor data store operations
+## Stats
+The right hand pane shows the execution history information, reflecting the current filters.
 
-### Real-time Dashboards
-- **Flow Status**: Visual representation of flow execution
-- **Performance Charts**: Historical performance trends
-- **Alert Panels**: Real-time notification displays
-- **System Metrics**: Key performance indicators
+At the top is key statistical information.
 
-## Configuration
+## Deleting
+Press the trash icon to delete the execution history for the current filters.
 
-Monitoring can be configured through:
-- **Global Settings**: System-wide monitoring configuration
-- **Flow Settings**: Per-flow monitoring options
-- **Alert Thresholds**: Set performance and error thresholds
-- **Data Retention**: Configure how long to keep monitoring data
+## Examining an execution
+You can click on any execution history item in the list. This will load the Flow snapshot and, if present, will show you the full execution log and edge data.
 
-## Use Cases
+This is especially useful for diagnosing errored executions. In the above screenshot you can see how there is a fatal error. If you click on it, the Flow will load with the data snapshot.
 
-- **Production Monitoring**: Track system health in live environments
-- **Performance Optimization**: Identify bottlenecks and optimize flows
-- **Error Detection**: Catch and resolve issues quickly
-- **Capacity Planning**: Understand system resource requirements
-- **Compliance**: Maintain audit trails and reporting
+![fatal history item](fatal-history.png)
 
-## Best Practices
+- Note how the edge after the first data has data on it but no other edges do. Clearly the Flow failed in the Javascript Block.
+- Examine the log pane to see more information. If you click on the log row, a data viewer will appear.
 
-- **Set Appropriate Thresholds**: Configure alerts for meaningful events
-- **Monitor Key Metrics**: Focus on critical performance indicators
-- **Regular Review**: Periodically examine monitoring data
-- **Proactive Alerts**: Set up alerts before issues become critical
-- **Document Incidents**: Keep records of issues and resolutions
-
-## Related Topics
-
-- [Global Settings](/user-guide/Global-Settings) - System configuration
-- [Alerts](/user-guide/Alerts) - Setting up notifications
-- [Logging](/user-guide/Logging) - System logging configuration
-- [Execution History](/user-guide/editor/Execution-history) - Flow execution tracking
+![Log row data](log-row-data.png)

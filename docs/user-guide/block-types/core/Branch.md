@@ -2,46 +2,17 @@
 title: Branch Block
 ---
 
-# Branch Block
+# Branch
 
-The Branch Block is a core block type that provides conditional flow control based on data conditions. It enables complex decision-making and routing within flows.
+With the Branch Block allows you can evaluate data on the incoming edge and branch to different Blocks accordingly.
 
-## Overview
+![Branch](block-branch.png){width="900"}
 
-The Branch Block is responsible for:
-- Evaluating conditional expressions
-- Routing data to different output paths
-- Implementing business logic decisions
-- Managing flow control based on data values
+You can add more conditions by pressing the **+** button and remove them with the **Trash** icon.
 
-## Configuration
+The syntax is anything you would write inside a normal ```if(...)``` statement.
 
-Branch blocks can be configured with various options including:
-- Conditional expressions
-- Output path mapping
-- Default routing behavior
-- Error handling options
+## Alternatives
+If you have more complex branching requirements, you can use the Javascript Block and use the ```branchTo(edgeIndexZeroBased, data)``` method as follows.
 
-## Usage
-
-Branch blocks are typically placed after data sources to route data based on specific conditions or business rules.
-
-## Related Blocks
-
-- [Branch-To-Subflow](/user-guide/block-types/core/Branch-To-Subflow) - For calling subflows conditionally
-- [Merger](/user-guide/block-types/core/Merger) - For combining branched paths
-- [Collector](/user-guide/block-types/core/Collector) - For gathering data from multiple paths
-
-## Use Cases
-
-- **Data Routing**: Route data based on content or conditions
-- **Business Logic**: Implement decision-making in flows
-- **Error Handling**: Route errors to appropriate handlers
-- **Data Filtering**: Separate data into different processing paths
-
-## Best Practices
-
-- Use clear, readable conditional expressions
-- Ensure all output paths are properly connected
-- Test branch conditions with various data scenarios
-- Consider default routing for unexpected conditions
+![Brnach to](js-branch-to.png){width="800"}

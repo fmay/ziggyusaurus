@@ -2,103 +2,17 @@
 title: Dev-Prod Modes
 ---
 
-# Dev-Prod Modes
+# Dev/Prod Modes
 
-Ziggy supports separate development and production modes to ensure safe testing and deployment workflows. This feature allows you to develop and test flows in a controlled environment before deploying to production.
+You can run Flows in Development and Production mode. Each mode automatically selects the development or production [Secrets](Secrets.md) and [Connections](Connections.md).
 
-## Overview
+## Select the mode in the editor
+You can change mode by clicking the large box in the top right of the Flow editor.
 
-Dev-Prod Modes provide:
-- **Development Environment**: Safe testing and experimentation
-- **Production Environment**: Stable, optimized execution
-- **Environment Isolation**: Separate configurations and data
-- **Deployment Control**: Controlled promotion of flows
+![development](devprod-dev.png)
 
-## Mode Configuration
+![development](devprod-prod.png)
 
-### Development Mode
-- **Testing Environment**: Safe place to develop and test flows
-- **Sample Data**: Use test datasets without affecting production
-- **Debug Features**: Enhanced logging and debugging capabilities
-- **Connection Testing**: Test external system connections safely
+## Select mode when launching via the API
+You can also specify which mode a Flow should operate in when launching a Flow from the API. This is explained in more detail in the [Launching Flows](Launching-flows.md) topic.
 
-### Production Mode
-- **Live Environment**: Real data and production systems
-- **Performance Optimized**: Optimized for production workloads
-- **Security Enhanced**: Stricter security and access controls
-- **Monitoring Enabled**: Full production monitoring and alerting
-
-## Environment Settings
-
-### Development Settings
-```javascript
-// Development mode configuration
-{
-    "mode": "development",
-    "debug": true,
-    "logging": "verbose",
-    "connections": "test",
-    "dataStores": "dev"
-}
-```
-
-### Production Settings
-```javascript
-// Production mode configuration
-{
-    "mode": "production",
-    "debug": false,
-    "logging": "standard",
-    "connections": "live",
-    "dataStores": "prod"
-}
-```
-
-## Mode Switching
-
-### Switching to Development
-1. **Global Settings**: Set system mode to development
-2. **Flow Settings**: Configure flows for development
-3. **Connection Setup**: Use test connection configurations
-4. **Data Preparation**: Set up test datasets
-
-### Switching to Production
-1. **Validation**: Ensure flows are thoroughly tested
-2. **Configuration**: Update to production settings
-3. **Connection Update**: Switch to live connections
-4. **Monitoring**: Enable production monitoring
-
-## Best Practices
-
-### Development Phase
-- **Test Thoroughly**: Test all flow paths and edge cases
-- **Use Sample Data**: Never use production data in development
-- **Document Changes**: Keep track of modifications and improvements
-- **Peer Review**: Have team members review flow logic
-
-### Production Deployment
-- **Gradual Rollout**: Deploy to production incrementally
-- **Rollback Plan**: Have a plan to revert if issues arise
-- **Monitoring**: Watch closely during initial deployment
-- **Documentation**: Update production documentation
-
-### Environment Management
-- **Separate Configurations**: Keep dev and prod configs separate
-- **Version Control**: Use version control for configuration changes
-- **Backup Strategy**: Regular backups of production configurations
-- **Access Control**: Limit production access to authorized users
-
-## Use Cases
-
-- **Flow Development**: Develop new flows in development mode
-- **Testing**: Test flow modifications before production
-- **Debugging**: Debug issues in a safe environment
-- **Training**: Train users on new flows without production risk
-- **Staging**: Final validation before production deployment
-
-## Related Topics
-
-- [Global Settings](/user-guide/Global-Settings) - System configuration
-- [Deployment](/user-guide/Deployment) - Production deployment
-- [Testing](/user-guide/Tests) - Flow testing procedures
-- [Security](/user-guide/Security) - Security considerations

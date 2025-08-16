@@ -2,46 +2,12 @@
 title: Collector Block
 ---
 
-# Collector Block
+# Collector
 
-The Collector Block is a core block type that gathers data from multiple input sources and combines them into a single output stream. It's essential for aggregating data from various systems and sources.
+The Collector Block has one main purpose and one secondary purpose.
 
-## Overview
+![Collector](block-collector.png)
 
-The Collector Block is responsible for:
-- Gathering data from multiple input paths
-- Combining data streams into unified output
-- Managing data synchronization
-- Handling different data formats
+- It acts as a gathering point for the completion of prior Blocks. It won't pass data onwards until all incoming edge data is populated.
+- You can set the **Sleep** value so it also waits the specified amount of time before passing execution to subsequent Blocks.
 
-## Configuration
-
-Collector blocks can be configured with various options including:
-- Input path management
-- Data combination rules
-- Synchronization settings
-- Output formatting options
-
-## Usage
-
-Collector blocks are typically placed before data processing or output blocks to aggregate data from multiple sources.
-
-## Related Blocks
-
-- [Splitter](/user-guide/block-types/core/Splitter) - For dividing data streams
-- [Merger](/user-guide/block-types/core/Merger) - For merging related data
-- [Joiner](/user-guide/block-types/core/joiner) - For joining data based on relationships
-
-## Use Cases
-
-- **Data Aggregation**: Combine data from multiple sources
-- **System Integration**: Merge data from different systems
-- **Reporting**: Collect data for analysis and reporting
-- **Data Consolidation**: Unify data from various inputs
-
-## Best Practices
-
-- Ensure all input paths are properly connected
-- Monitor data synchronization timing
-- Handle different data formats appropriately
-- Consider memory usage when collecting large datasets

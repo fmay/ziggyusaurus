@@ -1,244 +1,193 @@
 ---
 title: Javascript Block
 ---
+# Javascript
 
-# Javascript Block
+The **Javascript** Block is the catch-all Block. 
+It allows you to perform any task that is not covered by another block.
 
-The Javascript Block is one of the most powerful and versatile core blocks in Ziggy. It allows you to execute custom JavaScript code within your flows, providing unlimited flexibility for data processing, system integration, and custom logic implementation.
+## In place or full screen editing
+There are two Javascript editing modes. You can edit in place in the Flow.
 
-## Overview
+![In place editing](js-in-place.png){width="500"}
 
-The Javascript Block is responsible for:
-- Executing custom JavaScript code
-- Processing and transforming data
-- Integrating with external systems via APIs
-- Implementing complex business logic
-- Handling asynchronous operations
-- Accessing system resources and connections
+When your code gets too large for in-place editing, then press the expand icon in the Block header.
 
-## Configuration
+![Full screen editing](js-full-screen.png)
 
-Javascript blocks can be configured with various options including:
-- **Code Input**: JavaScript code to execute
-- **Input Data**: Data passed to the script
-- **Output Mapping**: How to handle script results
-- **Error Handling**: What to do if the script fails
-- **Timeout Settings**: Maximum execution time
-- **Security Settings**: Script execution permissions
+## Inputs and Outputs
 
-## Code Execution
+### Inputs
+Data is read from the incoming edge or edges. The Block will automatically add as many output edge connectors as there are input arguments. If you provide no arguments, then the edge data will be ignored.
 
-### Basic Structure
-```javascript
-// Access input data
-const inputData = data;
+![input args](js-arguments.png){width="450"}
 
-// Process the data
-const processedData = processData(inputData);
+In the above screenshot, you can see two arguments and two corresponding input edge connectors.
 
-// Set output data
-data = processedData;
+### Outputs
+The return structure is examined to determine how many output edge connectors should be available.
+
+If you have a simple ```return``` statement, then an empty object is placed on a single output edge.
+
+You can output a primitive as follows.
+
+![return primitive](js-return-primitive.png){width="450"}
+
+Or data on multiple edges.
+
+![return statement](js-return.png){width="450"}
+
+## Branching to edges
+You can handle any branching logic using the ```branchTo(edgeIndexZeroBased, data)``` method.
+
+![Brnach to](js-branch-to.png){width="800"}
+
+The output connectors will automatically be validated and created as you enter the ```branchTo()``` commands.
+
+You should not return any data using ```return {edge1: someObj}``` when usiung ```branchTo()```.
+
+## Accessing Ziggy objects, values and methods
+You can access various objects and values from the code editor. Basic auto-completion will help you find the object or value as well as available options for each one.
+
+## Console output
+You can output information to the editor's console pane (bottom left).
+
+```JavaScript
+consoleMsg('Hello', value1, value2, ...)
 ```
 
-### Input Data Access
-- **`data`**: The main data object passed to the block
-- **`flowData`**: Access to flow-level variables and state
-- **`connections`**: Access to configured system connections
-- **`secrets`**: Access to stored secrets and credentials
+## Writing to system logs
+You can also write to the Ziggy system logs. These are hourly rotated and are located in the ```/logs``` folder.
 
-### Output Data
-- **`data`**: The main output data object
-- **`flowData`**: Set flow-level variables
-- **Return values**: Can return data directly
+Errors are logged as follows
 
-## Common Use Cases
-
-### Data Transformation
-```javascript
-// Transform data structure
-data = data.map(item => ({
-    id: item.record_id,
-    name: item.full_name,
-    email: item.email_address
-}));
+```JavaScript
+sysLog.error(msg: string, traceInfo: string, extraData?: any)
 ```
 
-### API Integration
-```javascript
-// Make HTTP requests
-const response = await fetch('https://api.example.com/data', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-});
-data = await response.json();
+All other log level calls ```.log()```, ```.warn()```, ```.debug()```, ```.verbose()``` are as follows.
+
+```JavaScript
+sysLog.log(msg: string, extraData?: any)
 ```
 
-### Business Logic
+## Connections
 ```javascript
-// Implement business rules
-if (data.amount > 1000) {
-    data.priority = 'high';
-    data.requiresApproval = true;
-} else {
-    data.priority = 'normal';
-    data.requiresApproval = false;
-}
+const connection = connections.myConnectionName
 ```
 
-### Error Handling
+This will automatically select the development/production secret as determined by the [prod/dev mode](Dev-Prod-Modes.md).
+
+## Secrets
+Secrets can be accessed as follows.
+
 ```javascript
-try {
-    // Risky operation
-    data = await processData(data);
-} catch (error) {
-    // Handle errors gracefully
-    data.error = error.message;
-    data.status = 'failed';
-}
+const pw = secrets.NORTHWIND_DB_PASSWORD
 ```
 
-## System Integration
+This will automatically select the development/production secret as determined by the [prod/dev mode](Dev-Prod-Modes.md).
 
-### Console Output
+## Data Store
+Refer to [Data Store methods](Data-Store.md) for available methods.
+
 ```javascript
-// Write to console for debugging
-consoleMsg('Processing data:', data);
-consoleMsg('Data count:', data.length);
+const customer = await dataStore.get(myEntity, myKey)
 ```
 
-### System Logging
+## Memory Store
+Refer to [Memory Store methods](Memory-Store.md) for available methods.
+
 ```javascript
-// Write to system logs
-sysLog.log('Info message');
-sysLog.warn('Warning message');
-sysLog.error('Error message');
-sysLog.debug('Debug message');
-sysLog.verbose('Verbose message');
+const customer = await memStore.get(myKey)
 ```
 
-### Flow Control
-```javascript
-// Control flow execution
-if (data.shouldStop) {
-    flowData.stopExecution = true;
-}
+## Execution IDs
+You can access the following execution IDs.
 
-// Set flow variables
-flowData.processedCount = data.length;
+```javascript
+const ctr = executionCounter
+const id = executionId
+const externalId = externalExecutionId
 ```
 
-## Security Considerations
+- ```externalExecutionId``` is an optional value that can be passed into the Flow when [launched externally](Launching-flows.md). This allows the calling system to provide a value associated with the execution for you to work with.
+- ```executionCounter``` is a simple sequential counter that resets to 0 when the Ziggy server restarts. It's main purpose is debugging and is not broadly useful.
+- ```executionId``` is a GUID for the individual execution. Again, the primary purpose is debugging.
 
-### Code Execution Safety
-- Scripts run in a sandboxed environment
-- Access to system resources is controlled
-- Timeout limits prevent infinite loops
-- Input validation is recommended
+## Snooze
+You can use the ```snooze()``` method to pause execution for a specified number of milliseconds.
 
-### Best Practices
-- Validate all input data
-- Sanitize user-provided code
-- Use parameterized queries for databases
-- Implement proper error handling
-- Limit script execution time
-
-## Performance Optimization
-
-### Efficient Code
-```javascript
-// Use efficient data structures
-const lookup = new Map();
-data.forEach(item => lookup.set(item.id, item));
-
-// Avoid unnecessary operations
-if (data.length > 0) {
-    // Process data only when available
-    data = data.filter(item => item.active);
-}
+```JavaScript
+await snooze(1000)
 ```
 
-### Batch Processing
-```javascript
-// Process data in batches
-const batchSize = 100;
-for (let i = 0; i < data.length; i += batchSize) {
-    const batch = data.slice(i, i + batchSize);
-    await processBatch(batch);
-}
+## Custom client objects
+You will have access to certain client objects. Which ones depends on your specific Ziggy configuration.
+
+Assuming you have Postgres, SFTP and HubSpot clients available, you can access these using.
+
+```JavaScript
+const pgClient = new clientPG(configObj)
+const ftpClient = new clientSFTP(configObj)
+const hsClient = new clientHubspot(configObj)
 ```
 
-## Debugging and Testing
+... where ```configObj``` is specific to each one.
 
-### Console Debugging
-```javascript
-// Debug output
-consoleMsg('Input data:', JSON.stringify(data, null, 2));
-consoleMsg('Data type:', typeof data);
-consoleMsg('Data length:', Array.isArray(data) ? data.length : 'N/A');
+## Batching
+You can perform batching operations with the Javascript Block. Please refer to [Batching](Batching.md) for general information on Batching.
+
+![JS Batching](js-batching.png)
+
+### Available methods
+
+You should use the ```batch``` object, which has the the following methods.
+
+ ```batch.isBatch()``` - tests whether the Flow is in a batch at the point the Javascript block executes.
+- ```batch.begin(batchSize)``` - informs Ziggy that this is the starting point for batch operations and the size of each batch. This returns ```{offset: x, iteration: y}``` where ```x``` is the number of records processed by the batch loops so far and ```y``` is the batch iteration.
+- ```batch.terminate()``` - once there is no data left to process, call this to continue execution after the [**Batch End**](Batch-End.md) Block (or Terminator if there is no Batch End Block.)
+- ```batch.iteration()``` - returns the batch iteration counter.
+- ```batch.offset()``` - returns the current record # offset from the first batch, in other words ```batchSize * batchIterations```.
+
+### Alerts
+You can generate a custom alert. This adds an item to the [Log](Alerts.md) and will also send an email alert.
+
+![Alert](javascript-alert.png){width="500"}
+
+```JavaScript
+alert(alertLevel: string, message: stringe, extraData?: string)
 ```
 
-### Error Handling
-```javascript
-// Comprehensive error handling
-try {
-    // Your code here
-} catch (error) {
-    consoleMsg('Error occurred:', error.message);
-    consoleMsg('Stack trace:', error.stack);
-    data.error = {
-        message: error.message,
-        stack: error.stack,
-        timestamp: new Date().toISOString()
-    };
-}
+The first parameter (required) should be one of the following.
+
+- WARNING - this will not create an alert notification but it will show up in the Log.
+- ALERT - generates a log entry and sends an alert notification.
+- IMMEDIATE - sends an alert notifcation immediately rather than waiting for the digest notification to be sent.
+
+The second parameter (required) is notification message.
+
+The third, optional, parameter is any additional data you may want to add to the log. It will not appear in the notification.
+
+## Security
+Script code does not have access to the following global objects.
+
+```JavaScript
+process
+console
+global
+require
+Buffer
+fs
+child_process
+os
+net
+http
+crypto
+vm
 ```
 
-## Related Blocks
+However, the script code is considered **trusted**. This means that although there is good protection from harmful script code, it should not be considered 100% safe.
 
-- [Variable-Set-Get](/user-guide/block-types/core/Variable-Set-Get) - For setting and getting variables
-- [Console-Message](/user-guide/block-types/core/Console-Message) - For simple console output
-- [Iterator](/user-guide/block-types/core/Iterator) - For looping through data
-- [Branch](/user-guide/block-types/core/Branch) - For conditional logic
+We therefore advise that you give access to Flow creators with this in mind.
 
-## Examples
-
-### Data Validation
-```javascript
-// Validate required fields
-const requiredFields = ['name', 'email', 'phone'];
-const missingFields = requiredFields.filter(field => !data[field]);
-
-if (missingFields.length > 0) {
-    data.validationError = `Missing required fields: ${missingFields.join(', ')}`;
-    data.isValid = false;
-} else {
-    data.isValid = true;
-}
-```
-
-### Data Aggregation
-```javascript
-// Aggregate data by category
-const aggregated = data.reduce((acc, item) => {
-    const category = item.category || 'uncategorized';
-    if (!acc[category]) {
-        acc[category] = { count: 0, total: 0 };
-    }
-    acc[category].count++;
-    acc[category].total += item.value || 0;
-    return acc;
-}, {});
-
-data.aggregated = aggregated;
-```
-
-## Best Practices
-
-- **Keep scripts focused**: Each script should do one thing well
-- **Use meaningful variable names**: Make code readable and maintainable
-- **Implement proper error handling**: Always handle potential failures
-- **Document complex logic**: Add comments for complex operations
-- **Test thoroughly**: Test scripts with various data scenarios
-- **Monitor performance**: Watch for performance bottlenecks
-- **Follow JavaScript best practices**: Use modern ES6+ features when possible
+We plan to change the architecture for script code evaluation in the future. If this is important to you now, please contact us to discuss.

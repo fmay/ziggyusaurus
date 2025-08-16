@@ -4,65 +4,17 @@ title: Scheduled Flows
 
 # Scheduled Flows
 
-Scheduled Flows allow you to automate the execution of Ziggy flows at predetermined intervals or specific times. This feature is essential for recurring data processing, maintenance tasks, and automated workflows.
+Scheduled Flow execution is configured from the Schedules menu option.
 
-## Overview
+![Schedules](schedules-listing.png){width="700"}
 
-Scheduled Flows provide:
-- Automated flow execution
-- Flexible scheduling options
-- Time-based triggers
-- Recurring task automation
+You can add or edit a Schedules. The Schedule dialog is shown below.
 
-## Scheduling Options
+![Schedule edit](schedules-edit.png){width="600"}
 
-### Time-based Scheduling
-- **Daily**: Execute flows at specific times each day
-- **Weekly**: Run flows on specific days of the week
-- **Monthly**: Execute flows on specific dates each month
-- **Custom**: Define custom intervals and patterns
+- Choose a Flow that is to be executed.
+- Check the **Paused** box to suspend the schedule.
+- Select from the **Schedule** dropdowns to specify the timing. Note that you can specify multiple times by selected and deselecting from the 2nd and 3rd dropdowns.
 
-### Event-based Scheduling
-- **File Watchers**: Trigger flows when files appear
-- **Database Triggers**: Execute flows on data changes
-- **API Endpoints**: Trigger flows via HTTP requests
-- **Message Queues**: Process flows based on queue events
+The Cron string and a textual summary is shown as you make changes to the Schedule.
 
-## Configuration
-
-Scheduled flows can be configured with:
-- **Schedule**: Timing and frequency settings
-- **Triggers**: What events start the flow
-- **Parameters**: Input data for the flow
-- **Error Handling**: What to do if execution fails
-- **Notifications**: Alerts for success/failure
-
-## Use Cases
-
-- **Data Synchronization**: Keep systems in sync automatically
-- **Report Generation**: Generate reports at regular intervals
-- **Data Cleanup**: Perform maintenance tasks automatically
-- **Backup Operations**: Automated backup processes
-- **Monitoring**: Regular health checks and monitoring
-
-## Best Practices
-
-- **Test Schedules**: Verify timing works as expected
-- **Monitor Execution**: Track success/failure rates
-- **Resource Management**: Consider system load during execution
-- **Error Handling**: Implement proper error recovery
-- **Documentation**: Document what each scheduled flow does
-
-## Monitoring and Management
-
-- **Execution History**: View past executions
-- **Status Monitoring**: Check current schedule status
-- **Manual Triggers**: Run scheduled flows manually when needed
-- **Schedule Modifications**: Update timing without recreating flows
-
-## Related Topics
-
-- [Flows Listing](/user-guide/editor/Flows-listing) - Managing your flows
-- [Global Settings](/user-guide/Global-Settings) - System configuration
-- [Monitoring](/user-guide/Monitoring) - Flow execution monitoring
-- [Alerts](/user-guide/Alerts) - Setting up notifications

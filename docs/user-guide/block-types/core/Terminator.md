@@ -2,44 +2,36 @@
 title: Terminator Block
 ---
 
-# Terminator Block
+# Terminator
 
-The Terminator Block is a core block type that ends flow execution. It provides a clean way to terminate flows and can be used for error handling or normal completion.
+The Terminator Block will end a Flow as soon as it has edge data on all incoming edges.
 
-## Overview
+You can also end a Flow branch without terminating the Flow using the Sinkhole Block.
 
-The Terminator Block is responsible for:
-- Ending flow execution cleanly
-- Providing exit status information
-- Handling flow completion scenarios
+If you have multihere we have parallel executing Subflows, the Flow won't terminate until the longest running Subflow has completed.
 
-## Configuration
+![Terminator](terminator-block.png){width="300"}
 
-Terminator blocks can be configured with various options including:
-- Exit status codes
-- Completion messages
-- Error handling options
+## Send data in response
+If the Flow is [launched via the API](Launching-flows.md) (as opposed to the editor) and you want to 
+return the data arriving at the Terminator, then you should check 
+the **Send data in response** box.
 
-## Usage
+If the Terminator has multiple incoming edges, each edge will be represented in the 
+response as shown below.
 
-Terminator blocks are typically placed at the end of a flow to handle completion or error scenarios.
+```javascript
+{
+    "data0": "OK",
+    "data1": [
+        {
+          hubspot_id: '125005142222'
+        },
+        {
+          hubspot_id: '125005142215'
+        }
+    ]
+}
+```
 
-## Related Blocks
 
-- [Receiver](/user-guide/block-types/core/Receiver) - For starting flows
-- [Branch](/user-guide/block-types/core/Branch) - For conditional flow control
-- [Error Handling](/user-guide/Error-Handling) - For error management
-
-## Use Cases
-
-- **Normal Completion**: End flows after successful execution
-- **Error Termination**: Stop execution when errors occur
-- **Flow Control**: Provide clean exit points for subflows
-- **Status Reporting**: Return completion status to calling systems
-
-## Best Practices
-
-- Use Terminator blocks at the end of all flow paths
-- Provide meaningful exit status codes
-- Include completion messages for debugging
-- Consider error scenarios when designing flows

@@ -93,7 +93,7 @@ const config = {
       // Public API key: it is safe to commit it
       apiKey: 'd306c3a1645bb47380811310974fed3b',
       
-      indexName: 'ziggy_docs',
+      indexName: 'Ziggy Docs',
       
       // Optional: see doc section below
       contextualSearch: true,

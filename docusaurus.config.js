@@ -1,7 +1,7 @@
 const config = {
   title: 'Ziggy Documentation',
-  url: 'https://ziggyservices.com',
-  baseUrl: '/docs/',
+  url: 'https://docs.ziggyservices.com',
+  baseUrl: '/',
   organizationName: 'ziggyservices',
   projectName: 'ziggyusaurus',
   onBrokenLinks: 'warn', // Temporarily warn instead of fail

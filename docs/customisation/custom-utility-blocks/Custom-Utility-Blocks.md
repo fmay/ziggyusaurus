@@ -2,7 +2,6 @@
 title: Adding your own custom Blocks
 ---
 
-# Adding your own custom Blocks
 
 Custom Utility Blocks are very helpful for encapsulating and simplifying commonly used Javascript code. This allows you to modularise the nuts and bolts of an integration and present access to it through a friendly front-end.
 

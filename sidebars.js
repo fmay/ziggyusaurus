@@ -1,7 +1,6 @@
 const sidebars = {
   tutorialSidebar: [
     'About',
-    'Overview',
     {
       type: 'category',
       label: 'Case Studies',
@@ -162,26 +161,26 @@ const sidebars = {
         'user-guide/Deployment',
       ],
     },
-    {
-      type: 'category',
-      label: 'Customisation',
-      items: [
-        'customisation/Custom-Utility-Blocks',
-        {
-          type: 'category',
-          label: 'Custom Utility Blocks',
-          items: [
-            'customisation/custom-utility-blocks/Client',
-            'customisation/custom-utility-blocks/Server',
-            'customisation/custom-utility-blocks/Definitions-File',
-            'customisation/custom-utility-blocks/React-component',
-            'customisation/custom-utility-blocks/Manifest-file',
-            'customisation/custom-utility-blocks/Block-Handler',
-            'customisation/custom-utility-blocks/Block-Helper',
-          ],
-        },
-      ],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'Customisation',
+    //   items: [
+    //     'customisation/Custom-Utility-Blocks',
+    //     {
+    //       type: 'category',
+    //       label: 'Custom Utility Blocks',
+    //       items: [
+    //         'customisation/custom-utility-blocks/Client',
+    //         'customisation/custom-utility-blocks/Server',
+    //         'customisation/custom-utility-blocks/Definitions-File',
+    //         'customisation/custom-utility-blocks/React-component',
+    //         'customisation/custom-utility-blocks/Manifest-file',
+    //         'customisation/custom-utility-blocks/Block-Handler',
+    //         'customisation/custom-utility-blocks/Block-Helper',
+    //       ],
+    //     },
+    //   ],
+    // },
   ],
 };
 

@@ -12,4 +12,10 @@ The SQL database could be substituted with any other database, platform or API.
 
 When you install the Hubspot App, you will get a set of migration tutorials that contain all the Flows shown in the video.
 
-<video src="https://vimeo.com/video/1076683916" preview-src="ss_migrations.png"/>
+<iframe 
+  src="https://vimeo.com/video/1076683916" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>

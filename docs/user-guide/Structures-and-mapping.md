@@ -7,7 +7,15 @@ title: Structures, validation, mapping and transformations
 ## Introduction - video and tutorials
 It is worth watching the video that explains this process in detail.
 
-<video src="https://vimeo.com/video/1076607988" preview-src="ss-transform-mapping.png"/>
+[//]: # (<video src="https://vimeo.com/video/1076607988" preview-src="ss-transform-mapping.png"/>)
+
+<iframe 
+  src="https://player.vimeo.com/video/1076607988" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 There is also a set of tutorials that both explain the process and provide Flows where you can build 
 out validations, transformations and mappings.

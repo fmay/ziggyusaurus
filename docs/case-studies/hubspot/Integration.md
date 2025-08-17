@@ -10,4 +10,10 @@ triggers an update in a database that should reflect this change.
 Obviously, you could trigger changes in any 3rd party system, database or API. 
 Similarly, a change in a 3rd party system could update a record in HubSpot.
 
-<video src="https://vimeo.com/video/1076617169" preview-src="ss-integrations.png"/>
+<iframe 
+  src="https://vimeo.com/video/1076617169" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>

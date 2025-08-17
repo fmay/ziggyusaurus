@@ -10,7 +10,7 @@ You can also end a Flow branch without terminating the Flow using the Sinkhole B
 
 If you have multihere we have parallel executing Subflows, the Flow won't terminate until the longest running Subflow has completed.
 
-![Terminator](terminator-block.png){width="300"}
+<img src="/img/flows/blocks/core/terminator-block.png" alt="Terminator" width="300" />
 
 ## Send data in response
 If the Flow is [launched via the API](Launching-flows.md) (as opposed to the editor) and you want to 

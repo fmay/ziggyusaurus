@@ -10,9 +10,9 @@ Once your prototyped your Flow, which will often use a few Javascript Blocks, yo
 
 There's very little to configuring the Subflow Block. 
 
-![Subflow block](block-subflow.png)
+![Subflow block](/img/flows/blocks/core/subflow/block-subflow.png)
 
 You only need to specify the Subflow name.
 
-![Subflow chooser](subflow-chooser.png){width="700"}
+![Subflow chooser](/img/flows/blocks/core/subflow/subflow-chooser.png){width="700"}
 

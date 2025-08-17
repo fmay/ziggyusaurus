@@ -29,7 +29,7 @@ There are three create modes. The mode is specified in the dropdown next the Ope
 - **Create** : create the record if it does not exist.
 - **Error if exists** : create a record if the key does not exist; throw an error if the key does exist.
 
-![Data Store upsert](data-store-upsert.png){width="300"}
+![Data Store upsert](/img/flows/blocks/utility/data-store/data-store-upsert.png){width="300"}
 
 Ziggy will create Data Store key/value pairs based on what you specify in the
 **Select key or "literal"** field - `recordId` in the screenshot above.
@@ -49,7 +49,7 @@ specifies the number or records to read in a batch.
 
 You can see the **sql_customers** namespace being read, 100 records at a time.
 
-![Batch read array](data-store-batch-array.png){width="500"}
+![Batch read array](/img/flows/blocks/utility/data-store/data-store-batch-array.png){width="500"}
 
 ### Read (edge data driven)
 You can also read data from the data store using values specified in the incoming edge data.
@@ -60,7 +60,7 @@ Ziggy will fetch all the Data Store key/value pairs based on what you specify in
 **Tip** - to make life easier, run the Flow up to the block so the drop-down is populated 
 with keys found on the input edge. Otherwise, type the name of the key in the input field and press enter.
 
-![Batch read array](data-store-edge-read.png){width="300"}
+![Batch read array](/img/flows/blocks/utility/data-store/data-store-edge-read.png){width="300"}
 
 ### Delete
 Deletes the **Key** from the store based on the incoming edge data. 
@@ -70,9 +70,9 @@ All elements on the edge will be deleted using the specified edge key in **Selec
 with keys found on the input edge. Otherwise, type the name of the key in the input field and press enter.
 
 
-![Data store delete](data-store-delete.png){width="300"}
+![Data store delete](/img/flows/blocks/utility/data-store/data-store-delete.png){width="300"}
 
 ## Delete all namespace keys
 This is used to delete all data from the specified namespace(s).
 
-![Data store delete namespaces](data-store-delete-namespaces.png){width="300"}
+![Data store delete namespaces](/img/flows/blocks/utility/data-store/data-store-delete-namespaces.png){width="300"}

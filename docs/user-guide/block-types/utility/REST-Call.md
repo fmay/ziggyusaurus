@@ -5,11 +5,11 @@ title: REST Call Block
 # REST Block
 This Utility Block is used to make REST API calls. If you require more features, you can use the Axios module from the Javascript Block.
 
-![rest](rest-block.png){width="500"}
+![rest](/img/flows/blocks/utility/REST/rest-block.png)
 
 The Block shows the current configuration, which can be changed by pressing the Edit button.
 
-![Edit REST](rest-block-edit.png)
+![Edit REST](/img/flows/blocks/utility/REST/rest-block-edit.png)
 
 ## Method
 The usual REST method (GET, POST, PUT, PATCH, DELETE) should be selected from the dropdown.
@@ -17,33 +17,59 @@ The usual REST method (GET, POST, PUT, PATCH, DELETE) should be selected from th
 ## URL
 The URL can contain query and path parameters. These can be literal values but you can also insert tokens in the format ```token.qualifier```
 
-<table>
-    <tr>
-        <td>Token</td>
-        <td>Description</td>
-    </tr>
-    <tr>
-        <td><code>$</code></td>
-        <td> References data on the input edge.
-            <ul>
-            <li>{$} would replace the token with the complete edge data.</li>
-            <li>{$.limit} would replace the token with the edge's ```limit``` key value</li>
-        </ul></td>
-    </tr>
-    <tr> 
-        <td><code>variables</code></td>
-        <td>Replace token with a variable value.<br/><code>{variables.limit}</code> for example.</td>
-    </tr>
-    <tr> 
-        <td><code>secrets</code></td>
-        <td>Replace token with a secret's value.<br/><code>{secrets.apiKey}</code> for example.</td>
-    </tr>
-    <tr>
-        <td><code>batch</code></td>
-        <td>For both limit/offset and cursor pagination see **Pagination** below.
-        </td>
-    </tr>
-</table>
+[//]: # (<table>)
+
+[//]: # (    <tr>)
+
+[//]: # (        <td>Token</td>)
+
+[//]: # (        <td>Description</td>)
+
+[//]: # (    </tr>)
+
+[//]: # (    <tr>)
+
+[//]: # (        <td><code>$</code></td>)
+
+[//]: # (        <td> References data on the input edge.)
+
+[//]: # (            <ul>)
+
+[//]: # (            <li>{$} would replace the token with the complete edge data.</li>)
+
+[//]: # (            <li>{$.limit} would replace the token with the edge's ```limit``` key value</li>)
+
+[//]: # (        </ul></td>)
+
+[//]: # (    </tr>)
+
+[//]: # (    <tr> )
+
+[//]: # (        <td><code>variables</code></td>)
+
+[//]: # (        <td>Replace token with a variable value.<br/><code>{variables.limit}</code> for example.</td>)
+
+[//]: # (    </tr>)
+
+[//]: # (    <tr> )
+
+[//]: # (        <td><code>secrets</code></td>)
+
+[//]: # (        <td>Replace token with a secret's value.<br/><code>{secrets.apiKey}</code> for example.</td>)
+
+[//]: # (    </tr>)
+
+[//]: # (    <tr>)
+
+[//]: # (        <td><code>batch</code></td>)
+
+[//]: # (        <td>For both limit/offset and cursor pagination see **Pagination** below.)
+
+[//]: # (        </td>)
+
+[//]: # (    </tr>)
+
+[//]: # (</table>)
 
 ## Pagination
 If you want to paginate your REST calls, then you should check the **loop until no data** box. This will process in batches (make sure you have a **Batch End** block to close the loop).

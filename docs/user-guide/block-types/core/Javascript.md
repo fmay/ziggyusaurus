@@ -9,18 +9,18 @@ It allows you to perform any task that is not covered by another block.
 ## In place or full screen editing
 There are two Javascript editing modes. You can edit in place in the Flow.
 
-![In place editing](js-in-place.png){width="500"}
+![In place editing](/img/flows/javascript/js-in-place.png){width="500"}
 
 When your code gets too large for in-place editing, then press the expand icon in the Block header.
 
-![Full screen editing](js-full-screen.png)
+![Full screen editing](/img/flows/javascript/js-full-screen.png)
 
 ## Inputs and Outputs
 
 ### Inputs
 Data is read from the incoming edge or edges. The Block will automatically add as many output edge connectors as there are input arguments. If you provide no arguments, then the edge data will be ignored.
 
-![input args](js-arguments.png){width="450"}
+![input args](/img/flows/blocks/core/javscript/js-arguments.png){width="450"}
 
 In the above screenshot, you can see two arguments and two corresponding input edge connectors.
 
@@ -31,16 +31,16 @@ If you have a simple ```return``` statement, then an empty object is placed on a
 
 You can output a primitive as follows.
 
-![return primitive](js-return-primitive.png){width="450"}
+![return primitive](/img/flows/blocks/core/javscript/js-return-primitive.png){width="450"}
 
 Or data on multiple edges.
 
-![return statement](js-return.png){width="450"}
+![return statement](/img/flows/blocks/core/javscript/js-return.png){width="450"}
 
 ## Branching to edges
 You can handle any branching logic using the ```branchTo(edgeIndexZeroBased, data)``` method.
 
-![Brnach to](js-branch-to.png){width="800"}
+![Brnach to](/img/flows/blocks/core/javscript/js-branch-to.png){width="800"}
 
 The output connectors will automatically be validated and created as you enter the ```branchTo()``` commands.
 
@@ -137,7 +137,7 @@ const hsClient = new clientHubspot(configObj)
 ## Batching
 You can perform batching operations with the Javascript Block. Please refer to [Batching](Batching.md) for general information on Batching.
 
-![JS Batching](js-batching.png)
+![JS Batching](/img/flows/blocks/core/javscript/js-batching.png)
 
 ### Available methods
 
@@ -152,7 +152,7 @@ You should use the ```batch``` object, which has the the following methods.
 ### Alerts
 You can generate a custom alert. This adds an item to the [Log](Alerts.md) and will also send an email alert.
 
-![Alert](javascript-alert.png){width="500"}
+![Alert](/img/flows/javascript/javascript-alert.png){width="500"}
 
 ```JavaScript
 alert(alertLevel: string, message: stringe, extraData?: string)

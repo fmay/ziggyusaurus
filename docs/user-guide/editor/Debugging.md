@@ -4,7 +4,7 @@ title: Debugging
 
 # Debugging
 
-![Debugging](debugging-nw-to-hs.png)
+![Debugging](/img/flows/debugging/debugging-nw-to-hs.png)
 
 The Ziggy editor has a visual debugger so you can step through your Flow and look at edge data as the flow executes.
 

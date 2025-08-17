@@ -18,7 +18,7 @@ It signals the end point of the batch loop so Ziggy can return control to the in
 If you don't use the Batch End Block (but it is strongly recommended that you do), then the Terminator Block will act as the loop-back point 
 until there is now more data, at which point the Flow will terminate. 
 
-![Batch End](block-batch-end.png)
+![Batch End](/img/flows/blocks/core/batch-end/block-batch-end.png)
 
 The above image shows the Batch End block looping back to the SQL block. It will continue to loop back 
 until there are no more records available or until the maximum number of iterations has been reached (0 iterations means read all).
@@ -33,4 +33,4 @@ information to the Queue page (navigation bar).
 
 You can see how far through a job a Flow has progressed on this page. 
 
-![Batch End](batch-end-progress.png)
+![Batch End](/img/flows/blocks/core/batch-end/batch-end-progress.png)

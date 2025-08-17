@@ -1,0 +1,187 @@
+
+================================================================================
+IMAGE LOCATION ANALYSIS REPORT
+================================================================================
+
+SUMMARY:
+  Total image references found: 144
+  Found elsewhere in subfolders: 35
+  Not found anywhere: 0
+
+IMAGES FOUND ELSEWHERE IN SUBFOLDERS:
+(These were referenced at one path but found at another)
+  File: docs/user-guide/Dev-Prod-Modes.md
+    Type: markdown
+    Referenced at: devprod-dev.png
+    Found at: img/flows/devprod/devprod-dev.png
+
+  File: docs/user-guide/Dev-Prod-Modes.md
+    Type: markdown
+    Referenced at: devprod-prod.png
+    Found at: img/flows/devprod/devprod-prod.png
+
+  File: docs/user-guide/Scheduled-Flows.md
+    Type: markdown
+    Referenced at: schedules-listing.png
+    Found at: img/flows/schedules/schedules-listing.png
+
+  File: docs/user-guide/Scheduled-Flows.md
+    Type: markdown
+    Referenced at: schedules-edit.png
+    Found at: img/flows/schedules/schedules-edit.png
+
+  File: docs/user-guide/Monitoring.md
+    Type: markdown
+    Referenced at: flows-dashboard-1.png
+    Found at: img/flows/dashboard/flows-dashboard-1.png
+
+  File: docs/user-guide/Monitoring.md
+    Type: markdown
+    Referenced at: fatal-history.png
+    Found at: img/flows/dashboard/fatal-history.png
+
+  File: docs/user-guide/Monitoring.md
+    Type: markdown
+    Referenced at: log-row-data.png
+    Found at: img/flows/dashboard/log-row-data.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-in-place.png
+    Found at: img/flows/javascript/js-in-place.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-full-screen.png
+    Found at: img/flows/javascript/js-full-screen.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-arguments.png
+    Found at: img/flows/blocks/core/javscript/js-arguments.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-return-primitive.png
+    Found at: img/flows/blocks/core/javscript/js-return-primitive.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-return.png
+    Found at: img/flows/blocks/core/javscript/js-return.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-branch-to.png
+    Found at: img/flows/blocks/core/javscript/js-branch-to.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: js-batching.png
+    Found at: img/flows/blocks/core/javscript/js-batching.png
+
+  File: docs/user-guide/block-types/core/Javascript.md
+    Type: markdown
+    Referenced at: javascript-alert.png
+    Found at: img/flows/javascript/javascript-alert.png
+
+  File: docs/user-guide/block-types/core/Subflow.md
+    Type: markdown
+    Referenced at: block-subflow.png
+    Found at: img/flows/blocks/core/subflow/block-subflow.png
+
+  File: docs/user-guide/block-types/core/Subflow.md
+    Type: markdown
+    Referenced at: subflow-chooser.png
+    Found at: img/flows/blocks/core/subflow/subflow-chooser.png
+
+  File: docs/user-guide/block-types/core/Annotation.md
+    Type: markdown
+    Referenced at: block-annotation-rendered.png
+    Found at: img/flows/blocks/core/annotation/block-annotation-rendered.png
+
+  File: docs/user-guide/block-types/core/Annotation.md
+    Type: markdown
+    Referenced at: block-annotation-edit.png
+    Found at: img/flows/blocks/core/annotation/block-annotation-edit.png
+
+  File: docs/user-guide/block-types/core/Branch.md
+    Type: markdown
+    Referenced at: block-branch.png
+    Found at: img/flows/blocks/core/block-branch.png
+
+  File: docs/user-guide/block-types/core/Branch.md
+    Type: markdown
+    Referenced at: js-branch-to.png
+    Found at: img/flows/blocks/core/javscript/js-branch-to.png
+
+  File: docs/user-guide/block-types/core/Collector.md
+    Type: markdown
+    Referenced at: block-collector.png
+    Found at: img/flows/blocks/core/block-collector.png
+
+  File: docs/user-guide/block-types/core/Receiver.md
+    Type: html
+    Referenced at: receiver-block.png
+    Found at: img/flows/blocks/core/receiver/receiver-block.png
+
+  File: docs/user-guide/block-types/core/Batch-End.md
+    Type: markdown
+    Referenced at: block-batch-end.png
+    Found at: img/flows/blocks/core/batch-end/block-batch-end.png
+
+  File: docs/user-guide/block-types/core/Batch-End.md
+    Type: markdown
+    Referenced at: batch-end-progress.png
+    Found at: img/flows/blocks/core/batch-end/batch-end-progress.png
+
+  File: docs/user-guide/block-types/core/Terminator.md
+    Type: markdown
+    Referenced at: terminator-block.png
+    Found at: img/flows/blocks/core/terminator-block.png
+
+  File: docs/user-guide/block-types/core/Splitter.md
+    Type: markdown
+    Referenced at: block-splitter.png
+    Found at: img/flows/blocks/core/block-splitter.png
+
+  File: docs/user-guide/block-types/utility/Data-Store.md
+    Type: markdown
+    Referenced at: data-store-upsert.png
+    Found at: img/flows/blocks/utility/data-store/data-store-upsert.png
+
+  File: docs/user-guide/block-types/utility/Data-Store.md
+    Type: markdown
+    Referenced at: data-store-batch-array.png
+    Found at: img/flows/blocks/utility/data-store/data-store-batch-array.png
+
+  File: docs/user-guide/block-types/utility/Data-Store.md
+    Type: markdown
+    Referenced at: data-store-edge-read.png
+    Found at: img/flows/blocks/utility/data-store/data-store-edge-read.png
+
+  File: docs/user-guide/block-types/utility/Data-Store.md
+    Type: markdown
+    Referenced at: data-store-delete.png
+    Found at: img/flows/blocks/utility/data-store/data-store-delete.png
+
+  File: docs/user-guide/block-types/utility/Data-Store.md
+    Type: markdown
+    Referenced at: data-store-delete-namespaces.png
+    Found at: img/flows/blocks/utility/data-store/data-store-delete-namespaces.png
+
+  File: docs/user-guide/block-types/utility/REST-Call.md
+    Type: markdown
+    Referenced at: rest-block.png
+    Found at: img/flows/blocks/utility/REST/rest-block.png
+
+  File: docs/user-guide/block-types/utility/REST-Call.md
+    Type: markdown
+    Referenced at: rest-block-edit.png
+    Found at: img/flows/blocks/utility/REST/rest-block-edit.png
+
+  File: docs/user-guide/editor/Debugging.md
+    Type: markdown
+    Referenced at: debugging-nw-to-hs.png
+    Found at: img/flows/debugging/debugging-nw-to-hs.png
+

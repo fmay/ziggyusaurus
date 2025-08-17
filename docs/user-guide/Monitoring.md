@@ -11,7 +11,7 @@ Depending on your Global Settings and Flow Settings, you can also examine the da
 **Important** : for secure environments, you can set whether snapshot data is stored or not at the system or Flow level. 
 Please read the [next topic](History-data-storage-levels.md) for more information.
 
-![Dashboard](flows-dashboard-1.png)
+![Dashboard](/img/flows/dashboard/flows-dashboard-1.png)
  
 ## Filters
 Select any combination of filters in the left pane to narrow down the execution history list.
@@ -31,9 +31,9 @@ You can click on any execution history item in the list. This will load the Flow
 
 This is especially useful for diagnosing errored executions. In the above screenshot you can see how there is a fatal error. If you click on it, the Flow will load with the data snapshot.
 
-![fatal history item](fatal-history.png)
+![fatal history item](/img/flows/dashboard/fatal-history.png)
 
 - Note how the edge after the first data has data on it but no other edges do. Clearly the Flow failed in the Javascript Block.
 - Examine the log pane to see more information. If you click on the log row, a data viewer will appear.
 
-![Log row data](log-row-data.png)
+![Log row data](/img/flows/dashboard/log-row-data.png)

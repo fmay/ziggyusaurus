@@ -5,7 +5,7 @@ title: Receiver Block
 
 A Flow requires a single Receiver Block that acts as the entry point.
 
-<img src="receiver-block.png" alt="Receiver" width="300" />
+<img src="/img/flows/blocks/core/receiver/receiver-block.png" alt="Receiver" width="300" />
 
 ## Passing data to the Flow
 You will often [trigger a Flow from an API call](Launching-flows.md) and optionally 

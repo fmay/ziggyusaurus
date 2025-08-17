@@ -6,11 +6,11 @@ title: Scheduled Flows
 
 Scheduled Flow execution is configured from the Schedules menu option.
 
-![Schedules](/img/flows/schedules/schedules-listing.png){width="700"}
+<img src="/img/flows/schedules/schedules-listing.png" alt="Schedules" width="700" />
 
 You can add or edit a Schedules. The Schedule dialog is shown below.
 
-![Schedule edit](/img/flows/schedules/schedules-edit.png){width="600"}
+<img src="/img/flows/schedules/schedules-edit.png" alt="Schedule edit" width="600" />
 
 - Choose a Flow that is to be executed.
 - Check the **Paused** box to suspend the schedule.

@@ -9,7 +9,7 @@ It allows you to perform any task that is not covered by another block.
 ## In place or full screen editing
 There are two Javascript editing modes. You can edit in place in the Flow.
 
-![In place editing](/img/flows/javascript/js-in-place.png){width="500"}
+<img src="/img/flows/javascript/js-in-place.png" alt="In place editing" width="500" />
 
 When your code gets too large for in-place editing, then press the expand icon in the Block header.
 
@@ -20,7 +20,7 @@ When your code gets too large for in-place editing, then press the expand icon i
 ### Inputs
 Data is read from the incoming edge or edges. The Block will automatically add as many output edge connectors as there are input arguments. If you provide no arguments, then the edge data will be ignored.
 
-![input args](/img/flows/blocks/core/javscript/js-arguments.png){width="450"}
+<img src="/img/flows/blocks/core/javscript/js-arguments.png" alt="input args" width="450" />
 
 In the above screenshot, you can see two arguments and two corresponding input edge connectors.
 
@@ -31,16 +31,16 @@ If you have a simple ```return``` statement, then an empty object is placed on a
 
 You can output a primitive as follows.
 
-![return primitive](/img/flows/blocks/core/javscript/js-return-primitive.png){width="450"}
+<img src="/img/flows/blocks/core/javscript/js-return-primitive.png" alt="return primitive" width="450" />
 
 Or data on multiple edges.
 
-![return statement](/img/flows/blocks/core/javscript/js-return.png){width="450"}
+<img src="/img/flows/blocks/core/javscript/js-return.png" alt="return statement" width="450" />
 
 ## Branching to edges
 You can handle any branching logic using the ```branchTo(edgeIndexZeroBased, data)``` method.
 
-![Brnach to](/img/flows/blocks/core/javscript/js-branch-to.png){width="800"}
+<img src="/img/flows/blocks/core/javscript/js-branch-to.png" alt="Brnach to" width="800" />
 
 The output connectors will automatically be validated and created as you enter the ```branchTo()``` commands.
 
@@ -152,7 +152,7 @@ You should use the ```batch``` object, which has the the following methods.
 ### Alerts
 You can generate a custom alert. This adds an item to the [Log](Alerts.md) and will also send an email alert.
 
-![Alert](/img/flows/javascript/javascript-alert.png){width="500"}
+<img src="/img/flows/javascript/javascript-alert.png" alt="Alert" width="500" />
 
 ```JavaScript
 alert(alertLevel: string, message: stringe, extraData?: string)

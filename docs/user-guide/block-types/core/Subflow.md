@@ -14,5 +14,5 @@ There's very little to configuring the Subflow Block.
 
 You only need to specify the Subflow name.
 
-![Subflow chooser](/img/flows/blocks/core/subflow/subflow-chooser.png){width="700"}
+<img src="/img/flows/blocks/core/subflow/subflow-chooser.png" alt="Subflow chooser" width="700" />
 

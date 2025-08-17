@@ -7,11 +7,11 @@ This is used to provide useful information in your Flow canvas.
 
 You should also be aware of how you can [Document a Flow](Flow-documentation.md) in the info pane.
 
-![In place editing](/img/flows/blocks/core/annotation/block-annotation-rendered.png){width="500"}
+<img src="/img/flows/blocks/core/annotation/block-annotation-rendered.png" alt="In place editing" width="500" />
 
 Double click the block to edit.
 
-![In place editing](/img/flows/blocks/core/annotation/block-annotation-edit.png){width="500"}
+<img src="/img/flows/blocks/core/annotation/block-annotation-edit.png" alt="In place editing" width="500" />
 
 
 ## Images

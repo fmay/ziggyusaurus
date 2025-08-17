@@ -40,7 +40,7 @@ const config = {
       },
       items: [
         {
-          href: 'https://github.com/ziggyservices/ziggyusaurus',
+          href: 'https://github.com/fmay/ziggyusaurus',
           label: 'GitHub',
           position: 'right',
         },

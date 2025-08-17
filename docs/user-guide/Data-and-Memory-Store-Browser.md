@@ -18,7 +18,7 @@ Enter an expression to search the **value** portion of a key/value pair.
 
 An expression editor will appear.
 
-![Expression editor](/img/flows/stores-browser/store_expression_editor.png
+![Expression editor](/img/flows/stores-browser/store_expression_editor.png)
 
 You should enter a Javascript type expression that addresses a key within the data value. This expression is tolerant of ```=``` as opposed to `==` and ```OR``` as opposed to ```||```.
 

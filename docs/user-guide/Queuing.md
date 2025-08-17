@@ -9,7 +9,7 @@ This ensures that the system is not overloaded with requests.
 However, it is often necessary to use a user defined queue to stay within API rate limits.
 
 ## Define Queues
-You can define your Queues in [Global Settings](/user-guide/Global-Settings).
+You can define your Queues in [Global Settings](Global-Settings).
 
 ![Queue settings](/img/flows/queueing/queue-settings.png)
 

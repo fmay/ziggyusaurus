@@ -7,7 +7,7 @@ title: Security
 There are a few areas of security you will want to control. 
 
 ## API Security 
-When calling Ziggy from an external source, you pass a secret key in the API call. These secret keys are managed in the [Global Settings](/user-guide/Global-Settings).
+When calling Ziggy from an external source, you pass a secret key in the API call. These secret keys are managed in the [Global Settings](Global-Settings).
 
 You can issue and revoke multiple keys. Keys are only displayed when they are created. If you lose this key then you will need to issue another one.
 
@@ -38,7 +38,7 @@ Ziggy has its own internal user management in order to reduce the need for relia
 All communication between the Ziggy UI and the Ziggy server uses JWT web tokens.
 
 ## Logs
-Ziggy does not log payload information or Flow data in the system logs unless Debug mode is enabled in [Global Settings](Global-Settings.md#security).
+Ziggy does not log payload information or Flow data in the system logs unless Debug mode is enabled in [Global Settings](/user-guide/Global-Settings.md#security).
 
 ## Javascript Block Execution
 Please refer to the [Javascript Block](/user-guide/block-types/core/Javascript) for information about security on script code.

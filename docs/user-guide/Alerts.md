@@ -22,7 +22,7 @@ You can view the alert log from the **Logs** menu item.
 ## Digest emails
 Ziggy checks the log every minute. If it finds new items where notifications have not been sent, it combines these into a digest email.
 
-![digest](/img/flows/alerts/alerts-digest.png
+![digest](/img/flows/alerts/alerts-digest.png)
 
 Note that only the text from the last alert of each type is included. You should inspect the Log listing to see all details.
 

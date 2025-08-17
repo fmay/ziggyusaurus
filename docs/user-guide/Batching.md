@@ -17,17 +17,17 @@ All blocks can be used within a batch loop. The following blocks initiate a batc
 The following blocks offer batching.
 
 - [HubSpot Read](/user-guide/block-types/hubspot/hs-read)
-- [SQL (select)](/user-guide/block-types/utility/SQL)
+- [SQL (select)](block-types/utility/SQL)
 - [REST](/user-guide/block-types/utility/REST-Call)
 - [File (read)](/user-guide/block-types/utility/file-reader-writer)
 - [Data Store (read)](/user-guide/block-types/utility/Data-Store)
-- [Memory Store (read)](/user-guide/Memory-Store)
+- [Memory Store (read)](Memory-Store)
 - [Airtable](/user-guide/block-types/utility/airtable)
 - [Javascript](/user-guide/block-types/core/Javascript)
 
 ## Example
 
-![reporting-prep](/img/flows/batching/batching-reporting-prep.png
+![reporting-prep](/img/flows/batching/batching-reporting-prep.png)
 
 - The HubSpot Read block reads batches of 100 Deals from HubSpot.
 - It then gets associated Companies
@@ -37,7 +37,7 @@ The following blocks offer batching.
 ## Example - Javascript
 You can batch with Javascript as shown in the following example. Refer to the [Javascript Block](/user-guide/block-types/core/Javascript) for more details.
 
-![JS Batching](/img/flows/batching/batching-js-heavy.png
+![JS Batching](/img/flows/batching/batching-js-heavy.png)
 
 The first Javascript initiates the batch with ```batch(BATCH_SIZE)```. When there is no data left to process. it calls ```batchEnd()```.
 

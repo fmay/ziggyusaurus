@@ -6,6 +6,11 @@ const config = {
   projectName: 'ziggyusaurus',
   onBrokenLinks: 'warn', // Temporarily warn instead of fail
   
+  // Improve hot reloading
+  customFields: {
+    enableHotReload: true,
+  },
+  
   presets: [
     [
       'classic',

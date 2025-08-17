@@ -3,13 +3,33 @@ const sidebars = {
     'About',
     {
       type: 'category',
-      label: 'Case Studies',
+      label: 'AI Search',
       items: [
-        'case-studies/hubspot/Case-Study-Hubspot',
-        'case-studies/hubspot/Migration',
-        'case-studies/hubspot/Integration',
+        'search/search-overview',
+        'search/search-elastic',
+        'search/search-slack',
+        'search/search-chatterbox',
+        'search/search-prompt-flows',
+        'search/search-loading-flows',
       ],
     },
+    {
+      type: 'category',
+      label: 'Flows and ETL',
+      items: [
+        {
+          type: 'category',
+          label: 'Case Studies',
+          items: [
+            'case-studies/hubspot/Case-Study-Hubspot',
+            'case-studies/hubspot/Migration',
+            'case-studies/hubspot/Integration',
+          ],
+        },
+      ],
+
+    },
+
     {
       type: 'category',
       label: 'User Guide',

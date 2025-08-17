@@ -3,37 +3,40 @@ title: About
 slug: /
 ---
 
-# Overview
+# About Ziggy
 
-Ziggy Services is a product for Systems Integrators and System Architects with a focus on
+## AI Search
+Ziggy is a platform for perform highly configurable AI driven search.
 
-- Integrations
-- Migrations
-- Data Transformations and Quality checks
+**Any data, in any of your systems, platforms and databases can be made fully searchable using natural language queries. There is rarely any need for any form of coding. However, if you want to handle edge-cases with code, you can.**
 
-It focuses on
+## Flows
+Ziggy Flows handle the customization of your Flows.
 
-- Ease-of-use using **Custom Blocks**
-- Rapid development with minimal blocks
+- Perform any data validation, transformation and mappings.
+- Handle any custom logic
+- Connect directly to databases, CRMs, ERPs, APIs - in fact pretty well anything - using Flow Blocks. 
+- Collections of platform specific Blocks to connect to platforms like Hubspot, SalesForce, Databases and Warehouses etc, handling not just reading but object associations, record owner translations etc.
 
-And it comes in two flavors.
+## API
+Each Flow is accessible through an API call, so you can trigger ingestions, WebHook handlers, migrations, integrations that can support your search Flows.
 
-- **Shared Platform** - a shared platform that is intended for proof-of-concepts and testing. While
-  we implement stringent security measures, it is not as secure as Ziggy Solo, which is fully
-  private. Performance is good but not as fast and controllable as Ziggy Solo.
-- **Ziggy Solo** - a private Ziggy instance, where you can manage all aspects of DevOps and
-  security, or we can manage it on your behalf
-- **Ziggy Solo Source Code** - Ziggy solo with source code.
+## Installation
+Ziggy is installed in any cloud platform just using Docker. This means you have total control over security and performance.
+
+## Customization
+Ziggy is not limited to one, predefined way of doing things. The whole point of Ziggy is to give you total control over all aspects, using Flows to achieve this. 
+
+So no matter where your data lives or how you want to search it, you can do it.
+
+## Product or Services
+
+You can, of course, use Ziggy to build your own search applications. However, if your priority is getting a solution up and running as fast as possible, then we can assist you in any of the following ways. 
+
+- Building end-to-end solutions
+- Training
+- Support
 
 ## Contacting us
 
-If you have any inquiries, please [contact us here](https://www.ziggyservices.com/contact).
-
-## Services
-
-We and Ziggy Partners offer a range of services.
-
-- Full migration and integration implementations for projects of any scale
-- Developing Custom Blocks to talk to your own systems
-- Training
-- Support
+If you have any questions or require a demonstration, please [contact us here](https://www.ziggyservices.com/contact).

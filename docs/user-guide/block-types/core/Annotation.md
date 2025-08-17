@@ -5,7 +5,7 @@ title: Annotation Block
 # Annotation
 This is used to provide useful information in your Flow canvas.
 
-You should also be aware of how you can [Document a Flow](Flow-documentation.md) in the info pane.
+You should also be aware of how you can [Document a Flow](user-guide/editor/Flow-documentation.md) in the info pane.
 
 <img src="/img/flows/blocks/core/annotation/block-annotation-rendered.png" alt="In place editing" width="500" />
 

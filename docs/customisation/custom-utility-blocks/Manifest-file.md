@@ -49,4 +49,4 @@ Manifest File can be configured through:
 - [Global Settings](/user-guide/Global-Settings) - System configuration
 - [Monitoring](/user-guide/Monitoring) - System monitoring
 - [Security](/user-guide/Security) - Security and access control
-- [User Guide](/user-guide) - Comprehensive user documentation
+- [User Guide](user-guide/User-Guide.md) - Comprehensive user documentation

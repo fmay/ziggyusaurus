@@ -142,5 +142,5 @@ If the API is using cursor pagination, you should specify the response data path
 In the above example, you can see we have specified ```paging.next.after```.
 
 ### Batch End Block
-You should be sure to include a [Batch End Block](Batch-End.md) downstream of the REST Block as the loop back point. You can include other Blocks in between.
+You should be sure to include a [Batch End Block](user-guide/block-types/core/Batch-End.md) downstream of the REST Block as the loop back point. You can include other Blocks in between.
 

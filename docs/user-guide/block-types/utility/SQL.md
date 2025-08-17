@@ -30,7 +30,7 @@ All operations are parameterized to avoid SQL injection attacks.
 All operation modes assume that the data coming into the block has key names that match the database field names. 
 As this is frequently not the case, you will need to transform data into the correct format.
 
-Ziggy offers several ways to deal with this as [explained in the Edge Mapping topic](sql-mapping.md). 
+Ziggy offers several ways to deal with this as [explained in the Edge Mapping topic](user-guide/block-types/utility/sql/sql-mapping.md). 
 
 ## Overriding SQL
 By default, the SQL is not editable. As you change the configuration, the SQL is automatically generated.
@@ -38,5 +38,5 @@ By default, the SQL is not editable. As you change the configuration, the SQL is
 If you want to customise the query, then you can check the **Edit SQL** box. From this point onwards, 
 changing the configuration will not alter the SQL.
 
-Refer to [SQL Editing](sql-editing.md) for details.
+Refer to [SQL Editing](user-guide/block-types/utility/sql/sql-editing.md) for details.
 

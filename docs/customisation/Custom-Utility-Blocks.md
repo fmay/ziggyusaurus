@@ -19,7 +19,7 @@ Custom Utility Blocks provides comprehensive functionality for managing and orga
 ## Getting Started
 
 Choose your path:
-- [User Guide](/user-guide) - Learn how to use Ziggy
+- [User Guide](user-guide/User-Guide.md) - Learn how to use Ziggy
 - [Block Types](/user-guide/block-types) - Explore available blocks
 - [Case Studies](/case-studies/hubspot/Case-Study-Hubspot) - See real-world examples
 

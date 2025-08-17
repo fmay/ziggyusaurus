@@ -9,7 +9,7 @@ The Execution History Dashboard lets you monitor Flow executions.
 Depending on your Global Settings and Flow Settings, you can also examine the data snapshot and edge data for an individual Flow execution.
 
 **Important** : for secure environments, you can set whether snapshot data is stored or not at the system or Flow level. 
-Please read the [next topic](History-data-storage-levels.md) for more information.
+Please read the [next topic](user-guide/History-data-storage-levels.md) for more information.
 
 ![Dashboard](/img/flows/dashboard/flows-dashboard-1.png)
  

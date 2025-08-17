@@ -76,7 +76,7 @@ sysLog.log(msg: string, extraData?: any)
 const connection = connections.myConnectionName
 ```
 
-This will automatically select the development/production secret as determined by the [prod/dev mode](Dev-Prod-Modes.md).
+This will automatically select the development/production secret as determined by the [prod/dev mode](user-guide/Dev-Prod-Modes.md).
 
 ## Secrets
 Secrets can be accessed as follows.
@@ -85,17 +85,17 @@ Secrets can be accessed as follows.
 const pw = secrets.NORTHWIND_DB_PASSWORD
 ```
 
-This will automatically select the development/production secret as determined by the [prod/dev mode](Dev-Prod-Modes.md).
+This will automatically select the development/production secret as determined by the [prod/dev mode](user-guide/Dev-Prod-Modes.md).
 
 ## Data Store
-Refer to [Data Store methods](Data-Store.md) for available methods.
+Refer to [Data Store methods](user-guide/block-types/utility/Data-Store.md) for available methods.
 
 ```javascript
 const customer = await dataStore.get(myEntity, myKey)
 ```
 
 ## Memory Store
-Refer to [Memory Store methods](Memory-Store.md) for available methods.
+Refer to [Memory Store methods](user-guide/Memory-Store.md) for available methods.
 
 ```javascript
 const customer = await memStore.get(myKey)
@@ -110,7 +110,7 @@ const id = executionId
 const externalId = externalExecutionId
 ```
 
-- ```externalExecutionId``` is an optional value that can be passed into the Flow when [launched externally](Launching-flows.md). This allows the calling system to provide a value associated with the execution for you to work with.
+- ```externalExecutionId``` is an optional value that can be passed into the Flow when [launched externally](user-guide/Launching-flows.md). This allows the calling system to provide a value associated with the execution for you to work with.
 - ```executionCounter``` is a simple sequential counter that resets to 0 when the Ziggy server restarts. It's main purpose is debugging and is not broadly useful.
 - ```executionId``` is a GUID for the individual execution. Again, the primary purpose is debugging.
 
@@ -135,7 +135,7 @@ const hsClient = new clientHubspot(configObj)
 ... where ```configObj``` is specific to each one.
 
 ## Batching
-You can perform batching operations with the Javascript Block. Please refer to [Batching](Batching.md) for general information on Batching.
+You can perform batching operations with the Javascript Block. Please refer to [Batching](user-guide/Batching.md) for general information on Batching.
 
 ![JS Batching](/img/flows/blocks/core/javscript/js-batching.png)
 
@@ -145,12 +145,12 @@ You should use the ```batch``` object, which has the the following methods.
 
  ```batch.isBatch()``` - tests whether the Flow is in a batch at the point the Javascript block executes.
 - ```batch.begin(batchSize)``` - informs Ziggy that this is the starting point for batch operations and the size of each batch. This returns ```{offset: x, iteration: y}``` where ```x``` is the number of records processed by the batch loops so far and ```y``` is the batch iteration.
-- ```batch.terminate()``` - once there is no data left to process, call this to continue execution after the [**Batch End**](Batch-End.md) Block (or Terminator if there is no Batch End Block.)
+- ```batch.terminate()``` - once there is no data left to process, call this to continue execution after the [**Batch End**](user-guide/block-types/core/Batch-End.md) Block (or Terminator if there is no Batch End Block.)
 - ```batch.iteration()``` - returns the batch iteration counter.
 - ```batch.offset()``` - returns the current record # offset from the first batch, in other words ```batchSize * batchIterations```.
 
 ### Alerts
-You can generate a custom alert. This adds an item to the [Log](Alerts.md) and will also send an email alert.
+You can generate a custom alert. This adds an item to the [Log](user-guide/Alerts.md) and will also send an email alert.
 
 <img src="/img/flows/javascript/javascript-alert.png" alt="Alert" width="500" />
 

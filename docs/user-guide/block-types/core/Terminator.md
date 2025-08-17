@@ -13,7 +13,7 @@ If you have multihere we have parallel executing Subflows, the Flow won't termin
 <img src="/img/flows/blocks/core/terminator-block.png" alt="Terminator" width="300" />
 
 ## Send data in response
-If the Flow is [launched via the API](Launching-flows.md) (as opposed to the editor) and you want to 
+If the Flow is [launched via the API](user-guide/Launching-flows.md) (as opposed to the editor) and you want to 
 return the data arriving at the Terminator, then you should check 
 the **Send data in response** box.
 

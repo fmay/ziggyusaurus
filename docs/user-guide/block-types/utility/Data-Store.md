@@ -10,10 +10,10 @@ Write to and read from the Data Store. You can choose between the following Plat
 - **AWS** : recommended if running Ziggy Solo on AWS
 - **Azure** : recommended if running Ziggy Solo on Azure.
 
-You can also access the Data Store from the [Javascript Block](Data-Store-section.md).
+You can also access the Data Store from the [Javascript Block](user-guide/Data-Store-section.md).
 
 ## Data Store Browser
-If using **Internal**, you can [view the Data Store contents](Data-and-Memory-Store-Browser.md) from the Store menu item in the navigation bar.
+If using **Internal**, you can [view the Data Store contents](user-guide/Data-and-Memory-Store-Browser.md) from the Store menu item in the navigation bar.
 
 ## Namespace
 The dropdown will contain the names of all existing namespaces if using **Internal**.

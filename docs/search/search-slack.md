@@ -2,9 +2,15 @@
 title: Slack
 ---
 
-TODO: Video
-
 Rather like [ChatterBox](search-chatterbox.md), you can perform natural language queries from Slack. This allows your teams to perform any query on any data without the hassle of leaving Slack and navigating through screens in the browser.
+
+<iframe 
+  src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/slack-overview-UAw2NUTAo8NJHOiblOdEvfh8sSPyBT.mp4" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 ## Slack App
 We, or you, can configure a custom, personal Slack App calls Ziggy Flows and returns Slack formatted data to a personal DM or channel.

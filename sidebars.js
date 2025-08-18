@@ -15,8 +15,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'AI Models',
+      items: [
+        'models/models-overview',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Flows and ETL',
       items: [
+        'case-studies/hubspot/Case-Study-Hubspot',
         {
           type: 'category',
           label: 'Case Studies',

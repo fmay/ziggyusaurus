@@ -1,5 +1,5 @@
 ---
-title: AI Search
+title: AI Search Prompt
 ---
 
 This is the most important AI related Block. It handles the translation of a natural language query

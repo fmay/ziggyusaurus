@@ -7,7 +7,7 @@ The beauty of **[Elastic Search](https://www.elastic.co/)** is it's ability to s
 ## Hubspot Example
 Let's say you have a lot of data in Hubspot and you want to be able to search with more flexibility than Hubspot itself offers.
 
-You can create Ziggy Flows that load data into an Elastic Index that manages very flexible searching, presents a list of records using [Slack](../TODO.md), [ChatterBox](../TODO.md) or your own UI. From there you can directly jump into Hubspot records using a simple link
+You can create Ziggy Flows that load data into an Elastic Index that manages very flexible searching, presents a list of records using [Slack](/search/search-slack.md), [ChatterBox](/search/search-chatterbox.md) or your own UI. From there you can directly jump into Hubspot records using a simple link
 
 Data can be bulk loaded initially and then updated in real-time using WebHooks and another simple Flow whenever related Hubspot data is edited.
 
@@ -17,11 +17,11 @@ Similarly, you may have your data in a Database or Data Warehouse and want to ha
 ## Ziggy Blocks
 To support Elastic, Ziggy has three Blocks for quickly and easily working with Elastic.
 
-### AI Prompt Block
-The [AI Prompt Block](../TODO.md) turns any natural language query into a platform specific query.
+### AI Search Prompt Block
+The [AI Search Prompt Block](/user-guide/block-types/ai/ai-search-prompt) turns any natural language query into a platform specific query.
 
 ### Elastic Ingest Block
-The [Elastic Ingest Black](../TODO.md) handles both Elastic Index configuration and data ingestion. It is used as a part of an [ingest Flow](../TODO.md).
+The [Elastic Ingest Block](../TODO.md) handles both Elastic Index configuration and data ingestion. It is used as a part of an [ingest Flow](search-loading-flows.md).
 
 ### Elastic Search Block
-This is used in a Flow, in conjunction with the [AI Prompt Bock](../TODO.md), to perform the actual Elastic search. 
+This is used in a Flow, in conjunction with the [AI Search Prompt Bock](/user-guide/block-types/ai/ai-search-prompt), to perform the actual Elastic search. 

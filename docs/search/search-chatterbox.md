@@ -4,7 +4,13 @@ title: ChatterBox
 
 ChatterBox is Ziggy's own UI for searching any of your data. 
 
-TODO:Video (longer one)
+<iframe 
+  src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/chatterbox-overview-bL8l1IooBSo2zJYEgOD6hC7zSYUnpJ.mp4" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>
 
 ## Source Code
 The source code is freely available should you want to modify and tailor it to your own requirements. It is an React application.

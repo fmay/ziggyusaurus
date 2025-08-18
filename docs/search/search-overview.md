@@ -2,7 +2,36 @@
 title: Overview
 ---
 
-Ziggy helps you make your data searchable using natural language queires, no matter where it is stored. 
+Ziggy helps you make your data searchable using natural language queries, no matter where it is stored.
+
+## Front Ends
+You have various options for querying.
+
+### ChatterBox
+[ChatterBox](/search/search-chatterbox.md) is Ziggy's own, fully customizable front end.
+
+<iframe 
+  src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/chatterbox-overview-bL8l1IooBSo2zJYEgOD6hC7zSYUnpJ.mp4" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+
+### Slack 
+You can also enter natural language queries in [Slack](search-slack.md) and get data back in any format you need.  
+
+<iframe 
+  src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/slack-overview-UAw2NUTAo8NJHOiblOdEvfh8sSPyBT.mp4" 
+  width="100%" 
+  height="400" 
+  allow="autoplay; fullscreen; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+### Your own front end
+All Ziggy Flows can be invoked using simple API calls, so you can perform searches using any application. All data is returned in standardised formats for listings, tables and crosstabs.
 
 ## Search Flows
 If your data is already in a database, data warehouse, Elastic ERP/CRM platform etc., then you use a Ziggy Flow to directly query the data.
@@ -17,9 +46,7 @@ In some cases, while you have direct access to the data, the data is not searcha
 
 In both cases, Ziggy can handle this for you very efficiently by creating a streamlined data store with everything you need for these types of searches.
 
-Initially, you can bulk load this data. Thereafter, you can incrementally load data when systems performs record level changes. This is all managed by simple Ziggy Flows.
-
-[Transformation Flow details](search-loading-flows).
+Initially, you can bulk load this data. Thereafter, you can incrementally load data when systems performs record level changes. This is all managed by [ingestion flows](search-loading-flows).
 
 
 

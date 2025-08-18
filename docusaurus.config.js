@@ -1,10 +1,11 @@
 const config = {
-  title: 'Ziggy Documentation',
+  title: 'Docs',
   url: 'https://docs.ziggyservices.com',
   baseUrl: '/',
   organizationName: 'ziggyservices',
   projectName: 'ziggyusaurus',
   onBrokenLinks: 'warn', // Temporarily warn instead of fail
+  favicon: 'img/favicon.ico',
   
   // Improve hot reloading
   customFields: {

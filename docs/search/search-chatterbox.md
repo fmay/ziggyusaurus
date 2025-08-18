@@ -29,7 +29,7 @@ Here are a few key points.
 ## Search Flows
 When ChatterBox users enter a query, ChatterBox passes control to a Ziggy Flow. These Flows are simple and quickly configured.
 
-Most [Search Flows](search-prompt-flows.md) will contain an [AI Prompt Block](TODO) and a platform specific search Block.
+Most [Search Flows](search-prompt-flows.md) will contain an [AI Prompt Block](../TODO.md) and a platform specific search Block.
 
 Data is returned to ChatterBox in a standardised format so ChatterBox can instantly render in the appropriate listing format.
 

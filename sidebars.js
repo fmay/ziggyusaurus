@@ -56,7 +56,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Block Types',
+          label: 'Blocks',
           items: [
             {
               type: 'category',
@@ -86,16 +86,16 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'AI',
+              items: [
+                'user-guide/block-types/ai/ai-search-prompt',
+                'user-guide/block-types/ai/ai-qdrant',
+              ],
+            },
+            {
+              type: 'category',
               label: 'Utility',
               items: [
-                'user-guide/block-types/utility/Data-Store',
-                'user-guide/block-types/utility/MemStore',
-                'user-guide/block-types/utility/file-reader-writer',
-                'user-guide/block-types/utility/SQL',
-                'user-guide/block-types/utility/REST-Call',
-                'user-guide/block-types/utility/Mapper',
-                'user-guide/block-types/utility/airtable',
-                'user-guide/block-types/utility/audit',
                 {
                   type: 'category',
                   label: 'SQL',
@@ -111,8 +111,26 @@ const sidebars = {
                     'user-guide/block-types/utility/sql/sql-editing',
                   ],
                 },
+                'user-guide/block-types/utility/Data-Store',
+                'user-guide/block-types/utility/MemStore',
+                'user-guide/block-types/utility/file-reader-writer',
+                'user-guide/block-types/utility/SQL',
+                'user-guide/block-types/utility/REST-Call',
+                'user-guide/block-types/utility/Mapper',
+                'user-guide/block-types/utility/airtable',
+                'user-guide/block-types/utility/audit',
+                'user-guide/block-types/utility/slack-blocks-formatter',
               ],
             },
+            {
+              type: 'category',
+              label: 'Elastic Search',
+              items: [
+                'user-guide/block-types/elastic/elastic-ingest',
+                'user-guide/block-types/elastic/elastic-search',
+              ],
+            },
+
             {
               type: 'category',
               label: 'HubSpot',
@@ -125,6 +143,7 @@ const sidebars = {
                 'user-guide/block-types/hubspot/hs-owner-translate',
                 'user-guide/block-types/hubspot/hs-merge',
                 'user-guide/block-types/hubspot/hs-timeline-write',
+                'user-guide/block-types/hubspot/hs-search',
               ],
             },
             {

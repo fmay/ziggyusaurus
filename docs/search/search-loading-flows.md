@@ -19,6 +19,6 @@ You can configure Ziggy Flows that are triggered by changes in data in any syste
 - WebHooks - a 3rd party platform passes data to a Flow when data changes at the record level.
 - Database Trigger
 - API Call - any platform can call a Flow and pass over data to updare in the searchable data store.
-- Scheduled - Ziggy has an integrated [Scheduler](TODO) that can trigger a Flow. From the Flow you could load data from an SFTP Server, run a database query with a data filter to fetch records update since the last fetch etc.
+- Scheduled - Ziggy has an integrated [Scheduler](../TODO.md) that can trigger a Flow. From the Flow you could load data from an SFTP Server, run a database query with a data filter to fetch records update since the last fetch etc.
 
 TODO: image of Churn UPdate

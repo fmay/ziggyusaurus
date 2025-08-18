@@ -24,7 +24,7 @@ const sidebars = {
       type: 'category',
       label: 'Flows and ETL',
       items: [
-        'case-studies/hubspot/Case-Study-Hubspot',
+        'etl/etl-features',
         {
           type: 'category',
           label: 'Case Studies',

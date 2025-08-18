@@ -13,7 +13,7 @@ It is worth watching the video that explains this process in detail.
   src="https://player.vimeo.com/video/1076607988" 
   width="100%" 
   height="400" 
-  allow="autoplay; fullscreen; picture-in-picture" 
+  allow="fullscreen; picture-in-picture" 
   allowfullscreen>
 </iframe>
 

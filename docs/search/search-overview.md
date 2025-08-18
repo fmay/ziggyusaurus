@@ -14,7 +14,7 @@ You have various options for querying.
   src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/chatterbox-overview-bL8l1IooBSo2zJYEgOD6hC7zSYUnpJ.mp4" 
   width="100%" 
   height="400" 
-  allow="autoplay; fullscreen; picture-in-picture" 
+  allow="fullscreen; picture-in-picture" 
   allowfullscreen>
 </iframe>
 
@@ -26,7 +26,7 @@ You can also enter natural language queries in [Slack](search-slack.md) and get 
   src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/slack-overview-UAw2NUTAo8NJHOiblOdEvfh8sSPyBT.mp4" 
   width="100%" 
   height="400" 
-  allow="autoplay; fullscreen; picture-in-picture" 
+  allow="fullscreen; picture-in-picture" 
   allowfullscreen>
 </iframe>
 

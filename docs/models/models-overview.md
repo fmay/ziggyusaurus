@@ -23,7 +23,7 @@ Below is a video that shows ChatterBox searching for a customer and then checkin
   src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/model-churn-hero-f2uNX2HZfgOQt2yEwcMy38yB56TX4s.mp4" 
   width="100%" 
   height="500" 
-  allow="autoplay; fullscreen; picture-in-picture" 
+  allow="fullscreen; picture-in-picture" 
   allowfullscreen>
 </iframe>
 

@@ -8,7 +8,7 @@ Rather like [ChatterBox](search-chatterbox.md), you can perform natural language
   src="https://nxucrsk2vrk61vtm.public.blob.vercel-storage.com/website-videos/slack-overview-UAw2NUTAo8NJHOiblOdEvfh8sSPyBT.mp4" 
   width="100%" 
   height="400" 
-  allow="autoplay; fullscreen; picture-in-picture" 
+  allow="fullscreen; picture-in-picture" 
   allowfullscreen>
 </iframe>
 

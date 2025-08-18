@@ -37,6 +37,32 @@ Note that you can specify a different connection object for Development and Prod
 It is good practice to use the [Secrets Manager](Secrets) 
 to avoid exposing sensitive information in the Connection object. 
 
+## Elastic Search
+
+Serverless
+```javascript
+{
+  node: 'https://my-elasticsearch-project-xxxx.es.eu-west-1.aws.elastic.cloud:443',
+  auth: {
+    apiKey: secrets.ELASTIC_API_KEY
+  }
+  serverMode: 'serverless',
+}
+```
+
+Hosted
+```javascript
+{
+    cloud: {
+        id: 'My_deployment:your_deployment_id='
+    },
+    auth: {
+        username: 'elastic',
+        password: secrets.MY_ELASTIC_PW
+    }
+}
+```
+
 ## Hubspot object
 
 ```javascript

@@ -1,5 +1,8 @@
 ---
 title: Salesforce Blocks
+description: Complete guide to Salesforce integration blocks in Ziggy. Connect, sync, and manage Salesforce CRM data with no-code flows and automation.
+keywords: [ziggy, salesforce, crm integration, blocks, automation, data sync, salesforce api]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Salesforce Blocks

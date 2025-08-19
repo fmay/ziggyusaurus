@@ -1,5 +1,8 @@
 ---
 title: Sinkhole
+description: Learn how to use the Sinkhole block in Ziggy flows for discarding unwanted data paths. Complete guide with examples and configuration options.
+keywords: [ziggy, sinkhole, core blocks, flows, no-code, data filtering, discard]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Sinkhole

@@ -1,5 +1,8 @@
 ---
-title: Custom Models
+title: Custom AI Models
+description: Build and integrate custom AI models with Ziggy for advanced data processing. Learn to train models on your data and integrate them into workflows.
+keywords: [ziggy custom models, ai model integration, machine learning, model training, ai workflows, custom ai]
+image: /img/ziggy-logo-light.webp
 ---
 
 Ziggy can build and integrate custom models that are trained on your own data to perform many tasks to make your operations more efficient.

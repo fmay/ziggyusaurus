@@ -1,5 +1,8 @@
 ---
 title: Batch-End Block
+description: Learn how to use the Batch-End block in Ziggy flows for ending batch processing loops. Complete guide with examples and configuration options.
+keywords: [ziggy, batch-end, core blocks, flows, no-code, batch processing, loops]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Batch End

@@ -1,5 +1,8 @@
 ---
 title: Connections
+description: Learn how to set up and manage connections to external systems in Ziggy. Connect to APIs, databases, and services for seamless data integration.
+keywords: [ziggy connections, external systems, api integration, database connections, system setup]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Connections

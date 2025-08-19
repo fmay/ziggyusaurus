@@ -1,5 +1,8 @@
 ---
 title: Secrets
+description: Securely manage API keys, passwords, and sensitive data in Ziggy flows. Complete guide to secrets management and security best practices.
+keywords: [ziggy secrets, security, api keys, configuration, sensitive data, encryption]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Secrets

@@ -1,5 +1,8 @@
 ---
 title: SQL Block
+description: Execute SQL queries and manage database operations using Ziggy's SQL utility block. Complete guide for database integration flows.
+keywords: [ziggy, utility blocks, sql, database queries, data integration, database operations]
+image: /img/ziggy-logo-light.webp
 ---
 
 # SQL

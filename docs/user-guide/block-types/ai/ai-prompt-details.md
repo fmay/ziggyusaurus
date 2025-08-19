@@ -1,5 +1,8 @@
 ---
 title: Detailed Prompt Guidance
+description: Master AI prompt engineering for Ziggy's search functionality. Learn to customize and optimize prompts for better AI search results and accuracy.
+keywords: [ziggy, ai prompts, prompt engineering, ai search optimization, search customization, nlp prompts]
+image: /img/ziggy-logo-light.webp
 ---
 
 Engineering the prompt is the most important part of search. Ziggy provides you with default prompt templates. However, you can add your own customizations to refine each search operation.  

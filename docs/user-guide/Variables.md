@@ -1,5 +1,8 @@
 ---
-title: Variables
+title: Variables - Ziggy Platform Data Management
+description: Learn how to use variables in Ziggy flows for dynamic data handling. Complete guide to variable management and data flow configuration.
+keywords: [ziggy variables, data management, flow configuration, dynamic data, no-code platform]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Variables

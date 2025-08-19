@@ -1,6 +1,10 @@
 ---
-title: About
+
+title: About Ziggy
+description: Discover Ziggy's no-code data platform for AI-powered search, data flows, and integrations. Connect any data source with visual flows and natural language queries.
+keywords: [ziggy, no-code data platform, AI search, data integration, ETL, flows, automation, hubspot, salesforce]
 slug: /
+image: /img/ziggy-logo-light.webp
 ---
 
 # About Ziggy

@@ -1,5 +1,8 @@
 ---
 title: Merger
+description: Learn how to use the Merger block in Ziggy flows for combining multiple data streams. Complete guide with examples and configuration options.
+keywords: [ziggy, merger, core blocks, flows, no-code, data processing, combine data]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Merger

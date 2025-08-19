@@ -1,5 +1,8 @@
 ---
 title: Collector Block
+description: Learn how to use the Collector block in Ziggy flows for gathering data from multiple sources. Complete guide with examples and configuration options.
+keywords: [ziggy, collector, core blocks, flows, no-code, data collection, aggregation]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Collector

@@ -1,5 +1,8 @@
 ---
 title: HubSpot Blocks
+description: Complete guide to HubSpot integration blocks in Ziggy. Connect, sync, and manage HubSpot data with no-code flows and automation.
+keywords: [ziggy, hubspot, crm integration, blocks, automation, data sync]
+image: /img/ziggy-logo-light.webp
 ---
 
 # HubSpot Blocks

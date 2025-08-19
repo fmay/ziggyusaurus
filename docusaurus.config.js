@@ -1,5 +1,6 @@
 const config = {
-  title: 'Docs',
+  title: 'Ziggy Documentation - No-Code Data Platform & AI Search',
+  tagline: 'Complete guide to Ziggy\'s no-code data platform, flows, blocks, and AI-powered search capabilities',
   url: 'https://docs.ziggyservices.com',
   baseUrl: '/',
   organizationName: 'ziggyservices',

@@ -1,5 +1,8 @@
 ---
-title: User Guide
+title: Ziggy User Guide - Complete Platform Documentation
+description: Comprehensive guide to using Ziggy's no-code data platform. Learn flows, blocks, connections, data integration, and AI search features.
+keywords: [ziggy user guide, no-code platform, data flows, blocks, integrations, tutorial, documentation]
+image: /img/ziggy-logo-light.webp
 ---
 
 # User Guide

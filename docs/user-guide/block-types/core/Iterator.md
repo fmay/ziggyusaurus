@@ -1,5 +1,8 @@
 ---
 title: Iterator
+description: Learn how to use the Iterator block in Ziggy flows for looping through data arrays. Complete guide with examples and configuration options.
+keywords: [ziggy, iterator, core blocks, flows, no-code, data processing, loops, arrays]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Iterator

@@ -1,5 +1,8 @@
 ---
-title: Overview
+title: AI Search Overview
+description: Discover Ziggy's AI-powered search capabilities. Make any data searchable using natural language queries across all your systems and databases.
+keywords: [ziggy ai search, natural language search, data search, ai powered search, search platform]
+image: /img/ziggy-logo-light.webp
 ---
 
 Ziggy helps you make your data searchable using natural language queries, no matter where it is stored.

@@ -1,5 +1,8 @@
 ---
 title: Global Settings
+description: Configure system-wide settings for your Ziggy platform. Complete guide to global configuration, preferences, and system administration.
+keywords: [ziggy global settings, system configuration, platform administration, preferences, setup]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Global Settings

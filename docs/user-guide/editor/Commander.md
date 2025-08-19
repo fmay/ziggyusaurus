@@ -1,5 +1,8 @@
 ---
 title: Commander
+description: Use Ziggy's Commander interface for advanced flow control and management. Learn keyboard shortcuts and quick commands for efficient workflow building.
+keywords: [ziggy commander, flow control, keyboard shortcuts, quick commands, workflow shortcuts]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Commander

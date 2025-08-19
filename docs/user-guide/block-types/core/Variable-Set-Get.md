@@ -1,5 +1,8 @@
 ---
-title: Variable Set/Get
+title: Variable Set/Get - Ziggy Core Block Documentation
+description: Learn how to use the Variable Set/Get block in Ziggy flows for variable management. Complete guide with examples and configuration options.
+keywords: [ziggy, variable, core blocks, flows, no-code, data processing]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Variable Set/Get

@@ -1,5 +1,8 @@
 ---
 title: HubSpot Read
+description: Retrieve and read data from HubSpot CRM using Ziggy's HubSpot Read block. Step-by-step guide for HubSpot data integration flows.
+keywords: [ziggy, hubspot read, crm integration, data retrieval, hubspot api]
+image: /img/ziggy-logo-light.webp
 ---
 
 # HubSpot Read

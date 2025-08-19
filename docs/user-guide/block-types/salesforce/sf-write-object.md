@@ -1,5 +1,8 @@
 ---
-title: SalesForce Write Object
+title: Salesforce Write Object
+description: Create and update Salesforce CRM objects using Ziggy's Salesforce Write block. Complete guide for Salesforce data synchronization flows.
+keywords: [ziggy, salesforce write, crm integration, data update, salesforce objects, data sync]
+image: /img/ziggy-logo-light.webp
 ---
 
 # SalesForce Write Object

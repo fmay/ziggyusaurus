@@ -1,5 +1,8 @@
 ---
 title: Joiner
+description: Learn how to use the Joiner block in Ziggy flows for joining multiple data streams. Complete guide with examples and configuration options.
+keywords: [ziggy, joiner, core blocks, flows, no-code, data processing]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Joiner

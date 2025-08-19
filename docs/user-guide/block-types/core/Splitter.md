@@ -1,5 +1,8 @@
 ---
 title: Splitter Block
+description: Learn how to use the Splitter block in Ziggy flows for dividing data into multiple output paths. Complete guide with examples and configuration options.
+keywords: [ziggy, splitter, core blocks, flows, no-code, data splitting, routing]
+image: /img/ziggy-logo-light.webp
 ---
 
 The Splitter Block can be used to take data on its incoming edge and split it into multiple output edges.

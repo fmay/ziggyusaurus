@@ -1,5 +1,8 @@
 ---
-title: Flow Execution history
+title: Flow Execution History
+description: Monitor and analyze flow execution history in Ziggy. Track performance, debug issues, and understand workflow execution patterns over time.
+keywords: [ziggy execution history, flow monitoring, performance tracking, execution logs, workflow analytics]
+image: /img/ziggy-logo-light.webp
 ---
 
 # Flow Execution history

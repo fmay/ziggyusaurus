@@ -48,5 +48,6 @@ In both cases, Ziggy can handle this for you very efficiently by creating a stre
 
 Initially, you can bulk load this data. Thereafter, you can incrementally load data when systems performs record level changes. This is all managed by [ingestion flows](search-loading-flows).
 
-
+## Parameter object
+A search
 

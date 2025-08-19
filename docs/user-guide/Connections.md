@@ -38,6 +38,7 @@ It is good practice to use the [Secrets Manager](Secrets)
 to avoid exposing sensitive information in the Connection object. 
 
 ## Elastic Search
+The typical connection objects are shown below. Full details can be found in [Elastic docs](https://www.elastic.co/docs/reference/elasticsearch/clients/javascript/getting-started). The Ziggy connection object is what you are looking for. Note that the object is different for Severless, Hosted and Local offerings. 
 
 Serverless
 ```javascript

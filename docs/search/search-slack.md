@@ -34,4 +34,5 @@ This lets you configure
 ## Multiple Slack Apps
 If you want to have several discreet Slack Apps, no problem. You can configure each App with its own / commands and scope permissions.
 
-
+## Slack Formatter Block
+The [Slack Block Formatter](/user-guide/block-types/slack/slack-formatter) lets you configure the way data is rendered in Slack.

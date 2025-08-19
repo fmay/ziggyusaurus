@@ -10,7 +10,7 @@ This Block performs two main functions.
 - Performs the actual ingestion when the Flow is run.
 
 ## Connection
-You should select an Elastic Connection in [Connections](/user-guide/Connections).
+You should select an Elastic Connection in [Connections](/user-guide/Connections#elastic-search).
 
 ## Index
 Select the Elastic Search index from the dropdown.

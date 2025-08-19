@@ -12,6 +12,31 @@ However, you can add all sorts of custom logic to address more complex scenarios
 
 ![Slack Search](/img/ai-intro/ai-search-flow-slack.png)
 
+## Receiver Data object
+Search Flows using the [AI Search Prompt Block](/user-guide/block-types/ai/ai-search-prompt.md) expect to receive an input object in the [Receiver](/user-guide/block-types/core/Receiver.md).
+
+This has the following format
+
+```JavaScript
+{
+    query: 'the natural language query',
+    isAIQuery: true, // always true
+    offset: 0, // optional: but required for pagination
+    limit: 10, // optional: but required for pagination
+    count: false, // optional: true returns a count
+    cachedQuery: {}, // optional See below. 
+    fetchIds: false, // optional: set to true if you want the query to return a list of matched IDs
+    restrictToIds: [], // optional: a list of IDs that the search should restrict the search to
+    responseType: '', //optional. See below
+    callingUserId: '', // optional: see below
+}
+```
+
+The following optional parameters are available.
+
+- `cachedQuery` - the search Block (Elastic, SQL etc) returns this object after the first query call and this data is returned from the Flow. When using pagination after the first page, you should set this object with the returned `cachedQuery` object.
+- `responseType` - the current options are '', 'chatterbox'. All responses are returned in a standardised data format. 'chatterbox' is also a standardised format, just tailored for [ChatterBox](/search/search-chatterbox). You can use this format in your own front end if its suits your requirements.
+- `callingUserId` - this is reserved for [Slack](/search/search-slack.md) usage. It is the Slack user id for targeting response data to the user making the request.
 
 ## AI Prompt Block
 This Block is responsible for turning the natual language query into a platform specific one. Its main features are
@@ -27,6 +52,9 @@ the AI Prompt Block outputs a query in the right format to the search Block. Com
 - Hubspot, SalesForce (etc.)
 - Any REST API 
 - We can also build custom search blocks for any platform that offers an API or a well defined query language of some sort.
+
+## Terminator
+It is important that the **Send data in response** box is checked, so the calling flow receives the search results.
 
 ## Custom Logic
 Many search Flows contain just the AI Prompt Block and the platform specific search Block. However, any additional logic can be added into a Flow.

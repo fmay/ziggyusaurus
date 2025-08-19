@@ -138,7 +138,13 @@ const sidebars = {
                 'user-guide/block-types/elastic/elastic-search',
               ],
             },
-
+            {
+              type: 'category',
+              label: 'Slack',
+              items: [
+                'user-guide/block-types/slack/slack-formatter',
+              ],
+            },
             {
               type: 'category',
               label: 'HubSpot',

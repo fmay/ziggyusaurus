@@ -7,7 +7,14 @@ const sidebars = {
       items: [
         'search/search-overview',
         'search/search-elastic',
-        'search/search-slack',
+        {
+          type: 'category',
+          label: 'Slack',
+          items: [
+            'search/search-slack',
+            'search/search-slack-app',
+          ],
+        },
         'search/search-chatterbox',
         'search/search-prompt-flows',
         'search/search-loading-flows',
@@ -127,7 +134,6 @@ const sidebars = {
                 'user-guide/block-types/utility/Mapper',
                 'user-guide/block-types/utility/airtable',
                 'user-guide/block-types/utility/audit',
-                'user-guide/block-types/utility/slack-blocks-formatter',
               ],
             },
             {

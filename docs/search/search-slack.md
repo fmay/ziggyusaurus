@@ -1,5 +1,5 @@
 ---
-title: Slack
+title: Slack overview
 ---
 
 Rather like [ChatterBox](search-chatterbox.md), you can perform natural language queries from Slack. This allows your teams to perform any query on any data without the hassle of leaving Slack and navigating through screens in the browser.

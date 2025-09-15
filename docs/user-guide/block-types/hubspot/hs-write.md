@@ -9,7 +9,7 @@ image: /img/ziggy-logo-light.webp
 
 This block writes data on the incoming edge to the specified HubSpot object.
 
-**Important** : all fields on the input edge should be valid HubSpot properties and contain valid data for each property.
+**Important** : **ALL** fields on the input edge should be valid HubSpot properties and contain valid data for each property. You must filter out any non-HubSpot fields n the incoming edge first.
 
 <img src="/img/flows/blocks/hubspot/hubspot-write.png" alt="HubSpot Write" width="300" />
 

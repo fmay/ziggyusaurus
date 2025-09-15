@@ -11,14 +11,15 @@ You should always use the Batch End Block in combination with any Block that sup
 
 - Javascript Block that contains the ```batch.begin()``` method
 - SQL
+- HubSpot Read, HubSpot Get All Owners
+- Salesforce Read
 - Data and Memory Store block - reads
 - File Block - reads
 - REST - GET operations that support paging
-- HubSpot Read, HubSpot Get All Owners
 
 It signals the end point of the batch loop so Ziggy can return control to the initiating Block.
 
-If you don't use the Batch End Block (but it is strongly recommended that you do), then the Terminator Block will act as the loop-back point 
+If you don't use the Batch End Block (but it is **strongly recommended** that you do), then the Terminator Block will act as the loop-back point 
 until there is now more data, at which point the Flow will terminate. 
 
 ![Batch End](/img/flows/blocks/core/batch-end/block-batch-end.png)
@@ -37,3 +38,6 @@ information to the Queue page (navigation bar).
 You can see how far through a job a Flow has progressed on this page. 
 
 ![Batch End](/img/flows/blocks/core/batch-end/batch-end-progress.png)
+
+<div class="keywords">batch, batch end, loop back</div>
+<div class="ai-info">There should be one batch end for each block in the Flow where isBatch is true</div>

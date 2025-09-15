@@ -114,3 +114,8 @@ html[data-theme='dark'] main a {
   color: inherit !important;
   text-decoration: underline !important;
 }
+
+/* AI related */
+.keywords, .ai-info {
+  color: transparent;
+}

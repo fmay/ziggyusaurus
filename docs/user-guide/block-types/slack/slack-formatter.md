@@ -40,7 +40,7 @@ Below is the Slack Block configuration for returning this data
     type: "divider",
   },
   {
-    type: "repeat-section",
+    type: "repeat-section|edge_key or ommit (see below)",
     repeat: [
       {
         type: "section",
@@ -102,9 +102,14 @@ Below is the Slack Block configuration for returning this data
 ### Repeat Section
 Where you have multiple rows of data to return, you should specify `type: repeat-section`. This is a Ziggy key and is not valid Slack Block syntax. This will be replaced during Flow execution. 
 
+**Important**: `type: "repeat-section|edge_key or ommit"`. This should be set to specify where the repeating data can be found on the incoming edge.
+
+- `type: "repeat-section"` will just use the incoming edge data array for the repeating data. This is the most common case.
+- `type: "repeat-section|data"` indicates that the repeating data can be found in the `data` key of the first element of the incoming data. You would use this if the incoming data also contains count or other data associated with the main repeating data. 
+
 ```JavaScript
 {
-    type: "repeat-section",
+    type: "repeat-section|edge_key or ommit (see above)",
     repeat: [
       {
         type: "section",

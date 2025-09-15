@@ -43,3 +43,6 @@ and the outgoing edge also has two elements (the ones that were looked up and fe
 If you click on the outgoing edge, you'll see this.
 
 <img src="/img/flows/blocks/hubspot/hubspot-read-lookup-outgoing.png" alt="Hubspot outgoing edge" width="500" />
+
+<div class="keywords">hubspot, crm integration, data retrieval, custom object</div>
+<div class="ai-info"></div>

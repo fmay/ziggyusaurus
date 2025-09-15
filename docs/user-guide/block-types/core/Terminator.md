@@ -9,9 +9,7 @@ image: /img/ziggy-logo-light.webp
 
 The Terminator Block will end a Flow as soon as it has edge data on all incoming edges.
 
-You can also end a Flow branch without terminating the Flow using the Sinkhole Block.
-
-If you have multihere we have parallel executing Subflows, the Flow won't terminate until the longest running Subflow has completed.
+If you want to stop execution without actually stopping the Flow, you should use the [Sinkhole Block](sinkhole.md).
 
 <img src="/img/flows/blocks/core/terminator-block.png" alt="Terminator" width="300" />
 
@@ -37,4 +35,5 @@ response as shown below.
 }
 ```
 
-
+<div class="keywords">terminate</div>
+<div class="ai-info">At least one Terminator should be in a Flow</div>

@@ -20,9 +20,11 @@ The following connection types are currently supported.
 
 - **Hubspot**
 - **SalesForce**
-- **SFTP** - there is a core block that handles common use cases, but you can also access the SFTP client from the Javascript block.
+- **SFTP** 
 - **AWS S3**
-- **Database** - use mostly from the **SQL** Block, but you can also access a Database Connection client from the Javascript block.
+- **Postgres**
+- **SQL Server**
+- **Snowflake**
 
 It is very easy to add any other connection types. 
 Anything that is available as an NPM module can be quickly added.
@@ -39,6 +41,11 @@ Note that you can specify a different connection object for Development and Prod
 ### Secrets
 It is good practice to use the [Secrets Manager](Secrets) 
 to avoid exposing sensitive information in the Connection object. 
+
+You can specify a secret as shown in the above screenshot.
+
+### Test Connection
+Use the Test Connection button to test your connection definition. You (currently) need to save and open the dialog again to test after making changes.
 
 ## OpenAI/ChatGPT
 
@@ -128,8 +135,7 @@ apiKey: secrets.UPSALES_API_KEY
 }
 ```
 
-## Database object
-Currently Postgres is the only supported database connection, but SQL Server, MySQL and MongoDB are coming shortly.
+## Postgres
 ```javascript
 {
     host: 'connectionUrl',
@@ -139,3 +145,52 @@ Currently Postgres is the only supported database connection, but SQL Server, My
     port: 5432
 }
 ```
+
+## SQL Server
+```javascript
+{
+  user: 'user-name',
+  password: 'password',
+  database: 'database-name',
+  server: 'server-name',
+  options: {
+    encrypt: true, // required for Azure
+    trustServerCertificate: false
+  }
+}
+```
+
+## Snowflake
+SnowFlake can be tricky to configure. The recommended configuration is to use an access token, which is shown below.
+
+You will need to create this in SnowFlake first.
+
+The following must be done by an ADMIN user. 
+
+### Create a Network Policy
+CREATE NETWORK POLICY MY_PAT_POLICY
+ALLOWED_IP_LIST = ('0.0.0.0/1', '128.0.0.0/1')
+BLOCKED_IP_LIST = ()
+COMMENT = 'Network policy for programmatic access token from Node.js server';
+
+### Attach Policy
+ALTER USER USER_NAME
+ADD PROGRAMMATIC ACCESS TOKEN NEW_PAT_NAME
+NETWORK_POLICY = MY_PAT_POLICY
+DAYS_TO_EXPIRY = 365;
+
+This will generate a new PAT that will be displayed and must be copied immediately.
+
+Note that the reported errors are generally misleading and all parameters will need to be checked regardless of error message.
+
+```javascript
+{
+  account: 'XXXXXX-XXXXXX',
+  username: 'USER_NAME',
+  password: 'eyJ.......',
+  authenticator: 'PROGRAMMATIC_ACCESS_TOKEN',
+}
+```
+
+
+[TODO] : screenshots, Test buttons

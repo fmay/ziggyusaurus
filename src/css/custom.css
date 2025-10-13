@@ -119,3 +119,21 @@ html[data-theme='dark'] main a {
 .keywords, .ai-info {
   color: transparent;
 }
+
+.markdown h1 {
+  font-size: 2.6rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+.markdown h2 {
+  font-size: 2.0rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}
+
+.markdown h3 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  font-weight: 400;
+}

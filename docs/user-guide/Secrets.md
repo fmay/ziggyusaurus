@@ -33,7 +33,7 @@ When defining a [Connection](Connections), you can specify a secret.
 <img src="/img/secrets/secret-connection-reference.png" alt="Connections" width="400" />
 
 ### Javascript Block
-You can reference a connection in a Javascript Block like this.
+You can reference a connection in a [Javascript Block](user-guide/block-types/core/Javascript.md) like this.
 
 ```JavaScript
 const apiKey = secrets.NORTHWIND_DB_PASSWORD

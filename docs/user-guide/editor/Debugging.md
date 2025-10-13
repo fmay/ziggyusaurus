@@ -5,8 +5,6 @@ keywords: [ziggy debugging, flow troubleshooting, error debugging, flow inspecti
 image: /img/ziggy-logo-light.webp
 ---
 
-# Debugging
-
 ![Debugging](/img/flows/debugging/debugging-nw-to-hs.png)
 
 The Ziggy editor has a visual debugger so you can step through your Flow and look at edge data as the flow executes.

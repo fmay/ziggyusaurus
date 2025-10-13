@@ -19,3 +19,4 @@ You only need to specify the Subflow name.
 
 <img src="/img/flows/blocks/core/subflow/subflow-chooser.png" alt="Subflow chooser" width="700" />
 
+You should flag a Subflow by opening the Flow properties in the UI and checking the "This flow can be used as a Subflow" box.

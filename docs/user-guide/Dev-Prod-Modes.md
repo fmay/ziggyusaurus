@@ -4,7 +4,11 @@ title: Dev-Prod Modes
 
 # Dev/Prod Modes
 
-You can run Flows in Development and Production mode. Each mode automatically selects the development or production [Secrets](user-guide/Secrets.md) and [Connections](user-guide/Connections.md).
+## Secrets and Connections
+
+The principle way Dev/Prod Mode operates is by referincing either the Dev or Prod version of [Secrets](user-guide/Secrets.md) and [Connections](user-guide/Connections.md).
+
+The selected mode will then reference the required value at runtime.
 
 ## Select the mode in the editor
 You can change mode by clicking the large box in the top right of the Flow editor.

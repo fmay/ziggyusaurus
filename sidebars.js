@@ -10,10 +10,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Slack',
-          items: [
-            'search/search-slack',
-            'search/search-slack-app',
-          ],
+          items: ['search/search-slack', 'search/search-slack-app'],
         },
         'search/search-chatterbox',
         'search/search-prompt-flows',
@@ -23,9 +20,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'AI Models',
-      items: [
-        'models/models-overview',
-      ],
+      items: ['models/models-overview'],
     },
     {
       type: 'category',
@@ -42,13 +37,32 @@ const sidebars = {
           ],
         },
       ],
-
     },
-
+    // USER GUIDE
     {
       type: 'category',
       label: 'User Guide',
       items: [
+        {
+          type: 'category',
+          label: 'Flow design considerations',
+          items: [
+            'user-guide/considerations/considerations-intro',
+            'user-guide/considerations/how-flows-work',
+            'user-guide/considerations/dev-prod-modes',
+            'user-guide/considerations/batching',
+            'user-guide/considerations/debugging',
+            'user-guide/considerations/javascript',
+            'user-guide/considerations/edge-validation-transformation-mapping',
+            'user-guide/considerations/datastore',
+            'user-guide/considerations/flow-termination',
+            'user-guide/considerations/test-data',
+            'user-guide/considerations/error-handling',
+            'user-guide/considerations/subflows',
+            'user-guide/considerations/performance-tuning',
+            'user-guide/considerations/rate-limiting',
+          ],
+        },
         {
           type: 'category',
           label: 'Editor',
@@ -148,9 +162,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Slack',
-              items: [
-                'user-guide/block-types/slack/slack-formatter',
-              ],
+              items: ['user-guide/block-types/slack/slack-formatter'],
             },
             {
               type: 'category',
@@ -181,9 +193,7 @@ const sidebars = {
             {
               type: 'category',
               label: 'Store Helpers',
-              items: [
-                'user-guide/block-types/store-helpers/timestamper',
-              ],
+              items: ['user-guide/block-types/store-helpers/timestamper'],
             },
           ],
         },

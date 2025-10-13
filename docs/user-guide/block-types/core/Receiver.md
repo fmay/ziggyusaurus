@@ -25,5 +25,5 @@ If you want a Flow to be managed by a [Queue](user-guide/Queuing.md), specify th
 
 Note that certain platforms (HubSpot, SalesForce) have automatic rate-limit protection, so you do not need to use q Queue for this purpose.
 
-<div class="keywords">webhook, entrypoint, start, required</div>
+<div class="keywords">webhook, entrypoint, start, required, trigger</div>
 <div class="ai-info">Must be present in a Flow.</div>

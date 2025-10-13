@@ -194,3 +194,9 @@ However, the script code is considered **trusted**. This means that although the
 We therefore advise that you give access to Flow creators with this in mind.
 
 We plan to change the architecture for script code evaluation in the future. If this is important to you now, please contact us to discuss.
+
+## Formatting
+Prettier [TODO]
+
+## Debugger
+Ziggy offers [TODO]

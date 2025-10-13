@@ -5,6 +5,8 @@ keywords: [ziggy global settings, system configuration, platform administration,
 image: /img/ziggy-logo-light.webp
 ---
 
+[TODO] Update
+
 # Global Settings
 
 The Global Settings dialog can be opened from the gear icon in right side of the menu bar.
@@ -115,3 +117,6 @@ This lets you transfer your entire database to another Ziggy instance.
 - **Load Transfer File** restores this into the target Ziggy instance.
 
 Please refer to [Transferring Data](Transferring-Data) for more information.
+
+## System Monitor
+[TODO] screenshot and explanation

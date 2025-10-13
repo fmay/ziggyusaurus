@@ -41,7 +41,7 @@ https://hubspot.ziggyservices.com/api?flowUuid=<your flow uuid>&execution-key=<y
 
 You can also send the execution key in the **execution-key** header.
 
-## Execution ID
+### Execution ID
 The `executionId` query parameter is optional. It lets you pass in a **unique** string that identifies the Flow. 
 
 If you are launching Flows programmatically, then you might want to query the execution status of the Flow (see below). 
@@ -49,19 +49,29 @@ In this case you should generate a unique id (a UUID is ideal) in your code and 
 
 This value will also be shown when viewing the [Execution History](/user-guide/editor/Execution-history) and when using the [Audit block](/user-guide/block-types/utility/audit).
 
-## Passing data to the Flow
+### Dev/Prod Mode
+You can specify the mode in the query string using `executionEnvironmentMode=DEV|PROD`
+
+If you omit this parameter, it will default to `DEV`.
+
+### Passing data to the Flow
 Data you want to pass to the Flow should be included in the request body in JSON format.
 
 Any Test Data you might have in the **Receiver** block will be ignore when called with an API call.
 
-## System Queuing
+### System Queuing
 When a Flow is launched, it is added to the system execution queue. 
 
 You can set the number of parallel Flow executions using the `MAX_CONCURENT_JOBS` parameter in your `.env` file. This is 10 by default.
 
 If Ziggy is able, it will immediately execute the Flow. You can check the execution status as explain below.
 
-## Checking Flow execution status
+### Do not queue
+You can request that a Flow is not queued. You should avoid this unless really necessary. Careless use can overload the system, which queuing protects against.
+
+To prevent queueing, add `doNotQueue` as a query parameter.
+
+### Checking Flow execution status
 If you are launching Flows programmatically, you can check the execution status with the following **GET** request.
 
 ```javascript
@@ -84,10 +94,11 @@ export class ExecutionStatusResponse {
 
 If it returns a `4XX` error, the Flow has not yet been released from the Queue or has not finished executing.
 
-## Test with Postman
-The simplest way to experiment is to use Postman.
+### Test with Postman
+Postman is a good way to test this.
 
 - Paste the URL and set the method (POST for executing, GET for checking status)
 - Add your **execution-key** as a header or query parameter.
 - Add an `executionId` as a query parameter (optional).
+- Add `executionEnvironmentMode=DEV|PROD` (optional).
 - Put any data you want to pass to the Flow in the body and ensure it is JSON encoded (raw/JSON in Postman).

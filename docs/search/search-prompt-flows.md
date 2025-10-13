@@ -50,7 +50,7 @@ the AI Prompt Block outputs a query in the right format to the search Block. Com
 - [SQL](/user-guide/block-types/utility/sql/sql-edge.md) (includes data warehouses like SnowFlake, BigQuery etc)
 - [Elastic Search](/user-guide/block-types/elastic/elastic-search.md)
 - [Hubspot](/user-guide/block-types/hubspot/hs-search.md), SalesForce (etc.)
-- Any [REST API](/user-guide/block-types/utility/REST-Call.mdx) 
+- Any [REST API](/user-guide/block-types/utility/REST-Call) 
 - We can also build custom search blocks for any platform that offers an API or a well defined query language of some sort.
 
 ## Terminator

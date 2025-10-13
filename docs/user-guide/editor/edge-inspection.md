@@ -12,8 +12,7 @@ Click on an edge bubble to open the edge inspection dialog.
 ## Data
 Edge data can be inspected within the **Data** tab.
 
-![Edde bubbles](/img/flows/edge-inspection-data.png)
-
+<img src="/img/flows/edge-inspection-data.png" alt="Edge bubbles" width="350" />
 
 ## Validations, transformations and mapping
 If you perform a validation, transformation or mapping on the edge and click the bubble, you will see the following dialog.

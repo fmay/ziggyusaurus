@@ -61,6 +61,7 @@ const sidebars = {
             'user-guide/considerations/subflows',
             'user-guide/considerations/performance-tuning',
             'user-guide/considerations/rate-limiting',
+            'user-guide/considerations/documenting',
           ],
         },
         {
@@ -178,6 +179,7 @@ const sidebars = {
                 'user-guide/block-types/hubspot/hs-merge',
                 'user-guide/block-types/hubspot/hs-timeline-write',
                 'user-guide/block-types/hubspot/hs-search',
+                'user-guide/block-types/hubspot/hs-options',
               ],
             },
             {

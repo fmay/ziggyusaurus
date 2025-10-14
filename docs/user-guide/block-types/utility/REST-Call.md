@@ -25,12 +25,12 @@ You can add as many headers as you require. Tokens can be inserted
 ## Batching
 All methods support [batching](user-guide/Batching.md). If you check the **Batch** box, then you should specify 
 
-- **Batch size** - Ziggy expects to find a query parameter with a value token `{offset}`. This token will be replaced at runtime.
+- **Batch size** - Ziggy expects to find a query parameter with a value token `{{offset}}`. This token will be replaced at runtime.
 - **Max iterations** - the number of batch iterations to execute. A value of 0 indicates it should loop until there is no more data available.
 
 This is an example of a `GET` call for batching.
 
-`https://api.hubapi.com/crm/v3/objects/companies?limit={limit}&after={offset}`
+`https://api.hubapi.com/crm/v3/objects/companies?limit={{limit}}&after={{offset}}`
 
 And this shows a `POST` operations body field for this URL.
 
@@ -38,9 +38,9 @@ And this shows a `POST` operations body field for this URL.
 
 ```javascript
 {
-  query: {edge.query},
-  limit: {limit},
-  after: {offset},
+  query: {{edge.query}{},
+  limit: {{limit}},
+  after: {{offset}},
   sorts: [],
   properties: ['name'],
   filterGroups: []
@@ -51,12 +51,12 @@ And this shows a `POST` operations body field for this URL.
 
 
 
-## Remove {offset} for 1st iteration
+## Remove {{offset}} for 1st iteration
 This applies to all methods when in Batch mode.
 
 Some platforms (notably HubSpot) will error if you include the pagination value (`after` for HubSpot) query parameter for the 1st iteration. 
 
-Checking this box instructs ziggy to remove the `{offset}` token and its associated parameter name for the 1st batch iteration.
+Checking this box instructs ziggy to remove the `{{offset}}` token and its associated parameter name for the 1st batch iteration.
 
 This can be applied to the URL and the body.
 

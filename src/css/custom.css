@@ -121,19 +121,19 @@ html[data-theme='dark'] main a {
 }
 
 .markdown h1 {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   margin-top: 2rem;
   font-weight: 400;
 }
 
 .markdown h2 {
-  font-size: 2.0rem;
+  font-size:  1.7rem;
   margin-top: 2rem;
   font-weight: 400;
 }
 
 .markdown h3 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
-  font-weight: 400;
+  font-weight: 600;
 }

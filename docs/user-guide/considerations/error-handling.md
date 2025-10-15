@@ -12,6 +12,8 @@ If an error is thrown in a Block, some Blocks offer a checkbox "Output errors to
 
 You can also use the output ports of the Terminator Block to handle errors.
 
+<img src="/img/considerations/terminator-error-catch.png" alt="input args" width="300" />
+
 If an error is thrown in a Block that does not provide an error port, then the Flow will terminate with an error.
 
 ## Edge based errors

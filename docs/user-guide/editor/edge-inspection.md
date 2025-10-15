@@ -6,7 +6,7 @@ You can inspect the data on any edge when stepping through a Flow or after then 
 
 Click on an edge bubble to open the edge inspection dialog.
 
-![Edde bubbles](/img/flows/edge-inspection-flow.png)
+![Edge bubbles](/img/flows/edge-inspection-flow.png)
 
 
 ## Data
@@ -15,10 +15,9 @@ Edge data can be inspected within the **Data** tab.
 <img src="/img/flows/edge-inspection-data.png" alt="Edge bubbles" width="350" />
 
 ## Validations, transformations and mapping
-If you perform a validation, transformation or mapping on the edge and click the bubble, you will see the following dialog.
+If you perform a validation, transformation or mapping on the edge and click the bubble, you will see the following dialog. [Click here](user-guide/Structures-and-mapping.md) for full details.
 
-![Edde bubbles](/img/flows/edge-inspection-transformation.png)
-
+![Edge bubbles](/img/flows/edge-inspection-transformation.png)
 
 - The bubble will contain icons to indicate whether validation, transformation and mapping has been configured.
 - The **Data In** tab shows the data pre transformation

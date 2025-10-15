@@ -5,10 +5,13 @@ title: How Flows work
 ## Blocks and Edges
 
 - **Blocks** are the main components of a Flow. Each block serves a unique purpose such as making
-  REST calls, executing Jsvscript, talking to Hubspot or SalesForce. There are also many Blocks for
-  general data manipulation.
+  REST calls, executing Javscript, talking to Hubspot or SalesForce. There are also many Blocks for
+  general data manipulation. [Blocks reference](user-guide/block-types/core/Receiver.md).
 - **Edges** are the lines that connect Blocks and along which data flows.
+- **Edge Bubbles* are clickable and open a dialog for handling data viewing, validation, transformation and mapping.
 - **Ports** are the input and output connection handles on a Block.
+
+<img src="/img/considerations/block-edge-port.png" alt="input args" width="700" />
 
 All Blocks should be connected with other Blocks using Edges connected to Block ports.
 
@@ -19,6 +22,8 @@ If a Block does not connect to another Block via an output port, then the Flow w
 error when it has finished executing that Block.
 
 ## Block Execution
+
+![block execution](/img/considerations/parallel-execution.png)
 
 Blocks execute as soon as they can. Whether they are ready to execute or not depends on whether the
 incoming edge or edges are populated with data.
@@ -39,6 +44,8 @@ will be placed on the output edge as `[{foo: 'bar'}]`.
 
 This provides a consistent approach to transferring data between blocks and therefore all Blocks
 expect data to be in this format.
+
+Edge data can be [inspected](user-guide/editor/edge-inspection.md) and [transformed](user-guide/Structures-and-mapping.md).
 
 ## Waiting principle
 
@@ -68,12 +75,4 @@ edge. All incoming edges will have a number bubble indicating the edge indices. 
 
 This is important for edges that read data from the incoming edge. Where there is more than one edge, the primary edge will be referenced.
 
-A good example of this is the following section **Edge data helpers**.
 
-## Edge data helpers
-
-Many Blocks have the ability to use data on the incoming edges as variables within the Block. In this situation. the data is taken from the first array element (of the Primary Edge).
-
-To make life easier, you should run the Flow up to the Block (by stepping to it) and then stopping. Now the selection list will be populated with the data on that edge as a helper.
-
-You can type in literal values within double quotes if you prefer, but using the populated edge data reduces the chance of typos, especially for nested data objects.

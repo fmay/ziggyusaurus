@@ -6,17 +6,18 @@ image: /img/ziggy-logo-light.webp
 ---
 # Javascript
 
-The **Javascript** Block is the catch-all Block. 
-It allows you to perform any task that is not covered by another block.
+The **Javascript** Block is ideal for performing the most complex data transformation tasks. It also has access to certain NPM packages such as `axios`. Others can be added on request.
+
+It allows you to perform more or less any task that is not handled by another Block.
 
 ## In place or full screen editing
 There are two Javascript editing modes. You can edit in place in the Flow.
 
-<img src="/img/flows/javascript/js-in-place.png" alt="In place editing" width="500" />
+<img src="/img/flows/blocks/core/javscript/js-in-place.png" alt="In place editing" width="500" />
 
 When your code gets too large for in-place editing, then press the expand icon in the Block header.
 
-![Full screen editing](/img/flows/javascript/js-full-screen.png)
+![Full screen editing](/img/flows/blocks/core/javscript/js-full-screen.png)
 
 ## Inputs and Outputs
 
@@ -25,20 +26,16 @@ Data is read from the incoming edge or edges. The Block will automatically add a
 
 <img src="/img/flows/blocks/core/javscript/js-arguments.png" alt="input args" width="450" />
 
-In the above screenshot, you can see two arguments and two corresponding input edge connectors.
+In the above screenshot, you can see two arguments `input0` and `input1` which result in two corresponding input edge connectors. You can name the function arguments as you wish.
 
 ### Outputs
-The return structure is examined to determine how many output edge connectors should be available.
+The return structure is examined to determine how many output edge connectors should be available. You should output data as an array of objects. The following example shows a simple example.
 
-If you have a simple ```return``` statement, then an empty object is placed on a single output edge.
+<img src="/img/flows/blocks/core/javscript/js-return.png" alt="return primitive" width="1000" />
 
-You can output a primitive as follows.
+You can also output data on multiple edges.
 
-<img src="/img/flows/blocks/core/javscript/js-return-primitive.png" alt="return primitive" width="450" />
-
-Or data on multiple edges.
-
-<img src="/img/flows/blocks/core/javscript/js-return.png" alt="return statement" width="450" />
+<img src="/img/flows/blocks/core/javscript/js-return-two-outputs.png" alt="return primitive" width="800" />
 
 ## Branching to edges
 You can handle any branching logic using the ```branchTo(edgeIndexZeroBased, data)``` method.
@@ -47,7 +44,7 @@ You can handle any branching logic using the ```branchTo(edgeIndexZeroBased, dat
 
 The output connectors will automatically be validated and created as you enter the ```branchTo()``` commands.
 
-You should not return any data using ```return {edge1: someObj}``` when usiung ```branchTo()```.
+You should not return any data using ```return {edge1: someObj}``` with ```branchTo()```.
 
 ## Accessing Ziggy objects, values and methods
 You can access various objects and values from the code editor. Basic auto-completion will help you find the object or value as well as available options for each one.
@@ -56,8 +53,13 @@ You can access various objects and values from the code editor. Basic auto-compl
 You can output information to the editor's console pane (bottom left).
 
 ```JavaScript
-consoleMsg('Hello', value1, value2, ...)
+console.log('Hello', value1, value2, ...)
 ```
+
+## Axios
+The `axios` object is exposed, allowing you to make REST calls.
+
+You will often want to use this in combination with [Batching](user-guide/block-types/core/Javascript.md#batching).
 
 ## Writing to system logs
 You can also write to the Ziggy system logs. These are hourly rotated and are located in the ```/logs``` folder.
@@ -124,19 +126,6 @@ You can use the ```snooze()``` method to pause execution for a specified number 
 await snooze(1000)
 ```
 
-## Custom client objects
-You will have access to certain client objects. Which ones depends on your specific Ziggy configuration.
-
-Assuming you have Postgres, SFTP and HubSpot clients available, you can access these using.
-
-```JavaScript
-const pgClient = new clientPG(configObj)
-const ftpClient = new clientSFTP(configObj)
-const hsClient = new clientHubspot(configObj)
-```
-
-... where ```configObj``` is specific to each one.
-
 ## Batching
 You can perform batching operations with the Javascript Block. Please refer to [Batching](user-guide/Batching.md) for general information on Batching.
 
@@ -146,11 +135,12 @@ You can perform batching operations with the Javascript Block. Please refer to [
 
 You should use the ```batch``` object, which has the the following methods.
 
- ```batch.isBatch()``` - tests whether the Flow is in a batch at the point the Javascript block executes.
+ ```batch.isBatch``` - tests whether the Flow is in a batch at the point the Javascript block executes.
 - ```batch.begin(batchSize)``` - informs Ziggy that this is the starting point for batch operations and the size of each batch. This returns ```{offset: x, iteration: y}``` where ```x``` is the number of records processed by the batch loops so far and ```y``` is the batch iteration.
 - ```batch.terminate()``` - once there is no data left to process, call this to continue execution after the [**Batch End**](user-guide/block-types/core/Batch-End.md) Block (or Terminator if there is no Batch End Block.)
-- ```batch.iteration()``` - returns the batch iteration counter.
-- ```batch.offset()``` - returns the current record # offset from the first batch, in other words ```batchSize * batchIterations```.
+- ```batch.iteration``` - returns the batch iteration counter.
+- ```batch.offset``` - returns the current record # offset from the first batch, in other words ```batchSize * batchIterations```.
+- ```batch.batchSize``` - returns the number of records per iteration of the batch.
 
 ### Alerts
 You can generate a custom alert. This adds an item to the [Log](user-guide/Alerts.md) and will also send an email alert.
@@ -172,31 +162,34 @@ The second parameter (required) is notification message.
 The third, optional, parameter is any additional data you may want to add to the log. It will not appear in the notification.
 
 ## Security
-Script code does not have access to the following global objects.
+Code runs in an external worker process and prevents access to system level methods.
 
-```JavaScript
-process
-console
-global
-require
-Buffer
-fs
-child_process
-os
-net
-http
-crypto
-vm
-```
+## Worker Pool
+Ziggy provides a worker pool in which all Javascript Block code runs. The default pool size is 5. This is usually enough for most applications. However, if you have many simultaneously executing Flows and where the code is long-running (which should be avoided), then you can increase this in one of two ways.
 
-However, the script code is considered **trusted**. This means that although there is good protection from harmful script code, it should not be considered 100% safe.
+A temporary increase (until the server restarts) is made from Global Settings.
 
-We therefore advise that you give access to Flow creators with this in mind.
+<img src="/img/flows/blocks/core/javscript/js-system-monitor.png" alt="Alert" width="900" />
 
-We plan to change the architecture for script code evaluation in the future. If this is important to you now, please contact us to discuss.
+If Largest Queued Size is 0, then you have not exceeded the queue size since the server restarted.
+
+You can permanently increase the pool size by changing `JS_WORKER_POOL_SIZE=5` in the `.env` file.
 
 ## Formatting
-Prettier [TODO]
+You can use prettier type code formatting by using the following keyboard shortcuts.
+
+- Mac : Shift + Cmd + P
+- Other : Shift + Alt + F
 
 ## Debugger
-Ziggy offers [TODO]
+The Javascript Block has debugging support. This is still in beta, so please be aware that there could be some issues.
+
+To enable debugging, check the **Debug** box. The debug icons will then appear.
+
+<img src="/img/flows/blocks/core/javscript/js-debug.png" alt="Alert" width="900" />
+
+- You can see the breakpoint set in the gutter.
+- The line where code execution is paused.
+- In the bottom pane, you can see the local variables.
+
+Use the debug icons to step over code etc.

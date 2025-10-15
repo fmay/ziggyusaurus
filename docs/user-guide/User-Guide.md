@@ -12,7 +12,7 @@ Welcome to the Ziggy User Guide. This comprehensive guide covers everything you 
 ## Getting Started
 
 - [Editor](/user-guide/editor) - Learn about the Flow Editor
-- [Block Types](/user-guide/block-types) - Explore available blocks
+- [Block Types](/user-guide/block-types/core/Receiver.md) - Explore available blocks
 - [Connections](/user-guide/Connections) - Set up system connections
 - [Secrets](/user-guide/Secrets) - Manage sensitive configuration
 

@@ -15,7 +15,7 @@ The general concepts are hopefully self-explanatory but here are some things to 
 - **Add Block** - add a new Block to the canvas.
 - **Clone** - clones your Flow.
 - **Test** - indicates which [Tests](/user-guide/Tests) this Flow is associated with.
-- **Debug Info** - for developers working with [source code](/customisation/Custom-Utility-Blocks).
+- **Debug Info** - to help low level debugging.
 - **Debug Flow** - run and step through your flow using the [visual debugger](/user-guide/editor/Debugging).
 - **Execution History** - each time your Flow is executed, it logs it along with the complete flow data (optional).
 - **Named save** - you can create a save with a name you choose. You can then restore from this at a later date.

@@ -31,7 +31,7 @@ You need to specify a [Models Connection](/user-guide/Connections.md) that this 
 When adding a new Connection, from the **Type** dropdown, be sure to choose an LLM type (ChatGPT, Cohere etc.)
 
 ### Database
-If you are connecting to a SQL database or warehouse, then check the box and provide the connection details. You will need to have defined a database connection in [Connections](/user-guide/connections) first.
+If you are connecting to a SQL database or warehouse, then check the box and provide the connection details. You will need to have defined a database connection in [Connections](/user-guide/Connections.md) first.
 
 You should click the **Load Fields** button so Ziggy can perform a table discovery and populate the Fields section (see below).
 

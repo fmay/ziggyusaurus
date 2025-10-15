@@ -52,9 +52,9 @@ Use the Test Connection button to test your connection definition. You (currentl
 ```javascript
 
 {
-apiKey: 'your-api-key',
-organization: 'your-org-****',
-project: 'your-proj-***'
+    apiKey: 'your-api-key | secrets.******',
+    organization: 'your-org-****',
+    project: 'your-proj-***'
 }
 ```
 
@@ -66,7 +66,7 @@ Serverless
 {
   node: 'https://my-elasticsearch-project-xxxx.es.eu-west-1.aws.elastic.cloud:443',
   auth: {
-    apiKey: secrets.ELASTIC_API_KEY
+    apiKey: 'apiKey | secrets.******',
   }
   serverMode: 'serverless',
 }
@@ -80,7 +80,7 @@ Hosted
     },
     auth: {
         username: 'elastic',
-        password: secrets.MY_ELASTIC_PW
+        password: 'password | secrets.*****'
     }
 }
 ```
@@ -89,7 +89,7 @@ Hosted
 
 ```javascript
 {
-    accessToken: secrets.HUBSPOT_API_KEY,
+    accessToken: 'apiKey | secrets.*******',
     numberOfApiCallRetries: 5,
 }
 ```
@@ -99,8 +99,8 @@ Hosted
 ```javascript
 {
     username: "myemail4@agentforce.com",
-    password: "H8KK87KHJA7JGH7",
-    token: '987JHGehKJHh7KJh8wOiu77dd'
+    password: "password  | secrets.******",
+    token: 'token | secrets.******'
 }
 ```
 
@@ -111,8 +111,8 @@ Hosted
 {
     host: 'my-sftp-server.com',
     port: '22',
-    username: 'a8759b3dxxxxxx70c146ed99fc2xxxx',
-    password: 'XMsxxxxry8yN5flxxxxBEktDGV2Rw'
+    username: 'username',
+    password: 'password  | secrets.******'
 }
 ```
 
@@ -121,17 +121,17 @@ Hosted
 {
     region: 'us-east-1',
     credentials: {
-    accessKeyId: secrets.S3ExperimentorKeyId,
-    secretAccessKey: secrets.S3ExperimentorSecret,
-  },
+      accessKeyId: 'keyId | secrets.******',
+      secretAccessKey: 'key | secrets.******',
+    },
 }
 ```
 
 ## Upsales
 ```javascript
 {
-url: 'https://power.upsales.com/api/v2/',
-apiKey: secrets.UPSALES_API_KEY
+    url: 'https://power.upsales.com/api/v2/',
+    apiKey: 'apiKey | secrets.******'
 }
 ```
 
@@ -140,7 +140,7 @@ apiKey: secrets.UPSALES_API_KEY
 {
     host: 'connectionUrl',
     user: 'username',
-    password: 'password',
+    password: 'password | secrets.******',
     database: 'my_database',
     port: 5432
 }
@@ -150,7 +150,7 @@ apiKey: secrets.UPSALES_API_KEY
 ```javascript
 {
   user: 'user-name',
-  password: 'password',
+  password: 'password | secrets.******',
   database: 'database-name',
   server: 'server-name',
   options: {
@@ -187,7 +187,7 @@ Note that the reported errors are generally misleading and all parameters will n
 {
   account: 'XXXXXX-XXXXXX',
   username: 'USER_NAME',
-  password: 'eyJ.......',
+  password: 'eyJ....... | secrets.******',
   authenticator: 'PROGRAMMATIC_ACCESS_TOKEN',
 }
 ```

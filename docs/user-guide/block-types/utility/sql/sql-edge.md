@@ -12,7 +12,7 @@ This is used to perform a SQL search. It is typically used in conjunction with t
 Select **EDGE** from the dropdown.
 
 ### Connection
-Choose a [Connection](/user-guide/Connections#database-object) that points to the database you want to query. 
+Choose a [Connection](/user-guide/Connections#postgres) that points to the database you want to query. 
 
 Then, choose the schema and table as well as the fields the query should return.
 

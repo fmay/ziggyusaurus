@@ -73,7 +73,7 @@ In some cases, you may require a query that does performs a high targeted search
 ## Testing Flows
 You can test your search Flows directly from the Ziggy UI. You can provide test data in the [Receiver Block](/user-guide/block-types/core/Receiver.md) so you don't have to call it from whichever front end you are using.
 
-Ziggy provides excellent [debugging features](user-guide/editor/Debugging) that let you step through the Flow, one block and a time.
+Ziggy provides excellent [debugging features](user-guide/editor/Debugging.md) that let you step through the Flow, one block and a time.
 
 You can then inspect the data flowing between Blocks to diagnose issues. For example, you might want to see exactly what data is being output from the [AI Search Prompt Block](/user-guide/block-types/ai/ai-search-prompt.md). This might inform what prompt changes you need to make in that Block to pass an better query to the search block itself.
 

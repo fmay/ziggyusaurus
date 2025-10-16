@@ -60,11 +60,11 @@ Data you want to pass to the Flow should be included in the request body in JSON
 Any Test Data you might have in the **Receiver** block will be ignore when called with an API call.
 
 ### System Queuing
-When a Flow is launched, it is added to the system execution queue. 
+When a Flow is launched, it is added to the [system execution queue](user-guide/Queuing.md). 
 
 You can set the number of parallel Flow executions using the `MAX_CONCURENT_JOBS` parameter in your `.env` file. This is 10 by default.
 
-If Ziggy is able, it will immediately execute the Flow. You can check the execution status as explain below.
+If Ziggy is able, it will immediately execute the Flow. You can check the execution status as explained below.
 
 ### Do not queue
 You can request that a Flow is not queued. You should avoid this unless really necessary. Careless use can overload the system, which queuing protects against.

@@ -2,43 +2,58 @@
 title: Queuing
 ---
 
-# Queuing
-Ziggy operates its own background queuing mechanism for all Flows. 
-This ensures that the system is not overloaded with requests.
+## System Queue
 
-However, it is often necessary to use a user defined queue to stay within API rate limits.
+Ziggy operates its own background queuing mechanism for all Flows. This ensures that the system is
+not overloaded with requests.
 
-## Define Queues
-You can define your Queues in [Global Settings](Global-Settings).
+All Flows will first be placed into the System Queue before being released for execution.
+
+You can set the number of parallel Flow executions using the `MAX_CONCURENT_JOBS` parameter in your
+`.env` file. This is 10 by default.
+
+Flows will be released for execution immediately up to `MAX_CONCURENT_JOBS`. Thereafter, they will
+be queued and released as Flows complete.
+
+The only way to circumvent the system queue is when [launching Flows from an external API call](user-guide/Launching-flows.md). However, this should not be abused in high volume situations as system overload protection is bypassed.
+
+## User Defined Queue
+
+It is often helpful to use a user defined queue to stay within API rate limits. You can define these
+in Ziggy from [Global Settings](Global-Settings).
 
 ![Queue settings](/img/flows/queueing/queue-settings.png)
 
-Generally, you might use the following strategy if you were integrating Hubspot with Microsoft Dynamics.
+Queues are applied globally and work across all your Flows.
 
-- Define a **General** queue for miscellaneous Flows.
-- Define a **Hubspot** queue for all Flows that access the Hubspot Api, (which has rate limiting, typically 10 requests per second).
-- Define a **Dynamics** queue for Flows making calls to Microsoft Dynamics.
+### Defining a Queue
 
-## Rate limits
-You can assign a rate limit to a Queue by clicking on the Queue in Global Settings.
+You can manage queues and assign rate limits for each queue by clicking on the Queue section in Global Settings.
 
 <img src="/img/flows/queueing/queue-settings-edit.png" alt="Queue settings" width="450" />
 
-## Assigning a Flow to a Queue
-You can assign a request to a Queue within the Receiver Block. If no Queue is specified, the Flow will execute immediately. Otherwise, the Flow will be added to the chosen Queue and then processed by the Queue Worker.
 
-<img src="/img/flows/queueing/queues-receiver.png" alt="Receiver" width="400" />
+### Using a Queue from a Block
 
-The queue worker processes any jobs found in the queue on an FIFO basis. 
+You specify that a Block should use a Queue. This will then place that block into the queue when it executes.
 
-## Monitoring and pausing Queues
-You can access Queue stats from Queue menu bar. You can also pause and restart queues.
+<img src="/img/flows/queueing/queue-block-set.png" alt="Queue settings" width="350" />
+
+- Click in the Block header on the **?** icon.
+- Select the Queues Tab
+
+<img src="/img/flows/queueing/queue-define.png" alt="Queue settings" width="450" />
+
+- Choose (or remove) the queue from the dropdown. 
+- If a queue is selected, you will see a red **Q** icon in the header, as shown above.
+
+## Monitoring
+
+You can access Queue stats from Queue menu bar.
 
 ![Queue monitor](/img/flows/queueing/queues-menu.png)
 
-## Security
-Users with the most stringent security requirements may be concerned about any form of data persistence.
+## Security & Performance
 
-Queuing persists the data by default. Ziggy uses Redis for queue management and it is set to persist queues by default.
+Queues are never persisted to disk, they are retained in memory. As a result, you should be aware that queues with a large number of entries can impact memory usage, although it would usually requre a large overflow to cause problems.
 
-You can disable this in ```redis.conf``` if you are running Ziggy solo.

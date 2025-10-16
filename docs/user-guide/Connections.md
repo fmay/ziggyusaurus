@@ -98,7 +98,7 @@ Hosted
 
 ```javascript
 {
-    username: "myemail4@agentforce.com",
+    username: "myemail@agentforce.com",
     password: "password  | secrets.******",
     token: 'token | secrets.******'
 }

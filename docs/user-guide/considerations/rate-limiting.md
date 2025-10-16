@@ -11,3 +11,4 @@ If you would like to have rate limit protection for other platforms, please inqu
 
 ## REST Block
 The [REST Block](user-guide/block-types/utility/REST-Call.md#rate-limit) also has support for rate limit protection. This is implemented at the Block level. 
+

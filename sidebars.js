@@ -59,6 +59,7 @@ const sidebars = {
             'user-guide/considerations/test-data',
             'user-guide/considerations/error-handling',
             'user-guide/considerations/subflows',
+            'user-guide/considerations/queueing',
             'user-guide/considerations/performance-tuning',
             'user-guide/considerations/rate-limiting',
             'user-guide/considerations/documenting',

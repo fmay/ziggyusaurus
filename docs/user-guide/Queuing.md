@@ -1,5 +1,5 @@
 ---
-title: Queuing
+title: Queuing & Rate Limiting
 ---
 
 ## System Queue
@@ -17,7 +17,9 @@ be queued and released as Flows complete.
 
 The only way to circumvent the system queue is when [launching Flows from an external API call](user-guide/Launching-flows.md). However, this should not be abused in high volume situations as system overload protection is bypassed.
 
-## User Defined Queue
+## User Defined Queue (rate limiting)
+
+**HubSpot** : you do not need to rate limit protect when using HubSpot Blocks. These have in-built rate-limit protection. 
 
 It is often helpful to use a user defined queue to stay within API rate limits. You can define these
 in Ziggy from [Global Settings](Global-Settings).

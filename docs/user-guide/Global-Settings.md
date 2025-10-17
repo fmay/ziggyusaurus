@@ -119,4 +119,8 @@ This lets you transfer your entire database to another Ziggy instance.
 Please refer to [Transferring Data](Transferring-Data) for more information.
 
 ## System Monitor
-[TODO] screenshot and explanation
+This lets you monitor all important aspects of your Ziggy server.
+
+This screen lets you temporarily adjust the Javascript Worker Pool size until your server restarts. Refer to [Performance Tuning](user-guide/Performance-Tuning.md) for details.
+
+![System Monitor](/img/flows/blocks/core/javscript/js-system-monitor.png)

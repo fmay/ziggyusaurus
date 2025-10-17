@@ -62,6 +62,7 @@ const sidebars = {
             'user-guide/considerations/queueing',
             'user-guide/considerations/performance-tuning',
             'user-guide/considerations/documenting',
+            'user-guide/considerations/performance-tuning',
           ],
         },
         {
@@ -223,6 +224,7 @@ const sidebars = {
         'user-guide/Transferring-Data',
         'user-guide/Troubleshooting',
         'user-guide/Security',
+        'user-guide/Performance-Tuning',
         'user-guide/Deployment',
       ],
     },

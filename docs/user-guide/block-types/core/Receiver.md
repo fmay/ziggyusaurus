@@ -12,8 +12,7 @@ You will often [trigger a Flow from an API call](user-guide/Launching-flows.md).
 pass data to the Flow in the REST body, which will be received by this Receiver Block.
 
 ## Test data
-While building your Flow, you can simulate data being passed into the Flow by adding test data 
-in the block as shown above.
+While [debugging your Flow](user-guide/editor/Debugging.md), you can simulate data being passed into the Flow by adding test data in the block as shown above.
 
 When the Flow is launched from an API call, the test data is ignored. 
 

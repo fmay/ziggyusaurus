@@ -139,7 +139,7 @@ You should use the ```batch``` object, which has the the following methods.
 - ```batch.begin(batchSize)``` - informs Ziggy that this is the starting point for batch operations and the size of each batch. This returns ```{offset: x, iteration: y}``` where ```x``` is the number of records processed by the batch loops so far and ```y``` is the batch iteration.
 - ```batch.terminate()``` - once there is no data left to process, call this to continue execution after the [**Batch End**](user-guide/block-types/core/Batch-End.md) Block (or Terminator if there is no Batch End Block.)
 - ```batch.iteration``` - returns the batch iteration counter.
-- ```batch.offset``` - returns the current record # offset from the first batch, in other words ```batchSize * batchIterations```.
+- ```batch.offset``` - returns the current record # offset from the first batch, in other words ```batchSize * batchIterations```. The value shown is the offset for the start of the next loop.
 - ```batch.batchSize``` - returns the number of records per iteration of the batch.
 
 ### Alerts
@@ -161,10 +161,7 @@ The second parameter (required) is notification message.
 
 The third, optional, parameter is any additional data you may want to add to the log. It will not appear in the notification.
 
-## Security
-Code runs in an external worker process and prevents access to system level methods.
-
-## Worker Pool
+## Worker Pool - performance tuning
 Ziggy provides a worker pool in which all Javascript Block code runs. The default pool size is 5. This is usually enough for most applications. However, if you have many simultaneously executing Flows and where the code is long-running (which should be avoided), then you can increase this in one of two ways.
 
 A temporary increase (until the server restarts) is made from Global Settings.

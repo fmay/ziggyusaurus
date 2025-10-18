@@ -25,7 +25,7 @@ You write to this from a [Javascript Block](/user-guide/block-types/core/Javascr
 You can also write to the system log files, which are stored in the ```volume-data/logs``` folder.
 
 ### Log viewer
-There is a [System Log Viewer](/user-guide/Global-Settings.md#system-logs) in the Global Settings.
+There is a [System Log Viewer](/user-guide/Global-Settings.md#logs--files) in the Global Settings.
 
 ### Write to log from Javascript Block
 Write to system logs using ```sysLog.(log|warn|debug|verbose|error)```. See the [Javascript Block](/user-guide/block-types/core/Javascript) for details.

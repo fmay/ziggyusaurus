@@ -189,3 +189,21 @@ Manage your User Defined Queues, which are used for generalised [queueing](user-
   then this will be logged and an alert notification sent. See [Alerts](Alerts) for more details.
 - **Delete queue** - the delete icon lets you delete a Flow. You should be careful when deleting a
   queue as any Flow using this Queue will fail.
+
+## Load Test
+This is a useful way of seeing how your Ziggy server performs under load. It is not entirely arms-length as it runs on your regular Ziggy server, but the actual server load created by the load test is rather small.
+
+If you are [launching Flows from external API calls](user-guide/Launching-flows.md), then the load test can simulate the conditions you expect in real-life.
+
+<img src="/img/global-settings/gsettings-load-test.png" alt="Queues" width="800" />
+
+Settings are as follows
+
+- **Flow** - the flow to test with
+- **Execution key** - the execution key to use. You must have at least one [Execution Key](#security)
+- **Test Calls** - total nuber of Flows to call
+- **Pause between calls** - the delays between each Flow execution. Set to 1 to simulate extremely heavy, near continuous load. Set to higher values to simulate the load you expect.
+- **System Queue size before pausing** - when **Pause between calls** is small, or for Flows that take a long time to execute, the [MAX_CONCURRENT_JOBS](user-guide/Queuing.md) threshold will be exceeded. At this point, Flows will be queued. This value says "if the size of the System Queue exceeds 20, then stop requesting new Flow executions". It will then wait until the System Queue has subsided to **Restart call at queue size** (see below).
+- **Restart call at queue size** tells the load test to resume Flow executions once the Queue has subsided to the specified size. 
+- **Pause between queue size polling (ms)** - tells the load test how long to wait to poll the queue size again.
+

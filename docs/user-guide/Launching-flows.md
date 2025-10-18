@@ -94,6 +94,23 @@ export class ExecutionStatusResponse {
 
 If it returns a `4XX` error, the Flow has not yet been released from the Queue or has not finished executing.
 
+### Checking System Queue size
+You might want to build in your own protection/detection mechanism so you don't request more Flow executions if the System Queue is heavily loaded. 
+
+Normally, the System Queue will be empty. Once the [MAX_CONCURRENT_JOBS](user-guide/Queuing.md) threshold has been exceeded, then Flows will be queued.
+
+You can detect this with the following REST call.
+
+```javascript
+const url = `http://yourdomain:3000/api/ziggy/system-queue-list`
+const response = await axios.get(url, {
+headers: {
+  'Content-Type': 'application/json',
+  'Execution-Key': executionKey,
+}
+})
+```
+
 ### Test with Postman
 Postman is a good way to test this.
 

@@ -137,3 +137,16 @@ html[data-theme='dark'] main a {
   margin-top: 2rem;
   font-weight: 600;
 }
+
+/* Improve anchor scrolling behavior */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust for fixed navbar */
+}
+
+/* Ensure images maintain their aspect ratio and don't cause layout shifts */
+.markdown img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

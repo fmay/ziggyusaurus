@@ -51,9 +51,10 @@ You specify that a Block should use a Queue. This will then place that block int
 
 ## Monitoring
 
-You can access Queue stats from Queue menu bar.
+You can access Queue stats from Queue menu bar. This updates every 2 seconds so will show near real-time values,
 
 ![Queue monitor](/img/flows/queueing/queues-menu.png)
+
 
 ## Security & Performance
 

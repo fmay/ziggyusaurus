@@ -207,3 +207,19 @@ Settings are as follows
 - **Restart call at queue size** tells the load test to resume Flow executions once the Queue has subsided to the specified size. 
 - **Pause between queue size polling (ms)** - tells the load test how long to wait to poll the queue size again.
 
+### What affects performance
+The major factors in performance are
+
+- Block execution time - slow running Blocks will obviously impact Flow execution.
+- [MAX_CONCURRENT_JOBS](user-guide/Queuing.md) - the system level setting for the number of Flows that can execute simultaneously.
+- [Queues](user-guide/Queuing.md) - if you are using Ziggy queues for rate-limiting purposes, these will impact performance when rate-limits are exceeded.
+- Javascript worker pool - if you are making heavy use of Javascript Blocks that are slow-running. You can [adjust the size of the worker pool](user-guide/Performance-Tuning.md).
+
+### Peak Queue Sizes
+These are important values for overall system performance under load.
+
+- **System Queue Size (peak)** - if this values becomes very high, then it is a sign that you might want to increase [MAX_CONCURRENT_JOBS](user-guide/Queuing.md). You should be aware then if your server does not have a lot of memory, increasing this value arbitrarily will simply overwhelm the server. 
+- **JS Queue Size (peak)** - if this values becomes too high, your Flow is waiting for a Javascript worker to become available from the pool. Refer to [Performance Tuning](user-guide/Performance-Tuning.md) for information on increasing the pool size.
+
+### System Stats
+The right hand box shows important indicators for the Ziggy server as a whole. These can also be accessed under normal system usage in [System Monitor](#system-monitor)

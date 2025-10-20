@@ -22,3 +22,5 @@ You can [monitor the current system usage](user-guide/Global-Settings.md#system-
 
 You can create [Alerts](user-guide/Alerts.md) if usage limits are exceeded.
 
+## Load Testing
+Ziggy has an [integrated Load Testing](user-guide/Global-Settings.md#load-test) utility that lets you test the system performance and load with individual Flows.

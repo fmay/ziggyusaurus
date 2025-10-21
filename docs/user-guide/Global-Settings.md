@@ -206,6 +206,7 @@ Settings are as follows
 - **System Queue size before pausing** - when **Pause between calls** is small, or for Flows that take a long time to execute, the [MAX_CONCURRENT_JOBS](user-guide/Queuing.md) threshold will be exceeded. At this point, Flows will be queued. This value says "if the size of the System Queue exceeds 20, then stop requesting new Flow executions". It will then wait until the System Queue has subsided to **Restart call at queue size** (see below).
 - **Restart call at queue size** tells the load test to resume Flow executions once the Queue has subsided to the specified size. 
 - **Pause between queue size polling (ms)** - tells the load test how long to wait to poll the queue size again.
+- **Reset peak values** - resets the peak queue values before running the test.
 
 ### What affects performance
 The major factors in performance are

@@ -190,3 +190,30 @@ To enable debugging, check the **Debug** box. The debug icons will then appear.
 - In the bottom pane, you can see the local variables.
 
 Use the debug icons to step over code etc.
+
+## AI Assistant
+Press the lightning icon at the top of the block to reveal the assistant (see screenshot below). Due to space constraints, you may want to change to the full screen mode.
+
+**Important** : the assistant will usually do a better job if the Flow has been run up to the Javascript Block so the input edge(s) are populated with data. 
+
+### Basic Block
+ 
+Here's a basic block with nothing added to it.
+
+<img src="/img/flows/javascript/js-ai-assistant-before.png" alt="Alert" width="500" />
+
+### Coding instruction
+You can see how we have asked it to capitalize the message field (see the input field at the bottom of the code in the above screenshot). This uses the edge input data for extra context, which is why it's important to run the Flow first so the input edge has data.
+
+<img src="/img/flows/javascript/js-ai-assistant-after.png" alt="Alert" width="500" />
+
+You can continue to issue instructions to modify the code. It will always use the current code as context.
+
+### Explain
+
+You can also ask specific or general questions like "What does this code do?" or simply "explain".
+
+<img src="/img/flows/javascript/js-ai-assistant-explain.png" alt="Alert" width="900" />
+
+### Reverting
+If the AI Assistant messes up your code, just use Undo.

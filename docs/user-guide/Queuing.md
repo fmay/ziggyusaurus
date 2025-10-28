@@ -58,5 +58,5 @@ You can access Queue stats from Queue menu bar. This updates every 2 seconds so 
 
 ## Security & Performance
 
-Queues are never persisted to disk, they are retained in memory. As a result, you should be aware that queues with a large number of entries can impact memory usage, although it would usually requre a large overflow to cause problems.
+Queues are never persisted to disk, they are retained in memory. As a result, you should be aware that queues with a large number of entries can impact memory usage, although it would usually require a large queue backlog to cause problems.
 

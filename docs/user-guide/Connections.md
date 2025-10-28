@@ -16,18 +16,9 @@ Connections are managed the Ziggy UI.
 
 ![Connections](/img/flows/connections/connections-listing.png)
 
-The following connection types are currently supported.
+See below for the currently available connection types.
 
-- **Hubspot**
-- **SalesForce**
-- **SFTP** 
-- **AWS S3**
-- **Postgres**
-- **SQL Server**
-- **Snowflake**
-
-It is very easy to add any other connection types. 
-Anything that is available as an NPM module can be quickly added.
+It is very easy to add any other connection types. Please inquire if you would like a new Connection type to be added.
 
 ## Configuration
 The configuration you enter is an object. The example below shows a Hubspot connection object.
@@ -192,5 +183,50 @@ Note that the reported errors are generally misleading and all parameters will n
 }
 ```
 
+## AWS MQQT
+```javascript
+{
+    endPoint: 'xxxxxx-ats.iot.us-east-1.amazonaws.com',
+    clientId: 'my-thing-name',
+    certificate: '-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE----- | secrets.******',
+    privateKey: '-----BEGIN RSA PRIVATE KEY-----\n...\n-----END RSA PRIVATE KEY----- | secrets.******',
+    ca: '-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE----- | secrets.******',
+}
+```
 
-[TODO] : screenshots, Test buttons
+## Generic MQQT
+Use this for MQTT platforms other than AWS IoT Core.
+
+### TLS Enabled
+
+```javascript
+{
+    brokerUrl: 'mqtt.example.com',
+    port: 8883,
+    clientId: 'my-client-id',
+    tlsEnabled: true,
+    username: 'username',
+    password: 'password | secrets.******',
+    caCert: '-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE----- | secrets.******',
+    clientCert: '-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE----- | secrets.******',
+    clientKey: '-----BEGIN RSA PRIVATE KEY-----\n...\n-----END RSA PRIVATE KEY----- | secrets.******',
+}
+```
+
+### No TLS
+```javascript
+{
+    brokerUrl: 'mqtt.example.com',
+    port: 1883,
+    clientId: 'my-client-id',
+    tlsEnabled: false,
+    username: 'username',
+    password: 'password | secrets.******',
+    caCert: 'ca-certificate | secrets.******',
+    clientCert: 'client-certificate | secrets.******',
+    clientKey: 'client-private-key | secrets.******',
+}
+```
+
+
+

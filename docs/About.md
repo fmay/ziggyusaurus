@@ -9,35 +9,65 @@ image: /img/ziggy-logo-light.webp
 
 # About Ziggy
 
-## AI Search
-Ziggy is a platform for perform highly configurable AI driven search.
+Ziggy is for any software/platform company that needs to make it incredibly easy to access its data.
 
-**Any data, in any of your systems, platforms and databases can be made fully searchable using natural language queries. There is rarely any need for any form of coding. However, if you want to handle edge-cases with code, you can.**
+It lets **non-developers** read data from and write to your platform whether for  
 
-## Flows
-Ziggy Flows handle the customization of your Flows.
+- your customers 
+- or your own internal usae.
 
-- Perform any data validation, transformation and mappings.
-- Handle any custom logic
-- Connect directly to databases, CRMs, ERPs, APIs - in fact pretty well anything - using Flow Blocks. 
-- Collections of platform specific Blocks to connect to platforms like Hubspot, SalesForce, Databases and Warehouses etc, handling not just reading but object associations, record owner translations etc.
+This means your developers can focus on their core product responsibilities and your customers don't have to try to find scarce developer resource to integrate with your platform.
 
-## API
-Each Flow is accessible through an API call, so you can trigger ingestions, WebHook handlers, migrations, integrations that can support your search Flows.
+## Example - HubSpot
+The screenshot below shows a simple example of getting company data and associated contacts out of HubSpot and into a Snowflake data warehouse. 
 
-## Installation
-Ziggy is installed in any cloud platform just using Docker. This means you have total control over security and performance.
+<img src="/img/about/about-hs-associations.png" alt="Alert" width="900" />
 
-## Customization
-Ziggy is not limited to one, predefined way of doing things. The whole point of Ziggy is to give you total control over all aspects, using Flows to achieve this. 
+- It reads a batch of 100 records from HubSpot Companies.
+- Fetches associated Contact records for each of the companies fetched.
+- Writes them to a Snowflake data warehouse.
+- Data can be viewed, validated and transformed as it moves from Block to Block.
+- You can step through the Flow one Block at a time - great when building and debugging Flows.
 
-So no matter where your data lives or how you want to search it, you can do it.
+## Your Platform's own Custom Blocks
+The secret to making your company's data easy to access is the **Custom Block**. You can add as many Custom Blocks as makes sense for your platform.
+
+Continuing the HubSpot example, below are some of the custom HubSpot Blocks (there are 12 in total). Each one focuses on making one specific task as easy as it can be,
+
+Of course, you can achieve the same the API but it is a non-trivial API and, of course, only developers can find their way around it.
+
+<img src="/img/about/about-hs-blocks-group.webp" alt="Alert" width="900" />
+
+As data moves around the Flow from Block to Block, you can validate and transform this data in any way you choose and send it to other platforms (such as files, databases, APIs or other platforms' Custom Blocks).
+
+A Custom Block can access your platform in several ways and abstract away all the complexity.
+
+- Your platform API - the preferred and usual way.
+- Direct database access - may be ok for read access but likely unsafe for write access unless protected.
+
+## What about Zapier or Make.com?
+Both of these platform can also be used by non-developers. However, they have some drawbacks, especially for medium to large size companies.
+
+- You have no control over security and have no control over how or where your data is stored - Ziggy gives you **absolute** control.
+- You have no control over performance - Ziggy gives you **absolute** control.
+- Usage based costs escalate over time in a way that is hard to predict and budget for. Ziggy's pricing is independent of usage.
+
+## Security, Performance and Pricing
+Ziggy is perfect for both you as a platform company and your customers. here's why.
+
+- Ziggy can run on your own cloud infrastructure, meaning you control all aspects of access and security.
+- Each customer gets their own, isolated Ziggy server, providing reassurance that their data is fully isolated from other customers.
+- The Ziggy server is highly performant but for most cases runs very happy in a $12 per month AWS Instance. 
+- Ziggy can run large number of flows simultaneously and has superb queuing and rate-limiting support. It copes very nicely even with Internet of Things applications where large volumes of data need to be processed.
+- Performance can be tuned in many ways depending on the nature of your Flows and volumes.
+- We do not have usage based pricing making it easy for you and your customers to budget.
 
 ## Product or Services
+If you want assistance in building Custom Blocks or designing Flows, we are here to help.
 
-You can, of course, use Ziggy to build your own search applications. However, if your priority is getting a solution up and running as fast as possible, then we can assist you in any of the following ways. 
-
+- Custom Block development
 - Building end-to-end solutions
+- Flow design and development
 - Training
 - Support
 

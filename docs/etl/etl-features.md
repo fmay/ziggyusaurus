@@ -44,7 +44,7 @@ The Flow shown below is a good example of this.
 
 ### Core Blocks
 
-These are simple Blocks that are commonly used.
+Below are a few of our commonly used Blocks.
 
 ![core blocks](/img/etl-intro/intro-core-blocks.png)
 
@@ -53,31 +53,31 @@ These are simple Blocks that are commonly used.
 The perform more complex tasks such as:
 
 - Writing CSV/JSON data to files on S3, SFTP etc.
-- Writing to and reading from databases.
+- Writing to and reading from databases and data warehouses.
 - REST calls.
 - Writing to and reading from Ziggy's key/value Data Store.
 
 ![utility blocks](/img/etl-intro/intro-utility-blocks.png)
 
-### Hubspot Blocks
+### Custom Blocks
 
-These blocks are designed to simplify interactions with Hubspot.
+These platform specific blocks, designed to simplify interactions with any target platform. Below are some of the HubSpot Custom Blocks.
 
 ![hubspot blocks](/img/etl-intro/intro-hubspot-blocks.png)
 
 ### Javascript Block
 
-The Javascript Block is a very flexible Block. Use it to:
+The [Javascript Block](user-guide/block-types/core/Javascript.md) is a very flexible Block. It is perfect for dealing with any edge case or managing complex custom transformations.
 
-- Make custom REST API calls
-- Embed logic inside your flow
-- Create Custom Blocks in a Subflow
+- Call whitelisted NPM modules
+- Integrated code debugger
+- AI Assistant that is tightly integrated into the Ziggy Flow architecture. Great for non-developers wanting to do things you'd otherwise need a developer for.
 
 ![js example](/img/etl-intro/intro-js-example.png)
 
-## Debugger
+## Flow Debugger
 
-Ziggy provides a full step-through debugger. You can inspect data and view logs.
+Ziggy provides a comprehensive [Flow Debugger](user-guide/editor/Debugging.md). You can inspect data and view logs.
 
 ![debugging](/img/etl-intro/intro-debugging.png)
 
@@ -93,9 +93,9 @@ You can also inspect data by right-clicking on an edge and selecting "Inspect Da
 
 ![edge inspect data](/img/etl-intro/intro-edge-inspect-data.png)
 
-### Edge Validation and Mapping
+### Edge Validation, Transformation and Mapping
 
-You can validate and map data on edges. This is useful for ensuring data quality and transforming data as it flows through your Flow.
+You can [validate, transform and map](user-guide/Structures-and-mapping.md) data on edges. This is useful for ensuring data quality and transforming data as it flows through your Flow.
 
 ![edge validate map](/img/etl-intro/intro-edge-validate-map.png)
 
@@ -109,39 +109,51 @@ You can create Subflows to organize your Flow and reuse common patterns. Subflow
 
 ### Execution History
 
-Ziggy keeps a history of all Flow executions. You can view the results of previous executions and debug issues.
+Ziggy keeps a comprehensive [Flow Execution History](/user-guide/Monitoring). You can view the results of previous executions and debug issues. You have [full control](/user-guide/History-data-storage-levels) of when and whether data persists.
 
 ### Batching
 
-Ziggy can process data in batches to improve performance and reduce memory usage.
+Ziggy can process data in [batches](user-guide/Batching.md) to improve performance and control memory usage.  
 
-### Queuing
+### Rate Limiting
 
-Ziggy can queue Flow executions to ensure they run in the correct order and prevent resource contention.
+Ziggy [User Queues](/user-guide/Queuing.md) let you specify rate limits that protect against overage when using 3rd party platforms, or simply to dlow things down at strategic points in a Flow.
+
+### Performance Tuning
+Ziggy is designed to be highly performant but give you full control over the important aspects of performance tuning. 
+
+- Max Concurrent Flows - how many Flows can run simultaneously. The ideal value depends very much on the nature of the Flows you are running. 
+- System Queue - if Max Concurrent Flows is exceeded then they are placed in an in-memory queue. You can specify the size of this queue.
+- Overflow Queue - if the system queue is exceeded, further Flow execution requests are placed in a database overflow queue.
+- [User / Rate Limiting Queues](user-guide/Queuing.md) - these are also tunable in a similar way.
+
+The benefit of this approach is that you can extract the best possible performance without overloading the system or the memory queues. 
+
+All relevant values can be monitored in the [System Monitor](user-guide/Queuing.md).
+
+### Load Testing
+
+To help you with performance tuning, we provide a [Load Testing](/user-guide/Global-Settings.md#load-test) option that lets you run large number of flows at any specified rate. The test results show clearly how key indicators are effected.
 
 ### Alerts and Logging
 
-Ziggy provides comprehensive logging and alerting capabilities. You can set up alerts for Flow failures and monitor Flow performance.
+Ziggy provides comprehensive [logging](/user-guide/Global-Settings.md#logs--files) and [alerting](docs/user-guide/Alerts.md) capabilities. You can set up alerts for Flow failures and monitor Flow performance.
 
 ### Secrets Management
 
-Ziggy provides a secure way to store and manage secrets such as API keys and database passwords.
-
-### Variables
-
-You can define variables in your Flow and use them in Blocks. Variables can be set at runtime or defined in the Flow configuration.
+Ziggy provides a secure way to store and [manage secrets](/user-guide/Secrets.md) such as API keys and database passwords.
 
 ### Connections
 
-Ziggy provides a way to define and manage connections to external systems such as databases and APIs.
+Ziggy provides a way to define and [manage connections](/user-guide/Connections.md) to external systems such as databases and APIs.
 
 ### Data Store
 
-Ziggy provides a key/value Data Store that can be used to store data between Flow executions.
+Ziggy provides a fast, local key/value Data Store that can be used to store data for a variety of purposes. The [Data Store Block](docs/user-guide/block-types/utility/Data-Store.md) provides access.
 
 ### Memory Store
 
-Ziggy provides an in-memory store that can be used to store data during Flow execution.
+Ziggy provides an in-memory store that can be used to store data during Flow execution. 
 
 ### Commander
 
@@ -149,40 +161,21 @@ Commander is Ziggy's command-line interface that allows you to manage Flows, con
 
 ### Development and Production Modes
 
-Ziggy provides separate development and production modes to ensure safe testing and deployment of Flows.
+Ziggy provides separate [development and production modes](docs/user-guide/Dev-Prod-Modes.md) to ensure safe testing and deployment of Flows.
 
 ### Scheduler
 
-Ziggy provides a built-in scheduler that allows you to run Flows on a schedule.
+Ziggy provides a built-in [scheduler](/user-guide/Scheduled-Flows.md) that allows you to run Flows on a schedule.
 
-### Deployment Options
+### Deployment
 
-Ziggy can be deployed in various ways to meet your infrastructure requirements.
+Ziggy is very easy to deploy. It is a simple Docker Container that always runs in a private server on the infrastructure of your choice. It normally runs just fine on a $12 per month AWS EC2 Instance (or equivalent on Azure etc.).
+
+As a result you have full control over performance and security.
 
 ### Data Transfer
 
 Ziggy provides efficient data transfer capabilities for moving large amounts of data between systems.
-
-### Security Controls
-
-Ziggy provides comprehensive security controls to ensure your data and Flows are protected.
-
-## Deployment (Ziggy Solo)
-
-Ziggy Solo gives you complete deployment flexibility:
-
-- Deploy on your own dedicated server or cloud infrastructure
-- Available as a Docker container for bare-bones installation
-- Choose your own database and Redis instance
-- Full control over your data and infrastructure
-
-## Security Principles
-
-Ziggy is designed with security in mind:
-
-- You have full control over API access and user management
-- Choose what data to persist and what to keep ephemeral
-- All security controls are under your management
 
 ## Source Code
 

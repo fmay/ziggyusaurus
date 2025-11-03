@@ -9,6 +9,9 @@ title: Flow settings
 ## Identifier
 Each Flow has a unique id. This is the value you will need to used when [launching flows via an API call](/user-guide/Launching-flows).
 
+## Lock/Unlock
+CLicking the padlock icon toggles the Flow between locked and unlocked. A locked Flow will prevents inadvertent changes to your Flow. A locked Flow will be clearly shown when you view the Flow in the editor. 
+
 ## API Launch URL
 Press this button to paste the URL that [external systems should use to launch the Flow](/user-guide/Launching-flows). 
 

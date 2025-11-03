@@ -185,27 +185,27 @@ Manage your User Defined Queues, which are used for generalised [queueing](user-
 - **Rate limit** - this will ensure that Flows are executed according to a per second rate limit
   value you specify here. This feature works across all Flows that use the same Queue ensuring you
   never exceed the target API's ceiling value.
-- **Alert threshold** - if the queue size ever exceeds this value and alerts are enabled for queues,
-  then this will be logged and an alert notification sent. See [Alerts](Alerts) for more details.
+- **Overflow threshold** - if the queue size ever exceeds this value then data is queued in the database (rather than in memory). [Alerts](Alerts) are also sent.
 - **Delete queue** - the delete icon lets you delete a Flow. You should be careful when deleting a
   queue as any Flow using this Queue will fail.
 
 ## Load Test
-This is a useful way of seeing how your Ziggy server performs under load. It is not entirely arms-length as it runs on your regular Ziggy server, but the actual server load created by the load test is rather small.
+To help you with performance tuning, we provide a Load Testing option that lets you run large number of flows at any specified rate. The test results show clearly how key indicators are effected.
+
+<img src="/img/global-settings/gsettings-load-testing.png" alt="Users" width="800" />
+
+
+You can tweak Max Concurrent Flows, Queue Size and Javascript Worker Pool size in the [System Monitor](#system-monitor).
+
+You should also be aware that if you are using User Queues for rate limiting, this can significantly affect performance and adjusting the above values will not improve performance if your Flow is being rate limited by your queue.
 
 If you are [launching Flows from external API calls](user-guide/Launching-flows.md), then the load test can simulate the conditions you expect in real-life.
-
-<img src="/img/global-settings/gsettings-load-test.png" alt="Queues" width="800" />
 
 Settings are as follows
 
 - **Flow** - the flow to test with
 - **Execution key** - the execution key to use. You must have at least one [Execution Key](#security)
-- **Test Calls** - total nuber of Flows to call
-- **Pause between calls** - the delays between each Flow execution. Set to 1 to simulate extremely heavy, near continuous load. Set to higher values to simulate the load you expect.
-- **System Queue size before pausing** - when **Pause between calls** is small, or for Flows that take a long time to execute, the [MAX_CONCURRENT_JOBS](user-guide/Queuing.md) threshold will be exceeded. At this point, Flows will be queued. This value says "if the size of the System Queue exceeds 20, then stop requesting new Flow executions". It will then wait until the System Queue has subsided to **Restart call at queue size** (see below).
-- **Restart call at queue size** tells the load test to resume Flow executions once the Queue has subsided to the specified size. 
-- **Pause between queue size polling (ms)** - tells the load test how long to wait to poll the queue size again.
+- **Test Calls** - total number of Flows to execute
 - **Reset peak values** - resets the peak queue values before running the test.
 
 ### What affects performance
@@ -224,3 +224,4 @@ These are important values for overall system performance under load.
 
 ### System Stats
 The right hand box shows important indicators for the Ziggy server as a whole. These can also be accessed under normal system usage in [System Monitor](#system-monitor)
+

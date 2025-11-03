@@ -1,6 +1,7 @@
 const sidebars = {
   tutorialSidebar: [
     'About',
+    'etl/etl-features',
     {
       type: 'category',
       label: 'AI Search',
@@ -22,50 +23,35 @@ const sidebars = {
       label: 'AI Models',
       items: ['models/models-overview'],
     },
-    {
-      type: 'category',
-      label: 'Flows and ETL',
-      items: [
-        'etl/etl-features',
-        {
-          type: 'category',
-          label: 'Case Studies',
-          items: [
-            'case-studies/hubspot/Case-Study-Hubspot',
-            'case-studies/hubspot/Migration',
-            'case-studies/hubspot/Integration',
-          ],
-        },
-      ],
-    },
     // USER GUIDE
     {
       type: 'category',
       label: 'User Guide',
       items: [
-        {
-          type: 'category',
-          label: 'Flow design considerations',
-          items: [
-            'user-guide/considerations/considerations-intro',
-            'user-guide/considerations/how-flows-work',
-            'user-guide/considerations/dev-prod-modes',
-            'user-guide/considerations/batching',
-            'user-guide/considerations/debugging',
-            'user-guide/considerations/javascript',
-            'user-guide/considerations/edge-validation-transformation-mapping',
-            'user-guide/considerations/datastore',
-            'user-guide/considerations/flow-termination',
-            'user-guide/considerations/test-data',
-            'user-guide/considerations/error-handling',
-            'user-guide/considerations/subflows',
-            'user-guide/considerations/queueing',
-            'user-guide/considerations/mqtt',
-            'user-guide/considerations/performance-tuning',
-            'user-guide/considerations/documenting',
-            'user-guide/considerations/performance-tuning',
-          ],
-        },
+        // {
+        //   type: 'category',
+        //   label: 'Flow design considerations',
+        //   items: [
+        //     'user-guide/considerations/considerations-intro',
+        //     'user-guide/considerations/how-flows-work',
+        //     'user-guide/considerations/dev-prod-modes',
+        //     'user-guide/considerations/batching',
+        //     'user-guide/considerations/debugging',
+        //     'user-guide/considerations/javascript',
+        //     'user-guide/considerations/edge-validation-transformation-mapping',
+        //     'user-guide/considerations/datastore',
+        //     'user-guide/considerations/flow-termination',
+        //     'user-guide/considerations/test-data',
+        //     'user-guide/considerations/error-handling',
+        //     'user-guide/considerations/subflows',
+        //     'user-guide/considerations/queueing',
+        //     'user-guide/considerations/mqtt',
+        //     'user-guide/considerations/performance-tuning',
+        //     'user-guide/considerations/documenting',
+        //     'user-guide/considerations/performance-tuning',
+        //   ],
+        // },
+        'user-guide/considerations/considerations-intro',
         {
           type: 'category',
           label: 'Editor',

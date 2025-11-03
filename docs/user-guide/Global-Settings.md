@@ -190,16 +190,15 @@ Manage your User Defined Queues, which are used for generalised [queueing](user-
   queue as any Flow using this Queue will fail.
 
 ## Load Test
+If you are [launching Flows from external API calls](user-guide/Launching-flows.md), then the load test can simulate the conditions you expect in real-life.
+
 To help you with performance tuning, we provide a Load Testing option that lets you run large number of flows at any specified rate. The test results show clearly how key indicators are effected.
 
-<img src="/img/global-settings/gsettings-load-testing.png" alt="Users" width="800" />
+<img src="/img/global-settings/gsettings-load-test.png" alt="Load Test" width="800" />
 
-
-You can tweak Max Concurrent Flows, Queue Size and Javascript Worker Pool size in the [System Monitor](#system-monitor).
+You can adjust Max Concurrent Flows, System Queue Size and Javascript Worker Pool size in the [System Monitor](#system-monitor).
 
 You should also be aware that if you are using User Queues for rate limiting, this can significantly affect performance and adjusting the above values will not improve performance if your Flow is being rate limited by your queue.
-
-If you are [launching Flows from external API calls](user-guide/Launching-flows.md), then the load test can simulate the conditions you expect in real-life.
 
 Settings are as follows
 
@@ -207,21 +206,3 @@ Settings are as follows
 - **Execution key** - the execution key to use. You must have at least one [Execution Key](#security)
 - **Test Calls** - total number of Flows to execute
 - **Reset peak values** - resets the peak queue values before running the test.
-
-### What affects performance
-The major factors in performance are
-
-- Block execution time - slow running Blocks will obviously impact Flow execution.
-- [MAX_CONCURRENT_JOBS](user-guide/Queuing.md) - the system level setting for the number of Flows that can execute simultaneously.
-- [Queues](user-guide/Queuing.md) - if you are using Ziggy queues for rate-limiting purposes, these will impact performance when rate-limits are exceeded.
-- Javascript worker pool - if you are making heavy use of Javascript Blocks that are slow-running. You can [adjust the size of the worker pool](user-guide/Performance-Tuning.md).
-
-### Peak Queue Sizes
-These are important values for overall system performance under load.
-
-- **System Queue Size (peak)** - if this values becomes very high, then it is a sign that you might want to increase [MAX_CONCURRENT_JOBS](user-guide/Queuing.md). You should be aware then if your server does not have a lot of memory, increasing this value arbitrarily will simply overwhelm the server. 
-- **JS Queue Size (peak)** - if this values becomes too high, your Flow is waiting for a Javascript worker to become available from the pool. Refer to [Performance Tuning](user-guide/Performance-Tuning.md) for information on increasing the pool size.
-
-### System Stats
-The right hand box shows important indicators for the Ziggy server as a whole. These can also be accessed under normal system usage in [System Monitor](#system-monitor)
-

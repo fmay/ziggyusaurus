@@ -2,10 +2,9 @@
 title: Launching flows
 ---
 
-# Launching flows
 All Flows can be launched from the UI. For migrations, this is the typical approach,
 
-# Launching a Flow with an API call
+## Launching a Flow with an API call
 For most integration scenarios, you will want to launch your Flows from an external source.
 An API call is the usual approach.
 

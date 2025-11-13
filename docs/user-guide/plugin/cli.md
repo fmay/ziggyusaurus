@@ -2,7 +2,7 @@
 title: CLI
 ---
 
-You should use the CLI to help you scaffold a plugin, manage blocks and register/sync with the Ziggy instance.
+You should use the [CLI](/user-guide/cli/plugin-commands.md) to help you scaffold a plugin, manage blocks and register/sync with the Ziggy instance.
 
 ## Current working directory
 You must be in the root of a plugin project to run the Ziggy CLI `ziggy plugin` commands. 

@@ -203,6 +203,15 @@ const sidebars = {
             'user-guide/plugin/batcher',
           ],
         },
+        {
+          type: 'category',
+          label: 'CLI',
+          items: [
+            'user-guide/cli/overview',
+            'user-guide/cli/authorization',
+            'user-guide/cli/plugin-commands',
+          ],
+        },
         'user-guide/History-data-storage-levels',
         'user-guide/Monitoring',
         'user-guide/Structures-and-mapping',

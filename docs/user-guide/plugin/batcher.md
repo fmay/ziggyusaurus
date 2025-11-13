@@ -1,5 +1,5 @@
 ---
-title: Batching
+title: Batching server handler
 ---
 
 You will often want to create a block that initiates [Batching](/user-guide/Batching.md). 
@@ -92,8 +92,9 @@ export async function executeBatcherBlockV1(props: BlockExecutionProps): Promise
     }
   }
 }
-
 ```
+
+Refer to the [Server block handler](./server.md) for code explanations that are not specific to batching.
 
 ## Batch setup
 `getBatchStackItem()` sets up the batching. Note that `if (config.isBatch) {...}` is optional and is included for illustrative purposes only. If your block always operates in batch mode, then you would not define `isBatch` in your [config](./config.md) file.
@@ -119,8 +120,8 @@ Call the following helper function to check whether there is no more data or `ma
 If you want to manage your own termination logic, then you can call `terminateBatch(props, batchItem)` when you determine that the batch should terminate.
 
 ## Setting noMoreData
-You should include some logic to tell the batching whether there is any more data to fetch. Below we are checking whether the amount of data returned by the `const response = await client.get(`?limit=${limit}&skip=${offset}`)
-` is less than the `limit` value. In this case, we can assume that there is no more data to fetch and therefore set `batchItem.noMoreData = true`.
+You should include some logic to tell the batching whether there is any more data to fetch. Below we are checking whether the amount of data returned by the API call
+is less than the `limit` value. In this case, we can assume that there is no more data to fetch and therefore set `batchItem.noMoreData = true`.
 
 ```javascript
    if (batchItem) {

@@ -4,6 +4,8 @@ title: Create Plugin
 
 Use the CLI to create a new plugin project.
 
+You should first navigate to a folder from which the plugin project will be created as a subfolder.
+
 `ziggy plugin create`
 
 You will be prompted to enter information before the project is created.

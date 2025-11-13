@@ -1,5 +1,5 @@
 ---
-title : Server code
+title : Server block handler
 ---
 
 ## Building

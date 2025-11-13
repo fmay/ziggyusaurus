@@ -1,5 +1,5 @@
 ---
-title: Configuration
+title: Configuration file
 ---
 
 The first thing you should do is to configure the block properties in `my-block.v1.config.ts`.

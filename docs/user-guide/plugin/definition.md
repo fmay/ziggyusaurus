@@ -33,4 +33,23 @@ export const MyBlockBlockV1: PluginBlockDefinition = {
 }
 ```
 
-You may want to change the icon `icon: MdExtension`. [React Icons](https://react-icons.github.io/react-icons/) is the recommended source if you require a good selection.
+## Block Icons
+Each block displays an icon in the top left of the Block when rendered in a Ziggy Flow.
+
+For quick and easy icons, use an icon from [React Icons](https://react-icons.github.io/react-icons/). By default `MdExtension` is generated.
+
+```javascript
+      icon: MdExtension,
+```
+
+You can change this to another icons from React Icons or you can use a png, jpg or svg file.
+
+```javascript
+icon: {
+    type: 'file',
+    format: 'png',  // 'png', 'jpg', 'jpeg', 'svg'
+    path: 'myicon.png'
+}
+```
+
+You should then place the image file in the `assets` folder and then rebuild the plugin using the package script or `ziggy plugin build`.

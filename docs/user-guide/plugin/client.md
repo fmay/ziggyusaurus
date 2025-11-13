@@ -1,5 +1,5 @@
 ---
-title: Client
+title: Client block handler
 ---
 
 The file `my-block.v1.block.tsx` is the React component that renders in the Ziggy flow editor. 

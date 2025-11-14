@@ -11,4 +11,11 @@ This is under continuous development and more commands are being added.
 
 ## Installation
 
-URL Coming soon
+```shell
+npm install -g github:fmay/ziggy-cli.git
+```
+
+## Commands
+
+### Plugin commands
+All [plugin commands](./plugin-commands.md) are grouped under `ziggy plugin`.

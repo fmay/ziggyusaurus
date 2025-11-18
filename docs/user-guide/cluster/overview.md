@@ -16,9 +16,10 @@ It is important to understand how to adjust the main settings that will influenc
 A single Ziggy server can handle large numbers of simultaneously executing flows. However, if you are dealing with very high load, then creating a cluster is the answer.
 
 ## Redundancy
-There are different ays to configure your cluster for high-availability scenarios.
+There are different ways to configure your cluster for high-availability scenarios. See the [Levels page](/user-guide/cluster/levels.md).
 
-
+## Load Balancing
+You will need to configure a load balancer to point to the servers in your cluster.
 
 
 

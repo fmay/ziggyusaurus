@@ -220,6 +220,8 @@ const sidebars = {
             'user-guide/cluster/monitoring',
             'user-guide/cluster/protected-server',
             'user-guide/cluster/leader',
+            'user-guide/cluster/docker-compose',
+            'user-guide/cluster/health',
           ],
         },
         'user-guide/History-data-storage-levels',

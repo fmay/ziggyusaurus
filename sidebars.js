@@ -212,6 +212,16 @@ const sidebars = {
             'user-guide/cli/plugin-commands',
           ],
         },
+        {
+          type: 'category',
+          label: 'Ziggy Cluster',
+          items: [
+            'user-guide/cluster/overview',
+            'user-guide/cluster/monitoring',
+            'user-guide/cluster/protected-server',
+            'user-guide/cluster/leader',
+          ],
+        },
         'user-guide/History-data-storage-levels',
         'user-guide/Monitoring',
         'user-guide/Structures-and-mapping',

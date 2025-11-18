@@ -7,15 +7,9 @@ title: Queuing & Rate Limiting
 Ziggy operates its own background queuing mechanism for all Flows. This ensures that the system is
 not overloaded with requests.
 
-All Flows will first be placed into the System Queue before being released for execution.
+You should refer to [Performance tuning](docs/user-guide/Performance-Tuning.md) for information on how to optimize your server configuration.
 
-You can set the number of parallel Flow executions using the `MAX_CONCURENT_JOBS` parameter in your
-`.env` file. This is 10 by default.
-
-Flows will be released for execution immediately up to `MAX_CONCURENT_JOBS`. Thereafter, they will
-be queued and released as Flows complete.
-
-The only way to circumvent the system queue is when [launching Flows from an external API call](user-guide/Launching-flows.md). However, this should not be abused in high volume situations as system overload protection is bypassed.
+The only way to circumvent the system queue is when [launching Flows from an external API call](user-guide/Launching-flows.md) and specifying `doNotQueue`. However, this should not be abused in high volume situations as system overload protection is bypassed.
 
 ## User Defined Queue (rate limiting)
 

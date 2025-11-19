@@ -218,6 +218,7 @@ const sidebars = {
           items: [
             'user-guide/cluster/overview',
             'user-guide/cluster/levels',
+            'user-guide/cluster/load-testing',
             'user-guide/cluster/monitoring',
             'user-guide/cluster/protected-server',
             'user-guide/cluster/instance-names',

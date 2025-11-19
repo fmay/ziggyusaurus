@@ -3,7 +3,7 @@ title: Docker Compose
 ---
 
 ## Level 1
-For a [Level 1 cluster]((/user-guide/cluster/levels.md)) your docker file will look like this.
+For a [Level 1 cluster]((/user-guide/cluster/levels.md)) a typical `docker-compose.yaml` is shown below. Note the (optional) use of Caddy for automatic Let's Encrypt certificates. 
 
 ```yaml
 services:

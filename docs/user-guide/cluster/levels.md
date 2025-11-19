@@ -2,7 +2,11 @@
 title: Cluster Levels
 ---
 
-We will refer to these levels in the documentation. They indicate whether your cluster is intended for scale, high-availability or both.
+The Cluster Level indicates whether your cluster is intended primarily for 
+
+- Scale
+- High availability
+- Both
 
 ## Level 1
 Ziggy runs in a Docker container. By default, one of these runs the database and Redis. This is fine for scaling, but not for high-availability. If the container running the database and redis fails, Ziggy will fail. 

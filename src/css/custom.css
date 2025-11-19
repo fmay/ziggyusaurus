@@ -140,7 +140,7 @@ html[data-theme='dark'] main a {
 
 /* Improve anchor scrolling behavior */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scroll-padding-top: 80px; /* Adjust for fixed navbar */
 }
 

@@ -202,6 +202,7 @@ You should also be aware that if you are using User Queues for rate limiting, th
 
 Settings are as follows
 
-- **Flow** - the flow to test with
-- **Test Calls** - total number of Flows to execute
+- **Flow** - the flow to test with.
+- **Total Calls** - total number of Flows to execute.
+- **Pause between calls** - how long to wait between each flow execution call. 1 ms is the heaviest load possible.
 - **Reset peak values** - resets the peak queue values before running the test.

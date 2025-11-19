@@ -4,9 +4,7 @@ title: Overview
 
 A Ziggy cluster addresses your scalability and high availability requirements.
 
-<img src="/img/cluster/flow-monitor.png" alt="flow execution monitor" width="800" />
-
-## Video summary
+## Video overview
 
 The following video shows
 

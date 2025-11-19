@@ -203,6 +203,5 @@ You should also be aware that if you are using User Queues for rate limiting, th
 Settings are as follows
 
 - **Flow** - the flow to test with
-- **Execution key** - the execution key to use. You must have at least one [Execution Key](#security)
 - **Test Calls** - total number of Flows to execute
 - **Reset peak values** - resets the peak queue values before running the test.

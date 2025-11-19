@@ -55,7 +55,7 @@ Currently, user roles other than Admin do not function.
 **IMPORTANT** - note that flushed data will remain in the database until you perform a database
 reorganisation. This can be done in the Housekeeping section in these Global Settings.
 
-### **Successful Executions** and **Errored Executions**
+### Successful Executions and Errored Executions
 
 These provide the default approach to storing data. Ziggy gives you full control if and how
 execution history data is stored. This allows you to strike the correct balance between security,

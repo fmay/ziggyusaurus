@@ -9,6 +9,8 @@ You can adjust the system performance by adjusting the following values in the [
 - Javascript Worker Pool size
 - You can also run a [multi-server configuration](/user-guide/cluster/overview.md) 
 
+<img src="/img/flows/blocks/core/javscript/js-system-monitor.png" alt="System monitor" width="1200" />
+
 ## Maximum concurrent flows
 The nuber of flows that can execute simultaneously on the server. The default is 10, but you can increase this significantly higher if required. 
 
@@ -22,7 +24,7 @@ If a flow is invoked and the number of currently active flows exceeds Maximum co
 If you are passing in large payloads, then the impact on memory will be related to the size of this payload and the number of flows that are queued. The default value is 100, but you can increase this as you require. 
 
 ## System queue overflow
-Once the system queue is full, waiting flows will be persisted to the database. The throughput will drop somewhat once the overflow is being used. If the overflow size gets too large, it is a clear sign that you need to adjust **Maximum concurrent flows**, **Maximum system queue size** or add another server to balance the load.
+Once the system queue is full, flows will be persisted to the database. The throughput will drop somewhat once the overflow is being used. If the overflow size gets too large, it is a clear sign that you need to adjust **Maximum concurrent flows**, **Maximum system queue size** or add another server to a [Ziggy cluster](docs/user-guide/cluster/overview.md).
 
 ## Javascript workers
 Javascript Block code is executed in isolated worker processes. Ziggy manages a pool of workers. By default the pool size is 20 but you can increase this in the [System Monitor](user-guide/Global-Settings.md#system-monitor).
@@ -31,7 +33,7 @@ Javascript Block code is executed in isolated worker processes. Ziggy manages a 
 There are two ways to monitor the load and the flow throughput.
 
 - In the [System Monitor](user-guide/Global-Settings.md#system-monitor) section of Global Settings.
-- From the Flow Execution Monitor. TODO : link to new page
+- From the [Flow Execution Monitor](/user-guide/flow-execution-monitor.md). 
 
 You can also configure [Alerts](user-guide/Alerts.md) if system resource limits are exceeded.
 

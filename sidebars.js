@@ -217,8 +217,10 @@ const sidebars = {
           label: 'Ziggy Cluster',
           items: [
             'user-guide/cluster/overview',
+            'user-guide/cluster/levels',
             'user-guide/cluster/monitoring',
             'user-guide/cluster/protected-server',
+            'user-guide/cluster/instance-names',
             'user-guide/cluster/leader',
             'user-guide/cluster/docker-compose',
             'user-guide/cluster/health',

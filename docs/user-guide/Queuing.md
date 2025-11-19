@@ -49,6 +49,7 @@ You can access Queue stats from Queue menu bar. This updates every 2 seconds so 
 
 ![Queue monitor](/img/flows/queueing/queues-menu.png)
 
+You can press the icon in the Peak overflow column to reset the peak value after adjusting performance values.
 
 ## Security & Performance
 

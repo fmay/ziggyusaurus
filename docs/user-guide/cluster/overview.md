@@ -2,7 +2,9 @@
 title: Overview
 ---
 
-You can create a Ziggy cluster to address your scalability and redundancy needs.
+A Ziggy cluster addresses your scalability and high availability requirements.
+
+<img src="/img/cluster/flow-monitor.png" alt="flow execution monitor" width="800" />
 
 ## Before you create your cluster
 You should be familiar with the performance tuning settings before you add instances. This will help you tune your instances which still applies when running multiple servers.

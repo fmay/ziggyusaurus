@@ -118,6 +118,14 @@ Hosted
 }
 ```
 
+## Azure Blob
+```javascript
+{
+    accountName: 'storage_account',
+    accountKey: 'key | secrets.******',
+}
+```
+
 ## Upsales
 ```javascript
 {

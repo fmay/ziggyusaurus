@@ -85,14 +85,42 @@ viewer.
 
 <img src="/img/global-settings/gsettings-housekeeping.png" alt="Housekeeping" width="800" />
 
-Perform a database reorganisation.
+### Database Reorganization
+When data is deleted from the database, records are flagged for deletion rather than fully deleted. As a result, the database will increase in size over time. [Flow execution history](/user-guide/editor/Execution-history.md) uses the most database space. 
 
-- **Full Vacuum** is the most thorough but it blocks the database until completed.
-- **Standard Vacuum** does not block the database but will slow it down. It removes records flagged
-  for deletion and reindexes.
+Execution history items are automatically deleted as per the **Execution Log Retention (hours)** setting in [Flows settings section](#flows). The higher this value, the larger your database size and the longer reorganization will take. 48 to 168 hours is typical as you will usually be interested in failed executions that happen in the short term.
 
-Please note that these operations can take a long time and are bets performed during periods of
-relative inactivity.
+The **Reorganize** button performs a database vacuum that fully deletes all records in all tables that are flagged for deletion.
+
+Vacuuming will slow the database down, so it is best done when load is at its lowest.
+
+Note the **Auto Vacuum** settings that perform this automatically on a schedule you specify.
+
+### DB Backup
+
+You should always create a database backup schedule. 
+
+The backup is created on the server itself, so if you lose your storage system, you will lose not only the database (if it is configured to run on the server, which is the default), but also the backup.
+
+For this reason, you are advised to use the **Remote backup** option.
+
+- Create a [Connection](docs/user-guide/Connections.md) for either S3 or Azure.
+- Specify the bucket name
+- Test it - it will create a test file called `Test-Remote.txt`. If this file is created, then run a manual backup by pressing the **Backup Now** button and check that the file is created.
+
+Whenever the backup is performed (whether manually or scheduled) the backup should be copied to the remote storage.
+
+You could also set up customer scripts on the server to perform other remote backup configurations. The backup folder is in 
+
+### Auto Vacuum
+Performs a database reorganization at the specifeid time(s). It is suggested you do this daily at a time when load is lowest as it will slow database performance while it runs.
+
+### System Transfer
+**Create Transfer File** - creates a database backup that is then automatically downloaded to your computer. If you do nothing else then this is effectively a local backup. 
+
+**Load Transfer File** - lets choose and load a Transfer File that you created using the above step and then load it into the current Ziggy system you are working with. The database is completely replaced and the existing database is backed up but no longer online. 
+
+**Important** : you should always create a backup or a Transfer File on the system you are about to load the remote Transfer File INTO. The transfer process does also retain the database, which is named `ziggy-pre-transfer-backup-timestamp.sql.gz`.
 
 ## System Monitor
 

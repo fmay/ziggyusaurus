@@ -180,6 +180,7 @@ const sidebars = {
                 'user-guide/block-types/hubspot/hs-create-associations',
                 'user-guide/block-types/hubspot/hs-get-all-owners',
                 'user-guide/block-types/hubspot/hs-owner-translate',
+                'user-guide/block-types/hubspot/hs-currency',
                 'user-guide/block-types/hubspot/hs-merge',
                 'user-guide/block-types/hubspot/hs-timeline-write',
                 'user-guide/block-types/hubspot/hs-search',

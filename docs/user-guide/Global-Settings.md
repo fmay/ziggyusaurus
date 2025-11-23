@@ -98,7 +98,8 @@ relative inactivity.
 
 This lets you monitor all important aspects of your Ziggy server.
 
-This screen lets you temporarily adjust the Javascript Worker Pool size until your server restarts.
+This screen lets you temporarily adjust the Javascript Worker Pool and heap sizes until your server restarts.
+
 Refer to [Performance Tuning](user-guide/Performance-Tuning.md) for details.
 
 ![System Monitor](/img/flows/blocks/core/javscript/js-system-monitor.png)

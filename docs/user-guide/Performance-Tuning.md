@@ -7,9 +7,23 @@ You can adjust the system performance by adjusting the following values in the [
 - Maximum concurrent flows
 - Maximum system queue size
 - Javascript Worker Pool size
-- You can also run a [multi-server configuration](/user-guide/cluster/overview.md) 
+- Javascript maximum heap size
+
+There are limits to how much performance you can squeeze out of a single server, at which point you should consider a [multi-server configuration](/user-guide/cluster/overview.md).
 
 <img src="/img/flows/blocks/core/javscript/js-system-monitor.png" alt="System monitor" width="1200" />
+
+## Tuning strategy
+
+The main consideration when tuning is the available memory. It is worth considering the following when adjusting key values.
+
+- Performance depends on the nature of your flows and available memory. You switch to a [Cluster](/user-guide/cluster/overview.md) when you need more performance and high availability.
+- The [Load Tester](/user-guide/Global-Settings.md#load-test) (or running your own external load testing) is a useful way of getting a handle on performance.
+- You should be aware of the [Queues screen](/user-guide/Queuing.md#monitoring) and the [Flow Execution Monitor](/user-guide/flow-execution-monitor.md), both of which give you useful insights into current flow load and peaks.
+- The NodeJS process is where the core of the application runs. It does not need lots of memory but it should not be getting close to the Heap Limit (which can be adjusted in your `.env` or `docker-compose.yaml` files). 
+- Max concurrent flows will impact the NodeJS heap size but the actual amount depends very much on the nature of your flows.
+- The Javascript Worker Pool settings have an immediate impact on memory. If you make only occasional use of the Javascript block or they are very short running, you can afford to have a lower value. You can inspect the Queued Tasks and Largest Queue Size values to see whether you are exceeding the pool size.
+- When flows are queued (System Queue) then performance will degrade somewhat. If they overflow ([Queues screen](/user-guide/Queuing.md#monitoring) or [Load Tester](/user-guide/Global-Settings.md#load-test)) then performance will slow further as they persist to the database to avoid memory overload.
 
 ## Maximum concurrent flows
 The nuber of flows that can execute simultaneously on the server. The default is 10, but you can increase this significantly higher if required. 
@@ -27,7 +41,13 @@ If you are passing in large payloads, then the impact on memory will be related 
 Once the system queue is full, flows will be persisted to the database. The throughput will drop somewhat once the overflow is being used. If the overflow size gets too large, it is a clear sign that you need to adjust **Maximum concurrent flows**, **Maximum system queue size** or add another server to a [Ziggy cluster](docs/user-guide/cluster/overview.md).
 
 ## Javascript workers
-Javascript Block code is executed in isolated worker processes. Ziggy manages a pool of workers. By default the pool size is 20 but you can increase this in the [System Monitor](user-guide/Global-Settings.md#system-monitor).
+Javascript Block code is executed in isolated worker processes. Ziggy manages a pool of workers, which are pre-allocated and therefore have an immediate impact on total system memory consumption. 
+
+The total memory required is `Pool Size * Heap Size`. 
+
+The pool size is 20 by default, but you can increase this in the [System Monitor](user-guide/Global-Settings.md#system-monitor). 
+
+When you change either value, the server will make immediate adjustments. If there is not enough memory to accommodate the values then it will allocate as many workers as it can without overloading memory.
 
 ## Monitoring
 There are two ways to monitor the load and the flow throughput.

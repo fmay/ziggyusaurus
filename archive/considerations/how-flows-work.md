@@ -6,7 +6,7 @@ title: How Flows work
 
 - **Blocks** are the main components of a Flow. Each block serves a unique purpose such as making
   REST calls, executing Javscript, talking to Hubspot or SalesForce. There are also many Blocks for
-  general data manipulation. [Blocks reference](user-guide/block-types/core/Receiver.md).
+  general data manipulation. [Blocks reference](../../docs/user-guide/block-types/core/Receiver.md).
 - **Edges** are the lines that connect Blocks and along which data flows.
 - **Edge Bubbles* are clickable and open a dialog for handling data viewing, validation, transformation and mapping.
 - **Ports** are the input and output connection handles on a Block.
@@ -45,7 +45,7 @@ will be placed on the output edge as `[{foo: 'bar'}]`.
 This provides a consistent approach to transferring data between blocks and therefore all Blocks
 expect data to be in this format.
 
-Edge data can be [inspected](user-guide/editor/edge-inspection.md) and [transformed](user-guide/Structures-and-mapping.md).
+Edge data can be [inspected](../../docs/user-guide/editor/edge-inspection.md) and [transformed](../../docs/user-guide/Structures-and-mapping.md).
 
 ## Waiting principle
 

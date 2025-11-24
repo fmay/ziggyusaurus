@@ -4,7 +4,7 @@ title: Batching
 
 Batching allows to you handle pagination scenarios on your data source.
 
-[Click here](user-guide/Batching.md) for full documentation on Batching.
+[Click here](../../docs/user-guide/Batching.md) for full documentation on Batching.
 
 Your data source might contain very large numbers of records. It is therefore necessary to process these in batches to avoid overload and fetch limits imposed by 3rd parties.
 

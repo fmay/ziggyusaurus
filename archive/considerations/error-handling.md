@@ -17,5 +17,5 @@ You can also use the output ports of the Terminator Block to handle errors.
 If an error is thrown in a Block that does not provide an error port, then the Flow will terminate with an error.
 
 ## Edge based errors
-The [edge configuration dialog](user-guide/Structures-and-mapping.md) offers various ways of dealing with errors so that the Flow does not terminate with an error.
+The [edge configuration dialog](../../docs/user-guide/Structures-and-mapping.md) offers various ways of dealing with errors so that the Flow does not terminate with an error.
 

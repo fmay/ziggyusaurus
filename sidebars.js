@@ -67,7 +67,7 @@ const sidebars = {
       type: 'category',
       label: 'User Guide',
       items: [
-        'user-guide/considerations/considerations-intro',
+        'user-guide/ug-intro',
         {
           type: 'category',
           label: 'Editor',

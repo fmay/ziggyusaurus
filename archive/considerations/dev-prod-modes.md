@@ -7,6 +7,6 @@ Ziggy supports these modes to allow for you to test before moving to production.
 - Secrets
 - Connections
 
-Please refer to [Dev/Prod Modes](/docs/user-guide/Dev-Prod-Modes.md) for details.
+Please refer to [Dev/Prod Modes](/user-guide/Dev-Prod-Modes.md) for details.
 
 

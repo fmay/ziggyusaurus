@@ -10,5 +10,5 @@ Below, you can see a Block with an annotation in the header. Click the **?** ico
 <img src="/img/considerations/block-annotation.png" alt="Block annotation" width="300" />
 
 ## Canvas annotation
-You can add [Annotation Blocks](user-guide/block-types/core/Annotation.md) to the canvas where you can write markdown copy.
+You can add [Annotation Blocks](../../docs/user-guide/block-types/core/Annotation.md) to the canvas where you can write markdown copy.
 

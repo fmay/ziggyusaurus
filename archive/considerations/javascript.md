@@ -11,5 +11,5 @@ You can also perform Batching operations should you need to.
 ## Alternatives
 For simpler requirements, you can use the functionality provided on the Edge for data transformations, validations and data mapping. 
 
-Refer to [Structures and Mapping](user-guide/Structures-and-mapping.md) for detailed information.
+Refer to [Structures and Mapping](../../docs/user-guide/Structures-and-mapping.md) for detailed information.
 

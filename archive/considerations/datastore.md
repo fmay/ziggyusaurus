@@ -2,7 +2,7 @@
 title: Data Store
 ---
 
-[Click here](user-guide/Data-Store-section.md) for detailed information on the Data Store.
+[Click here](../../docs/user-guide/Data-Store-section.md) for detailed information on the Data Store.
 
 The Data Store is an extremely useful way of storing data in Ziggy in a key/value format. It is highly recommended to understand how and when to use this.
 

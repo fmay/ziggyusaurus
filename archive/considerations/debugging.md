@@ -11,7 +11,7 @@ Ziggy has extensive Flow debugging support.
 
 Please refer to the following detailed documentation.
 
-- [Debugging Flows](user-guide/editor/Debugging.md)
+- [Debugging Flows](../../docs/user-guide/editor/Debugging.md)
 - [Debugging Javascript Block code](/user-guide/block-types/core/Javascript.md#debugger)
 - [Edge data inspection](/user-guide/editor/edge-inspection.md)
 

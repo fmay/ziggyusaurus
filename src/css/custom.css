@@ -176,7 +176,7 @@ html {
   background: var(--ifm-menu-link-sublist-icon) 100% / 1.0rem no-repeat !important;
 
   /* Space from the text */
-  margin-right: 0.5rem !important;
+  margin-right: 0.2rem !important;
 
   /* Flip the arrow 180 degrees from default */
   transform: rotate(180deg) !important;
@@ -187,26 +187,96 @@ html {
   transform: rotate(90deg) !important;
 }
 
-/* Reduce font size in left sidebar */
-.theme-doc-sidebar-container .menu__link {
-  font-size: 1rem !important; /* 14px if base is 16px */
-  line-height: 1.3 !important; /* Tighter line height */
-  padding-top: 0.2rem !important; /* Reduce vertical padding */
-  padding-bottom: 0.2rem !important;
+/* ===== STRIPE-INSPIRED SIDEBAR STYLING ===== */
+
+/* Sidebar container */
+.theme-doc-sidebar-container {
+  background-color: #fafbfc !important;
+  border-right: 1px solid #e6ebf1 !important;
 }
 
-/* Adjust nested items if needed */
+/* All sidebar links - Stripe style */
+.theme-doc-sidebar-container .menu__link {
+  font-size: 0.875rem !important; /* 14px */
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  color: #425466 !important; /* Stripe's muted text color */
+  padding: 0.375rem 0.1rem !important;
+  border-radius: 6px !important;
+  transition: all 0.15s ease !important;
+  margin: 1px 8px !important;
+}
+
+/* Sidebar link hover state */
+.theme-doc-sidebar-container .menu__link:hover {
+  background-color: #f6f9fc !important;
+  color: #0a2540 !important;
+  text-decoration: none !important;
+}
+
+/* Active/selected link - Bold style without border */
+.theme-doc-sidebar-container .menu__link--active {
+  background-color: transparent !important;
+  color: #0a2540 !important;
+  font-weight: 600 !important; /* Bold for selected items */
+  border-left: none !important;
+}
+
+/* Category labels (collapsible items) */
+.theme-doc-sidebar-container .menu__link--sublist {
+  font-weight: 500 !important;
+  color: #0a2540 !important; /* Darker for categories */
+  font-size: 0.8125rem !important; /* 13px */
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* Nested items - slightly smaller and more muted */
 .theme-doc-sidebar-container .menu__list .menu__list .menu__link {
-  font-size: 1rem !important; /* Slightly smaller for nested items */
+  font-size: 0.8125rem !important; /* 13px for nested */
+  color: #6b7c93 !important; /* More muted */
 }
 
 /* Reduce spacing between list items */
 .theme-doc-sidebar-container .menu__list-item {
   margin-top: 0 !important;
-  margin-bottom: 0 !important;
+  margin-bottom: 0px !important;
 }
 
 /* Increase indentation for nested items */
 .theme-doc-sidebar-container .menu__list .menu__list {
-  padding-left: 1.4rem !important; /* Increase from default */
+  padding-left: 1.25rem !important;
+  margin-top: -8px !important;
+}
+
+/* Reduce spacing for nested list items specifically */
+.theme-doc-sidebar-container .menu__list .menu__list .menu__list-item {
+  margin-bottom: -8px !important;
+}
+
+/* Remove default Docusaurus active styles that conflict */
+.theme-doc-sidebar-container .menu__link--active:not(.menu__link--sublist) {
+  background-color: #f6f9fc !important;
+}
+
+/* Dark mode adjustments for Stripe style */
+html[data-theme='dark'] .theme-doc-sidebar-container {
+  background-color: #0a2540 !important;
+  border-right-color: #1a3a52 !important;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link {
+  color: #8898aa !important;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link:hover {
+  background-color: #0d2d4a !important;
+  color: #f6f9fc !important;
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container .menu__link--active {
+  background-color: transparent !important;
+  color: #f6f9fc !important;
+  font-weight: 600 !important;
+  border-left: none !important;
 }

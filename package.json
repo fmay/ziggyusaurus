@@ -16,6 +16,8 @@
     "format:fix": "prettier --write --ignore-unknown ."
   },
   "dependencies": {
+    "@docsearch/css": "^4.3.2",
+    "@docsearch/react": "^4.3.2",
     "@docusaurus/core": "^3.8.1",
     "@docusaurus/preset-classic": "^3.8.1",
     "@easyops-cn/docusaurus-search-local": "^0.52.1",

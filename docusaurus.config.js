@@ -52,7 +52,7 @@ const config = {
           position: 'right',
         },
         {
-          type: 'search',
+          type: 'custom-docsearch',
           position: 'right',
         },
       ],
@@ -99,6 +99,8 @@ const config = {
       
       // Public API key: it is safe to commit it
       apiKey: 'd306c3a1645bb47380811310974fed3b',
+
+      askAi: 'IPIDvjstyBlu',
       
       indexName: 'Ziggy Docs',
       

@@ -151,3 +151,62 @@ html {
   display: block;
   margin-bottom: 30px;
 }
+
+/* Hide the default arrow (after) */
+.menu__link--sublist-caret::after {
+  display: none !important;
+}
+
+/* Create arrow before the text */
+.menu__link--sublist-caret::before {
+  content: '' !important;
+  display: inline-block !important;
+
+  /* Container size */
+  width: 1rem !important;
+  height: 1rem !important;
+
+  /* Make it less bold/prominent */
+  opacity: 1 !important;
+
+  /* Add transition for smooth rotation */
+  transition: transform 0.2s ease !important;
+
+  /* Arrow graphic (size is in the shorthand: 50% / 1.4rem) */
+  background: var(--ifm-menu-link-sublist-icon) 100% / 1.0rem no-repeat !important;
+
+  /* Space from the text */
+  margin-right: 0.5rem !important;
+
+  /* Flip the arrow 180 degrees from default */
+  transform: rotate(180deg) !important;
+}
+
+/* Rotate when collapsed - add 90 degrees to the base rotation */
+.menu__list-item--collapsed .menu__link--sublist-caret::before {
+  transform: rotate(90deg) !important;
+}
+
+/* Reduce font size in left sidebar */
+.theme-doc-sidebar-container .menu__link {
+  font-size: 1rem !important; /* 14px if base is 16px */
+  line-height: 1.3 !important; /* Tighter line height */
+  padding-top: 0.2rem !important; /* Reduce vertical padding */
+  padding-bottom: 0.2rem !important;
+}
+
+/* Adjust nested items if needed */
+.theme-doc-sidebar-container .menu__list .menu__list .menu__link {
+  font-size: 1rem !important; /* Slightly smaller for nested items */
+}
+
+/* Reduce spacing between list items */
+.theme-doc-sidebar-container .menu__list-item {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Increase indentation for nested items */
+.theme-doc-sidebar-container .menu__list .menu__list {
+  padding-left: 1.4rem !important; /* Increase from default */
+}

@@ -7,6 +7,5 @@ image: /img/ziggy-logo-light.webp
 
 # The Flow editor
 
-General information on navigating the Flow editor. 
-This is where you'll spend most of your time building Flows.
+General information on navigating the Flow editor, where you'll spend most of your time building Flows.
 

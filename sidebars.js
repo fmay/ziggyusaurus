@@ -57,11 +57,11 @@ const sidebars = {
         'search/search-loading-flows',
       ],
     },
-    {
-      type: 'category',
-      label: 'AI Models',
-      items: ['models/models-overview'],
-    },
+    // {
+    //   type: 'category',
+    //   label: 'AI Models',
+    //   items: ['models/models-overview'],
+    // },
     // USER GUIDE
     {
       type: 'category',
@@ -97,6 +97,7 @@ const sidebars = {
               type: 'category',
               label: 'Core',
               items: [
+                'user-guide/block-types/core/Core',
                 'user-guide/block-types/core/Receiver',
                 'user-guide/block-types/core/Terminator',
                 'user-guide/block-types/core/sinkhole',
@@ -143,6 +144,13 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'MQTT/IoT',
+              items: [
+                'user-guide/block-types/messaging/mqtt-publish',
+              ],
+            },
+            {
+              type: 'category',
               label: 'SQL',
               items: [
                 'user-guide/block-types/utility/sql/sql-configuration',
@@ -174,6 +182,7 @@ const sidebars = {
               type: 'category',
               label: 'HubSpot',
               items: [
+                'user-guide/block-types/hubspot/Hubspot',
                 'user-guide/block-types/hubspot/hs-read',
                 'user-guide/block-types/hubspot/hs-write',
                 'user-guide/block-types/hubspot/hs-get-associated',

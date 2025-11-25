@@ -90,44 +90,24 @@ const config = {
     },
     */
     
-    // Algolia search configuration
-    // You'll need to sign up at https://docsearch.algolia.com/
-    // and replace these placeholder values with your actual API keys
-    algolia: {
-      // The application ID provided by Algolia
-      appId: 'XPMSD22TBN',
-      
-      // Public API key: it is safe to commit it
-      apiKey: 'd306c3a1645bb47380811310974fed3b',
-
-      askAi: 'IPIDvjstyBlu',
-      
-      indexName: 'Ziggy Docs',
-      
-      // Optional: see doc section below
-      contextualSearch: false,
-      
-      // Sitemap for crawling
-      sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],
-      
-      // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-      externalUrlRegex: 'external\\.com|domain\\.com',
-
-      // Optional: Replace parts of the item URLs from Algolia search results. Useful when using the same search index for multiple deployments using a different baseUrl. For example: localhost:3000 vs myCompany.com/docs
-      replaceSearchResultPathname: {
-        from: '/docs/', // or as RegExp: /\/docs\//
-        to: '/',
-      },
-      
-      // Optional: Algolia search parameters
-      
-      // Optional: path for search page that enabled by default (`false` to disable it)
-      searchPagePath: 'search',
-
-      searchParameters: {
-        facetFilters: [] // This will remove all tag filtering
-      }
-    },
+    // Algolia search configuration - DISABLED (using custom DocSearch component instead)
+    // algolia: {
+    //   appId: 'XPMSD22TBN',
+    //   apiKey: 'd306c3a1645bb47380811310974fed3b',
+    //   askAi: 'IPIDvjstyBlu',
+    //   indexName: 'Ziggy Docs',
+    //   contextualSearch: false,
+    //   sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],
+    //   externalUrlRegex: 'external\\.com|domain\\.com',
+    //   replaceSearchResultPathname: {
+    //     from: '/docs/',
+    //     to: '/',
+    //   },
+    //   searchPagePath: 'search',
+    //   searchParameters: {
+    //     facetFilters: []
+    //   }
+    // },
   },
 };
 

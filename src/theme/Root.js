@@ -4,10 +4,10 @@ import { useLocation } from '@docusaurus/router';
 export default function Root({ children }) {
   const location = useLocation();
   useEffect(() => {
-    // Override the document title to always show "Docs"
+    // Override the document title to always show "Ziggy Docs"
     const observer = new MutationObserver(() => {
-      if (document.title !== 'Docs') {
-        document.title = 'Docs';
+      if (document.title !== 'Ziggy Docs') {
+        document.title = 'Ziggy Docs';
       }
     });
 
@@ -17,7 +17,7 @@ export default function Root({ children }) {
     });
 
     // Set initial title
-    document.title = 'Docs';
+    document.title = 'Ziggy Docs';
 
     return () => observer.disconnect();
   }, []);

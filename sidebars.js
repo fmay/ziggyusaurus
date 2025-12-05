@@ -216,6 +216,7 @@ const sidebars = {
         },
         'user-guide/History-data-storage-levels',
         'user-guide/Monitoring',
+        'user-guide/AI-Edge-Assistant',
         'user-guide/Structures-and-mapping',
         'user-guide/Launching-flows',
         'user-guide/Connections',

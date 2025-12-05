@@ -13,7 +13,7 @@ title: Feature summary
 
 Below is a quick summary of Ziggy's key features.
 
-### Flow
+## Flow
 
 Ziggy provides a canvas where you design Flows, which are made up of interconnected Blocks.
 
@@ -42,13 +42,13 @@ The Flow shown below is a good example of this.
 }
 ```
 
-### Core Blocks
+## Core Blocks
 
 Below are a few of our commonly used Blocks.
 
 ![core blocks](/img/etl-intro/intro-core-blocks.png)
 
-### Utility Blocks
+## Utility Blocks
 
 The perform more complex tasks such as:
 
@@ -59,13 +59,13 @@ The perform more complex tasks such as:
 
 ![utility blocks](/img/etl-intro/intro-utility-blocks.png)
 
-### Custom Blocks
+## Custom Blocks
 
 These platform specific blocks, designed to simplify interactions with any target platform. Below are some of the HubSpot Custom Blocks.
 
 ![hubspot blocks](/img/etl-intro/intro-hubspot-blocks.png)
 
-### Javascript Block
+## Javascript Block
 
 The [Javascript Block](user-guide/block-types/core/Javascript.md) is a very flexible Block. It is perfect for dealing with any edge case or managing complex custom transformations.
 
@@ -81,9 +81,7 @@ Ziggy provides a comprehensive [Flow Debugger](user-guide/editor/Debugging.md). 
 
 ![debugging](/img/etl-intro/intro-debugging.png)
 
-## Key Features
-
-### Data Inspection
+## Data Inspection
 
 You can inspect data at any point in your Flow by clicking on the edge "bubble". This will show you the first few records that have passed through that edge.
 
@@ -93,33 +91,38 @@ You can also inspect data by right-clicking on an edge and selecting "Inspect Da
 
 ![edge inspect data](/img/etl-intro/intro-edge-inspect-data.png)
 
-### Edge Validation, Transformation and Mapping
+## AI Edge Assistant
+The [AI Edge Assistant](/user-guide/AI-Edge-Assistant.md) is a very powerful AI supported means of transforming, validating and mapping. It can even write failed validations to Ziggy's data store for processing later.
+
+![AI Edge Assistant](/img/edge-assistant/edge-assistant-test.png)
+
+## Edge Validation, Transformation and Mapping
 
 You can [validate, transform and map](user-guide/Structures-and-mapping.md) data on edges. This is useful for ensuring data quality and transforming data as it flows through your Flow.
 
 ![edge validate map](/img/etl-intro/intro-edge-validate-map.png)
 
-### Edge Transformation
+## Edge Transformation
 
 You can also transform data on edges using Javascript. This is useful for more complex data transformations.
 
-### Subflows
+## Subflows
 
 You can create Subflows to organize your Flow and reuse common patterns. Subflows can be called from other Flows and can accept parameters.
 
-### Execution History
+## Execution History
 
 Ziggy keeps a comprehensive [Flow Execution History](/user-guide/Monitoring). You can view the results of previous executions and debug issues. You have [full control](/user-guide/History-data-storage-levels) of when and whether data persists.
 
-### Batching
+## Batching
 
 Ziggy can process data in [batches](user-guide/Batching.md) to improve performance and control memory usage.  
 
-### Rate Limiting
+## Rate Limiting
 
 Ziggy [User Queues](/user-guide/Queuing.md) let you specify rate limits that protect against overage when using 3rd party platforms, or simply to dlow things down at strategic points in a Flow.
 
-### Performance Tuning
+## Performance Tuning
 Ziggy is designed to be highly performant but give you full control over the important aspects of performance tuning. 
 
 - Max Concurrent Flows - how many Flows can run simultaneously. The ideal value depends very much on the nature of the Flows you are running. 
@@ -131,49 +134,49 @@ The benefit of this approach is that you can extract the best possible performan
 
 All relevant values can be monitored in the [System Monitor](user-guide/Queuing.md).
 
-### Load Testing
+## Load Testing
 
 To help you with performance tuning, we provide a [Load Testing](/user-guide/Global-Settings.md#load-test) option that lets you run large number of flows at any specified rate. The test results show clearly how key indicators are effected.
 
-### Alerts and Logging
+## Alerts and Logging
 
 Ziggy provides comprehensive [logging](/user-guide/Global-Settings.md#logs--files) and [alerting](docs/user-guide/Alerts.md) capabilities. You can set up alerts for Flow failures and monitor Flow performance.
 
-### Secrets Management
+## Secrets Management
 
 Ziggy provides a secure way to store and [manage secrets](/user-guide/Secrets.md) such as API keys and database passwords.
 
-### Connections
+## Connections
 
 Ziggy provides a way to define and [manage connections](/user-guide/Connections.md) to external systems such as databases and APIs.
 
-### Data Store
+## Data Store
 
 Ziggy provides a fast, local key/value Data Store that can be used to store data for a variety of purposes. The [Data Store Block](docs/user-guide/block-types/utility/Data-Store.md) provides access.
 
-### Memory Store
+## Memory Store
 
 Ziggy provides an in-memory store that can be used to store data during Flow execution. 
 
-### Commander
+## Commander
 
 Commander is Ziggy's command-line interface that allows you to manage Flows, connections, and other resources.
 
-### Development and Production Modes
+## Development and Production Modes
 
 Ziggy provides separate [development and production modes](docs/user-guide/Dev-Prod-Modes.md) to ensure safe testing and deployment of Flows.
 
-### Scheduler
+## Scheduler
 
 Ziggy provides a built-in [scheduler](/user-guide/Scheduled-Flows.md) that allows you to run Flows on a schedule.
 
-### Deployment
+## Deployment
 
 Ziggy is very easy to deploy. It is a simple Docker Container that always runs in a private server on the infrastructure of your choice. It normally runs just fine on a $12 per month AWS EC2 Instance (or equivalent on Azure etc.).
 
 As a result you have full control over performance and security.
 
-### Data Transfer
+## Data Transfer
 
 Ziggy provides efficient data transfer capabilities for moving large amounts of data between systems.
 

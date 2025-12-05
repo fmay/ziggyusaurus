@@ -68,8 +68,8 @@ const config = {
       title: 'Documentation',
       logo: {
         alt: 'Ziggy Logo',
-        src: 'img/ziggy-z-light.svg',
-        srcDark: 'img/ziggy-z-dark.svg',
+        src: '/img/ziggy-logo-light-bg.webp',
+        srcDark: '/img/ziggy-logo-dark-bg.webp',
       },
       items: [
         {

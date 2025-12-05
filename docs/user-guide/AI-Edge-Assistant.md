@@ -20,7 +20,22 @@ You should provide a clear prompt like the one shown in the above image. If you 
 
 You press the send icon to generate everything. A test will automatically be run and the results displayed in the left column in the **Tests passed** and **Tests failed** tabs. 
 
-## Validations
+## Prompt tips
+When executing your prompt, Ziggy provides the background context and the edge data that is currently on the edge.
+
+You will typically want to mention **output** and **validate/validation**.
+
+If the Assistant does not do a good job first time, you can refine your prompt and try again. It will automatically run the test but you can also press the **Code** button if you are familiar with Javascript.
+
+### Errors
+By default, the Assistant will split validations into passed and failed groups. However, if you want the Flow to fail when an error is encountered, you should say something like **throw an error if....**.
+
+### Validations
+You can explicitly tell the Assistant how you want to validate. Generally, there are two types of validation
+
+- **Detailed** validates each row of data on the edge and splits into passed and failed rows. The passed rows will be output. You should explicitly mention that you want row by row validation or provide some other instruction as in the above screenshot `and that GBP, USD and SEK are all present in rates.`, which implicitly checks multiple values.
+- **Global** checks the data as a whole (see the above example).
+
 Below is another example flow that demonstrates this in more detail. 
 
 <img src="/img/edge-assistant/edge-assistant-test.png" alt="AI assistant" width="1000" />

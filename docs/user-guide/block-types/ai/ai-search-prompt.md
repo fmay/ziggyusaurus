@@ -2,7 +2,7 @@
 title: AI Search Prompt - Natural Language Query Processing
 description: Process natural language queries with Ziggy's AI Search Prompt block. Transform user questions into structured search queries for AI-powered search.
 keywords: [ziggy, ai search prompt, natural language processing, ai search, query processing, nlp]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 This is the most important AI related Block. It handles the translation of a natural language query

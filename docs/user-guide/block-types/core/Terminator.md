@@ -2,7 +2,7 @@
 title: Terminator Block
 description: Learn how to use the Terminator block in Ziggy flows for stopping flow execution. Complete guide with examples and configuration options.
 keywords: [ziggy, terminator, core blocks, flows, no-code, flow control, execution]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Terminator

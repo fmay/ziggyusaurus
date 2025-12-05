@@ -2,7 +2,7 @@
 title: Branch Block
 description: Learn how to use the Branch block in Ziggy flows for conditional logic and decision making. Complete guide with examples and configuration options.
 keywords: [ziggy, branch, core blocks, flows, no-code, conditional logic, decision making]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Branch

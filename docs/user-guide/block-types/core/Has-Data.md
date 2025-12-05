@@ -2,7 +2,7 @@
 title: Has Data
 description: Learn how to use the Has Data block in Ziggy flows for checking data existence. Complete guide with examples and configuration options.
 keywords: [ziggy, has-data, core blocks, flows, no-code, data processing]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Has Data

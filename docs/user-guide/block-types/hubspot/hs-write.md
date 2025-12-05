@@ -2,7 +2,7 @@
 title: HubSpot Write
 description: Create and update HubSpot CRM records using Ziggy's HubSpot Write block. Complete guide for HubSpot data synchronization flows.
 keywords: [ziggy, hubspot write, crm integration, data update, hubspot api, sync]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # HubSpot Write

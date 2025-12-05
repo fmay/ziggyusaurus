@@ -2,7 +2,7 @@
 title: Data Store
 description: Use Ziggy's Data Store utility block for persistent data storage and retrieval. Configuration guide with examples for data management flows.
 keywords: [ziggy, utility blocks, data store, persistent storage, data management]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Data Store

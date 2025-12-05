@@ -1,7 +1,9 @@
 /* Custom CSS for Ziggyusaurus */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 :root {
     --ifm-color-primary: #0d6efd; /* brand color */
-    --ifm-font-family-base: 'Inter', sans-serif;
+    --ifm-font-family-base: 'Poppins', sans-serif;
     --ifm-code-font-size: 95%;
   }
   
@@ -187,7 +189,7 @@ html {
   transform: rotate(90deg) !important;
 }
 
-/* ===== STRIPE-INSPIRED SIDEBAR STYLING ===== */
+/* ===== SIDEBAR STYLING ===== */
 
 /* Sidebar container */
 .theme-doc-sidebar-container {
@@ -226,15 +228,15 @@ html {
 .theme-doc-sidebar-container .menu__link--sublist {
   font-weight: 500 !important;
   color: #0a2540 !important; /* Darker for categories */
-  font-size: 0.8125rem !important; /* 13px */
+  font-size: 0.9rem !important; /* 13px */
   text-transform: none !important;
   letter-spacing: normal !important;
 }
 
 /* Nested items - slightly smaller and more muted */
 .theme-doc-sidebar-container .menu__list .menu__list .menu__link {
-  font-size: 0.8125rem !important; /* 13px for nested */
-  color: #6b7c93 !important; /* More muted */
+  font-size: 0.9rem !important; /* 13px for nested */
+  color: #566478 !important; /* More muted */
 }
 
 /* Reduce spacing between list items */

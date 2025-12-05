@@ -2,7 +2,7 @@
 title: Salesforce Read Object
 description: Retrieve and read data from Salesforce CRM objects using Ziggy's Salesforce Read block. Complete guide for Salesforce data integration flows.
 keywords: [ziggy, salesforce read, crm integration, data retrieval, salesforce objects, salesforce api]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # SalesForce Read Object

@@ -2,7 +2,7 @@
 title: Flow Debugging
 description: Debug and troubleshoot Ziggy flows with built-in debugging tools. Learn to identify issues, inspect data, and resolve flow execution problems.
 keywords: [ziggy debugging, flow troubleshooting, error debugging, flow inspection, data debugging]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 ![Debugging](/img/flows/debugging/debugging-nw-to-hs.png)

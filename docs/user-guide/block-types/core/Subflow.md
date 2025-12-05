@@ -2,7 +2,7 @@
 title: Subflow Block
 description: Learn how to use the Subflow block in Ziggy flows for modular flow organization and reusability. Complete guide with examples and configuration options.
 keywords: [ziggy, subflow, core blocks, flows, no-code, modular design, reusability]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Subflow

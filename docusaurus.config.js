@@ -13,7 +13,7 @@ const config = {
     enableHotReload: true,
   },
 
-  // Load Inter font from Google Fonts
+  // Load Poppins font from Google Fonts
   headTags: [
     {
       tagName: 'link',
@@ -34,7 +34,7 @@ const config = {
       tagName: 'link',
       attributes: {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap',
       },
     },
   ],

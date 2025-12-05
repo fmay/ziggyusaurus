@@ -2,7 +2,7 @@
 title: Salesforce Owner Translate
 description: Translate and map Salesforce record owners using Ziggy's Owner Translate block. Complete guide for user mapping and data migration flows.
 keywords: [ziggy, salesforce owner translate, user mapping, record owners, data migration, salesforce users]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # SalesForce Owner Translate

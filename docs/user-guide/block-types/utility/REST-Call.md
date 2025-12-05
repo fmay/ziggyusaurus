@@ -4,7 +4,7 @@ description:
   Make REST API calls with Ziggy's REST Call utility block. Complete guide for API integration,
   pagination, and data retrieval flows.
 keywords: [ziggy, utility blocks, rest api, api calls, http requests, api integration]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 This Utility Block is used to make REST API calls.

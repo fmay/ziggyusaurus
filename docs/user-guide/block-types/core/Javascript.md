@@ -2,7 +2,7 @@
 title: Javascript Block
 description: Learn how to use the Javascript block in Ziggy flows for custom code execution and complex logic. Complete guide with examples and configuration options.
 keywords: [ziggy, javascript, core blocks, flows, no-code, data processing]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 # Javascript
 

@@ -2,7 +2,7 @@
 title: Salesforce Set Associations
 description: Create and manage Salesforce object relationships using Ziggy's Set Associations block. Complete guide for CRM relationship management.
 keywords: [ziggy, salesforce associations, relationship management, crm relationships, salesforce linking, object associations]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # SalesForce Set Associations

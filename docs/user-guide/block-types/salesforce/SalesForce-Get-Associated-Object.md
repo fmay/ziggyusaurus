@@ -2,7 +2,7 @@
 title: Salesforce Get Associated Object
 description: Retrieve related Salesforce objects and relationships using Ziggy's Get Associated Objects block. Guide for complex CRM data relationships.
 keywords: [ziggy, salesforce associations, related objects, crm relationships, salesforce data, object relationships]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # SalesForce Get Associated Object

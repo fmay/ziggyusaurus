@@ -2,7 +2,7 @@
 title: Test Data - Ziggy Core Block Documentation
 description: Learn how to use the Test Data block in Ziggy flows for supplying test data to blocks. Complete guide with examples and configuration options.
 keywords: [ziggy, test-data, core blocks, flows, no-code, data processing]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Test Data

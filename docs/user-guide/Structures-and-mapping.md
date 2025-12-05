@@ -4,6 +4,8 @@ title: Structures, validation, mapping and transformations
 
 # Structures, validation, mapping and transformations
 
+**Important** - should should be aware of the [AI Edge Assistant](/user-guide/AI-Edge-Assistant.md) which is another excellent way of performing one-off validations and transformations.
+
 ## Introduction - video and tutorials
 It is worth watching the video that explains this process in detail.
 

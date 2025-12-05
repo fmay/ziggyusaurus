@@ -2,7 +2,7 @@
 title: Flow Management
 description: Organize and manage your Ziggy flows with the flows listing interface. Learn to browse, search, and organize your data workflows efficiently.
 keywords: [ziggy flow management, flow organization, flow listing, workflow management, flow browser]
-image: /img/ziggy-logo-light.webp
+image: /img/ziggy-logo-light-bg.webp
 ---
 
 # Flows listing

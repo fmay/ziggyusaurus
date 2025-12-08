@@ -124,6 +124,7 @@ const sidebars = {
               type: 'category',
               label: 'AI',
               items: [
+                'user-guide/block-types/ai/ai-generate',
                 'user-guide/block-types/ai/ai-search-prompt',
                 'user-guide/block-types/ai/ai-qdrant',
               ],

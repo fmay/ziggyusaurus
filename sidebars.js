@@ -4,67 +4,6 @@ const sidebars = {
     'etl/etl-features',
     {
       type: 'category',
-      label: 'Custom Blocks & Plugins',
-      items: [
-        'user-guide/plugin/overview',
-        'user-guide/plugin/sdk',
-        'user-guide/plugin/cli',
-        'user-guide/plugin/create',
-        'user-guide/plugin/config',
-        'user-guide/plugin/definition',
-        'user-guide/plugin/client',
-        'user-guide/plugin/server',
-        'user-guide/plugin/batcher',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'CLI',
-      items: [
-        'user-guide/cli/overview',
-        'user-guide/cli/authorization',
-        'user-guide/cli/plugin-commands',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Ziggy Cluster',
-      items: [
-        'user-guide/cluster/overview',
-        'user-guide/cluster/levels',
-        'user-guide/cluster/load-testing',
-        'user-guide/cluster/monitoring',
-        'user-guide/cluster/protected-server',
-        'user-guide/cluster/instance-names',
-        'user-guide/cluster/leader',
-        'user-guide/cluster/docker-compose',
-        'user-guide/cluster/health',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'AI Search',
-      items: [
-        'search/search-overview',
-        'search/search-elastic',
-        {
-          type: 'category',
-          label: 'Slack',
-          items: ['search/search-slack', 'search/search-slack-app'],
-        },
-        'search/search-chatterbox',
-        'search/search-prompt-flows',
-        'search/search-loading-flows',
-      ],
-    },
-    // {
-    //   type: 'category',
-    //   label: 'AI Models',
-    //   items: ['models/models-overview'],
-    // },
-    // USER GUIDE
-    {
-      type: 'category',
       label: 'User Guide',
       items: [
         'user-guide/ug-intro',
@@ -133,6 +72,8 @@ const sidebars = {
               type: 'category',
               label: 'Utility',
               items: [
+                'user-guide/block-types/utility/Email',
+                'user-guide/block-types/utility/Twilio',
                 'user-guide/block-types/utility/Data-Store',
                 'user-guide/block-types/utility/MemStore',
                 'user-guide/block-types/utility/file-reader-writer',
@@ -141,13 +82,6 @@ const sidebars = {
                 'user-guide/block-types/utility/Mapper',
                 'user-guide/block-types/utility/airtable',
                 'user-guide/block-types/utility/audit',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'MQTT/IoT',
-              items: [
-                'user-guide/block-types/messaging/mqtt-publish',
               ],
             },
             {
@@ -231,7 +165,7 @@ const sidebars = {
         'user-guide/Auditing',
         'user-guide/Error-Handling',
         'user-guide/Data-and-Memory-Store-Browser',
-        'user-guide/MQTT',
+        'user-guide/Messaging',
         'user-guide/Tags',
         'user-guide/Tests',
         'user-guide/Alerts',
@@ -244,6 +178,63 @@ const sidebars = {
         'user-guide/Deployment',
       ],
     },
+    {
+      type: 'category',
+      label: 'Custom Blocks & Plugins',
+      items: [
+        'user-guide/plugin/overview',
+        'user-guide/plugin/sdk',
+        'user-guide/plugin/cli',
+        'user-guide/plugin/create',
+        'user-guide/plugin/config',
+        'user-guide/plugin/definition',
+        'user-guide/plugin/client',
+        'user-guide/plugin/server',
+        'user-guide/plugin/batcher',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'CLI',
+      items: [
+        'user-guide/cli/overview',
+        'user-guide/cli/authorization',
+        'user-guide/cli/plugin-commands',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Ziggy Cluster',
+      items: [
+        'user-guide/cluster/overview',
+        'user-guide/cluster/levels',
+        'user-guide/cluster/load-testing',
+        'user-guide/cluster/monitoring',
+        'user-guide/cluster/protected-server',
+        'user-guide/cluster/instance-names',
+        'user-guide/cluster/leader',
+        'user-guide/cluster/docker-compose',
+        'user-guide/cluster/health',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'AI Search',
+      items: [
+        'search/search-overview',
+        'search/search-elastic',
+        {
+          type: 'category',
+          label: 'Slack',
+          items: ['search/search-slack', 'search/search-slack-app'],
+        },
+        'search/search-chatterbox',
+        'search/search-prompt-flows',
+        'search/search-loading-flows',
+      ],
+    },
+    // USER GUIDE
+
   ],
 };
 

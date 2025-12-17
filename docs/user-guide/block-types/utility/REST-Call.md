@@ -9,7 +9,7 @@ image: /img/ziggy-logo-light-bg.webp
 
 This Utility Block is used to make REST API calls.
 
-<img src="/img/flows/blocks/utility/REST/REST-block-get.png" alt="REST GET" width="600" />
+<img src="/img/flows/blocks/utility/REST/REST-block-get.webp" alt="REST GET" width="600" />
 
 Note, you can also make REST calls using the `axios` method in the
 [Javascript Block](user-guide/block-types/utility/REST-Call.md).
@@ -34,7 +34,7 @@ You can add as many headers as you require. Tokens can be inserted
 Not available for the `GET` method, this is the request body. See below for `{tokens}` you can
 insert.
 
-<img src="/img/flows/blocks/utility/REST/REST-body.png" alt="REST body" width="900" />
+<img src="/img/flows/blocks/utility/REST/REST-body.webp" alt="REST body" width="500" />
 
 ## Response data key to output
 
@@ -121,6 +121,9 @@ The following tokens are supported
 - `{offset}` - pagination value
 - `{edge.edgeKey}` - a value taken from the 0th element object of the input edge
 - `{secrets.secret_name}` - a secret name from the [Secrets Manager](user-guide/Secrets.md)
+
+## Retries
+You can specify the timeout period and number of retries. You can also specify an exponential backoff for the retries.
 
 ## Batch End Block
 

@@ -236,5 +236,104 @@ Use this for MQTT platforms other than AWS IoT Core.
 }
 ```
 
+## IMAP
+
+```javascript
+{
+    host: 'imap.example.com',
+    port: 993,
+    secure: true, // true = implicit TLS (993), false = STARTTLS (143)
+    auth: {
+      user: 'user@example.com',
+      pass: 'password'
+    },
+    tls: {
+      rejectUnauthorized: true,
+      minVersion: 'TLSv1.2',
+      servername: 'imap.example.com'
+    },
+
+    // Optional connection name (shows in server logs)
+    name: 'my-imap-client',
+    logger: false, // true or console-like object
+    debug: false,
+    disableAutoIdle: false,
+    idleTimeout: 600000,
+    maxMessageSize: 25 * 1024 * 1024,
+    keepAlive: {
+      interval: 300000,
+      idleInterval: 300000,
+      forceNoop: false
+    },
+    maxFetchSize: 1024 * 1024,
+    utf8Enabled: true,
+    config: {
+      pollInterval: 5000,
+    }
+}
+```
+
+## SMTP
+
+```javascript
+{
+    host: 'smtp.example.com',
+    port: 465,
+    secure: false,
+    auth: {
+      user: 'username',
+      pass: 'password'
+    },
+    tls: {
+      rejectUnauthorized: true
+    }
+}
+```
+
+## Twilio
+```javascript
+{
+    authToken: '',
+    accountSid: '',
+}
+```
+
+## Redis Event Stream
+
+```javascript
+{
+    host: 'localhost',
+    port: 6379,
+    username: 'default',
+    password: 'your_password',
+    db: 0,
+    tls: undefined,
+    config: {
+      stream: 'DefaultStreamName',
+      blockMs: 250,
+      count: 10,
+      startId: '>',
+      autoAck: false,
+      retry: {
+        idleMs: 60_000,
+        batchSize: 1,
+      }
+    }
+}
+```
+
+## Redis Pub/Sub
+
+```javascript
+{
+    host: 'localhost',
+    port: 6379,
+    username: 'default',
+    password: 'your_password',
+    db: 0,
+    tls: undefined
+}
+```
+
 
 

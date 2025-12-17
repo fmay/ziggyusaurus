@@ -28,7 +28,7 @@ Ziggy will select the appropriate value at runtime. See [Dev/Prod mode](/user-gu
 There are two places where you reference a secret.
 
 ### Connections
-When defining a [Connection](Connections), you can specify a secret. 
+When defining a [Connection](/user-guide/Connections.md), you can specify a secret. 
 
 <img src="/img/secrets/secret-connection-reference.png" alt="Connections" width="400" />
 

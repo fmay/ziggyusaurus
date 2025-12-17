@@ -4,6 +4,10 @@ title: Messaging Center
 
 The Messaging Center is responsible for launching flows when emails, queue/messaging system notifications or other events are received.
 
+Open the Messaging Center by clicking the circled icon in the top navigation bar.
+
+<img src="/img/messaging/messaging-open.webp" alt="mqtt publish" width="1000" />
+
 We currently support the following messaging types
 
 - Email - monitors an IMAP inbox and processes on receipt.

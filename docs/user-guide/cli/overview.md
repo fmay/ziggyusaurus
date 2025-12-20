@@ -2,12 +2,13 @@
 title: Overview
 ---
 
-The CLI performs the following tasks.
+The CLI has the following top level commands.
 
-- Plugin management
-- Ziggy instance management tasks.
+- `ziggy auth` - [authorization management](/user-guide/cli/authorization.md).
+- `ziggy plugin` - [Plugin management](/user-guide/cli/plugin-commands.md).
+- `ziggy flow` - [list](/user-guide/cli/flow-list.md), [import](/user-guide/cli/flow-import-export.md), [export](/user-guide/cli/flow-import-export.md), [execution](/user-guide/cli/flow-execute.md) for flow ids and tags.
+- `ziggy system` - [backup](/user-guide/cli/system-backup.md), [database maintainance](/user-guide/cli/system-reorg.md).
 
-This is under continuous development and more commands are being added.
 
 ## Installation
 
@@ -15,7 +16,3 @@ This is under continuous development and more commands are being added.
 npm install -g github:fmay/ziggy-cli.git
 ```
 
-## Commands
-
-### Plugin commands
-All [plugin commands](./plugin-commands.md) are grouped under `ziggy plugin`.

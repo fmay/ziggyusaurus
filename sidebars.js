@@ -199,7 +199,12 @@ const sidebars = {
       items: [
         'user-guide/cli/overview',
         'user-guide/cli/authorization',
+        'user-guide/cli/flow-list',
+        'user-guide/cli/flow-execute',
+        'user-guide/cli/flow-import-export',
         'user-guide/cli/plugin-commands',
+        'user-guide/cli/system-backup',
+        'user-guide/cli/system-reorg',
       ],
     },
     {

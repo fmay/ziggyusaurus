@@ -37,6 +37,13 @@ To avoid having to use the `-s` or `--server` options in other commands, you can
 
 `ziggy auth use friendlyName`
 
+## Renaming a server configuration
+
+You can rename a server configuration with 
+
+- `ziggy auth rename` for interactive renaming
+- `ziggy auth rename fromName toName` for immediate renaming
+
 ## Removing a server configuration
 To remove a locally stored server configuration use
 

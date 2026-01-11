@@ -149,6 +149,13 @@ const sidebars = {
             },
           ],
         },
+        {
+          type: 'category',
+          label: 'User Management',
+          items: [
+            'user-guide/rbac/rbac-overview',
+          ],
+        },
         'user-guide/History-data-storage-levels',
         'user-guide/Monitoring',
         'user-guide/AI-Edge-Assistant',

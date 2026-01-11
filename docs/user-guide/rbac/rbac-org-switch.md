@@ -6,3 +6,4 @@ If you are running a Multi Tenant version of Ziggy, users can belong to one or m
 
 In this case, the user will be able to switch between organizations from the dropdown in the navigation bar.
 
+<img src="/img/rbac/rbac-switch-org.webp" alt="System role" width="1000" />

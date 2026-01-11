@@ -110,6 +110,9 @@ You can also transform data on edges using Javascript. This is useful for more c
 
 You can create Subflows to organize your Flow and reuse common patterns. Subflows can be called from other Flows and can accept parameters.
 
+## RBAC User Management
+Ziggy has a comprehensive [Role Based Access Control](/user-guide/rbac/rbac-overview.md) system, supported by Teams and direct assignments for Flows, Connections, Secrets, Schedules and Messaging Items.
+
 ## Execution History
 
 Ziggy keeps a comprehensive [Flow Execution History](/user-guide/Monitoring). You can view the results of previous executions and debug issues. You have [full control](/user-guide/History-data-storage-levels) of when and whether data persists.

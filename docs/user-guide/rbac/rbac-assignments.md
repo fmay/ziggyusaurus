@@ -8,4 +8,6 @@ When you open the Flow settings or individual items dialogs, you will see **User
 
 From those, you can assign users and/or teams with specific roles for that item.
 
+<img src="/img/rbac/rbac-role-assignment.webp" alt="team assugnment" width="600" />
+
 

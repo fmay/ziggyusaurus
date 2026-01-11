@@ -20,6 +20,12 @@ Apart from **Personal**, Global settings are available to Admin users only.
 
 <img src="/img/global-settings/gsettings-personal.png" alt="Users" width="800" />
 
+## User Management
+
+See [RBAC and user Management](/user-guide/rbac/rbac-overview.md) for details on configuring Role Based Access Control.
+
+<img src="/img/rbac/rbac-settings.webp" alt="Flow settings" width="1000" />
+
 ## SMTP
 
 An SMTP server is used for

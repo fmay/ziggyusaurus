@@ -154,6 +154,14 @@ const sidebars = {
           label: 'User Management',
           items: [
             'user-guide/rbac/rbac-overview',
+            'user-guide/rbac/rbac-personal',
+            'user-guide/rbac/rbac-users',
+            'user-guide/rbac/rbac-roles',
+            'user-guide/rbac/rbac-teams',
+            'user-guide/rbac/rbac-org-switch',
+            'user-guide/rbac/rbac-assignments',
+            'user-guide/rbac/rbac-logs',
+            'user-guide/rbac/rbac-cli',
           ],
         },
         'user-guide/History-data-storage-levels',
@@ -213,6 +221,8 @@ const sidebars = {
         'user-guide/cli/plugin-commands',
         'user-guide/cli/system-backup',
         'user-guide/cli/system-reorg',
+        'user-guide/cli/user-management',
+        'user-guide/cli/org-management',
       ],
     },
     {

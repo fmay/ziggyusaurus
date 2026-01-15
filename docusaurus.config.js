@@ -16,6 +16,13 @@ const config = {
   // Load Poppins font from Google Fonts
   headTags: [
     {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'B0F686FA317AABA6',
+      },
+    },
+    {
       tagName: 'link',
       attributes: {
         rel: 'preconnect',

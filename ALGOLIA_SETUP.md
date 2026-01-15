@@ -9,7 +9,7 @@ This guide will help you set up Algolia DocSearch for your Ziggy documentation s
 2. Click "Apply" to request DocSearch for your site
 3. Fill out the application form:
    - **Project name**: Ziggy Documentation
-   - **Project URL**: https://docs.ziggyservices.com
+   - **Project URL**: https://docs.ziggyplatform.com
    - **Project description**: Documentation for Ziggy integration and migration platform
    - **Contact email**: Your email address
    - **Project type**: Documentation site

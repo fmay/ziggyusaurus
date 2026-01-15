@@ -178,7 +178,7 @@ You can see various tokens such as `##properties.hs_object_id##`. These are repl
 ### Functions
 We provide the following list of functions to help format your data. For example `£formatNumber(##properties.amount##)`.
 
-We are adding more functions, so if you have require one, please [contact us](https://ziggyservices.com/contact).
+We are adding more functions, so if you have require one, please [contact us](https://ziggyplatform.com/contact).
 
 - **formatNumber** - formats a number to 2 decimal places.
 - **formatISODate** - converts an ISO date string into a friendly format.

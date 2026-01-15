@@ -35,7 +35,7 @@ To get the endpoint for the Flow
 - Note this is a **POST** request.
 
 ```javascript
-https://hubspot.ziggyservices.com/api?flowUuid=<your flow uuid>&execution-key=<your execution key>&executionEnvironmentMode=DEV&executionId=f4b6b4c6-9525-4c0e-94e3-b93e3d798b57
+https://hubspot.ziggyplatform.com/api?flowUuid=<your flow uuid>&execution-key=<your execution key>&executionEnvironmentMode=DEV&executionId=f4b6b4c6-9525-4c0e-94e3-b93e3d798b57
 ```
 
 You can also send the execution key in the **execution-key** header.

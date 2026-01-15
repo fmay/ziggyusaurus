@@ -45,7 +45,7 @@ Below is an example Flow that does this.
 Rather than perform a large bulk load every time you want to bring your data up to date, you can trigger a Flow that calculates the indicators on single records whenever the underlying data for those records has changed.
 
 ## Services
-Please [contact us](https://ziggyservices.com/contact) if you would like to discuss model training and implementing Flows.
+Please [contact us](https://ziggyplatform.com/contact) if you would like to discuss model training and implementing Flows.
 
 
 

@@ -10,18 +10,18 @@ new Crawler({
   appId: "XPMSD22TBN",
   indexPrefix: "",
   rateLimit: 8,
-  startUrls: ["https://docs.ziggyservices.com"],
+  startUrls: ["https://docs.ziggyplatform.com"],
   renderJavaScript: false,
   maxDepth: 10,
   maxUrls: 300,
-  sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],
+  sitemaps: ["https://docs.ziggyplatform.com/sitemap.xml"],
   schedule: "on the 30 day of the month",
   ignoreCanonicalTo: false,
-  discoveryPatterns: ["https://docs.ziggyservices.com/**"],
+  discoveryPatterns: ["https://docs.ziggyplatform.com/**"],
   actions: [
     {
       indexName: "Ziggy Docs",
-      pathsToMatch: ["https://docs.ziggyservices.com/**"],
+      pathsToMatch: ["https://docs.ziggyplatform.com/**"],
       recordExtractor: ({ $, helpers }) => {
         // Extract the section from breadcrumbs or sidebar
         const breadcrumbs = $(".breadcrumbs__item .breadcrumbs__link");

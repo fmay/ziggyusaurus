@@ -73,4 +73,4 @@ If you want assistance in building Custom Blocks or designing Flows, we are here
 
 ## Contacting us
 
-If you have any questions or require a demonstration, please [contact us here](https://www.ziggyservices.com/contact).
+If you have any questions or require a demonstration, please [contact us here](https://ziggyplatform.com/contact).

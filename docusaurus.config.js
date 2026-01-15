@@ -1,9 +1,9 @@
 const config = {
   title: 'Ziggy Docs',
   tagline: 'Complete guide to Ziggy\'s no-code data platform, flows, blocks, and AI-powered search capabilities',
-  url: 'https://docs.ziggyservices.com',
+  url: 'https://docs.ziggyplatform.com',
   baseUrl: '/',
-  organizationName: 'ziggyservices',
+  organizationName: 'ziggyplatform',
   projectName: 'ziggyusaurus',
   onBrokenLinks: 'warn', // Temporarily warn instead of fail
   favicon: 'img/favicon.ico',
@@ -123,7 +123,7 @@ const config = {
     //   askAi: 'IPIDvjstyBlu',
     //   indexName: 'Ziggy Docs',
     //   contextualSearch: false,
-    //   sitemaps: ["https://docs.ziggyservices.com/sitemap.xml"],
+    //   sitemaps: ["https://docs.ziggyplatform.com/sitemap.xml"],
     //   externalUrlRegex: 'external\\.com|domain\\.com',
     //   replaceSearchResultPathname: {
     //     from: '/docs/',

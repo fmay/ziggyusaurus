@@ -42,5 +42,5 @@ Data is returned to ChatterBox in a standardised format so ChatterBox can instan
 Note that all Ziggy Flows are API callable so you can manage the UI yourself if you prefer.
 
 ## Want us to configure ChatterBox (or Flows) for you?
-If you want any assistance configuring any aspect of Ziggy, including ChatterBox, please [contact us](https:/ziggyservices.com/contact) to discuss.
+If you want any assistance configuring any aspect of Ziggy, including ChatterBox, please [contact us](https:/ziggyplatform.com/contact) to discuss.
 

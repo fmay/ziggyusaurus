@@ -3,7 +3,7 @@ title: Docker Compose
 ---
 
 ## Level 1
-For a [Level 1 cluster]((/user-guide/cluster/levels.md)) a typical `docker-compose.yaml` is shown below. Note the (optional) use of Caddy for automatic Let's Encrypt certificates. 
+For a [Level 1 cluster](/user-guide/cluster/levels) a typical `docker-compose.yaml` is shown below. Note the (optional) use of Caddy for automatic Let's Encrypt certificates. 
 
 ```yaml
 services:
@@ -84,7 +84,7 @@ networks:
 ```
 
 ## Level 2
-For a [Level 2 cluster]((/user-guide/cluster/levels.md)) `docker-compose.yaml` should not contain `db` or `redis`.
+For a [Level 2 cluster](/user-guide/cluster/levels) `docker-compose.yaml` should not contain `db` or `redis`.
 
 You will then need to adjust the `.env` file to point to your clusters.
 

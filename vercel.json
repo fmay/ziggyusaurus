@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "docs.ziggyservices.com"
+        }
+      ],
+      "destination": "https://docs.ziggyplatform.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {

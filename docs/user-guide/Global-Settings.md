@@ -77,7 +77,7 @@ This lets you view
 
 - set the server log level (you should generally use **Info**)
 - all system logs
-- files that are written to the Ziggy file system ([File Block](user-guide/block-types))
+- files that are written to the Ziggy file system ([File Block](/user-guide/block-types/utility/file-reader-writer))
 - Set node and edge IDs (for low level debugging support only)
 
 <img src="/img/global-settings/gsettings-sys-logs.png" alt="system logs" width="800" />

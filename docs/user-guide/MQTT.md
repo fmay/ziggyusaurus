@@ -18,4 +18,4 @@ The payload is passed into that Flow, where it can be processed.
 Each messaging configuration can be associated with one or more topics. 
 
 ## Publishing Messages
-Please refer to the [MQTT Publisher Block](user-guide/block-types/messaging/overview) for information on how to publish messages within a Flow.
+Please refer to the [Messaging](/user-guide/Messaging) for information on how to publish messages within a Flow.

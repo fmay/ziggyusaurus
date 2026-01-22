@@ -5,7 +5,7 @@
       "has": [
         {
           "type": "host",
-          "value": "docs.ziggyservices.com"
+          "value": "docs.ziggyplatform.com"
         }
       ],
       "destination": "https://docs.ziggyplatform.com/",
@@ -16,7 +16,7 @@
       "has": [
         {
           "type": "host",
-          "value": "docs.ziggyservices.com"
+          "value": "docs.ziggyplatform.com"
         }
       ],
       "destination": "https://docs.ziggyplatform.com/:path*",

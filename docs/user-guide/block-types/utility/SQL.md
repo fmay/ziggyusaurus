@@ -13,7 +13,7 @@ This Block supports the following databases and data warehouses.
 - SQL Server
 - Snowflake
 - MySQL (coming soon)
-- Other databases can be added on request. Please email [info@ziggyservices.com](mailto:info@ziggyservices.com) if you'd like to add a new database.
+- Other databases can be added on request. Please email [info@ziggyplatform.com](mailto:info@ziggyplatform.com) if you'd like to add a new database.
 
 The following SQL operations are supported with the query generator, 
 but you can edit the generated SQL if required.

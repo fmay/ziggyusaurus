@@ -22,7 +22,7 @@ We will shortly be releasing support for
 - AWS SQS/SNS
 - Azure Service Bus, Queue Storage and Event Hubs
 
-If you have a requirement for an alternative messaging system, please email info@ziggyservices.com.
+If you have a requirement for an alternative messaging system, please email info@ziggyplatform.com.
 
 ## Main listing
 

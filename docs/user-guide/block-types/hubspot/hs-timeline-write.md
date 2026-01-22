@@ -42,7 +42,7 @@ eventually expire and you will need to reauthenticate through the UI.
 Because Public Apps are generic in nature, it is necessary for us to create a special Public App that is 
 dedicated to you. This can contains as many Event Templates as you require.
 
-Please contact info@ziggyservices.com to request this. We will then provide an **appId** to you, which you can 
+Please contact info@ziggyplatform.com to request this. We will then provide an **appId** to you, which you can 
 enter in your Connection config as shown below.
 
 ```JavaScript

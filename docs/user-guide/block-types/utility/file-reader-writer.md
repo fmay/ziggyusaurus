@@ -9,7 +9,7 @@ This block reads from and writes to files that are stored on the following platf
 - **File System** - files that are stored in the Ziggy platform. See below for more information.
 - **SFTP** - a remote SFTP server
 - **AWS S3**
-- **Azure** - coming soon. Email [info@ziggyservices.com](mailto:info@ziggyservices.com) if you require this urgently.
+- **Azure** - coming soon. Email [info@ziggyplatform.com](mailto:info@ziggyplatform.com) if you require this urgently.
 
 ## Data formats
 Ziggy currently supports the following data formats. The format is specified in the block configuration.

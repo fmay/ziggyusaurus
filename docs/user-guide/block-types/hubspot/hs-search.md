@@ -40,7 +40,7 @@ You can use this independently to run a HubSpot search query, in which case the 
     limit: 5,
     offset: 0,
     query: "deals worth more than 10000",
-    callingUserId: "freddy.may@ziggyservices.com",
+    callingUserId: "freddy.may@ziggyplatform.com",
   },
 ]
 ```
